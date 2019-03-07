@@ -1,0 +1,5 @@
+<map id="ndn_sd_identity" name="ndn_sd_identity">
+<area shape="rect" id="node1" title="The structure to implement neighbors management in Access Control." alt="" coords="61,167,176,240"/>
+<area shape="rect" id="node2" href="$structndn__service.html" title="The structure to represent a NDN service." alt="" coords="5,5,99,105"/>
+<area shape="rect" id="node3" href="$structname__component.html" title="The structure to represent the Name Component." alt="" coords="123,5,251,105"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="NDNUtil" name="NDNUtil">
+<area shape="rect" id="node1" href="$group___n_d_n_util_msq_queue.html" title="Message queue of the forwarder." alt="" coords="123,5,242,29"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,29,75,53"/>
+<area shape="rect" id="node3" href="$group___n_d_n_util_mem_pool.html" title="Memory pool manages pseudo memory blocks in a static memory array." alt="" coords="130,53,235,77"/>
+</map>

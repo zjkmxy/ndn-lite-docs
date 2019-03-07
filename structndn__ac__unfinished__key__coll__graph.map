@@ -1,0 +1,7 @@
+<map id="ndn_ac_unfinished_key" name="ndn_ac_unfinished_key">
+<area shape="rect" id="node1" title="The structure to present an unfinished key only used in Access Control EK/DK process." alt="" coords="77,301,238,375"/>
+<area shape="rect" id="node2" href="$structndn__ecc__pub.html" title="The structure to keep an ECC public key." alt="" coords="45,153,147,240"/>
+<area shape="rect" id="node3" href="$structabstract__ecc__pub__key.html" title=" " alt="" coords="5,5,160,92"/>
+<area shape="rect" id="node4" href="$structndn__ecc__prv.html" title="The structure to keep an ECC private key." alt="" coords="198,153,296,240"/>
+<area shape="rect" id="node5" href="$structabstract__ecc__prv__key.html" title=" " alt="" coords="185,5,336,92"/>
+</map>

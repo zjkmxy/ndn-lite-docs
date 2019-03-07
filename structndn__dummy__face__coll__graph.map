@@ -1,0 +1,4 @@
+<map id="ndn_dummy_face" name="ndn_dummy_face">
+<area shape="rect" id="node1" title="The structure to represent a dummy face." alt="" coords="5,167,133,240"/>
+<area shape="rect" id="node2" href="$structndn__face__intf.html" title="Abstract NDN network face." alt="" coords="18,5,120,105"/>
+</map>

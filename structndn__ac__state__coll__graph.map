@@ -1,0 +1,9 @@
+<map id="ndn_ac_state" name="ndn_ac_state">
+<area shape="rect" id="node1" title="The structure to implement state storage and management in Access Control." alt="" coords="197,315,299,401"/>
+<area shape="rect" id="node2" href="$structndn__ecc__pub.html" title="The structure to keep an ECC public key." alt="" coords="44,167,145,253"/>
+<area shape="rect" id="node3" href="$structabstract__ecc__pub__key.html" title=" " alt="" coords="5,12,160,99"/>
+<area shape="rect" id="node4" href="$structndn__name.html" title="The structure to represent the Name." alt="" coords="180,173,316,247"/>
+<area shape="rect" id="node5" href="$structname__component.html" title="The structure to represent the Name Component." alt="" coords="184,5,312,105"/>
+<area shape="rect" id="node6" href="$structndn__ecc__prv.html" title="The structure to keep an ECC private key." alt="" coords="352,167,450,253"/>
+<area shape="rect" id="node7" href="$structabstract__ecc__prv__key.html" title=" " alt="" coords="337,12,488,99"/>
+</map>

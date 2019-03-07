@@ -1,0 +1,5 @@
+<map id="ndn_timer_scheduler" name="ndn_timer_scheduler">
+<area shape="rect" id="node1" title="The structure to represent a timer scheduler in front end." alt="" coords="69,167,215,240"/>
+<area shape="rect" id="node2" href="$structndn__timer.html" title="The structure to represent a timer." alt="" coords="5,5,89,105"/>
+<area shape="rect" id="node3" href="$structndn__alarm__api.html" title="The structure to represent alarm APIs provided by specific platform backend." alt="" coords="173,5,297,105"/>
+</map>

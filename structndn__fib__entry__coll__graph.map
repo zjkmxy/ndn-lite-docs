@@ -1,0 +1,6 @@
+<map id="ndn_fib_entry" name="ndn_fib_entry">
+<area shape="rect" id="node1" title="FIB entry." alt="" coords="113,328,215,401"/>
+<area shape="rect" id="node2" href="$structndn__face__intf.html" title="Abstract NDN network face." alt="" coords="5,167,107,267"/>
+<area shape="rect" id="node3" href="$structndn__name.html" title="The structure to represent the Name." alt="" coords="205,180,342,253"/>
+<area shape="rect" id="node4" href="$structname__component.html" title="The structure to represent the Name Component." alt="" coords="209,5,337,105"/>
+</map>

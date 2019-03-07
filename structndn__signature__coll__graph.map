@@ -1,0 +1,6 @@
+<map id="ndn_signature" name="ndn_signature">
+<area shape="rect" id="node1" title="The structure to represent the Signature." alt="" coords="105,315,211,428"/>
+<area shape="rect" id="node2" href="$structndn__name.html" title="The structure to represent the Name." alt="" coords="5,173,142,247"/>
+<area shape="rect" id="node3" href="$structname__component.html" title="The structure to represent the Name Component." alt="" coords="10,5,138,105"/>
+<area shape="rect" id="node4" href="$structndn__validity__period.html" title="The structure to represent the signature validity period." alt="" coords="166,167,302,253"/>
+</map>

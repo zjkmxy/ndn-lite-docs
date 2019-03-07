@@ -1,0 +1,7 @@
+<map id="ndn_sd_context" name="ndn_sd_context">
+<area shape="rect" id="node1" title="The structure to implement state storage and management in Service Discovery." alt="" coords="93,315,208,388"/>
+<area shape="rect" id="node2" href="$structndn__sd__identity.html" title="The structure to implement neighbors management in Access Control." alt="" coords="20,167,135,240"/>
+<area shape="rect" id="node3" href="$structndn__service.html" title="The structure to represent a NDN service." alt="" coords="5,5,99,105"/>
+<area shape="rect" id="node4" href="$structname__component.html" title="The structure to represent the Name Component." alt="" coords="143,5,271,105"/>
+<area shape="rect" id="node5" href="$structndn__name.html" title="The structure to represent the Name." alt="" coords="158,167,295,240"/>
+</map>

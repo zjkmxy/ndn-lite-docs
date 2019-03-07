@@ -1,0 +1,4 @@
+<map id="ndn_metainfo" name="ndn_metainfo">
+<area shape="rect" id="node1" title="The structure to represent the Metainfo structure." alt="" coords="5,167,161,280"/>
+<area shape="rect" id="node2" href="$structname__component.html" title="The structure to represent the Name Component." alt="" coords="19,5,147,105"/>
+</map>

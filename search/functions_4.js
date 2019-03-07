@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['eccpoint_5fcompute_5fpublic_5fkey',['EccPoint_compute_public_key',['../tc__ecc_8c.html#a7b2834960a6b12213006f05419163b5b',1,'EccPoint_compute_public_key(tc_uECC_word_t *result, tc_uECC_word_t *private_key, tc_uECC_Curve curve):&#160;tc_ecc.c'],['../tc__ecc_8h.html#a7b2834960a6b12213006f05419163b5b',1,'EccPoint_compute_public_key(tc_uECC_word_t *result, tc_uECC_word_t *private_key, tc_uECC_Curve curve):&#160;tc_ecc.c']]],
+  ['eccpoint_5fiszero',['EccPoint_isZero',['../tc__ecc_8c.html#ab941240122098008de0deaf7a6a7830a',1,'EccPoint_isZero(const tc_uECC_word_t *point, tc_uECC_Curve curve):&#160;tc_ecc.c'],['../tc__ecc_8h.html#ab941240122098008de0deaf7a6a7830a',1,'EccPoint_isZero(const tc_uECC_word_t *point, tc_uECC_Curve curve):&#160;tc_ecc.c']]],
+  ['eccpoint_5fmult',['EccPoint_mult',['../tc__ecc_8c.html#ac62cbd58b90ba6192cac4ebd68fe9561',1,'EccPoint_mult(tc_uECC_word_t *result, const tc_uECC_word_t *point, const tc_uECC_word_t *scalar, const tc_uECC_word_t *initial_Z, bitcount_t num_bits, tc_uECC_Curve curve):&#160;tc_ecc.c'],['../tc__ecc_8h.html#ac62cbd58b90ba6192cac4ebd68fe9561',1,'EccPoint_mult(tc_uECC_word_t *result, const tc_uECC_word_t *point, const tc_uECC_word_t *scalar, const tc_uECC_word_t *initial_Z, bitcount_t num_bits, tc_uECC_Curve curve):&#160;tc_ecc.c']]]
+];

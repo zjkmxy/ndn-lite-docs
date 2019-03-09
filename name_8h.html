@@ -114,9 +114,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a65207bea0be3dbed5f7ceda875f1f729"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name_8h.html#a65207bea0be3dbed5f7ceda875f1f729">ndn_name_compare</a> (const <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *lhs, const <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *rhs)</td></tr>
 <tr class="memdesc:a65207bea0be3dbed5f7ceda875f1f729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two Name.  <a href="#a65207bea0be3dbed5f7ceda875f1f729">More...</a><br /></td></tr>
 <tr class="separator:a65207bea0be3dbed5f7ceda875f1f729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4183dd7689e58c14d4bdd6b48818843"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name_8h.html#ad4183dd7689e58c14d4bdd6b48818843">ndn_name_compare_sub_names</a> (const <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *lhs, int lhs_b, int lhs_e, const <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *rhs, int rhs_b, int rhs_e)</td></tr>
+<tr class="memdesc:ad4183dd7689e58c14d4bdd6b48818843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare sub-names of two names.  <a href="#ad4183dd7689e58c14d4bdd6b48818843">More...</a><br /></td></tr>
+<tr class="separator:ad4183dd7689e58c14d4bdd6b48818843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe9b29f4fba9169cd01e94ed07591013"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name_8h.html#afe9b29f4fba9169cd01e94ed07591013">ndn_name_is_prefix_of</a> (const <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *lhs, const <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *rhs)</td></tr>
 <tr class="memdesc:afe9b29f4fba9169cd01e94ed07591013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two Name based on the canonical order, to see whether a name is the prefix of another.  <a href="#afe9b29f4fba9169cd01e94ed07591013">More...</a><br /></td></tr>
 <tr class="separator:afe9b29f4fba9169cd01e94ed07591013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab507357a415f92f0f6eec1b32d75f309"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name_8h.html#ab507357a415f92f0f6eec1b32d75f309">ndn_name_compare_block</a> (const uint8_t *lhs_block_value, uint32_t lhs_block_size, const uint8_t *rhs_block_value, uint32_t rhs_block_size)</td></tr>
+<tr class="memdesc:ab507357a415f92f0f6eec1b32d75f309"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two encoded Name in TLV blocks.  <a href="#ab507357a415f92f0f6eec1b32d75f309">More...</a><br /></td></tr>
+<tr class="separator:ab507357a415f92f0f6eec1b32d75f309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a52e1c60a5efcf839a3f521199f7b4be4"></a>
@@ -210,6 +216,130 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if <code>lhs</code> == <code>rhs</code>. </dd></dl>
+
+</div>
+</div>
+<a id="ab507357a415f92f0f6eec1b32d75f309"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab507357a415f92f0f6eec1b32d75f309">&#9670;&nbsp;</a></span>ndn_name_compare_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ndn_name_compare_block </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>lhs_block_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>lhs_block_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>rhs_block_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>rhs_block_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compare two encoded Name in TLV blocks. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs_encoder.</td><td>Input. Left-hand-side encoded Name in TLV block. </td></tr>
+    <tr><td class="paramname">rhs_encoder.</td><td>Input. Right-hand-side encoded Name in TLV block. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if <code>lhs</code> == <code>rhs</code>. </dd>
+<dd>
+1, if <code>lhs</code> &gt; <code>rhs</code> and <code>rhs</code> is not a prefix of <code>lhs</code>. </dd>
+<dd>
+2, if <code>lhs</code> &gt; <code>rhs</code> and <code>rhs</code> is a proper prefix of <code>lhs</code>. </dd>
+<dd>
+-1, if <code>lhs</code> &lt; <code>rhs</code> and <code>lhs</code> is not a prefix of <code>rhs</code>. </dd>
+<dd>
+-2, if <code>lhs</code> &lt; <code>rhs</code> and <code>lhs</code> is a proper prefix of <code>rhs</code>. </dd></dl>
+
+</div>
+</div>
+<a id="ad4183dd7689e58c14d4bdd6b48818843"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4183dd7689e58c14d4bdd6b48818843">&#9670;&nbsp;</a></span>ndn_name_compare_sub_names()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ndn_name_compare_sub_names </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lhs_b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lhs_e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *&#160;</td>
+          <td class="paramname"><em>rhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rhs_b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rhs_e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compare sub-names of two names. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs.</td><td>Input. Left-hand-side Name. </td></tr>
+    <tr><td class="paramname">lhs_b.</td><td>Input. Beginning index of left-hand-side-name. </td></tr>
+    <tr><td class="paramname">lhs_e.</td><td>Input. Ending index of left-hand-side-name (should be one more than last index to compare) </td></tr>
+    <tr><td class="paramname">rhs.</td><td>Input. Right-hand-side Name. </td></tr>
+    <tr><td class="paramname">rhs_b.</td><td>Input. Beginning index of right-hand-side-name. </td></tr>
+    <tr><td class="paramname">rhs_e.</td><td>Input. Ending index of right-hand-side-name (should be one more than last index to compare) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if <code>lhs</code> from lhs_b to lhs_e-1 == <code>rhs</code> from rhs_b to rhs_e-1. </dd></dl>
 
 </div>
 </div>

@@ -104,7 +104,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:afe9b29f4fba9169cd01e94ed07591013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two Name based on the canonical order, to see whether a name is the prefix of another.  <a href="#afe9b29f4fba9169cd01e94ed07591013">More...</a><br /></td></tr>
 <tr class="separator:afe9b29f4fba9169cd01e94ed07591013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab507357a415f92f0f6eec1b32d75f309"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name_8c.html#ab507357a415f92f0f6eec1b32d75f309">ndn_name_compare_block</a> (const uint8_t *lhs_block_value, uint32_t lhs_block_size, const uint8_t *rhs_block_value, uint32_t rhs_block_size)</td></tr>
-<tr class="memdesc:ab507357a415f92f0f6eec1b32d75f309"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two encoded Name in TLV blocks.  <a href="#ab507357a415f92f0f6eec1b32d75f309">More...</a><br /></td></tr>
+<tr class="memdesc:ab507357a415f92f0f6eec1b32d75f309"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two encoded Names.  <a href="#ab507357a415f92f0f6eec1b32d75f309">More...</a><br /></td></tr>
 <tr class="separator:ab507357a415f92f0f6eec1b32d75f309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -222,11 +222,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compare two encoded Name in TLV blocks. </p>
+<p>Compare two encoded Names. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">lhs_encoder.</td><td>Input. Left-hand-side encoded Name in TLV block. </td></tr>
-    <tr><td class="paramname">rhs_encoder.</td><td>Input. Right-hand-side encoded Name in TLV block. </td></tr>
+    <tr><td class="paramname">lhs_block_value.</td><td>Input. Left-hand-side encoded Name block value. </td></tr>
+    <tr><td class="paramname">lhs_block_size.</td><td>Input. Left-hand-side encoded Name block size. </td></tr>
+    <tr><td class="paramname">rhs_block_value.</td><td>Input. Right-hand-side encoded Name block value. </td></tr>
+    <tr><td class="paramname">rhs_block_size.</td><td>Input. Right-hand-side encoded Name block size. </td></tr>
   </table>
   </dd>
 </dl>

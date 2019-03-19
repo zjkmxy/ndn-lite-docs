@@ -106,9 +106,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5e7cf807971c73f1407502e1c7de7eed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interest_8h.html#a5e7cf807971c73f1407502e1c7de7eed">ndn_interest_tlv_encode</a> (<a class="el" href="encoder_8h.html#a7e8d31a88e1f377c42e835275385119c">ndn_encoder_t</a> *encoder, const <a class="el" href="interest_8h.html#afca88883fe1b0948d6e5d813bfacd08c">ndn_interest_t</a> *interest)</td></tr>
 <tr class="memdesc:a5e7cf807971c73f1407502e1c7de7eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the Interest into wire format (TLV block).  <a href="#a5e7cf807971c73f1407502e1c7de7eed">More...</a><br /></td></tr>
 <tr class="separator:a5e7cf807971c73f1407502e1c7de7eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8f3872dbafe788c6f40ae30d2041ab1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interest_8h.html#ae8f3872dbafe788c6f40ae30d2041ab1">ndn_interest_tlv_compare_name</a> (const uint8_t *lhs_block_value, uint32_t lhs_block_size, const uint8_t *rhs_block_value, uint32_t rhs_block_size)</td></tr>
-<tr class="memdesc:ae8f3872dbafe788c6f40ae30d2041ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two encoded Interest Name in TLV blocks.  <a href="#ae8f3872dbafe788c6f40ae30d2041ab1">More...</a><br /></td></tr>
-<tr class="separator:ae8f3872dbafe788c6f40ae30d2041ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fb53cb13db7219e135d88996fba9d32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interest_8h.html#a3fb53cb13db7219e135d88996fba9d32">ndn_interest_name_compare_block</a> (const uint8_t *lhs_block_value, uint32_t lhs_block_size, const uint8_t *rhs_block_value, uint32_t rhs_block_size)</td></tr>
+<tr class="memdesc:a3fb53cb13db7219e135d88996fba9d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two encoded Interests' names.  <a href="#a3fb53cb13db7219e135d88996fba9d32">More...</a><br /></td></tr>
+<tr class="separator:a3fb53cb13db7219e135d88996fba9d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="af46a0a240478450f026fbfa043eb6bef"></a>
@@ -189,14 +189,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae8f3872dbafe788c6f40ae30d2041ab1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8f3872dbafe788c6f40ae30d2041ab1">&#9670;&nbsp;</a></span>ndn_interest_tlv_compare_name()</h2>
+<a id="a3fb53cb13db7219e135d88996fba9d32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fb53cb13db7219e135d88996fba9d32">&#9670;&nbsp;</a></span>ndn_interest_name_compare_block()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ndn_interest_tlv_compare_name </td>
+          <td class="memname">int ndn_interest_name_compare_block </td>
           <td>(</td>
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>lhs_block_value</em>, </td>
@@ -227,11 +227,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Compare two encoded Interest Name in TLV blocks. </p>
+<p>Compare two encoded Interests' names. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">lhs_encoder.</td><td>Input. Left-hand-side encoded Interest Name in TLV block. </td></tr>
-    <tr><td class="paramname">rhs_encoder.</td><td>Input. Right-hand-side encoded Interest Name in TLV block. </td></tr>
+    <tr><td class="paramname">lhs_block_value.</td><td>Input. Left-hand-side encoded Interest block value. </td></tr>
+    <tr><td class="paramname">lhs_block_size.</td><td>Input. Left-hand-side encoded Interest block size. </td></tr>
+    <tr><td class="paramname">rhs_block_value.</td><td>Input. Right-hand-side encoded Interest block value. </td></tr>
+    <tr><td class="paramname">rhs_block_size.</td><td>Input. Right-hand-side encoded Interest block size. </td></tr>
   </table>
   </dd>
 </dl>

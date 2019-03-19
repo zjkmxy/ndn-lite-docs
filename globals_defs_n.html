@@ -65,9 +65,6 @@ $(function() {
 &#160;
 
 <h3><a id="index_n"></a>- n -</h3><ul>
-<li>NAME_POOL_LEN
-: <a class="el" href="forwarder_8c.html#a4af83d80e3f05dad3fa1827b6424aac3">forwarder.c</a>
-</li>
 <li>Nb
 : <a class="el" href="tc__aes_8h.html#a1ae104196f1fc7af4751c5b9e07b1610">tc_aes.h</a>
 </li>
@@ -191,17 +188,26 @@ $(function() {
 <li>NDN_DEFAULT_INTEREST_LIFETIME
 : <a class="el" href="ndn-constants_8h.html#ad8262148490f365456f0645b712937ab">ndn-constants.h</a>
 </li>
-<li>NDN_DIRECT_FACE_CB_ENTRY_SIZE
-: <a class="el" href="direct-face_8h.html#a07a834e9b8f3552b36ba3057e0456d43">direct-face.h</a>
-</li>
 <li>NDN_FACE_DEFAULT_COST
 : <a class="el" href="ndn-constants_8h.html#a0770773df4188f99e819c09eb0850f6b">ndn-constants.h</a>
 </li>
 <li>NDN_FACE_TABLE_MAX_SIZE
 : <a class="el" href="ndn-constants_8h.html#a1dca27e73f511126c00d9f0d12b0e534">ndn-constants.h</a>
 </li>
+<li>NDN_FACE_TABLE_RESERVE_SIZE
+: <a class="el" href="face-table_8h.html#a9bdc50d25ffa3313a540c8c2d31ba00c">face-table.h</a>
+</li>
 <li>NDN_FIB_MAX_SIZE
 : <a class="el" href="ndn-constants_8h.html#a43c012add745a0fbd1356828d600bcea">ndn-constants.h</a>
+</li>
+<li>NDN_FIB_RESERVE_SIZE
+: <a class="el" href="group___n_d_n_fwd_f_i_b.html#ga39149c6642dd82d4196d43fd9b49aa53">fib.h</a>
+</li>
+<li>NDN_FORWARDER_DEFAULT_SIZE
+: <a class="el" href="forwarder_8c.html#a677252d063633a31d9b8ada5d0a71769">forwarder.c</a>
+</li>
+<li>NDN_FORWARDER_RESERVE_SIZE
+: <a class="el" href="forwarder_8c.html#a9855afeb61da9b61f4efb66c63b8a83c">forwarder.c</a>
 </li>
 <li>NDN_FRAG_BUFFER_MAX
 : <a class="el" href="ndn-constants_8h.html#a867350ff7f2fa0ee9368e132666593de">ndn-constants.h</a>
@@ -233,8 +239,11 @@ $(function() {
 <li>NDN_FRAG_WRONG_IDENTIFIER
 : <a class="el" href="group___n_d_n_error_code_fragmentation.html#ga3baa5392208c3d46297532b20898c7f5">ndn-error-code.h</a>
 </li>
-<li>NDN_FWD_APP_FACE_CB_TABLE_FULL
-: <a class="el" href="group___n_d_n_error_code_face.html#ga038a08c6eb3c028417535513773778f8">ndn-error-code.h</a>
+<li>NDN_FWD_FACE_DOWN
+: <a class="el" href="group___n_d_n_error_code_face.html#ga1c08300243ec36be71673358ed575361">ndn-error-code.h</a>
+</li>
+<li>NDN_FWD_FACE_TABLE_FULL
+: <a class="el" href="group___n_d_n_error_code_forwarder.html#ga306a003ff5faab09f04d58fb836cea14">ndn-error-code.h</a>
 </li>
 <li>NDN_FWD_FIB_FULL
 : <a class="el" href="group___n_d_n_error_code_forwarder.html#ga4a7e3d6faf0732a4dd4489f915f151c3">ndn-error-code.h</a>
@@ -242,26 +251,35 @@ $(function() {
 <li>NDN_FWD_INTEREST_REJECTED
 : <a class="el" href="group___n_d_n_error_code_forwarder.html#ga80f6f034bdfc27fe398df1685c2c6ef6">ndn-error-code.h</a>
 </li>
+<li>NDN_FWD_INVALID_FACE
+: <a class="el" href="group___n_d_n_error_code_forwarder.html#ga02151365ed9a3ca51556ea5c578bc01f">ndn-error-code.h</a>
+</li>
 <li>NDN_FWD_INVALID_NAME_COMPONENT_SIZE
 : <a class="el" href="ndn-constants_8h.html#a08a4efcba6e3c58207799ac2ed63cdf5">ndn-constants.h</a>
 </li>
 <li>NDN_FWD_INVALID_NAME_SIZE
 : <a class="el" href="ndn-constants_8h.html#a8cfa5a5268d68e4f726801d508db8d1f">ndn-constants.h</a>
 </li>
-<li>NDN_FWD_NO_MATCHED_CALLBACK
-: <a class="el" href="group___n_d_n_error_code_forwarder.html#ga7220bf2a382c1408e50c1c32992d07ee">ndn-error-code.h</a>
+<li>NDN_FWD_MSGQUEUE_FULL
+: <a class="el" href="group___n_d_n_error_code_forwarder.html#gaa92df746f395b8b746fed90eeb219d90">ndn-error-code.h</a>
 </li>
-<li>NDN_FWD_NO_MEM
-: <a class="el" href="group___n_d_n_error_code_forwarder.html#gacb25c8101a8782177a39e3a5dc0ac4c2">ndn-error-code.h</a>
+<li>NDN_FWD_NO_EFFECT
+: <a class="el" href="group___n_d_n_error_code_forwarder.html#ga043c5b16a26718ac8672e59601529a79">ndn-error-code.h</a>
 </li>
-<li>NDN_FWD_PIT_ENTRY_FACE_LIST_FULL
-: <a class="el" href="group___n_d_n_error_code_forwarder.html#gae16e4e15651275d6d06b8e3bf4c648d0">ndn-error-code.h</a>
+<li>NDN_FWD_NO_ROUTE
+: <a class="el" href="group___n_d_n_error_code_forwarder.html#ga16d3574b0c4b789a088d5d7242f4959b">ndn-error-code.h</a>
 </li>
 <li>NDN_FWD_PIT_FULL
 : <a class="el" href="group___n_d_n_error_code_forwarder.html#ga130102c578e26d3579d7c07acee1ff77">ndn-error-code.h</a>
 </li>
 <li>NDN_INTEREST_PARAMS_BUFFER_SIZE
 : <a class="el" href="ndn-constants_8h.html#abab5535d3af2120266efd5eb9e743322">ndn-constants.h</a>
+</li>
+<li>NDN_INVALID_ID
+: <a class="el" href="ndn-constants_8h.html#ad61ec7f675ac40e4950a7c9cca24dd60">ndn-constants.h</a>
+</li>
+<li>NDN_INVALID_POINTER
+: <a class="el" href="group___n_d_n_error_code_general.html#ga1f1433d339d230755b6576c1b93e7110">ndn-error-code.h</a>
 </li>
 <li>NDN_LITE_SEC_BACKEND_AES_DEFAULT
 : <a class="el" href="ndn-lite-sec-config_8h.html#ae5110862284c5a4e78c3d0f335dd7e00">ndn-lite-sec-config.h</a>
@@ -308,6 +326,18 @@ $(function() {
 <li>NDN_NAME_MAX_BLOCK_SIZE
 : <a class="el" href="ndn-constants_8h.html#aeb80b1602794e499217802fb9150f8ea">ndn-constants.h</a>
 </li>
+<li>NDN_NAMETREE_FIB_TYPE
+: <a class="el" href="name-tree_8h.html#a0eedb383e0f06432905757f5b6ed0a0a">name-tree.h</a>
+</li>
+<li>NDN_NAMETREE_MAX_SIZE
+: <a class="el" href="ndn-constants_8h.html#a95f5891d1a442bbf7e2b028242687e05">ndn-constants.h</a>
+</li>
+<li>NDN_NAMETREE_PIT_TYPE
+: <a class="el" href="name-tree_8h.html#a62d0b1db81287c21f29252ae4cdca88b">name-tree.h</a>
+</li>
+<li>NDN_NAMETREE_RESERVE_SIZE
+: <a class="el" href="name-tree_8h.html#a61123ad429ced326422eec6dbaf3ddae">name-tree.h</a>
+</li>
 <li>NDN_OVERSIZE
 : <a class="el" href="group___n_d_n_error_code_general.html#ga1a0dce2f8f494b253db34fbfa1f33ac4">ndn-error-code.h</a>
 </li>
@@ -316,6 +346,9 @@ $(function() {
 </li>
 <li>NDN_PIT_MAX_SIZE
 : <a class="el" href="ndn-constants_8h.html#a4ffd9ff00b7003376b788e299bb1258f">ndn-constants.h</a>
+</li>
+<li>NDN_PIT_RESERVE_SIZE
+: <a class="el" href="group___n_d_n_fwd_p_i_t.html#ga8eec45ea468a858dafaf4043ee7d567f">pit.h</a>
 </li>
 <li>NDN_SD_CONTROL
 : <a class="el" href="ndn-services_8h.html#a5165d0e9350e0f3f724eb8a8e3674054">ndn-services.h</a>
@@ -557,6 +590,9 @@ $(function() {
 <li>NDN_TRUST_SCHEMA_NAME_DID_NOT_MATCH
 : <a class="el" href="group___n_d_n_error_code_schematized_trust.html#gacafee96f3c89ddffe1ee4fd95f2e8633">ndn-error-code.h</a>
 </li>
+<li>NDN_TRUST_SCHEMA_NO_TYPE
+: <a class="el" href="ndn-constants_8h.html#a602b02ab8aadb9618e022a16e816403e">ndn-constants.h</a>
+</li>
 <li>NDN_TRUST_SCHEMA_NUMBER_OF_SUBPATTERNS_EXCEEDS_LIMIT
 : <a class="el" href="group___n_d_n_error_code_schematized_trust.html#ga020f2780dcc89fe59302919f17de453c">ndn-error-code.h</a>
 </li>
@@ -605,6 +641,9 @@ $(function() {
 <li>NDN_TRUST_SCHEMA_RULE_REF_UNEQUAL_NUM_OF_SUBPATTERN_CAPTURES
 : <a class="el" href="group___n_d_n_error_code_schematized_trust.html#ga8f2885a8997260449ceacb2d77e306c7">ndn-error-code.h</a>
 </li>
+<li>NDN_TRUST_SCHEMA_RULE_REFERENCING_NOT_IMPLEMENTED_YET
+: <a class="el" href="group___n_d_n_error_code_schematized_trust.html#gae2313000af9535889dcd86b3f767dec5">ndn-error-code.h</a>
+</li>
 <li>NDN_TRUST_SCHEMA_RULE_STORAGE_FULL
 : <a class="el" href="group___n_d_n_error_code_schematized_trust.html#gac9258ffeb44cdc1b1a5673c0a653d80e">ndn-error-code.h</a>
 </li>
@@ -620,6 +659,9 @@ $(function() {
 <li>NDN_TRUST_SCHEMA_SUBPATTERN_INDEX
 : <a class="el" href="ndn-constants_8h.html#a16ce24e7b0ce4bd5b6c38c56d06013b2">ndn-constants.h</a>
 </li>
+<li>NDN_TRUST_SCHEMA_SUBPATTERN_INDEX_GREATER_THAN_NUMBER_OF_SUBPATTERN_CAPTURES
+: <a class="el" href="group___n_d_n_error_code_schematized_trust.html#ga16a4f916d9e01948bc6311bc7af92ebc">ndn-error-code.h</a>
+</li>
 <li>NDN_TRUST_SCHEMA_WILDCARD_NAME_COMPONENT
 : <a class="el" href="ndn-constants_8h.html#a2c0dbcc3d433fe452f80b0822239282c">ndn-constants.h</a>
 </li>
@@ -628,6 +670,9 @@ $(function() {
 </li>
 <li>NDN_TRUST_SCHEMA_WILDCARD_SPECIALIZER
 : <a class="el" href="ndn-constants_8h.html#a476334aaa139e4ff494a2f67e4c359fd">ndn-constants.h</a>
+</li>
+<li>NDN_UNSUPPORTED_FORMAT
+: <a class="el" href="group___n_d_n_error_code_general.html#gae94c942c9aa43b297db0d8d2646e3039">ndn-error-code.h</a>
 </li>
 <li>NDN_WRONG_TLV_LENGTH
 : <a class="el" href="group___n_d_n_error_code_general.html#ga243d8e225b0220dbfeb49f29a600b54d">ndn-error-code.h</a>

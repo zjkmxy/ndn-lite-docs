@@ -1,0 +1,4 @@
+<map id="ndn_trust_schema_pattern" name="ndn_trust_schema_pattern">
+<area shape="rect" id="node1" title="The structure to represent the NDN Trust Schema pattern." alt="" coords="5,193,193,293"/>
+<area shape="rect" id="node2" href="$structndn__trust__schema__pattern__component.html" title="The structure to represent an NDN Trust Schema Pattern Component." alt="" coords="9,5,189,132"/>
+</map>

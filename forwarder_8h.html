@@ -67,48 +67,55 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">forwarder.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="pit_8h_source.html">pit.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="fib_8h_source.html">fib.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="face_8h_source.html">face.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="face_8h_source.html">face.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="callback-funcs_8h_source.html">callback-funcs.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="msg-queue_8h_source.html">../util/msg-queue.h</a>&quot;</code><br />
 </div>
 <p><a href="forwarder_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__forwarder.html">ndn_forwarder</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NDN-Lite forwarder.  <a href="structndn__forwarder.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gadf9816d8080c2a8400533d64f4a7b89e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structndn__forwarder.html">ndn_forwarder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_forwarder.html#gadf9816d8080c2a8400533d64f4a7b89e">ndn_forwarder_t</a></td></tr>
-<tr class="memdesc:gadf9816d8080c2a8400533d64f4a7b89e"><td class="mdescLeft">&#160;</td><td class="mdescRight">NDN-Lite forwarder.  <a href="group___n_d_n_fwd_forwarder.html#gadf9816d8080c2a8400533d64f4a7b89e">More...</a><br /></td></tr>
-<tr class="separator:gadf9816d8080c2a8400533d64f4a7b89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga44739133ee994206a135a0e3db38290b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___n_d_n_fwd_forwarder.html#gadf9816d8080c2a8400533d64f4a7b89e">ndn_forwarder_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_forwarder.html#ga44739133ee994206a135a0e3db38290b">ndn_forwarder_get_instance</a> (void)</td></tr>
-<tr class="memdesc:ga44739133ee994206a135a0e3db38290b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a running instance of forwarder.  <a href="group___n_d_n_fwd_forwarder.html#ga44739133ee994206a135a0e3db38290b">More...</a><br /></td></tr>
-<tr class="separator:ga44739133ee994206a135a0e3db38290b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2c69399cb60e585490810a131d031fd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___n_d_n_fwd_forwarder.html#gadf9816d8080c2a8400533d64f4a7b89e">ndn_forwarder_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_forwarder.html#ga2c69399cb60e585490810a131d031fd7">ndn_forwarder_init</a> (void)</td></tr>
-<tr class="memdesc:ga2c69399cb60e585490810a131d031fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init the NDN-Lite forwarder.  <a href="group___n_d_n_fwd_forwarder.html#ga2c69399cb60e585490810a131d031fd7">More...</a><br /></td></tr>
-<tr class="separator:ga2c69399cb60e585490810a131d031fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaca28728697482d6779eab17df87c2943"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_forwarder.html#gaca28728697482d6779eab17df87c2943">ndn_forwarder_fib_insert</a> (const <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *name_prefix, <a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *face, uint8_t cost)</td></tr>
-<tr class="memdesc:gaca28728697482d6779eab17df87c2943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add FIB entry into the FIB.  <a href="group___n_d_n_fwd_forwarder.html#gaca28728697482d6779eab17df87c2943">More...</a><br /></td></tr>
-<tr class="separator:gaca28728697482d6779eab17df87c2943"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadca607192773e274b8c1641b45445eb7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_forwarder.html#gadca607192773e274b8c1641b45445eb7">ndn_forwarder_on_incoming_data</a> (<a class="el" href="group___n_d_n_fwd_forwarder.html#gadf9816d8080c2a8400533d64f4a7b89e">ndn_forwarder_t</a> *self, <a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *face, <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *name, const uint8_t *raw_data, uint32_t size)</td></tr>
-<tr class="memdesc:gadca607192773e274b8c1641b45445eb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Let the forwarder receive a Data packet.  <a href="group___n_d_n_fwd_forwarder.html#gadca607192773e274b8c1641b45445eb7">More...</a><br /></td></tr>
-<tr class="separator:gadca607192773e274b8c1641b45445eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga77fc0c48c64b10f9b61e0582a15f28ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_forwarder.html#ga77fc0c48c64b10f9b61e0582a15f28ee">ndn_forwarder_on_incoming_interest</a> (<a class="el" href="group___n_d_n_fwd_forwarder.html#gadf9816d8080c2a8400533d64f4a7b89e">ndn_forwarder_t</a> *self, <a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *face, <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *name, const uint8_t *raw_interest, uint32_t size)</td></tr>
-<tr class="memdesc:ga77fc0c48c64b10f9b61e0582a15f28ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Let the forwarder receive a Interest packet.  <a href="group___n_d_n_fwd_forwarder.html#ga77fc0c48c64b10f9b61e0582a15f28ee">More...</a><br /></td></tr>
-<tr class="separator:ga77fc0c48c64b10f9b61e0582a15f28ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad186b23521651fd2593fbf381f6fd1eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_forwarder.html#gad186b23521651fd2593fbf381f6fd1eb">ndn_forwarder_init</a> (void)</td></tr>
+<tr class="memdesc:gad186b23521651fd2593fbf381f6fd1eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize all components of the forwarder.  <a href="group___n_d_n_fwd_forwarder.html#gad186b23521651fd2593fbf381f6fd1eb">More...</a><br /></td></tr>
+<tr class="separator:gad186b23521651fd2593fbf381f6fd1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61562d9c4e9c7fcfa8ab385104709175"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_forwarder.html#ga61562d9c4e9c7fcfa8ab385104709175">ndn_forwarder_process</a> (void)</td></tr>
+<tr class="memdesc:ga61562d9c4e9c7fcfa8ab385104709175"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process event messages.  <a href="group___n_d_n_fwd_forwarder.html#ga61562d9c4e9c7fcfa8ab385104709175">More...</a><br /></td></tr>
+<tr class="separator:ga61562d9c4e9c7fcfa8ab385104709175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae20555e0b3645d21429671ec51d75874"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_forwarder.html#gae20555e0b3645d21429671ec51d75874">ndn_forwarder_register_face</a> (<a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *face)</td></tr>
+<tr class="memdesc:gae20555e0b3645d21429671ec51d75874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a new face.  <a href="group___n_d_n_fwd_forwarder.html#gae20555e0b3645d21429671ec51d75874">More...</a><br /></td></tr>
+<tr class="separator:gae20555e0b3645d21429671ec51d75874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabcf1ec89cf5d5952181576ef1a331aaf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_forwarder.html#gabcf1ec89cf5d5952181576ef1a331aaf">ndn_forwarder_unregister_face</a> (<a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *face)</td></tr>
+<tr class="memdesc:gabcf1ec89cf5d5952181576ef1a331aaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a face.  <a href="group___n_d_n_fwd_forwarder.html#gabcf1ec89cf5d5952181576ef1a331aaf">More...</a><br /></td></tr>
+<tr class="separator:gabcf1ec89cf5d5952181576ef1a331aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74441e4c6947aa2826e1dc34031a9725"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_forwarder.html#ga74441e4c6947aa2826e1dc34031a9725">ndn_forwarder_add_route</a> (<a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *face, uint8_t *prefix, size_t length)</td></tr>
+<tr class="memdesc:ga74441e4c6947aa2826e1dc34031a9725"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a route into FIB.  <a href="group___n_d_n_fwd_forwarder.html#ga74441e4c6947aa2826e1dc34031a9725">More...</a><br /></td></tr>
+<tr class="separator:ga74441e4c6947aa2826e1dc34031a9725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae6190a2e989be0e9b2764626b35f727"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_forwarder.html#gaae6190a2e989be0e9b2764626b35f727">ndn_forwarder_remove_route</a> (<a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *face, uint8_t *prefix, size_t length)</td></tr>
+<tr class="memdesc:gaae6190a2e989be0e9b2764626b35f727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a route from FIB.  <a href="group___n_d_n_fwd_forwarder.html#gaae6190a2e989be0e9b2764626b35f727">More...</a><br /></td></tr>
+<tr class="separator:gaae6190a2e989be0e9b2764626b35f727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad596c735921ed97fd79c0d54f07b2c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_forwarder.html#gaad596c735921ed97fd79c0d54f07b2c7">ndn_forwarder_remove_all_routes</a> (uint8_t *prefix, size_t length)</td></tr>
+<tr class="memdesc:gaad596c735921ed97fd79c0d54f07b2c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all routes of a prefix from FIB.  <a href="group___n_d_n_fwd_forwarder.html#gaad596c735921ed97fd79c0d54f07b2c7">More...</a><br /></td></tr>
+<tr class="separator:gaad596c735921ed97fd79c0d54f07b2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga066f70e0e9635fdf4afc3c4a31a4e9db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_forwarder.html#ga066f70e0e9635fdf4afc3c4a31a4e9db">ndn_forwarder_receive</a> (<a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *face, uint8_t *packet, size_t length)</td></tr>
+<tr class="memdesc:ga066f70e0e9635fdf4afc3c4a31a4e9db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a packet from a face.  <a href="group___n_d_n_fwd_forwarder.html#ga066f70e0e9635fdf4afc3c4a31a4e9db">More...</a><br /></td></tr>
+<tr class="separator:ga066f70e0e9635fdf4afc3c4a31a4e9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga242d83d29bed45ac4eba6896686e5a16"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_forwarder.html#ga242d83d29bed45ac4eba6896686e5a16">ndn_forwarder_register_prefix</a> (uint8_t *prefix, size_t length, <a class="el" href="callback-funcs_8h.html#a723850a958e63905c4b1aa3c4232cb52">ndn_on_interest_func</a> on_interest, void *userdata)</td></tr>
+<tr class="memdesc:ga242d83d29bed45ac4eba6896686e5a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a prefix.  <a href="group___n_d_n_fwd_forwarder.html#ga242d83d29bed45ac4eba6896686e5a16">More...</a><br /></td></tr>
+<tr class="separator:ga242d83d29bed45ac4eba6896686e5a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd4d6034be89a37db47ea782fd5c8e02"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_forwarder.html#gadd4d6034be89a37db47ea782fd5c8e02">ndn_forwarder_unregister_prefix</a> (uint8_t *prefix, size_t length)</td></tr>
+<tr class="memdesc:gadd4d6034be89a37db47ea782fd5c8e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a prefix.  <a href="group___n_d_n_fwd_forwarder.html#gadd4d6034be89a37db47ea782fd5c8e02">More...</a><br /></td></tr>
+<tr class="separator:gadd4d6034be89a37db47ea782fd5c8e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadad08a352af44a8a3bc7a4096ad052ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_forwarder.html#gadad08a352af44a8a3bc7a4096ad052ae">ndn_forwarder_express_interest</a> (uint8_t *interest, size_t length, <a class="el" href="callback-funcs_8h.html#a452c4f70da99ab88816c3b2398a9c09e">ndn_on_data_func</a> on_data, <a class="el" href="callback-funcs_8h.html#a8405a85fb37f81835d71363fd396b270">ndn_on_timeout_func</a> on_timeout, void *userdata)</td></tr>
+<tr class="memdesc:gadad08a352af44a8a3bc7a4096ad052ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Express an interest.  <a href="group___n_d_n_fwd_forwarder.html#gadad08a352af44a8a3bc7a4096ad052ae">More...</a><br /></td></tr>
+<tr class="separator:gadad08a352af44a8a3bc7a4096ad052ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga78fa2b60a439670d46a937db0a6647a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_forwarder.html#ga78fa2b60a439670d46a937db0a6647a3">ndn_forwarder_put_data</a> (uint8_t *data, size_t length)</td></tr>
+<tr class="memdesc:ga78fa2b60a439670d46a937db0a6647a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Produce a data packet.  <a href="group___n_d_n_fwd_forwarder.html#ga78fa2b60a439670d46a937db0a6647a3">More...</a><br /></td></tr>
+<tr class="separator:ga78fa2b60a439670d46a937db0a6647a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

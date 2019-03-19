@@ -1,0 +1,7 @@
+<map id="ndn_rule_storage_t" name="ndn_rule_storage_t">
+<area shape="rect" id="node1" title=" " alt="" coords="115,503,251,576"/>
+<area shape="rect" id="node2" href="$structndn__trust__schema__rule.html" title=" " alt="" coords="19,368,180,441"/>
+<area shape="rect" id="node3" href="$structndn__trust__schema__pattern.html" title="The structure to represent the NDN Trust Schema pattern." alt="" coords="5,193,193,293"/>
+<area shape="rect" id="node4" href="$structndn__trust__schema__pattern__component.html" title="The structure to represent an NDN Trust Schema Pattern Component." alt="" coords="9,5,189,132"/>
+<area shape="rect" id="node5" href="$structndn__rule__name__t.html" title=" " alt="" coords="203,368,328,441"/>
+</map>

@@ -78,75 +78,77 @@ Collaboration diagram for ndn_fib_entry:</div>
 <div class="dyncontent">
 <div class="center"><img src="structndn__fib__entry__coll__graph.png" border="0" usemap="#ndn__fib__entry_coll__map" alt="Collaboration graph"/></div>
 <map name="ndn__fib__entry_coll__map" id="ndn__fib__entry_coll__map">
-<area shape="rect"  title="FIB entry." alt="" coords="113,328,215,401"/>
-<area shape="rect"  href="structndn__face__intf.html" title="Abstract NDN network face." alt="" coords="5,167,107,267"/>
-<area shape="rect"  href="structndn__name.html" title="The structure to represent the Name." alt="" coords="205,180,342,253"/>
-<area shape="rect"  href="structname__component.html" title="The structure to represent the Name Component." alt="" coords="209,5,337,105"/>
+<area shape="rect"  title="FIB entry." alt="" coords="5,5,112,119"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a8ef2666e8d17fd12ac4d11ffd31c4cd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__fib__entry.html#a8ef2666e8d17fd12ac4d11ffd31c4cd3">name_prefix</a></td></tr>
-<tr class="memdesc:a8ef2666e8d17fd12ac4d11ffd31c4cd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name prefix.  <a href="#a8ef2666e8d17fd12ac4d11ffd31c4cd3">More...</a><br /></td></tr>
-<tr class="separator:a8ef2666e8d17fd12ac4d11ffd31c4cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe7c4bf1ad2e294632bd222b1483f701"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__fib__entry.html#abe7c4bf1ad2e294632bd222b1483f701">next_hop</a></td></tr>
-<tr class="memdesc:abe7c4bf1ad2e294632bd222b1483f701"><td class="mdescLeft">&#160;</td><td class="mdescRight">The next-hop record.  <a href="#abe7c4bf1ad2e294632bd222b1483f701">More...</a><br /></td></tr>
-<tr class="separator:abe7c4bf1ad2e294632bd222b1483f701"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66aa46e252e6a59b93c8699656f50faf"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__fib__entry.html#a66aa46e252e6a59b93c8699656f50faf">cost</a></td></tr>
-<tr class="memdesc:a66aa46e252e6a59b93c8699656f50faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cost to the next-hop.  <a href="#a66aa46e252e6a59b93c8699656f50faf">More...</a><br /></td></tr>
-<tr class="separator:a66aa46e252e6a59b93c8699656f50faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb8153188738ad75f1335f29303ce6f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bit-operations_8h.html#affc3feed8995797a481682033fe4ccb8">ndn_bitset_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__fib__entry.html#afb8153188738ad75f1335f29303ce6f1">nexthop</a></td></tr>
+<tr class="separator:afb8153188738ad75f1335f29303ce6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dad9e91e035de7d6a21884ca042ea7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="callback-funcs_8h.html#a723850a958e63905c4b1aa3c4232cb52">ndn_on_interest_func</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__fib__entry.html#a5dad9e91e035de7d6a21884ca042ea7d">on_interest</a></td></tr>
+<tr class="separator:a5dad9e91e035de7d6a21884ca042ea7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45aba8bc260675d8da0493bd9eb290c6"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__fib__entry.html#a45aba8bc260675d8da0493bd9eb290c6">userdata</a></td></tr>
+<tr class="separator:a45aba8bc260675d8da0493bd9eb290c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6effc54c06f98d28e5c094504854585"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__fib__entry.html#aa6effc54c06f98d28e5c094504854585">nametree_id</a></td></tr>
+<tr class="separator:aa6effc54c06f98d28e5c094504854585"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>FIB entry. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a66aa46e252e6a59b93c8699656f50faf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66aa46e252e6a59b93c8699656f50faf">&#9670;&nbsp;</a></span>cost</h2>
+<a id="aa6effc54c06f98d28e5c094504854585"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6effc54c06f98d28e5c094504854585">&#9670;&nbsp;</a></span>nametree_id</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t ndn_fib_entry::cost</td>
+          <td class="memname">uint16_t ndn_fib_entry::nametree_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The cost to the next-hop. </p>
-
 </div>
 </div>
-<a id="a8ef2666e8d17fd12ac4d11ffd31c4cd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ef2666e8d17fd12ac4d11ffd31c4cd3">&#9670;&nbsp;</a></span>name_prefix</h2>
+<a id="afb8153188738ad75f1335f29303ce6f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb8153188738ad75f1335f29303ce6f1">&#9670;&nbsp;</a></span>nexthop</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> ndn_fib_entry::name_prefix</td>
+          <td class="memname"><a class="el" href="bit-operations_8h.html#affc3feed8995797a481682033fe4ccb8">ndn_bitset_t</a> ndn_fib_entry::nexthop</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The name prefix. </p>
-<p>A name with <code> <a class="el" href="structndn__name.html#a489fbf46a7eaefb02cf6a1bae720404f" title="The number of name components.">ndn_name_t::components_size</a> &lt; 0 </code> indicates an empty entry. </p>
-
 </div>
 </div>
-<a id="abe7c4bf1ad2e294632bd222b1483f701"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe7c4bf1ad2e294632bd222b1483f701">&#9670;&nbsp;</a></span>next_hop</h2>
+<a id="a5dad9e91e035de7d6a21884ca042ea7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dad9e91e035de7d6a21884ca042ea7d">&#9670;&nbsp;</a></span>on_interest</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a>* ndn_fib_entry::next_hop</td>
+          <td class="memname"><a class="el" href="callback-funcs_8h.html#a723850a958e63905c4b1aa3c4232cb52">ndn_on_interest_func</a> ndn_fib_entry::on_interest</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The next-hop record. </p>
-<dl class="section note"><dt>Note</dt><dd>Only one next-hop record per entry is allowed in NDN-Lite. </dd></dl>
+</div>
+</div>
+<a id="a45aba8bc260675d8da0493bd9eb290c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45aba8bc260675d8da0493bd9eb290c6">&#9670;&nbsp;</a></span>userdata</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* ndn_fib_entry::userdata</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

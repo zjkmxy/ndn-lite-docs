@@ -1,8 +1,10 @@
 <map id="ndn_forwarder" name="ndn_forwarder">
-<area shape="rect" id="node1" title="NDN&#45;Lite forwarder." alt="" coords="129,463,237,536"/>
-<area shape="rect" id="node2" href="$structndn__pit__entry.html" title="PIT entry." alt="" coords="33,328,183,401"/>
-<area shape="rect" id="node3" href="$structndn__face__intf.html" title="Abstract NDN network face." alt="" coords="23,167,124,267"/>
-<area shape="rect" id="node6" href="$structndn__fib__entry.html" title="FIB entry." alt="" coords="208,328,310,401"/>
-<area shape="rect" id="node4" href="$structndn__name.html" title="The structure to represent the Name." alt="" coords="227,180,363,253"/>
-<area shape="rect" id="node5" href="$structname__component.html" title="The structure to represent the Name Component." alt="" coords="231,5,359,105"/>
+<area shape="rect" id="node1" title="NDN&#45;Lite forwarder." alt="" coords="214,503,322,589"/>
+<area shape="rect" id="node2" href="$structndn__face__table.html" title=" " alt="" coords="65,361,178,435"/>
+<area shape="rect" id="node3" href="$structndn__face__intf.html" title="Abstract NDN network face." alt="" coords="5,187,107,287"/>
+<area shape="rect" id="node4" href="$structndn__pit.html" title="PIT class." alt="" coords="223,355,313,441"/>
+<area shape="rect" id="node5" href="$structndn__pit__entry.html" title="PIT entry." alt="" coords="205,180,331,293"/>
+<area shape="rect" id="node6" href="$structinterest__options.html" title=" " alt="" coords="210,5,326,119"/>
+<area shape="rect" id="node7" href="$structndn__fib.html" title="Forwarding Information Base (FIB) class." alt="" coords="350,355,439,441"/>
+<area shape="rect" id="node8" href="$structndn__fib__entry.html" title="FIB entry." alt="" coords="355,180,462,293"/>
 </map>

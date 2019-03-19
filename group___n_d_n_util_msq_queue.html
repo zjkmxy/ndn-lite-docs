@@ -101,15 +101,21 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9f875a3ca6f8f6bb0accd4f33c182add"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_util_msq_queue.html#ga9f875a3ca6f8f6bb0accd4f33c182add">ndn_msgqueue_init</a> (void)</td></tr>
 <tr class="memdesc:ga9f875a3ca6f8f6bb0accd4f33c182add"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init the message queue.  <a href="#ga9f875a3ca6f8f6bb0accd4f33c182add">More...</a><br /></td></tr>
 <tr class="separator:ga9f875a3ca6f8f6bb0accd4f33c182add"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad12a5a8f0a7e63023f07dd12fd385f50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_util_msq_queue.html#gad12a5a8f0a7e63023f07dd12fd385f50">ndn_msgqueue_post</a> (void *target, <a class="el" href="group___n_d_n_util_msq_queue.html#ga15f0a0eb16f63e8418cd07884f4324da">ndn_msg_callback</a> reason, size_t param_length, void *param)</td></tr>
-<tr class="memdesc:gad12a5a8f0a7e63023f07dd12fd385f50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post a message to the queue.  <a href="#gad12a5a8f0a7e63023f07dd12fd385f50">More...</a><br /></td></tr>
-<tr class="separator:gad12a5a8f0a7e63023f07dd12fd385f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a02bdee2edd5cef7c54c55286b3bce4"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structndn__msg.html">ndn_msg</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_util_msq_queue.html#ga9a02bdee2edd5cef7c54c55286b3bce4">ndn_msgqueue_post</a> (void *target, <a class="el" href="group___n_d_n_util_msq_queue.html#ga15f0a0eb16f63e8418cd07884f4324da">ndn_msg_callback</a> reason, size_t param_length, void *param)</td></tr>
+<tr class="memdesc:ga9a02bdee2edd5cef7c54c55286b3bce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post a message to the queue.  <a href="#ga9a02bdee2edd5cef7c54c55286b3bce4">More...</a><br /></td></tr>
+<tr class="separator:ga9a02bdee2edd5cef7c54c55286b3bce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf426b18fdf32ef1704329681af36d051"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_util_msq_queue.html#gaf426b18fdf32ef1704329681af36d051">ndn_msgqueue_dispatch</a> (void)</td></tr>
 <tr class="memdesc:gaf426b18fdf32ef1704329681af36d051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatch a message on the top of the queue.  <a href="#gaf426b18fdf32ef1704329681af36d051">More...</a><br /></td></tr>
 <tr class="separator:gaf426b18fdf32ef1704329681af36d051"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga20805137ae911ed02f83fd3d3419c490"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_util_msq_queue.html#ga20805137ae911ed02f83fd3d3419c490">ndn_msgqueue_empty</a> (void)</td></tr>
 <tr class="memdesc:ga20805137ae911ed02f83fd3d3419c490"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return if the messque queue is empty.  <a href="#ga20805137ae911ed02f83fd3d3419c490">More...</a><br /></td></tr>
 <tr class="separator:ga20805137ae911ed02f83fd3d3419c490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9661bef7c41401580ee15a20dae8ba5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_util_msq_queue.html#gae9661bef7c41401580ee15a20dae8ba5">ndn_msgqueue_process</a> (void)</td></tr>
+<tr class="memdesc:gae9661bef7c41401580ee15a20dae8ba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatch current messages.  <a href="#gae9661bef7c41401580ee15a20dae8ba5">More...</a><br /></td></tr>
+<tr class="separator:gae9661bef7c41401580ee15a20dae8ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf70379963532d87684732d798af5e59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_util_msq_queue.html#gacf70379963532d87684732d798af5e59">ndn_msgqueue_cancel</a> (struct <a class="el" href="structndn__msg.html">ndn_msg</a> *msg)</td></tr>
+<tr class="memdesc:gacf70379963532d87684732d798af5e59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel a posted message.  <a href="#gacf70379963532d87684732d798af5e59">More...</a><br /></td></tr>
+<tr class="separator:gacf70379963532d87684732d798af5e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Message queue of the forwarder. </p>
@@ -156,6 +162,32 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gacf70379963532d87684732d798af5e59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacf70379963532d87684732d798af5e59">&#9670;&nbsp;</a></span>ndn_msgqueue_cancel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ndn_msgqueue_cancel </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structndn__msg.html">ndn_msg</a> *&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cancel a posted message. </p>
+<p>Please make sure the pointer is correct and it's used before dispatch. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>Pointer to message </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="gaf426b18fdf32ef1704329681af36d051"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf426b18fdf32ef1704329681af36d051">&#9670;&nbsp;</a></span>ndn_msgqueue_dispatch()</h2>
 
@@ -231,14 +263,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gad12a5a8f0a7e63023f07dd12fd385f50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad12a5a8f0a7e63023f07dd12fd385f50">&#9670;&nbsp;</a></span>ndn_msgqueue_post()</h2>
+<a id="ga9a02bdee2edd5cef7c54c55286b3bce4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9a02bdee2edd5cef7c54c55286b3bce4">&#9670;&nbsp;</a></span>ndn_msgqueue_post()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool ndn_msgqueue_post </td>
+          <td class="memname">struct <a class="el" href="structndn__msg.html">ndn_msg</a>* ndn_msgqueue_post </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>target</em>, </td>
@@ -279,13 +311,28 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">true</td><td>The operation succeeded. </td></tr>
-    <tr><td class="paramname">false</td><td>The queue has insufficient memory. </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section return"><dt>Returns</dt><dd>An pointer to cancel the message. NULL if failed. </dd></dl>
+
+</div>
+</div>
+<a id="gae9661bef7c41401580ee15a20dae8ba5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae9661bef7c41401580ee15a20dae8ba5">&#9670;&nbsp;</a></span>ndn_msgqueue_process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ndn_msgqueue_process </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dispatch current messages. </p>
+<p>Process all messages currently in the queue. New messages posted during this function will not be dispatched. </p>
 
 </div>
 </div>

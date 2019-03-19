@@ -68,13 +68,16 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">fib.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="interest_8h_source.html">../encode/interest.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="face_8h_source.html">face.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="bit-operations_8h_source.html">../util/bit-operations.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="callback-funcs_8h_source.html">callback-funcs.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="name-tree_8h_source.html">name-tree.h</a>&quot;</code><br />
 </div>
 <p><a href="fib_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -83,15 +86,38 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__fib__entry.html">ndn_fib_entry</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">FIB entry.  <a href="structndn__fib__entry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__fib.html">ndn_fib</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwarding Information Base (FIB) class.  <a href="structndn__fib.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga39149c6642dd82d4196d43fd9b49aa53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_f_i_b.html#ga39149c6642dd82d4196d43fd9b49aa53">NDN_FIB_RESERVE_SIZE</a>(entry_count)&#160;&#160;&#160;(sizeof(<a class="el" href="group___n_d_n_fwd_f_i_b.html#gaeeaf739350ba1495b70e78214ad6d33a">ndn_fib_t</a>) + sizeof(<a class="el" href="group___n_d_n_fwd_f_i_b.html#gafc0ff4e8ec2a8dc6e2c0338ded0397a2">ndn_fib_entry_t</a>) * (entry_count))</td></tr>
+<tr class="separator:ga39149c6642dd82d4196d43fd9b49aa53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:gafc0ff4e8ec2a8dc6e2c0338ded0397a2"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structndn__fib__entry.html">ndn_fib_entry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_f_i_b.html#gafc0ff4e8ec2a8dc6e2c0338ded0397a2">ndn_fib_entry_t</a></td></tr>
 <tr class="memdesc:gafc0ff4e8ec2a8dc6e2c0338ded0397a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">FIB entry.  <a href="group___n_d_n_fwd_f_i_b.html#gafc0ff4e8ec2a8dc6e2c0338ded0397a2">More...</a><br /></td></tr>
 <tr class="separator:gafc0ff4e8ec2a8dc6e2c0338ded0397a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae312d6ea4400ce8fcdc451f7b8738659"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group___n_d_n_fwd_f_i_b.html#gafc0ff4e8ec2a8dc6e2c0338ded0397a2">ndn_fib_entry_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_f_i_b.html#gae312d6ea4400ce8fcdc451f7b8738659">ndn_fib_t</a>[<a class="el" href="ndn-constants_8h.html#a43c012add745a0fbd1356828d600bcea">NDN_FIB_MAX_SIZE</a>]</td></tr>
-<tr class="memdesc:gae312d6ea4400ce8fcdc451f7b8738659"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwarding Information Base (FIB) class.  <a href="group___n_d_n_fwd_f_i_b.html#gae312d6ea4400ce8fcdc451f7b8738659">More...</a><br /></td></tr>
-<tr class="separator:gae312d6ea4400ce8fcdc451f7b8738659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeeaf739350ba1495b70e78214ad6d33a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structndn__fib.html">ndn_fib</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_f_i_b.html#gaeeaf739350ba1495b70e78214ad6d33a">ndn_fib_t</a></td></tr>
+<tr class="memdesc:gaeeaf739350ba1495b70e78214ad6d33a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwarding Information Base (FIB) class.  <a href="group___n_d_n_fwd_f_i_b.html#gaeeaf739350ba1495b70e78214ad6d33a">More...</a><br /></td></tr>
+<tr class="separator:gaeeaf739350ba1495b70e78214ad6d33a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga9d43a2c6a589a235b75a14a25274f615"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_f_i_b.html#ga9d43a2c6a589a235b75a14a25274f615">ndn_fib_init</a> (void *memory, uint16_t capacity, <a class="el" href="name-tree_8h.html#a699153a76e5485373ce87e54e6fe5c98">ndn_nametree_t</a> *nametree)</td></tr>
+<tr class="separator:ga9d43a2c6a589a235b75a14a25274f615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3bee95986d0fc5603a6392e7a0b282b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_f_i_b.html#ga3bee95986d0fc5603a6392e7a0b282b2">ndn_fib_unregister_face</a> (<a class="el" href="group___n_d_n_fwd_f_i_b.html#gaeeaf739350ba1495b70e78214ad6d33a">ndn_fib_t</a> *self, uint16_t face_id)</td></tr>
+<tr class="separator:ga3bee95986d0fc5603a6392e7a0b282b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6bae680174312c6014909743b18c2e2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___n_d_n_fwd_f_i_b.html#gafc0ff4e8ec2a8dc6e2c0338ded0397a2">ndn_fib_entry_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_f_i_b.html#ga6bae680174312c6014909743b18c2e2b">ndn_fib_find_or_insert</a> (<a class="el" href="group___n_d_n_fwd_f_i_b.html#gaeeaf739350ba1495b70e78214ad6d33a">ndn_fib_t</a> *self, uint8_t *prefix, size_t length)</td></tr>
+<tr class="separator:ga6bae680174312c6014909743b18c2e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga531d674043a5ea52291ea284297645fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___n_d_n_fwd_f_i_b.html#gafc0ff4e8ec2a8dc6e2c0338ded0397a2">ndn_fib_entry_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_f_i_b.html#ga531d674043a5ea52291ea284297645fb">ndn_fib_find</a> (<a class="el" href="group___n_d_n_fwd_f_i_b.html#gaeeaf739350ba1495b70e78214ad6d33a">ndn_fib_t</a> *self, uint8_t *prefix, size_t length)</td></tr>
+<tr class="separator:ga531d674043a5ea52291ea284297645fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0895c1716c3cf37fac96e582c00d5697"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_f_i_b.html#ga0895c1716c3cf37fac96e582c00d5697">ndn_fib_remove_entry_if_empty</a> (<a class="el" href="group___n_d_n_fwd_f_i_b.html#gaeeaf739350ba1495b70e78214ad6d33a">ndn_fib_t</a> *self, <a class="el" href="group___n_d_n_fwd_f_i_b.html#gafc0ff4e8ec2a8dc6e2c0338ded0397a2">ndn_fib_entry_t</a> *entry)</td></tr>
+<tr class="separator:ga0895c1716c3cf37fac96e582c00d5697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga560e8e1875c0b04a2056d112fdd6737e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___n_d_n_fwd_f_i_b.html#gafc0ff4e8ec2a8dc6e2c0338ded0397a2">ndn_fib_entry_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_f_i_b.html#ga560e8e1875c0b04a2056d112fdd6737e">ndn_fib_prefix_match</a> (<a class="el" href="group___n_d_n_fwd_f_i_b.html#gaeeaf739350ba1495b70e78214ad6d33a">ndn_fib_t</a> *self, uint8_t *prefix, size_t length)</td></tr>
+<tr class="separator:ga560e8e1875c0b04a2056d112fdd6737e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

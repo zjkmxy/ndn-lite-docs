@@ -69,13 +69,15 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">face.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="name_8h_source.html">../encode/name.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="ndn-enums_8h_source.html">../ndn-enums.h</a>&quot;</code><br />
 </div>
 <p><a href="face_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -87,7 +89,7 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:af8c317a42292b61c93aae91e59118a46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="face_8h.html#af8c317a42292b61c93aae91e59118a46">container_of</a>(ptr,  type,  member)</td></tr>
+<tr class="memitem:af8c317a42292b61c93aae91e59118a46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="face_8h.html#af8c317a42292b61c93aae91e59118a46">container_of</a>(ptr,  type,  member)&#160;&#160;&#160;((type *)((char *)(1 ? (ptr) : &amp;((type *)0)-&gt;member) - offsetof(type, member)))</td></tr>
 <tr class="separator:af8c317a42292b61c93aae91e59118a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -95,9 +97,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gab61dab89f31eb408b213e92b617ba4c9"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#gab61dab89f31eb408b213e92b617ba4c9">ndn_face_intf_up</a>) (struct <a class="el" href="structndn__face__intf.html">ndn_face_intf</a> *self)</td></tr>
 <tr class="memdesc:gab61dab89f31eb408b213e92b617ba4c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The interface up function.  <a href="group___n_d_n_fwd_face.html#gab61dab89f31eb408b213e92b617ba4c9">More...</a><br /></td></tr>
 <tr class="separator:gab61dab89f31eb408b213e92b617ba4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa3c8e5fc376973b5d4daaedfe4edffd2"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#gaa3c8e5fc376973b5d4daaedfe4edffd2">ndn_face_intf_send</a>) (struct <a class="el" href="structndn__face__intf.html">ndn_face_intf</a> *self, const <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *name, const uint8_t *packet, uint32_t size)</td></tr>
-<tr class="memdesc:gaa3c8e5fc376973b5d4daaedfe4edffd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The packet sending function.  <a href="group___n_d_n_fwd_face.html#gaa3c8e5fc376973b5d4daaedfe4edffd2">More...</a><br /></td></tr>
-<tr class="separator:gaa3c8e5fc376973b5d4daaedfe4edffd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab4bfb4f0e624f01bd027fe65f41deb3d"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#gab4bfb4f0e624f01bd027fe65f41deb3d">ndn_face_intf_send</a>) (struct <a class="el" href="structndn__face__intf.html">ndn_face_intf</a> *self, const uint8_t *packet, uint32_t size)</td></tr>
+<tr class="memdesc:gab4bfb4f0e624f01bd027fe65f41deb3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The packet sending function.  <a href="group___n_d_n_fwd_face.html#gab4bfb4f0e624f01bd027fe65f41deb3d">More...</a><br /></td></tr>
+<tr class="separator:gab4bfb4f0e624f01bd027fe65f41deb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4ddc971aec5a26529d396e88f9a55250"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#ga4ddc971aec5a26529d396e88f9a55250">ndn_face_intf_down</a>) (struct <a class="el" href="structndn__face__intf.html">ndn_face_intf</a> *self)</td></tr>
 <tr class="memdesc:ga4ddc971aec5a26529d396e88f9a55250"><td class="mdescLeft">&#160;</td><td class="mdescRight">The interface down function.  <a href="group___n_d_n_fwd_face.html#ga4ddc971aec5a26529d396e88f9a55250">More...</a><br /></td></tr>
 <tr class="separator:ga4ddc971aec5a26529d396e88f9a55250"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,12 +109,6 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga8e0eb2b6fbad96a93867661dc7562913"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structndn__face__intf.html">ndn_face_intf</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a></td></tr>
 <tr class="memdesc:ga8e0eb2b6fbad96a93867661dc7562913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract NDN network face.  <a href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">More...</a><br /></td></tr>
 <tr class="separator:ga8e0eb2b6fbad96a93867661dc7562913"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga1158eec224ffbc37aaa3927621fbfb67"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#ga1158eec224ffbc37aaa3927621fbfb67">ndn_face_receive</a> (<a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *self, const uint8_t *packet, uint32_t size)</td></tr>
-<tr class="memdesc:ga1158eec224ffbc37aaa3927621fbfb67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send Interest to the Forwarder (Forwarder receives)  <a href="group___n_d_n_fwd_face.html#ga1158eec224ffbc37aaa3927621fbfb67">More...</a><br /></td></tr>
-<tr class="separator:ga1158eec224ffbc37aaa3927621fbfb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="af8c317a42292b61c93aae91e59118a46"></a>
@@ -142,11 +138,11 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td>&#160;&#160;&#160;((type *)((char *)(1 ? (ptr) : &amp;((type *)0)-&gt;member) - offsetof(type, member)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">({                \</div><div class="line">  const typeof(((type *)0)-&gt;member) *__mptr = (ptr);      \</div><div class="line">  (type *)((<span class="keywordtype">char</span> *)__mptr - offsetof(type, member)); })</div></div><!-- fragment -->
+
 </div>
 </div>
 </div><!-- contents -->

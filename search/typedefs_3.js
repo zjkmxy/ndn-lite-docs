@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['handler',['handler',['../ndn-lite-timer_8h.html#a9b17e9f6105ed1f12f3348340e12adc8',1,'ndn-lite-timer.h']]]
+  ['interest_5foptions_5ft',['interest_options_t',['../forwarder-helper_8h.html#ab3029eb7252ce096a135f0cdfe2a325b',1,'forwarder-helper.h']]],
+  ['interest_5fparams_5ft',['interest_params_t',['../interest_8h.html#af46a0a240478450f026fbfa043eb6bef',1,'interest.h']]]
 ];

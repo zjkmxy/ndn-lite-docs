@@ -94,14 +94,36 @@ Macros</h2></td></tr>
 <tr class="memdesc:ga243d8e225b0220dbfeb49f29a600b54d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Length specified differs from expected.  <a href="#ga243d8e225b0220dbfeb49f29a600b54d">More...</a><br /></td></tr>
 <tr class="separator:ga243d8e225b0220dbfeb49f29a600b54d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga59fb137e0731ed8c3a3c35737636747b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_error_code_general.html#ga59fb137e0731ed8c3a3c35737636747b">NDN_OVERSIZE_VAR</a>&#160;&#160;&#160;-14</td></tr>
-<tr class="memdesc:ga59fb137e0731ed8c3a3c35737636747b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The buffer given is insufficient.  <a href="#ga59fb137e0731ed8c3a3c35737636747b">More...</a><br /></td></tr>
+<tr class="memdesc:ga59fb137e0731ed8c3a3c35737636747b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Truncation due to insufficient buffer.  <a href="#ga59fb137e0731ed8c3a3c35737636747b">More...</a><br /></td></tr>
 <tr class="separator:ga59fb137e0731ed8c3a3c35737636747b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae3b54f352eda446e57ca560b9dadf6be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_error_code_general.html#gae3b54f352eda446e57ca560b9dadf6be">NDN_TLV_OP_FAILED</a>&#160;&#160;&#160;-15</td></tr>
 <tr class="memdesc:gae3b54f352eda446e57ca560b9dadf6be"><td class="mdescLeft">&#160;</td><td class="mdescRight">The operation faild due to specific reason.  <a href="#gae3b54f352eda446e57ca560b9dadf6be">More...</a><br /></td></tr>
 <tr class="separator:gae3b54f352eda446e57ca560b9dadf6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f1433d339d230755b6576c1b93e7110"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_error_code_general.html#ga1f1433d339d230755b6576c1b93e7110">NDN_INVALID_POINTER</a>&#160;&#160;&#160;-16</td></tr>
+<tr class="memdesc:ga1f1433d339d230755b6576c1b93e7110"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass NULL to a non-optional parameter.  <a href="#ga1f1433d339d230755b6576c1b93e7110">More...</a><br /></td></tr>
+<tr class="separator:ga1f1433d339d230755b6576c1b93e7110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae94c942c9aa43b297db0d8d2646e3039"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_error_code_general.html#gae94c942c9aa43b297db0d8d2646e3039">NDN_UNSUPPORTED_FORMAT</a>&#160;&#160;&#160;-17</td></tr>
+<tr class="memdesc:gae94c942c9aa43b297db0d8d2646e3039"><td class="mdescLeft">&#160;</td><td class="mdescRight">The format of a specified TLV block is different from expectation.  <a href="#gae94c942c9aa43b297db0d8d2646e3039">More...</a><br /></td></tr>
+<tr class="separator:gae94c942c9aa43b297db0d8d2646e3039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga1f1433d339d230755b6576c1b93e7110"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1f1433d339d230755b6576c1b93e7110">&#9670;&nbsp;</a></span>NDN_INVALID_POINTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NDN_INVALID_POINTER&#160;&#160;&#160;-16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pass NULL to a non-optional parameter. </p>
+
+</div>
+</div>
 <a id="ga6ce1c7bcba7b601139e4aa641b3ad82f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga6ce1c7bcba7b601139e4aa641b3ad82f">&#9670;&nbsp;</a></span>NDN_NAME_INVALID_FORMAT</h2>
 
@@ -148,8 +170,8 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The buffer given is insufficient. </p>
-<p>The operation specified requires more memory than the buffer variable given. </p>
+<p>Truncation due to insufficient buffer. </p>
+<p>The operation specified requires more memory than the buffer variable given. For example, passing <code>{FD 01}</code> to a TLV block parameter will cause this error, because <code>FD</code> indicates the Type is encoded in the following 2 bytes, but there's not enough space. </p>
 
 </div>
 </div>
@@ -170,6 +192,27 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="gae94c942c9aa43b297db0d8d2646e3039"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae94c942c9aa43b297db0d8d2646e3039">&#9670;&nbsp;</a></span>NDN_UNSUPPORTED_FORMAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NDN_UNSUPPORTED_FORMAT&#160;&#160;&#160;-17</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The format of a specified TLV block is different from expectation. </p>
+<p>Different between <a class="el" href="group___n_d_n_error_code_general.html#gaab7272475203df136f432522a93b29d1" title="The Type specified cannot be recognized.">NDN_WRONG_TLV_TYPE</a>, <a class="el" href="group___n_d_n_error_code_general.html#gae94c942c9aa43b297db0d8d2646e3039" title="The format of a specified TLV block is different from expectation.">NDN_UNSUPPORTED_FORMAT</a> is due to unexpected type inside a TLV block. For example, when a function requires a Interest parameter <code>interest</code> </p><ul>
+<li>If a Name is passed, it will return <a class="el" href="group___n_d_n_error_code_general.html#gaab7272475203df136f432522a93b29d1" title="The Type specified cannot be recognized.">NDN_WRONG_TLV_TYPE</a>.</li>
+<li>If an Interest with one component having a unknown TLV type is passed, return <a class="el" href="group___n_d_n_error_code_general.html#gaab7272475203df136f432522a93b29d1" title="The Type specified cannot be recognized.">NDN_WRONG_TLV_TYPE</a>.</li>
+<li>If an Interest whose first component is not Name is passed, return <a class="el" href="group___n_d_n_error_code_general.html#gae94c942c9aa43b297db0d8d2646e3039" title="The format of a specified TLV block is different from expectation.">NDN_UNSUPPORTED_FORMAT</a>. </li>
+</ul>
+
+</div>
+</div>
 <a id="ga243d8e225b0220dbfeb49f29a600b54d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga243d8e225b0220dbfeb49f29a600b54d">&#9670;&nbsp;</a></span>NDN_WRONG_TLV_LENGTH</h2>
 
@@ -185,7 +228,8 @@ Macros</h2></td></tr>
 <p>The Length specified differs from expected. </p>
 <p>This can be due to one of the following reasons:</p><ul>
 <li>The input Length for a TLV block is not 1, 2, 4 or 8, as the Spec requires.</li>
-<li>The Type of the TLV block given requires a fixed Length different from the Length it has. </li>
+<li>The Type of the TLV block given requires a fixed Length different from the Length it has.</li>
+<li>The function expects an input block to be a single TLV block, while the Length is less than the buffer size plus TL's sizes. </li>
 </ul>
 
 </div>

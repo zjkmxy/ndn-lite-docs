@@ -15,5 +15,6 @@ var searchData=
   ['enable_5fparameters',['enable_Parameters',['../structndn__interest.html#a94918e7ad15874f6474be023c8c8430f',1,'ndn_interest']]],
   ['enable_5fsignatureinfononce',['enable_SignatureInfoNonce',['../structndn__signature.html#a113dbb78d2740d5d77b263988e0c04c2',1,'ndn_signature']]],
   ['enable_5ftimestamp',['enable_Timestamp',['../structndn__signature.html#a0ed18a9d02854784ef91ded077fdd4c2',1,'ndn_signature']]],
-  ['enable_5fvalidityperiod',['enable_ValidityPeriod',['../structndn__signature.html#ac3836a22ab7d2a9161dfe4041bc49f70',1,'ndn_signature']]]
+  ['enable_5fvalidityperiod',['enable_ValidityPeriod',['../structndn__signature.html#ac3836a22ab7d2a9161dfe4041bc49f70',1,'ndn_signature']]],
+  ['express_5ftime',['express_time',['../structndn__pit__entry.html#aa681748b2498431c505bc4b40c891f4d',1,'ndn_pit_entry']]]
 ];

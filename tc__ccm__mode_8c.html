@@ -82,6 +82,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a1803e34ba4fe828f46122fc506b5931a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ccm__mode_8c.html#a1803e34ba4fe828f46122fc506b5931a">tc_ccm_config</a> (<a class="el" href="tc__ccm__mode_8h.html#a91adef5996b1bf862d6058e2bffc48e7">TCCcmMode_t</a> c, <a class="el" href="tc__aes_8h.html#a32bcef43049810395433f8040b3dc40e">TCAesKeySched_t</a> sched, uint8_t *nonce, unsigned int nlen, unsigned int mlen)</td></tr>
 <tr class="memdesc:a1803e34ba4fe828f46122fc506b5931a"><td class="mdescLeft">&#160;</td><td class="mdescRight">CCM configuration procedure.  <a href="#a1803e34ba4fe828f46122fc506b5931a">More...</a><br /></td></tr>
 <tr class="separator:a1803e34ba4fe828f46122fc506b5931a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08c7b44c14d16bd2076a2c69849daa6d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ccm__mode_8c.html#a08c7b44c14d16bd2076a2c69849daa6d">ccm_cbc_mac</a> (uint8_t *T, const uint8_t *data, unsigned int dlen, unsigned int flag, <a class="el" href="tc__aes_8h.html#a32bcef43049810395433f8040b3dc40e">TCAesKeySched_t</a> sched)</td></tr>
+<tr class="memdesc:a08c7b44c14d16bd2076a2c69849daa6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variation of CBC-MAC mode used in CCM.  <a href="#a08c7b44c14d16bd2076a2c69849daa6d">More...</a><br /></td></tr>
+<tr class="separator:a08c7b44c14d16bd2076a2c69849daa6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88b2507aedbc1f932d144c3dd5f7ef3e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ccm__mode_8c.html#a88b2507aedbc1f932d144c3dd5f7ef3e">ccm_ctr_mode</a> (uint8_t *out, unsigned int outlen, const uint8_t *in, unsigned int inlen, uint8_t *ctr, const <a class="el" href="tc__aes_8h.html#a32bcef43049810395433f8040b3dc40e">TCAesKeySched_t</a> sched)</td></tr>
+<tr class="memdesc:a88b2507aedbc1f932d144c3dd5f7ef3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variation of CTR mode used in CCM.  <a href="#a88b2507aedbc1f932d144c3dd5f7ef3e">More...</a><br /></td></tr>
+<tr class="separator:a88b2507aedbc1f932d144c3dd5f7ef3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9829904cae05c9bd13e7acde0025101e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ccm__mode_8c.html#a9829904cae05c9bd13e7acde0025101e">tc_ccm_generation_encryption</a> (uint8_t *out, unsigned int olen, const uint8_t *associated_data, unsigned int alen, const uint8_t *payload, unsigned int plen, <a class="el" href="tc__ccm__mode_8h.html#a91adef5996b1bf862d6058e2bffc48e7">TCCcmMode_t</a> c)</td></tr>
 <tr class="memdesc:a9829904cae05c9bd13e7acde0025101e"><td class="mdescLeft">&#160;</td><td class="mdescRight">CCM tag generation and encryption procedure.  <a href="#a9829904cae05c9bd13e7acde0025101e">More...</a><br /></td></tr>
 <tr class="separator:a9829904cae05c9bd13e7acde0025101e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -90,6 +96,125 @@ Functions</h2></td></tr>
 <tr class="separator:a0a602d1711fa8ff5eb236e1cb1947f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a08c7b44c14d16bd2076a2c69849daa6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08c7b44c14d16bd2076a2c69849daa6d">&#9670;&nbsp;</a></span>ccm_cbc_mac()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ccm_cbc_mac </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>T</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>dlen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>flag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tc__aes_8h.html#a32bcef43049810395433f8040b3dc40e">TCAesKeySched_t</a>&#160;</td>
+          <td class="paramname"><em>sched</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Variation of CBC-MAC mode used in CCM. </p>
+
+</div>
+</div>
+<a id="a88b2507aedbc1f932d144c3dd5f7ef3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88b2507aedbc1f932d144c3dd5f7ef3e">&#9670;&nbsp;</a></span>ccm_ctr_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ccm_ctr_mode </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>outlen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>inlen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>ctr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="tc__aes_8h.html#a32bcef43049810395433f8040b3dc40e">TCAesKeySched_t</a>&#160;</td>
+          <td class="paramname"><em>sched</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Variation of CTR mode used in CCM. </p>
+<p>The CTR mode used by CCM is slightly different than the conventional CTR mode (the counter is increased before encryption, instead of after encryption). Besides, it is assumed that the counter is stored in the last 2 bytes of the nonce. </p>
+
+</div>
+</div>
 <a id="a1803e34ba4fe828f46122fc506b5931a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1803e34ba4fe828f46122fc506b5931a">&#9670;&nbsp;</a></span>tc_ccm_config()</h2>
 

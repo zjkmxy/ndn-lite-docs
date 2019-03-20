@@ -100,6 +100,15 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a86d38364cee7e734fd677cfa338e450d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name-component_8h.html#a86d38364cee7e734fd677cfa338e450d">name_component_init</a> (<a class="el" href="name-component_8h.html#a6fcb406cc3baa1de6bb60323fcece5d6">name_component_t</a> *component, uint32_t type)</td></tr>
+<tr class="memdesc:a86d38364cee7e734fd677cfa338e450d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init a Name Component structure.  <a href="#a86d38364cee7e734fd677cfa338e450d">More...</a><br /></td></tr>
+<tr class="separator:a86d38364cee7e734fd677cfa338e450d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa45746490c4c95a5cb4c3afeb36cbc53"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name-component_8h.html#aa45746490c4c95a5cb4c3afeb36cbc53">name_component_from_buffer</a> (<a class="el" href="name-component_8h.html#a6fcb406cc3baa1de6bb60323fcece5d6">name_component_t</a> *component, uint32_t type, const uint8_t *value, uint32_t size)</td></tr>
+<tr class="memdesc:aa45746490c4c95a5cb4c3afeb36cbc53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init a Name Component structure from caller supplied memory block.  <a href="#aa45746490c4c95a5cb4c3afeb36cbc53">More...</a><br /></td></tr>
+<tr class="separator:aa45746490c4c95a5cb4c3afeb36cbc53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3831edbd271b335f234fb2721bf83030"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name-component_8h.html#a3831edbd271b335f234fb2721bf83030">name_component_from_string</a> (<a class="el" href="name-component_8h.html#a6fcb406cc3baa1de6bb60323fcece5d6">name_component_t</a> *component, const char *string, uint32_t size)</td></tr>
+<tr class="memdesc:a3831edbd271b335f234fb2721bf83030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init a Name Component structure from string.  <a href="#a3831edbd271b335f234fb2721bf83030">More...</a><br /></td></tr>
+<tr class="separator:a3831edbd271b335f234fb2721bf83030"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0f6f1e92b1dbf5f9f7fc6a2dfce3102"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name-component_8h.html#ac0f6f1e92b1dbf5f9f7fc6a2dfce3102">name_component_tlv_decode</a> (<a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *decoder, <a class="el" href="name-component_8h.html#a6fcb406cc3baa1de6bb60323fcece5d6">name_component_t</a> *component)</td></tr>
 <tr class="memdesc:ac0f6f1e92b1dbf5f9f7fc6a2dfce3102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode the Name Component from wire format (TLV block).  <a href="#ac0f6f1e92b1dbf5f9f7fc6a2dfce3102">More...</a><br /></td></tr>
 <tr class="separator:ac0f6f1e92b1dbf5f9f7fc6a2dfce3102"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,6 +118,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a05a88fdecceb6239d84c1344426d6f08"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name-component_8h.html#a05a88fdecceb6239d84c1344426d6f08">name_component_compare</a> (const <a class="el" href="name-component_8h.html#a6fcb406cc3baa1de6bb60323fcece5d6">name_component_t</a> *lhs, const <a class="el" href="name-component_8h.html#a6fcb406cc3baa1de6bb60323fcece5d6">name_component_t</a> *rhs)</td></tr>
 <tr class="memdesc:a05a88fdecceb6239d84c1344426d6f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two name components.  <a href="#a05a88fdecceb6239d84c1344426d6f08">More...</a><br /></td></tr>
 <tr class="separator:a05a88fdecceb6239d84c1344426d6f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bb9bd69749b0cda42760d08a5e8ed5d"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name-component_8h.html#a1bb9bd69749b0cda42760d08a5e8ed5d">name_component_probe_block_size</a> (const <a class="el" href="name-component_8h.html#a6fcb406cc3baa1de6bb60323fcece5d6">name_component_t</a> *component)</td></tr>
+<tr class="memdesc:a1bb9bd69749b0cda42760d08a5e8ed5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Probe the size of a Name component TLV block before encoding it from a Name Component structure.  <a href="#a1bb9bd69749b0cda42760d08a5e8ed5d">More...</a><br /></td></tr>
+<tr class="separator:a1bb9bd69749b0cda42760d08a5e8ed5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a330da3068ff504ed03dd4e93d7ee38af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name-component_8h.html#a330da3068ff504ed03dd4e93d7ee38af">name_component_tlv_encode</a> (<a class="el" href="encoder_8h.html#a7e8d31a88e1f377c42e835275385119c">ndn_encoder_t</a> *encoder, const <a class="el" href="name-component_8h.html#a6fcb406cc3baa1de6bb60323fcece5d6">name_component_t</a> *component)</td></tr>
 <tr class="memdesc:a330da3068ff504ed03dd4e93d7ee38af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the Name Component structure into wire format (TLV block).  <a href="#a330da3068ff504ed03dd4e93d7ee38af">More...</a><br /></td></tr>
 <tr class="separator:a330da3068ff504ed03dd4e93d7ee38af"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,6 +232,199 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if decoding is successful. </dd></dl>
+
+</div>
+</div>
+<a id="aa45746490c4c95a5cb4c3afeb36cbc53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa45746490c4c95a5cb4c3afeb36cbc53">&#9670;&nbsp;</a></span>name_component_from_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int name_component_from_buffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="name-component_8h.html#a6fcb406cc3baa1de6bb60323fcece5d6">name_component_t</a> *&#160;</td>
+          <td class="paramname"><em>component</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Init a Name Component structure from caller supplied memory block. </p>
+<p>The function will do memory copy </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">component.</td><td>Output. The Name Component structure to be inited. </td></tr>
+    <tr><td class="paramname">type.</td><td>Input. Name Component Type to be set with. </td></tr>
+    <tr><td class="paramname">value.</td><td>Input. Memory block which holds the Name Component Value. </td></tr>
+    <tr><td class="paramname">size.</td><td>Input. Size of input block. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
+
+</div>
+</div>
+<a id="a3831edbd271b335f234fb2721bf83030"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3831edbd271b335f234fb2721bf83030">&#9670;&nbsp;</a></span>name_component_from_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int name_component_from_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="name-component_8h.html#a6fcb406cc3baa1de6bb60323fcece5d6">name_component_t</a> *&#160;</td>
+          <td class="paramname"><em>component</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Init a Name Component structure from string. </p>
+<p>Please include the last byte of the string, which is "\0". The function will do memory copy. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">component.</td><td>Output. The Name Component structure to be inited. </td></tr>
+    <tr><td class="paramname">string.</td><td>Input. String variable which name component initing from. </td></tr>
+    <tr><td class="paramname">size.</td><td>Input. Size of input string. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
+
+</div>
+</div>
+<a id="a86d38364cee7e734fd677cfa338e450d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86d38364cee7e734fd677cfa338e450d">&#9670;&nbsp;</a></span>name_component_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void name_component_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="name-component_8h.html#a6fcb406cc3baa1de6bb60323fcece5d6">name_component_t</a> *&#160;</td>
+          <td class="paramname"><em>component</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Init a Name Component structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">component.</td><td>Output. The Name Component structure to be inited. </td></tr>
+    <tr><td class="paramname">type.</td><td>Input. Name Component Type to be set with. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1bb9bd69749b0cda42760d08a5e8ed5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bb9bd69749b0cda42760d08a5e8ed5d">&#9670;&nbsp;</a></span>name_component_probe_block_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t name_component_probe_block_size </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="name-component_8h.html#a6fcb406cc3baa1de6bb60323fcece5d6">name_component_t</a> *&#160;</td>
+          <td class="paramname"><em>component</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Probe the size of a Name component TLV block before encoding it from a Name Component structure. </p>
+<p>This function is used to check whether the output buffer size is enough or not. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">component.</td><td>Input. The name component structure to be probed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the length of the expected name component TLV block. </dd></dl>
 
 </div>
 </div>

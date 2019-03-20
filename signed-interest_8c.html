@@ -79,6 +79,8 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a66674ee15defd8267019b4e055ab0de4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signed-interest_8c.html#a66674ee15defd8267019b4e055ab0de4">_prepare_signature_info</a> (<a class="el" href="interest_8h.html#afca88883fe1b0948d6e5d813bfacd08c">ndn_interest_t</a> *interest, uint8_t signature_type, const <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *identity, uint32_t key_id, uint32_t signature_info_nonce, uint64_t timestamp)</td></tr>
+<tr class="separator:a66674ee15defd8267019b4e055ab0de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb71d494384ff394fbc4dfca81623928"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signed-interest_8c.html#acb71d494384ff394fbc4dfca81623928">ndn_signed_interest_ecdsa_sign</a> (<a class="el" href="interest_8h.html#afca88883fe1b0948d6e5d813bfacd08c">ndn_interest_t</a> *interest, const <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *identity, const <a class="el" href="ndn-lite-ecc_8h.html#a60d264130b5bd406a8ebf359acdc449a">ndn_ecc_prv_t</a> *prv_key)</td></tr>
 <tr class="memdesc:acb71d494384ff394fbc4dfca81623928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use ECDSA Algorithm to sign the Interest and encode the Signed Interest into wire format.  <a href="#acb71d494384ff394fbc4dfca81623928">More...</a><br /></td></tr>
 <tr class="separator:acb71d494384ff394fbc4dfca81623928"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,6 +101,66 @@ Functions</h2></td></tr>
 <tr class="separator:ac7d983319c4ca76e39a158a5b40c5c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a66674ee15defd8267019b4e055ab0de4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66674ee15defd8267019b4e055ab0de4">&#9670;&nbsp;</a></span>_prepare_signature_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _prepare_signature_info </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interest_8h.html#afca88883fe1b0948d6e5d813bfacd08c">ndn_interest_t</a> *&#160;</td>
+          <td class="paramname"><em>interest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>signature_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *&#160;</td>
+          <td class="paramname"><em>identity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>key_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>signature_info_nonce</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>timestamp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8dd880321c27341cf3e465b92d52bc37"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8dd880321c27341cf3e465b92d52bc37">&#9670;&nbsp;</a></span>ndn_signed_interest_digest_sign()</h2>
 

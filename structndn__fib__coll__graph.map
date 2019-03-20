@@ -1,4 +1,4 @@
 <map id="ndn_fib" name="ndn_fib">
-<area shape="rect" id="node1" title="Forwarding Information Base (FIB) class." alt="" coords="14,180,103,267"/>
+<area shape="rect" id="node1" title="Forwarding Information Base (FIB)." alt="" coords="14,180,103,267"/>
 <area shape="rect" id="node2" href="$structndn__fib__entry.html" title="FIB entry." alt="" coords="5,5,112,119"/>
 </map>

@@ -69,7 +69,8 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">face.h File Reference</div>  </div>
 </div><!--header-->
@@ -95,20 +96,35 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:gab61dab89f31eb408b213e92b617ba4c9"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#gab61dab89f31eb408b213e92b617ba4c9">ndn_face_intf_up</a>) (struct <a class="el" href="structndn__face__intf.html">ndn_face_intf</a> *self)</td></tr>
-<tr class="memdesc:gab61dab89f31eb408b213e92b617ba4c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The interface up function.  <a href="group___n_d_n_fwd_face.html#gab61dab89f31eb408b213e92b617ba4c9">More...</a><br /></td></tr>
+<tr class="memdesc:gab61dab89f31eb408b213e92b617ba4c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on the face.  <a href="group___n_d_n_fwd_face.html#gab61dab89f31eb408b213e92b617ba4c9">More...</a><br /></td></tr>
 <tr class="separator:gab61dab89f31eb408b213e92b617ba4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab4bfb4f0e624f01bd027fe65f41deb3d"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#gab4bfb4f0e624f01bd027fe65f41deb3d">ndn_face_intf_send</a>) (struct <a class="el" href="structndn__face__intf.html">ndn_face_intf</a> *self, const uint8_t *packet, uint32_t size)</td></tr>
-<tr class="memdesc:gab4bfb4f0e624f01bd027fe65f41deb3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The packet sending function.  <a href="group___n_d_n_fwd_face.html#gab4bfb4f0e624f01bd027fe65f41deb3d">More...</a><br /></td></tr>
+<tr class="memdesc:gab4bfb4f0e624f01bd027fe65f41deb3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send out a packet.  <a href="group___n_d_n_fwd_face.html#gab4bfb4f0e624f01bd027fe65f41deb3d">More...</a><br /></td></tr>
 <tr class="separator:gab4bfb4f0e624f01bd027fe65f41deb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4ddc971aec5a26529d396e88f9a55250"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#ga4ddc971aec5a26529d396e88f9a55250">ndn_face_intf_down</a>) (struct <a class="el" href="structndn__face__intf.html">ndn_face_intf</a> *self)</td></tr>
-<tr class="memdesc:ga4ddc971aec5a26529d396e88f9a55250"><td class="mdescLeft">&#160;</td><td class="mdescRight">The interface down function.  <a href="group___n_d_n_fwd_face.html#ga4ddc971aec5a26529d396e88f9a55250">More...</a><br /></td></tr>
+<tr class="memdesc:ga4ddc971aec5a26529d396e88f9a55250"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutdown the face temporarily.  <a href="group___n_d_n_fwd_face.html#ga4ddc971aec5a26529d396e88f9a55250">More...</a><br /></td></tr>
 <tr class="separator:ga4ddc971aec5a26529d396e88f9a55250"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4ae4b76cc49babcf1a35f9a939b236a6"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#ga4ae4b76cc49babcf1a35f9a939b236a6">ndn_face_intf_destroy</a>) (struct <a class="el" href="structndn__face__intf.html">ndn_face_intf</a> *self)</td></tr>
-<tr class="memdesc:ga4ae4b76cc49babcf1a35f9a939b236a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The interface destructor.  <a href="group___n_d_n_fwd_face.html#ga4ae4b76cc49babcf1a35f9a939b236a6">More...</a><br /></td></tr>
+<tr class="memdesc:ga4ae4b76cc49babcf1a35f9a939b236a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="group___n_d_n_fwd_face.html#ga4ae4b76cc49babcf1a35f9a939b236a6">More...</a><br /></td></tr>
 <tr class="separator:ga4ae4b76cc49babcf1a35f9a939b236a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8e0eb2b6fbad96a93867661dc7562913"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structndn__face__intf.html">ndn_face_intf</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a></td></tr>
 <tr class="memdesc:ga8e0eb2b6fbad96a93867661dc7562913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract NDN network face.  <a href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">More...</a><br /></td></tr>
 <tr class="separator:ga8e0eb2b6fbad96a93867661dc7562913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga22012eb7b92efa1c50f94ae82d3018bb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#ga22012eb7b92efa1c50f94ae82d3018bb">ndn_face_up</a> (<a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *self)</td></tr>
+<tr class="memdesc:ga22012eb7b92efa1c50f94ae82d3018bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on the face.  <a href="group___n_d_n_fwd_face.html#ga22012eb7b92efa1c50f94ae82d3018bb">More...</a><br /></td></tr>
+<tr class="separator:ga22012eb7b92efa1c50f94ae82d3018bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga63847b15f0a86266892b5fe7f518ce49"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#ga63847b15f0a86266892b5fe7f518ce49">ndn_face_send</a> (<a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *self, const uint8_t *packet, uint32_t size)</td></tr>
+<tr class="memdesc:ga63847b15f0a86266892b5fe7f518ce49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send out a packet.  <a href="group___n_d_n_fwd_face.html#ga63847b15f0a86266892b5fe7f518ce49">More...</a><br /></td></tr>
+<tr class="separator:ga63847b15f0a86266892b5fe7f518ce49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c24fdb633c2ad24d239d319948b72ce"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#ga9c24fdb633c2ad24d239d319948b72ce">ndn_face_down</a> (<a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *self)</td></tr>
+<tr class="memdesc:ga9c24fdb633c2ad24d239d319948b72ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutdown the face temporarily.  <a href="group___n_d_n_fwd_face.html#ga9c24fdb633c2ad24d239d319948b72ce">More...</a><br /></td></tr>
+<tr class="separator:ga9c24fdb633c2ad24d239d319948b72ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36d633ae9891ebcaf7c6edfe35760c50"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#ga36d633ae9891ebcaf7c6edfe35760c50">ndn_face_destroy</a> (<a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *self)</td></tr>
+<tr class="memdesc:ga36d633ae9891ebcaf7c6edfe35760c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="group___n_d_n_fwd_face.html#ga36d633ae9891ebcaf7c6edfe35760c50">More...</a><br /></td></tr>
+<tr class="separator:ga36d633ae9891ebcaf7c6edfe35760c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="af8c317a42292b61c93aae91e59118a46"></a>

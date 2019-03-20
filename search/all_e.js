@@ -9,6 +9,7 @@ var searchData=
   ['original',['original',['../structndn__fragmenter.html#a11fdbd9e87cf0f44b77081693d7637ab',1,'ndn_fragmenter::original()'],['../structndn__frag__assembler.html#a8a95c1eb6038d680432d2e626eec0950',1,'ndn_frag_assembler::original()']]],
   ['original_5fmax_5fsize',['original_max_size',['../structndn__frag__assembler.html#ac96adac6d571e45f97c09459d4aafdca',1,'ndn_frag_assembler']]],
   ['original_5fsize',['original_size',['../structndn__fragmenter.html#a1cbb9230ea93cbfb9ca8e3e7deb2c836',1,'ndn_fragmenter']]],
+  ['outgoing_5ffaces',['outgoing_faces',['../structndn__pit__entry.html#a352ee236d91430130039408c43a3ad9c',1,'ndn_pit_entry']]],
   ['output_5fmax_5fsize',['output_max_size',['../structndn__encoder.html#a1bb2b732e82ad1b9a6cc569919e5d36d',1,'ndn_encoder']]],
   ['output_5fvalue',['output_value',['../structndn__encoder.html#a53c2d91a9d377e3ebdc2172c4b30d078',1,'ndn_encoder']]],
   ['on_20process_20completion_20statuses_20for_20the_20sign_20on_20basic_20client_2e',['on process completion statuses for the sign on basic client.',['../group___sign.html',1,'']]]

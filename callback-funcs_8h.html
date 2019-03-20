@@ -104,9 +104,9 @@ Typedefs</h2></td></tr>
 <p>The onData callback function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>[in] The encoded data. </td></tr>
-    <tr><td class="paramname">data_size</td><td>[in] The length of the <code>data</code> . </td></tr>
-    <tr><td class="paramname">userdata</td><td>[in] User defined data. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The encoded data. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data_size</td><td>The length of the <code>data</code> . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userdata</td><td>[Optional] User defined data. </td></tr>
   </table>
   </dd>
 </dl>
@@ -128,13 +128,13 @@ Typedefs</h2></td></tr>
 <p>The onInterest callback function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">interest</td><td>[in] The encoded interest. </td></tr>
-    <tr><td class="paramname">interest_size</td><td>[in] The length of the <code>interest</code> . </td></tr>
-    <tr><td class="paramname">userdata</td><td>[in] User defined data. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interest</td><td>The encoded interest. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interest_size</td><td>The length of the <code>interest</code> . </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userdata</td><td>[Optional] User defined data. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The action to take. (Unused now) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The forward strategy to take, only used if no Data get from this function. </dd></dl>
 
 </div>
 </div>
@@ -153,7 +153,7 @@ Typedefs</h2></td></tr>
 <p>The onTimeout callback function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">userdata</td><td>[in] User defined data. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">userdata</td><td>[Optional] User defined data. </td></tr>
   </table>
   </dd>
 </dl>

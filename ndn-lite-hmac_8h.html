@@ -129,6 +129,9 @@ Functions</h2></td></tr>
 <tr class="memitem:adba9ad993168986d6ac7f67843578c94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-hmac_8h.html#adba9ad993168986d6ac7f67843578c94">ndn_hmac_load_key</a> (<a class="el" href="ndn-lite-hmac_8h.html#ab87648c70021e435b506f021a48ff3f2">ndn_hmac_key_t</a> *hmac_key, const uint8_t *key_value, uint32_t key_size)</td></tr>
 <tr class="memdesc:adba9ad993168986d6ac7f67843578c94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load in-memory key bits into an NDN hmac key.  <a href="#adba9ad993168986d6ac7f67843578c94">More...</a><br /></td></tr>
 <tr class="separator:adba9ad993168986d6ac7f67843578c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58cf406cc161da0793922bdcd7569a74"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-hmac_8h.html#a58cf406cc161da0793922bdcd7569a74">ndn_hmac_key_init</a> (<a class="el" href="ndn-lite-hmac_8h.html#ab87648c70021e435b506f021a48ff3f2">ndn_hmac_key_t</a> *hmac_key, const uint8_t *key_value, uint32_t key_size, uint32_t key_id)</td></tr>
+<tr class="memdesc:a58cf406cc161da0793922bdcd7569a74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a HMAC key.  <a href="#a58cf406cc161da0793922bdcd7569a74">More...</a><br /></td></tr>
+<tr class="separator:a58cf406cc161da0793922bdcd7569a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a688006970a541cb8e83048de72000e35"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-hmac_8h.html#a688006970a541cb8e83048de72000e35">ndn_hmac_sha256</a> (const void *payload, uint32_t payload_length, const <a class="el" href="ndn-lite-hmac_8h.html#ab87648c70021e435b506f021a48ff3f2">ndn_hmac_key_t</a> *hmac_key, uint8_t *hmac_result)</td></tr>
 <tr class="memdesc:a688006970a541cb8e83048de72000e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate HMAC using sha256 digest algorithm.  <a href="#a688006970a541cb8e83048de72000e35">More...</a><br /></td></tr>
 <tr class="separator:a688006970a541cb8e83048de72000e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -431,6 +434,66 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a58cf406cc161da0793922bdcd7569a74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58cf406cc161da0793922bdcd7569a74">&#9670;&nbsp;</a></span>ndn_hmac_key_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ndn_hmac_key_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ndn-lite-hmac_8h.html#ab87648c70021e435b506f021a48ff3f2">ndn_hmac_key_t</a> *&#160;</td>
+          <td class="paramname"><em>hmac_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>key_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>key_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>key_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialize a HMAC key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hmac_key.</td><td>Input. The HMAC key whose info will be set. </td></tr>
+    <tr><td class="paramname">key_value.</td><td>Input. The key value bytes to set. </td></tr>
+    <tr><td class="paramname">key_size.</td><td>Input. The key size. Should not larger than 32 bytes. </td></tr>
+    <tr><td class="paramname">key_id.</td><td>Input. The key id to be set with this key. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
 
 </div>
 </div>

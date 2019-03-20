@@ -67,7 +67,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">tc_ecc_dsa.c File Reference</div>  </div>
 </div><!--header-->
@@ -78,15 +79,108 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:afe2882d9d36168459ae9c877df77ff59"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc__dsa_8c.html#afe2882d9d36168459ae9c877df77ff59">bits2int</a> (<a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *native, const uint8_t *bits, unsigned bits_size, <a class="el" href="tc__ecc_8h.html#a8b74423c6941ae921ae2998900680385">tc_uECC_Curve</a> curve)</td></tr>
+<tr class="separator:afe2882d9d36168459ae9c877df77ff59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cf73a31b11a9410532adb63c4a3f957"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc__dsa_8c.html#a8cf73a31b11a9410532adb63c4a3f957">tc_uECC_sign_with_k</a> (const uint8_t *private_key, const uint8_t *message_hash, unsigned hash_size, <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *k, uint8_t *signature, <a class="el" href="tc__ecc_8h.html#a8b74423c6941ae921ae2998900680385">tc_uECC_Curve</a> curve)</td></tr>
 <tr class="separator:a8cf73a31b11a9410532adb63c4a3f957"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23c4e47537c8ea6a56b19da3cfb26c98"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc__dsa_8c.html#a23c4e47537c8ea6a56b19da3cfb26c98">tc_uECC_sign</a> (const uint8_t *private_key, const uint8_t *message_hash, unsigned hash_size, uint8_t *signature, <a class="el" href="tc__ecc_8h.html#a8b74423c6941ae921ae2998900680385">tc_uECC_Curve</a> curve)</td></tr>
 <tr class="memdesc:a23c4e47537c8ea6a56b19da3cfb26c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate an ECDSA signature for a given hash value.  <a href="#a23c4e47537c8ea6a56b19da3cfb26c98">More...</a><br /></td></tr>
 <tr class="separator:a23c4e47537c8ea6a56b19da3cfb26c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a7730481d59a5afb98d086c76de3412"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#ac149c71b403315c8af428f8d48aa84c8">bitcount_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc__dsa_8c.html#a8a7730481d59a5afb98d086c76de3412">smax</a> (<a class="el" href="types_8h.html#ac149c71b403315c8af428f8d48aa84c8">bitcount_t</a> a, <a class="el" href="types_8h.html#ac149c71b403315c8af428f8d48aa84c8">bitcount_t</a> b)</td></tr>
+<tr class="separator:a8a7730481d59a5afb98d086c76de3412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f71a980adc7808d3cc8b03237c76ef9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc__dsa_8c.html#a8f71a980adc7808d3cc8b03237c76ef9">tc_uECC_verify</a> (const uint8_t *public_key, const uint8_t *message_hash, unsigned hash_size, const uint8_t *signature, <a class="el" href="tc__ecc_8h.html#a8b74423c6941ae921ae2998900680385">tc_uECC_Curve</a> curve)</td></tr>
 <tr class="separator:a8f71a980adc7808d3cc8b03237c76ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a2adc1dfa39652d365a2125a1f4bd4270"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="tc__ecc_8h.html#a3cb0940adc785ce8498d76046742cee3">tc_uECC_RNG_Function</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc__dsa_8c.html#a2adc1dfa39652d365a2125a1f4bd4270">g_rng_function</a> = 0</td></tr>
+<tr class="separator:a2adc1dfa39652d365a2125a1f4bd4270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="afe2882d9d36168459ae9c877df77ff59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe2882d9d36168459ae9c877df77ff59">&#9670;&nbsp;</a></span>bits2int()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void bits2int </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>native</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>bits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>bits_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tc__ecc_8h.html#a8b74423c6941ae921ae2998900680385">tc_uECC_Curve</a>&#160;</td>
+          <td class="paramname"><em>curve</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a7730481d59a5afb98d086c76de3412"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a7730481d59a5afb98d086c76de3412">&#9670;&nbsp;</a></span>smax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="types_8h.html#ac149c71b403315c8af428f8d48aa84c8">bitcount_t</a> smax </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ac149c71b403315c8af428f8d48aa84c8">bitcount_t</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ac149c71b403315c8af428f8d48aa84c8">bitcount_t</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a23c4e47537c8ea6a56b19da3cfb26c98"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a23c4e47537c8ea6a56b19da3cfb26c98">&#9670;&nbsp;</a></span>tc_uECC_sign()</h2>
 
@@ -243,6 +337,29 @@ side-channel countermeasure: algorithm strengthened against timing attack. </dd>
           <td></td><td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a2adc1dfa39652d365a2125a1f4bd4270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2adc1dfa39652d365a2125a1f4bd4270">&#9670;&nbsp;</a></span>g_rng_function</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tc__ecc_8h.html#a3cb0940adc785ce8498d76046742cee3">tc_uECC_RNG_Function</a> g_rng_function = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

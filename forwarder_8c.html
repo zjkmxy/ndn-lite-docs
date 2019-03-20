@@ -70,7 +70,8 @@ $(function() {
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">forwarder.c File Reference</div>  </div>
 </div><!--header-->
@@ -104,6 +105,14 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:acd03a88322d9d135426638b1bdc56058"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forwarder_8c.html#acd03a88322d9d135426638b1bdc56058">fwd_on_incoming_interest</a> (uint8_t *interest, size_t length, <a class="el" href="forwarder-helper_8h.html#ab3029eb7252ce096a135f0cdfe2a325b">interest_options_t</a> *options, uint8_t *name, size_t name_len, uint16_t face_id)</td></tr>
+<tr class="separator:acd03a88322d9d135426638b1bdc56058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97c47ad6b34172d5a676130bcdcc1935"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forwarder_8c.html#a97c47ad6b34172d5a676130bcdcc1935">fwd_on_outgoing_interest</a> (uint8_t *interest, size_t length, uint8_t *name, size_t name_len, <a class="el" href="group___n_d_n_fwd_p_i_t.html#ga96ad322d1d01065597c3e66e9c079a08">ndn_pit_entry_t</a> *entry, uint16_t face_id)</td></tr>
+<tr class="separator:a97c47ad6b34172d5a676130bcdcc1935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64f1528536210de92f251c0386ac065f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forwarder_8c.html#a64f1528536210de92f251c0386ac065f">fwd_data_pipeline</a> (uint8_t *data, size_t length, uint8_t *name, size_t name_len, uint16_t face_id)</td></tr>
+<tr class="separator:a64f1528536210de92f251c0386ac065f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b6990fc81573f7ae1f40441c1453af8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="bit-operations_8h.html#affc3feed8995797a481682033fe4ccb8">ndn_bitset_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forwarder_8c.html#a2b6990fc81573f7ae1f40441c1453af8">fwd_multicast</a> (uint8_t *packet, size_t length, <a class="el" href="bit-operations_8h.html#affc3feed8995797a481682033fe4ccb8">ndn_bitset_t</a> out_faces, uint16_t in_face)</td></tr>
+<tr class="separator:a2b6990fc81573f7ae1f40441c1453af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad186b23521651fd2593fbf381f6fd1eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_forwarder.html#gad186b23521651fd2593fbf381f6fd1eb">ndn_forwarder_init</a> (void)</td></tr>
 <tr class="memdesc:gad186b23521651fd2593fbf381f6fd1eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize all components of the forwarder.  <a href="group___n_d_n_fwd_forwarder.html#gad186b23521651fd2593fbf381f6fd1eb">More...</a><br /></td></tr>
 <tr class="separator:gad186b23521651fd2593fbf381f6fd1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,6 +149,11 @@ Functions</h2></td></tr>
 <tr class="memitem:ga066f70e0e9635fdf4afc3c4a31a4e9db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_forwarder.html#ga066f70e0e9635fdf4afc3c4a31a4e9db">ndn_forwarder_receive</a> (<a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *face, uint8_t *packet, size_t length)</td></tr>
 <tr class="memdesc:ga066f70e0e9635fdf4afc3c4a31a4e9db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a packet from a face.  <a href="group___n_d_n_fwd_forwarder.html#ga066f70e0e9635fdf4afc3c4a31a4e9db">More...</a><br /></td></tr>
 <tr class="separator:ga066f70e0e9635fdf4afc3c4a31a4e9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a81c68a810006f7b65e8b1c38911c272d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="forwarder_8c.html#adf9816d8080c2a8400533d64f4a7b89e">ndn_forwarder_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forwarder_8c.html#a81c68a810006f7b65e8b1c38911c272d">forwarder</a></td></tr>
+<tr class="separator:a81c68a810006f7b65e8b1c38911c272d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a677252d063633a31d9b8ada5d0a71769"></a>
@@ -198,7 +212,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="name-tree_8h.html#a61123ad429ced326422eec6dbaf3ddae">NDN_NAMETREE_RESERVE_SIZE</a>(nametree_size) + \</div><div class="line">   NDN_FACE_TABLE_RESERVE_SIZE(facetab_size) + \</div><div class="line">   NDN_FIB_RESERVE_SIZE(fib_size) + \</div><div class="line">   NDN_PIT_RESERVE_SIZE(pit_size))</div><div class="ttc" id="name-tree_8h_html_a61123ad429ced326422eec6dbaf3ddae"><div class="ttname"><a href="name-tree_8h.html#a61123ad429ced326422eec6dbaf3ddae">NDN_NAMETREE_RESERVE_SIZE</a></div><div class="ttdeci">#define NDN_NAMETREE_RESERVE_SIZE(entry_count)</div><div class="ttdef"><b>Definition:</b> name-tree.h:29</div></div>
+<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="group___n_d_n_fwd_name_tree.html#ga61123ad429ced326422eec6dbaf3ddae">NDN_NAMETREE_RESERVE_SIZE</a>(nametree_size) + \</div><div class="line">   NDN_FACE_TABLE_RESERVE_SIZE(facetab_size) + \</div><div class="line">   NDN_FIB_RESERVE_SIZE(fib_size) + \</div><div class="line">   NDN_PIT_RESERVE_SIZE(pit_size))</div><div class="ttc" id="group___n_d_n_fwd_name_tree_html_ga61123ad429ced326422eec6dbaf3ddae"><div class="ttname"><a href="group___n_d_n_fwd_name_tree.html#ga61123ad429ced326422eec6dbaf3ddae">NDN_NAMETREE_RESERVE_SIZE</a></div><div class="ttdeci">#define NDN_NAMETREE_RESERVE_SIZE(entry_count)</div><div class="ttdef"><b>Definition:</b> name-tree.h:63</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -217,6 +231,252 @@ Functions</h2></td></tr>
 
 <p>NDN-Lite forwarder. </p>
 <p>We will support content support in future versions. The NDN forwarder is a singleton in an application. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a64f1528536210de92f251c0386ac065f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64f1528536210de92f251c0386ac065f">&#9670;&nbsp;</a></span>fwd_data_pipeline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int fwd_data_pipeline </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>name_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>face_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b6990fc81573f7ae1f40441c1453af8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b6990fc81573f7ae1f40441c1453af8">&#9670;&nbsp;</a></span>fwd_multicast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="bit-operations_8h.html#affc3feed8995797a481682033fe4ccb8">ndn_bitset_t</a> fwd_multicast </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="bit-operations_8h.html#affc3feed8995797a481682033fe4ccb8">ndn_bitset_t</a>&#160;</td>
+          <td class="paramname"><em>out_faces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>in_face</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd03a88322d9d135426638b1bdc56058"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd03a88322d9d135426638b1bdc56058">&#9670;&nbsp;</a></span>fwd_on_incoming_interest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int fwd_on_incoming_interest </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>interest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="forwarder-helper_8h.html#ab3029eb7252ce096a135f0cdfe2a325b">interest_options_t</a> *&#160;</td>
+          <td class="paramname"><em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>name_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>face_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97c47ad6b34172d5a676130bcdcc1935"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97c47ad6b34172d5a676130bcdcc1935">&#9670;&nbsp;</a></span>fwd_on_outgoing_interest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int fwd_on_outgoing_interest </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>interest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>name_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___n_d_n_fwd_p_i_t.html#ga96ad322d1d01065597c3e66e9c079a08">ndn_pit_entry_t</a> *&#160;</td>
+          <td class="paramname"><em>entry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>face_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a81c68a810006f7b65e8b1c38911c272d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81c68a810006f7b65e8b1c38911c272d">&#9670;&nbsp;</a></span>forwarder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="forwarder_8c.html#adf9816d8080c2a8400533d64f4a7b89e">ndn_forwarder_t</a> forwarder</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

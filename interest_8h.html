@@ -100,9 +100,27 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a3dd8af0c5e91851039b751b85089bb70"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interest_8h.html#a3dd8af0c5e91851039b751b85089bb70">ndn_interest_init</a> (<a class="el" href="interest_8h.html#afca88883fe1b0948d6e5d813bfacd08c">ndn_interest_t</a> *interest)</td></tr>
+<tr class="memdesc:a3dd8af0c5e91851039b751b85089bb70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init an Interest packet.  <a href="#a3dd8af0c5e91851039b751b85089bb70">More...</a><br /></td></tr>
+<tr class="separator:a3dd8af0c5e91851039b751b85089bb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d9b298761663c093f5acd518733595f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interest_8h.html#a6d9b298761663c093f5acd518733595f">ndn_interest_from_name</a> (<a class="el" href="interest_8h.html#afca88883fe1b0948d6e5d813bfacd08c">ndn_interest_t</a> *interest, const <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *name)</td></tr>
+<tr class="memdesc:a6d9b298761663c093f5acd518733595f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init an Interest packet from a.  <a href="#a6d9b298761663c093f5acd518733595f">More...</a><br /></td></tr>
+<tr class="separator:a6d9b298761663c093f5acd518733595f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdda7099aeea2cf5c1d65a2abf3bf694"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interest_8h.html#acdda7099aeea2cf5c1d65a2abf3bf694">ndn_interest_from_block</a> (<a class="el" href="interest_8h.html#afca88883fe1b0948d6e5d813bfacd08c">ndn_interest_t</a> *interest, const uint8_t *block_value, uint32_t block_size)</td></tr>
 <tr class="memdesc:acdda7099aeea2cf5c1d65a2abf3bf694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode an Interest TLV block into an ndn_interest_t.  <a href="#acdda7099aeea2cf5c1d65a2abf3bf694">More...</a><br /></td></tr>
 <tr class="separator:acdda7099aeea2cf5c1d65a2abf3bf694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae50eb386489873b8f16ce84b4f18235d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interest_8h.html#ae50eb386489873b8f16ce84b4f18235d">ndn_interest_set_CanBePrefix</a> (<a class="el" href="interest_8h.html#afca88883fe1b0948d6e5d813bfacd08c">ndn_interest_t</a> *interest, uint8_t can_be_prefix)</td></tr>
+<tr class="memdesc:ae50eb386489873b8f16ce84b4f18235d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set CanBePrefix flag of the Interest.  <a href="#ae50eb386489873b8f16ce84b4f18235d">More...</a><br /></td></tr>
+<tr class="separator:ae50eb386489873b8f16ce84b4f18235d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf3b6a7679985b0c1d1308637d0ced58"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interest_8h.html#adf3b6a7679985b0c1d1308637d0ced58">ndn_interest_set_MustBeFresh</a> (<a class="el" href="interest_8h.html#afca88883fe1b0948d6e5d813bfacd08c">ndn_interest_t</a> *interest, uint8_t must_be_fresh)</td></tr>
+<tr class="memdesc:adf3b6a7679985b0c1d1308637d0ced58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set MustBeFresh flag of the Interest.  <a href="#adf3b6a7679985b0c1d1308637d0ced58">More...</a><br /></td></tr>
+<tr class="separator:adf3b6a7679985b0c1d1308637d0ced58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c978cf971969bb9237f9e5b90f032f1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interest_8h.html#a3c978cf971969bb9237f9e5b90f032f1">ndn_interest_set_HopLimit</a> (<a class="el" href="interest_8h.html#afca88883fe1b0948d6e5d813bfacd08c">ndn_interest_t</a> *interest, uint8_t hop)</td></tr>
+<tr class="memdesc:a3c978cf971969bb9237f9e5b90f032f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set HopLimit element of the Interest.  <a href="#a3c978cf971969bb9237f9e5b90f032f1">More...</a><br /></td></tr>
+<tr class="separator:a3c978cf971969bb9237f9e5b90f032f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a889555a31ba530ce6618f66541e3a6a2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interest_8h.html#a889555a31ba530ce6618f66541e3a6a2">ndn_interest_set_Parameters</a> (<a class="el" href="interest_8h.html#afca88883fe1b0948d6e5d813bfacd08c">ndn_interest_t</a> *interest, const uint8_t *params_value, uint32_t params_size)</td></tr>
+<tr class="memdesc:a889555a31ba530ce6618f66541e3a6a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Parameters element of the Interest.  <a href="#a889555a31ba530ce6618f66541e3a6a2">More...</a><br /></td></tr>
+<tr class="separator:a889555a31ba530ce6618f66541e3a6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e7cf807971c73f1407502e1c7de7eed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interest_8h.html#a5e7cf807971c73f1407502e1c7de7eed">ndn_interest_tlv_encode</a> (<a class="el" href="encoder_8h.html#a7e8d31a88e1f377c42e835275385119c">ndn_encoder_t</a> *encoder, const <a class="el" href="interest_8h.html#afca88883fe1b0948d6e5d813bfacd08c">ndn_interest_t</a> *interest)</td></tr>
 <tr class="memdesc:a5e7cf807971c73f1407502e1c7de7eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the Interest into wire format (TLV block).  <a href="#a5e7cf807971c73f1407502e1c7de7eed">More...</a><br /></td></tr>
 <tr class="separator:a5e7cf807971c73f1407502e1c7de7eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,6 +207,86 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6d9b298761663c093f5acd518733595f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d9b298761663c093f5acd518733595f">&#9670;&nbsp;</a></span>ndn_interest_from_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ndn_interest_from_name </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interest_8h.html#afca88883fe1b0948d6e5d813bfacd08c">ndn_interest_t</a> *&#160;</td>
+          <td class="paramname"><em>interest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Init an Interest packet from a. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name.</td><td>This function or <a class="el" href="interest_8h.html#a3dd8af0c5e91851039b751b85089bb70" title="Init an Interest packet.">ndn_interest_init()</a> should be invoked whenever a new ndn_interest_t is created. </td></tr>
+    <tr><td class="paramname">interest.</td><td>Output. The Interest to be inited. </td></tr>
+    <tr><td class="paramname">name.</td><td>Input. The Interest name. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3dd8af0c5e91851039b751b85089bb70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dd8af0c5e91851039b751b85089bb70">&#9670;&nbsp;</a></span>ndn_interest_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ndn_interest_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interest_8h.html#afca88883fe1b0948d6e5d813bfacd08c">ndn_interest_t</a> *&#160;</td>
+          <td class="paramname"><em>interest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Init an Interest packet. </p>
+<p>This function or <a class="el" href="interest_8h.html#a6d9b298761663c093f5acd518733595f" title="Init an Interest packet from a.">ndn_interest_from_name()</a> should be invoked whenever a new ndn_interest_t is created. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interest.</td><td>Output. The Interest to be inited. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a3fb53cb13db7219e135d88996fba9d32"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3fb53cb13db7219e135d88996fba9d32">&#9670;&nbsp;</a></span>ndn_interest_name_compare_block()</h2>
 
@@ -246,6 +344,194 @@ Functions</h2></td></tr>
 -1, if <code>lhs</code> &lt; <code>rhs</code> and <code>lhs</code> is not a prefix of <code>rhs</code>. </dd>
 <dd>
 -2, if <code>lhs</code> &lt; <code>rhs</code> and <code>lhs</code> is a proper prefix of <code>rhs</code>. </dd></dl>
+
+</div>
+</div>
+<a id="ae50eb386489873b8f16ce84b4f18235d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae50eb386489873b8f16ce84b4f18235d">&#9670;&nbsp;</a></span>ndn_interest_set_CanBePrefix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ndn_interest_set_CanBePrefix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interest_8h.html#afca88883fe1b0948d6e5d813bfacd08c">ndn_interest_t</a> *&#160;</td>
+          <td class="paramname"><em>interest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>can_be_prefix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set CanBePrefix flag of the Interest. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interest.</td><td>Output. The Interest whose flag will be set. </td></tr>
+    <tr><td class="paramname">can_be_prefix.</td><td>Input. CanBePrefix is set if can_be_prefix is larger than 0. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3c978cf971969bb9237f9e5b90f032f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c978cf971969bb9237f9e5b90f032f1">&#9670;&nbsp;</a></span>ndn_interest_set_HopLimit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ndn_interest_set_HopLimit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interest_8h.html#afca88883fe1b0948d6e5d813bfacd08c">ndn_interest_t</a> *&#160;</td>
+          <td class="paramname"><em>interest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>hop</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set HopLimit element of the Interest. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interest.</td><td>Output. The Interest whose HopLimit will be set. </td></tr>
+    <tr><td class="paramname">hop.</td><td>Input. The value of the HopLimit. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adf3b6a7679985b0c1d1308637d0ced58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf3b6a7679985b0c1d1308637d0ced58">&#9670;&nbsp;</a></span>ndn_interest_set_MustBeFresh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ndn_interest_set_MustBeFresh </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interest_8h.html#afca88883fe1b0948d6e5d813bfacd08c">ndn_interest_t</a> *&#160;</td>
+          <td class="paramname"><em>interest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>must_be_fresh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set MustBeFresh flag of the Interest. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interest.</td><td>Output. The Interest whose flag will be set. </td></tr>
+    <tr><td class="paramname">can_be_prefix.</td><td>Input. MustBeFresh is set if must_be_fresh is larger than 0. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a889555a31ba530ce6618f66541e3a6a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a889555a31ba530ce6618f66541e3a6a2">&#9670;&nbsp;</a></span>ndn_interest_set_Parameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ndn_interest_set_Parameters </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interest_8h.html#afca88883fe1b0948d6e5d813bfacd08c">ndn_interest_t</a> *&#160;</td>
+          <td class="paramname"><em>interest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>params_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>params_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set Parameters element of the Interest. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interest.</td><td>Output. The Interest whose Parameters will be set. </td></tr>
+    <tr><td class="paramname">params_value.</td><td>Input. The interest parameters value (V). </td></tr>
+    <tr><td class="paramname">params_size.</td><td>Input. The size of the interest parameters value (V). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
 
 </div>
 </div>

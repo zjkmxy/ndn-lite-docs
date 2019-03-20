@@ -68,7 +68,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">tc_ecc.c File Reference</div>  </div>
 </div><!--header-->
@@ -98,6 +99,8 @@ Functions</h2></td></tr>
 <tr class="separator:aa3210b550fcd8cd37d388db5a466e598"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa882870e532372c84f7607d9978a9474"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#aa882870e532372c84f7607d9978a9474">tc_uECC_vli_testBit</a> (const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *vli, <a class="el" href="types_8h.html#ac149c71b403315c8af428f8d48aa84c8">bitcount_t</a> bit)</td></tr>
 <tr class="separator:aa882870e532372c84f7607d9978a9474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4406533eff7e6f150a7f1ea17acc41d4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a594492d6aff76c7f013be804154f49e5">wordcount_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#a4406533eff7e6f150a7f1ea17acc41d4">vli_numDigits</a> (const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *vli, const <a class="el" href="types_8h.html#a594492d6aff76c7f013be804154f49e5">wordcount_t</a> max_words)</td></tr>
+<tr class="separator:a4406533eff7e6f150a7f1ea17acc41d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23fd490f1d52fce34bbd02498d3f3e7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ac149c71b403315c8af428f8d48aa84c8">bitcount_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#a23fd490f1d52fce34bbd02498d3f3e7e">tc_uECC_vli_numBits</a> (const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *vli, const <a class="el" href="types_8h.html#a594492d6aff76c7f013be804154f49e5">wordcount_t</a> max_words)</td></tr>
 <tr class="separator:a23fd490f1d52fce34bbd02498d3f3e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a982cb8b300be50913af8a9a5d058757e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#a982cb8b300be50913af8a9a5d058757e">tc_uECC_vli_set</a> (<a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *dest, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *src, <a class="el" href="types_8h.html#a594492d6aff76c7f013be804154f49e5">wordcount_t</a> num_words)</td></tr>
@@ -110,8 +113,16 @@ Functions</h2></td></tr>
 <tr class="separator:ae126f2cc7fe216521336e5ba74ebab9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9641ee1ae2aa96c744c1bfab0d9c9a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#af9641ee1ae2aa96c744c1bfab0d9c9a1">tc_uECC_vli_sub</a> (<a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *result, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *left, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *right, <a class="el" href="types_8h.html#a594492d6aff76c7f013be804154f49e5">wordcount_t</a> num_words)</td></tr>
 <tr class="separator:af9641ee1ae2aa96c744c1bfab0d9c9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c4ca203c79ea7a5fde5806efecdf42"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#a39c4ca203c79ea7a5fde5806efecdf42">tc_uECC_vli_add</a> (<a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *result, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *left, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *right, <a class="el" href="types_8h.html#a594492d6aff76c7f013be804154f49e5">wordcount_t</a> num_words)</td></tr>
+<tr class="separator:a39c4ca203c79ea7a5fde5806efecdf42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99102f2723d70141e8342a3a2b88d395"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a6fe5a9f28375a016c203ced5e9282ae2">cmpresult_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#a99102f2723d70141e8342a3a2b88d395">tc_uECC_vli_cmp</a> (const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *left, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *right, <a class="el" href="types_8h.html#a594492d6aff76c7f013be804154f49e5">wordcount_t</a> num_words)</td></tr>
 <tr class="separator:a99102f2723d70141e8342a3a2b88d395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04f20af52962e2328a6788a958efdc53"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#a04f20af52962e2328a6788a958efdc53">tc_uECC_vli_rshift1</a> (<a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *vli, <a class="el" href="types_8h.html#a594492d6aff76c7f013be804154f49e5">wordcount_t</a> num_words)</td></tr>
+<tr class="separator:a04f20af52962e2328a6788a958efdc53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3af69fa5a878d019bd268772d15f142"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#ae3af69fa5a878d019bd268772d15f142">muladd</a> (<a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> a, <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> b, <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *r0, <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *r1, <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *r2)</td></tr>
+<tr class="separator:ae3af69fa5a878d019bd268772d15f142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8f7c71d8790d9309522b1e1a13f2c0d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#ac8f7c71d8790d9309522b1e1a13f2c0d">tc_uECC_vli_mult</a> (<a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *result, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *left, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *right, <a class="el" href="types_8h.html#a594492d6aff76c7f013be804154f49e5">wordcount_t</a> num_words)</td></tr>
+<tr class="separator:ac8f7c71d8790d9309522b1e1a13f2c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ba2c010490a2c81285fdc6508c4cad2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#a4ba2c010490a2c81285fdc6508c4cad2">tc_uECC_vli_modAdd</a> (<a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *result, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *left, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *right, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *mod, <a class="el" href="types_8h.html#a594492d6aff76c7f013be804154f49e5">wordcount_t</a> num_words)</td></tr>
 <tr class="separator:a4ba2c010490a2c81285fdc6508c4cad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd6dffec87a1e343aa4cec390a146fad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#abd6dffec87a1e343aa4cec390a146fad">tc_uECC_vli_modSub</a> (<a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *result, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *left, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *right, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *mod, <a class="el" href="types_8h.html#a594492d6aff76c7f013be804154f49e5">wordcount_t</a> num_words)</td></tr>
@@ -122,6 +133,10 @@ Functions</h2></td></tr>
 <tr class="separator:ac4af879648b288b7c7d45eee53111e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2260711183bb1647b51fc555cae2240"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#ab2260711183bb1647b51fc555cae2240">tc_uECC_vli_modMult_fast</a> (<a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *result, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *left, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *right, <a class="el" href="tc__ecc_8h.html#a8b74423c6941ae921ae2998900680385">tc_uECC_Curve</a> curve)</td></tr>
 <tr class="separator:ab2260711183bb1647b51fc555cae2240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebafb52dc613ea3426c537468fe49aa1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#aebafb52dc613ea3426c537468fe49aa1">tc_uECC_vli_modSquare_fast</a> (<a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *result, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *left, <a class="el" href="tc__ecc_8h.html#a8b74423c6941ae921ae2998900680385">tc_uECC_Curve</a> curve)</td></tr>
+<tr class="separator:aebafb52dc613ea3426c537468fe49aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f7decc7beb2d982e4732e1fc6c6fbb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#aa1f7decc7beb2d982e4732e1fc6c6fbb">vli_modInv_update</a> (<a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *uv, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *mod, <a class="el" href="types_8h.html#a594492d6aff76c7f013be804154f49e5">wordcount_t</a> num_words)</td></tr>
+<tr class="separator:aa1f7decc7beb2d982e4732e1fc6c6fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2c06fe34407dac2f92483fa479410c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#aa2c06fe34407dac2f92483fa479410c6">tc_uECC_vli_modInv</a> (<a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *result, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *input, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *mod, <a class="el" href="types_8h.html#a594492d6aff76c7f013be804154f49e5">wordcount_t</a> num_words)</td></tr>
 <tr class="separator:aa2c06fe34407dac2f92483fa479410c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a096f92530d94ca363bfbcd2bbdd38f61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#a096f92530d94ca363bfbcd2bbdd38f61">double_jacobian_default</a> (<a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *X1, <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *Y1, <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *Z1, <a class="el" href="tc__ecc_8h.html#a8b74423c6941ae921ae2998900680385">tc_uECC_Curve</a> curve)</td></tr>
@@ -136,8 +151,12 @@ Functions</h2></td></tr>
 <tr class="separator:ab941240122098008de0deaf7a6a7830a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac011c5b97c88aa12f0a59f3419cfdee9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#ac011c5b97c88aa12f0a59f3419cfdee9">apply_z</a> (<a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *X1, <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *Y1, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *const Z, <a class="el" href="tc__ecc_8h.html#a8b74423c6941ae921ae2998900680385">tc_uECC_Curve</a> curve)</td></tr>
 <tr class="separator:ac011c5b97c88aa12f0a59f3419cfdee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9adde1a4aa4141d6eb4b1ddcbe887fa3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#a9adde1a4aa4141d6eb4b1ddcbe887fa3">XYcZ_initial_double</a> (<a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *X1, <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *Y1, <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *X2, <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *Y2, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *const initial_Z, <a class="el" href="tc__ecc_8h.html#a8b74423c6941ae921ae2998900680385">tc_uECC_Curve</a> curve)</td></tr>
+<tr class="separator:a9adde1a4aa4141d6eb4b1ddcbe887fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d75ddd2601ef8496a6ed3cdfbcf84c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#a9d75ddd2601ef8496a6ed3cdfbcf84c5">XYcZ_add</a> (<a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *X1, <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *Y1, <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *X2, <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *Y2, <a class="el" href="tc__ecc_8h.html#a8b74423c6941ae921ae2998900680385">tc_uECC_Curve</a> curve)</td></tr>
 <tr class="separator:a9d75ddd2601ef8496a6ed3cdfbcf84c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c4d48612eee4967a4903d57e747c389"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#a5c4d48612eee4967a4903d57e747c389">XYcZ_addC</a> (<a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *X1, <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *Y1, <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *X2, <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *Y2, <a class="el" href="tc__ecc_8h.html#a8b74423c6941ae921ae2998900680385">tc_uECC_Curve</a> curve)</td></tr>
+<tr class="separator:a5c4d48612eee4967a4903d57e747c389"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac62cbd58b90ba6192cac4ebd68fe9561"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#ac62cbd58b90ba6192cac4ebd68fe9561">EccPoint_mult</a> (<a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *result, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *point, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *scalar, const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *initial_Z, <a class="el" href="types_8h.html#ac149c71b403315c8af428f8d48aa84c8">bitcount_t</a> num_bits, <a class="el" href="tc__ecc_8h.html#a8b74423c6941ae921ae2998900680385">tc_uECC_Curve</a> curve)</td></tr>
 <tr class="separator:ac62cbd58b90ba6192cac4ebd68fe9561"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51bb66cda46b5c5e07478691c2b47a14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#a51bb66cda46b5c5e07478691c2b47a14">regularize_k</a> (const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *const k, <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *k0, <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *k1, <a class="el" href="tc__ecc_8h.html#a8b74423c6941ae921ae2998900680385">tc_uECC_Curve</a> curve)</td></tr>
@@ -156,6 +175,11 @@ Functions</h2></td></tr>
 <tr class="separator:a9cdc3c4c29a6372f4b0cc71ee8458b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5285e1286a34a9a61d1f99fb1627e87"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#aa5285e1286a34a9a61d1f99fb1627e87">tc_uECC_compute_public_key</a> (const uint8_t *private_key, uint8_t *public_key, <a class="el" href="tc__ecc_8h.html#a8b74423c6941ae921ae2998900680385">tc_uECC_Curve</a> curve)</td></tr>
 <tr class="separator:aa5285e1286a34a9a61d1f99fb1627e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a2adc1dfa39652d365a2125a1f4bd4270"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="tc__ecc_8h.html#a3cb0940adc785ce8498d76046742cee3">tc_uECC_RNG_Function</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc_8c.html#a2adc1dfa39652d365a2125a1f4bd4270">g_rng_function</a> = 0</td></tr>
+<tr class="separator:a2adc1dfa39652d365a2125a1f4bd4270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ab74814b2d829f58ce25e7b365e9d08b3"></a>
@@ -401,6 +425,60 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae3af69fa5a878d019bd268772d15f142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3af69fa5a878d019bd268772d15f142">&#9670;&nbsp;</a></span>muladd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void muladd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a>&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>r0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>r1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>r2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -655,6 +733,54 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39c4ca203c79ea7a5fde5806efecdf42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39c4ca203c79ea7a5fde5806efecdf42">&#9670;&nbsp;</a></span>tc_uECC_vli_add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> tc_uECC_vli_add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>right</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a594492d6aff76c7f013be804154f49e5">wordcount_t</a>&#160;</td>
+          <td class="paramname"><em>num_words</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -1063,6 +1189,48 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aebafb52dc613ea3426c537468fe49aa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebafb52dc613ea3426c537468fe49aa1">&#9670;&nbsp;</a></span>tc_uECC_vli_modSquare_fast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tc_uECC_vli_modSquare_fast </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tc__ecc_8h.html#a8b74423c6941ae921ae2998900680385">tc_uECC_Curve</a>&#160;</td>
+          <td class="paramname"><em>curve</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="abd6dffec87a1e343aa4cec390a146fad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd6dffec87a1e343aa4cec390a146fad">&#9670;&nbsp;</a></span>tc_uECC_vli_modSub()</h2>
 
@@ -1105,6 +1273,54 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8f7c71d8790d9309522b1e1a13f2c0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8f7c71d8790d9309522b1e1a13f2c0d">&#9670;&nbsp;</a></span>tc_uECC_vli_mult()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tc_uECC_vli_mult </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>right</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a594492d6aff76c7f013be804154f49e5">wordcount_t</a>&#160;</td>
+          <td class="paramname"><em>num_words</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -1167,6 +1383,42 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04f20af52962e2328a6788a958efdc53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04f20af52962e2328a6788a958efdc53">&#9670;&nbsp;</a></span>tc_uECC_vli_rshift1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tc_uECC_vli_rshift1 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>vli</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a594492d6aff76c7f013be804154f49e5">wordcount_t</a>&#160;</td>
+          <td class="paramname"><em>num_words</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -1301,6 +1553,84 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa1f7decc7beb2d982e4732e1fc6c6fbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1f7decc7beb2d982e4732e1fc6c6fbb">&#9670;&nbsp;</a></span>vli_modInv_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void vli_modInv_update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>uv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>mod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a594492d6aff76c7f013be804154f49e5">wordcount_t</a>&#160;</td>
+          <td class="paramname"><em>num_words</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4406533eff7e6f150a7f1ea17acc41d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4406533eff7e6f150a7f1ea17acc41d4">&#9670;&nbsp;</a></span>vli_numDigits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="types_8h.html#a594492d6aff76c7f013be804154f49e5">wordcount_t</a> vli_numDigits </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>vli</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="types_8h.html#a594492d6aff76c7f013be804154f49e5">wordcount_t</a>&#160;</td>
+          <td class="paramname"><em>max_words</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a212f98ebffdd9ef39d4611bc1ddad783"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a212f98ebffdd9ef39d4611bc1ddad783">&#9670;&nbsp;</a></span>x_side_default()</h2>
 
@@ -1377,6 +1707,143 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5c4d48612eee4967a4903d57e747c389"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c4d48612eee4967a4903d57e747c389">&#9670;&nbsp;</a></span>XYcZ_addC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void XYcZ_addC </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>X1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>Y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>X2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>Y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tc__ecc_8h.html#a8b74423c6941ae921ae2998900680385">tc_uECC_Curve</a>&#160;</td>
+          <td class="paramname"><em>curve</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9adde1a4aa4141d6eb4b1ddcbe887fa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9adde1a4aa4141d6eb4b1ddcbe887fa3">&#9670;&nbsp;</a></span>XYcZ_initial_double()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void XYcZ_initial_double </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>X1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>Y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>X2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *&#160;</td>
+          <td class="paramname"><em>Y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="tc__ecc_8h.html#ae0d742269d5576de54e1dea0722125ee">tc_uECC_word_t</a> *const&#160;</td>
+          <td class="paramname"><em>initial_Z</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tc__ecc_8h.html#a8b74423c6941ae921ae2998900680385">tc_uECC_Curve</a>&#160;</td>
+          <td class="paramname"><em>curve</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a2adc1dfa39652d365a2125a1f4bd4270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2adc1dfa39652d365a2125a1f4bd4270">&#9670;&nbsp;</a></span>g_rng_function</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tc__ecc_8h.html#a3cb0940adc785ce8498d76046742cee3">tc_uECC_RNG_Function</a> g_rng_function = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

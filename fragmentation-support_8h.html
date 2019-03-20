@@ -68,7 +68,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">fragmentation-support.h File Reference</div>  </div>
 </div><!--header-->
@@ -97,6 +98,21 @@ Typedefs</h2></td></tr>
 <tr class="memitem:acd6732a0b2056ebaa89a92bd0f624cfa"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structndn__frag__assembler.html">ndn_frag_assembler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fragmentation-support_8h.html#acd6732a0b2056ebaa89a92bd0f624cfa">ndn_frag_assembler_t</a></td></tr>
 <tr class="memdesc:acd6732a0b2056ebaa89a92bd0f624cfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The structure to keep the state when assembling fragments.  <a href="#acd6732a0b2056ebaa89a92bd0f624cfa">More...</a><br /></td></tr>
 <tr class="separator:acd6732a0b2056ebaa89a92bd0f624cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ab3f97686286ff10e560f35e6af961d3f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fragmentation-support_8h.html#ab3f97686286ff10e560f35e6af961d3f">ndn_fragmenter_init</a> (<a class="el" href="fragmentation-support_8h.html#a69109e46fdce35ece37242f67f10431e">ndn_fragmenter_t</a> *fragmenter, const uint8_t *original, uint32_t original_size, uint32_t fragment_max_size, uint16_t frag_identifier)</td></tr>
+<tr class="memdesc:ab3f97686286ff10e560f35e6af961d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init a fragmenter.  <a href="#ab3f97686286ff10e560f35e6af961d3f">More...</a><br /></td></tr>
+<tr class="separator:ab3f97686286ff10e560f35e6af961d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a987bc5e4e1fa8caee0348b2bde4f5536"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fragmentation-support_8h.html#a987bc5e4e1fa8caee0348b2bde4f5536">ndn_fragmenter_fragment</a> (<a class="el" href="fragmentation-support_8h.html#a69109e46fdce35ece37242f67f10431e">ndn_fragmenter_t</a> *fragmenter, uint8_t *fragmented)</td></tr>
+<tr class="memdesc:a987bc5e4e1fa8caee0348b2bde4f5536"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate one fragmented packet.  <a href="#a987bc5e4e1fa8caee0348b2bde4f5536">More...</a><br /></td></tr>
+<tr class="separator:a987bc5e4e1fa8caee0348b2bde4f5536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcbdb6f112627a977e59f2f4fe570b49"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fragmentation-support_8h.html#abcbdb6f112627a977e59f2f4fe570b49">ndn_frag_assembler_init</a> (<a class="el" href="fragmentation-support_8h.html#acd6732a0b2056ebaa89a92bd0f624cfa">ndn_frag_assembler_t</a> *assembler, uint8_t *original, uint32_t original_max_size)</td></tr>
+<tr class="memdesc:abcbdb6f112627a977e59f2f4fe570b49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init an assembler.  <a href="#abcbdb6f112627a977e59f2f4fe570b49">More...</a><br /></td></tr>
+<tr class="separator:abcbdb6f112627a977e59f2f4fe570b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dac2f4947d9fb7af580f29db064b92e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fragmentation-support_8h.html#a9dac2f4947d9fb7af580f29db064b92e">ndn_frag_assembler_assemble_frag</a> (<a class="el" href="fragmentation-support_8h.html#acd6732a0b2056ebaa89a92bd0f624cfa">ndn_frag_assembler_t</a> *assembler, uint8_t *frag, uint32_t fra_size)</td></tr>
+<tr class="memdesc:a9dac2f4947d9fb7af580f29db064b92e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assemble a fragment into the assembler.  <a href="#a9dac2f4947d9fb7af580f29db064b92e">More...</a><br /></td></tr>
+<tr class="separator:a9dac2f4947d9fb7af580f29db064b92e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="acd6732a0b2056ebaa89a92bd0f624cfa"></a>
@@ -130,6 +146,224 @@ Typedefs</h2></td></tr>
 <p>NDN-Lite reuses the ndn-riot fragmentation header (3 bytes header) </p>
 <p>0 1 2 0 1 2 3 8 15 23 +-+-+&ndash;+-&mdash;+-------------------&mdash;+ |1|X|MF|Seq#| Identification | +-+-+&ndash;+-&mdash;+-------------------&mdash;+</p>
 <p>First bit: header bit, always 1 (indicating the fragmentation header) Second bit: reserved, always 0 Third bit: MF bit 4th to 8th bit: sequence number (5 bits, encoding up to 31 fragments) 9th to 24th bit: identification (2-byte random number)The structure to keep the state when doing fragmentation. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a9dac2f4947d9fb7af580f29db064b92e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dac2f4947d9fb7af580f29db064b92e">&#9670;&nbsp;</a></span>ndn_frag_assembler_assemble_frag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ndn_frag_assembler_assemble_frag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fragmentation-support_8h.html#acd6732a0b2056ebaa89a92bd0f624cfa">ndn_frag_assembler_t</a> *&#160;</td>
+          <td class="paramname"><em>assembler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>frag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>fra_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assemble a fragment into the assembler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">assembler.</td><td>Output. The assembler used to keep the assembled packet and the state. </td></tr>
+    <tr><td class="paramname">frag.</td><td>Input. The fragment packet buffer. </td></tr>
+    <tr><td class="paramname">fra_size.</td><td>Input. The size of the fragment packet buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
+
+</div>
+</div>
+<a id="abcbdb6f112627a977e59f2f4fe570b49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcbdb6f112627a977e59f2f4fe570b49">&#9670;&nbsp;</a></span>ndn_frag_assembler_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ndn_frag_assembler_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fragmentation-support_8h.html#acd6732a0b2056ebaa89a92bd0f624cfa">ndn_frag_assembler_t</a> *&#160;</td>
+          <td class="paramname"><em>assembler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>original</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>original_max_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Init an assembler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">assembler.</td><td>Output. The assembler to be inited. </td></tr>
+    <tr><td class="paramname">original.</td><td>Input. The buffer used to keep the assembled packet. </td></tr>
+    <tr><td class="paramname">original_max_size.</td><td>Input. The size of the buffer used to keep the assembled packet. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a987bc5e4e1fa8caee0348b2bde4f5536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a987bc5e4e1fa8caee0348b2bde4f5536">&#9670;&nbsp;</a></span>ndn_fragmenter_fragment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ndn_fragmenter_fragment </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fragmentation-support_8h.html#a69109e46fdce35ece37242f67f10431e">ndn_fragmenter_t</a> *&#160;</td>
+          <td class="paramname"><em>fragmenter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>fragmented</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate one fragmented packet. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fragmenter.</td><td>Input/Output. The fragmenter used to keep the original packet and the state. </td></tr>
+    <tr><td class="paramname">fragmented.</td><td>Output. The buffer to keep the fragmented packet. The buffer size should at least be the fragmenter-&gt;fragment_max_size. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
+
+</div>
+</div>
+<a id="ab3f97686286ff10e560f35e6af961d3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3f97686286ff10e560f35e6af961d3f">&#9670;&nbsp;</a></span>ndn_fragmenter_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ndn_fragmenter_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fragmentation-support_8h.html#a69109e46fdce35ece37242f67f10431e">ndn_fragmenter_t</a> *&#160;</td>
+          <td class="paramname"><em>fragmenter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>original</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>original_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>fragment_max_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>frag_identifier</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Init a fragmenter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fragmenter.</td><td>Output. The fragmenter to be inited. </td></tr>
+    <tr><td class="paramname">original.</td><td>Input. The original packet buffer. </td></tr>
+    <tr><td class="paramname">original_size.</td><td>Input. The size of the original packet buffer. </td></tr>
+    <tr><td class="paramname">fragment_max_size.</td><td>Input. The max size of each fragment. This value is obtained from protocol-specific MTU. </td></tr>
+    <tr><td class="paramname">frag_identifier.</td><td>Input. The identifier of the fragments generated from the original packet. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

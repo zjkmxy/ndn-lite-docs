@@ -70,7 +70,8 @@ $(function() {
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">msg-queue.c File Reference</div>  </div>
 </div><!--header-->
@@ -85,7 +86,7 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a86a815d3d6a7c59e095ca753a5d4667b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msg-queue_8c.html#a86a815d3d6a7c59e095ca753a5d4667b">NDN_MSG_PADDING</a>&#160;&#160;&#160;(void*)(-1)</td></tr>
+<tr class="memitem:a86a815d3d6a7c59e095ca753a5d4667b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msg-queue_8c.html#a86a815d3d6a7c59e095ca753a5d4667b">NDN_MSG_PADDING</a>&#160;&#160;&#160;(<a class="el" href="group___n_d_n_util_msq_queue.html#ga15f0a0eb16f63e8418cd07884f4324da">ndn_msg_callback</a>)(-1)</td></tr>
 <tr class="memdesc:a86a815d3d6a7c59e095ca753a5d4667b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Padding message.  <a href="#a86a815d3d6a7c59e095ca753a5d4667b">More...</a><br /></td></tr>
 <tr class="separator:a86a815d3d6a7c59e095ca753a5d4667b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada51b256b3fe454eb926d899da835817"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msg-queue_8c.html#ada51b256b3fe454eb926d899da835817">MSGQUEUE_NEXT</a>(ptr)</td></tr>
@@ -116,6 +117,17 @@ Functions</h2></td></tr>
 <tr class="memitem:gacf70379963532d87684732d798af5e59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_util_msq_queue.html#gacf70379963532d87684732d798af5e59">ndn_msgqueue_cancel</a> (struct <a class="el" href="structndn__msg.html">ndn_msg</a> *msg)</td></tr>
 <tr class="memdesc:gacf70379963532d87684732d798af5e59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel a posted message.  <a href="group___n_d_n_util_msq_queue.html#gacf70379963532d87684732d798af5e59">More...</a><br /></td></tr>
 <tr class="separator:gacf70379963532d87684732d798af5e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ac777511e37ed109f75cec6059c12934e"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msg-queue_8c.html#ac777511e37ed109f75cec6059c12934e">msg_queue</a> [<a class="el" href="group___n_d_n_util_msq_queue.html#ga64a776e6a341f931618c31a7a94d7ed9">NDN_MSGQUEUE_SIZE</a>]</td></tr>
+<tr class="separator:ac777511e37ed109f75cec6059c12934e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a788b5fd5c7473967efeed945d59a9378"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="msg-queue_8c.html#a3a7ef5abe98cc46f6ca8fdd847cdf5ce">ndn_msg_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msg-queue_8c.html#a788b5fd5c7473967efeed945d59a9378">pfront</a></td></tr>
+<tr class="separator:a788b5fd5c7473967efeed945d59a9378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19ff2fc18379c61b3c9c5c524f6c340b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="msg-queue_8c.html#a3a7ef5abe98cc46f6ca8fdd847cdf5ce">ndn_msg_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msg-queue_8c.html#a19ff2fc18379c61b3c9c5c524f6c340b">ptail</a></td></tr>
+<tr class="separator:a19ff2fc18379c61b3c9c5c524f6c340b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d26269d625a665aac5ae68ae521da37"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="msg-queue_8c.html#a3a7ef5abe98cc46f6ca8fdd847cdf5ce">ndn_msg_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msg-queue_8c.html#a5d26269d625a665aac5ae68ae521da37">psplit</a></td></tr>
+<tr class="separator:a5d26269d625a665aac5ae68ae521da37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ada51b256b3fe454eb926d899da835817"></a>
@@ -133,8 +145,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">ptr = (<a class="code" href="structndn__msg.html">ndn_msg_t</a>*)(((uint8_t*)ptr) + ptr-&gt;length); \</div><div class="line">  if(((uint8_t*)ptr) &gt;= &amp;msg_queue[<a class="code" href="group___n_d_n_util_msq_queue.html#ga64a776e6a341f931618c31a7a94d7ed9">NDN_MSGQUEUE_SIZE</a>]){ \</div><div class="line">    ptr = (<a class="code" href="structndn__msg.html">ndn_msg_t</a>*)&amp;msg_queue[0]; \</div><div class="line">  };</div><div class="ttc" id="structndn__msg_html"><div class="ttname"><a href="structndn__msg.html">ndn_msg</a></div><div class="ttdef"><b>Definition:</b> msg-queue.c:27</div></div>
+<b>Value:</b><div class="fragment"><div class="line">ptr = (<a class="code" href="structndn__msg.html">ndn_msg_t</a>*)(((uint8_t*)ptr) + ptr-&gt;length); \</div><div class="line">  if(((uint8_t*)ptr) &gt;= &amp;<a class="code" href="msg-queue_8c.html#ac777511e37ed109f75cec6059c12934e">msg_queue</a>[<a class="code" href="group___n_d_n_util_msq_queue.html#ga64a776e6a341f931618c31a7a94d7ed9">NDN_MSGQUEUE_SIZE</a>]){ \</div><div class="line">    ptr = (<a class="code" href="structndn__msg.html">ndn_msg_t</a>*)&amp;<a class="code" href="msg-queue_8c.html#ac777511e37ed109f75cec6059c12934e">msg_queue</a>[0]; \</div><div class="line">  };</div><div class="ttc" id="structndn__msg_html"><div class="ttname"><a href="structndn__msg.html">ndn_msg</a></div><div class="ttdef"><b>Definition:</b> msg-queue.c:27</div></div>
 <div class="ttc" id="group___n_d_n_util_msq_queue_html_ga64a776e6a341f931618c31a7a94d7ed9"><div class="ttname"><a href="group___n_d_n_util_msq_queue.html#ga64a776e6a341f931618c31a7a94d7ed9">NDN_MSGQUEUE_SIZE</a></div><div class="ttdeci">#define NDN_MSGQUEUE_SIZE</div><div class="ttdoc">The size of message queue in bytes.</div><div class="ttdef"><b>Definition:</b> msg-queue.h:32</div></div>
+<div class="ttc" id="msg-queue_8c_html_ac777511e37ed109f75cec6059c12934e"><div class="ttname"><a href="msg-queue_8c.html#ac777511e37ed109f75cec6059c12934e">msg_queue</a></div><div class="ttdeci">static uint8_t msg_queue[NDN_MSGQUEUE_SIZE]</div><div class="ttdef"><b>Definition:</b> msg-queue.c:34</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -145,7 +158,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NDN_MSG_PADDING&#160;&#160;&#160;(void*)(-1)</td>
+          <td class="memname">#define NDN_MSG_PADDING&#160;&#160;&#160;(<a class="el" href="group___n_d_n_util_msq_queue.html#ga15f0a0eb16f63e8418cd07884f4324da">ndn_msg_callback</a>)(-1)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -166,6 +179,95 @@ Functions</h2></td></tr>
           <td class="memname">typedef struct <a class="el" href="structndn__msg.html">ndn_msg</a>  <a class="el" href="msg-queue_8c.html#a3a7ef5abe98cc46f6ca8fdd847cdf5ce">ndn_msg_t</a></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ac777511e37ed109f75cec6059c12934e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac777511e37ed109f75cec6059c12934e">&#9670;&nbsp;</a></span>msg_queue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t msg_queue[<a class="el" href="group___n_d_n_util_msq_queue.html#ga64a776e6a341f931618c31a7a94d7ed9">NDN_MSGQUEUE_SIZE</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a788b5fd5c7473967efeed945d59a9378"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a788b5fd5c7473967efeed945d59a9378">&#9670;&nbsp;</a></span>pfront</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="msg-queue_8c.html#a3a7ef5abe98cc46f6ca8fdd847cdf5ce">ndn_msg_t</a>* pfront</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d26269d625a665aac5ae68ae521da37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d26269d625a665aac5ae68ae521da37">&#9670;&nbsp;</a></span>psplit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="msg-queue_8c.html#a3a7ef5abe98cc46f6ca8fdd847cdf5ce">ndn_msg_t</a> * psplit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a19ff2fc18379c61b3c9c5c524f6c340b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19ff2fc18379c61b3c9c5c524f6c340b">&#9670;&nbsp;</a></span>ptail</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="msg-queue_8c.html#a3a7ef5abe98cc46f6ca8fdd847cdf5ce">ndn_msg_t</a> * ptail</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

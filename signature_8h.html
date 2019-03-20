@@ -99,6 +99,32 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a9ec3404b60a5dcf5dc5850e594f8f0bb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a9ec3404b60a5dcf5dc5850e594f8f0bb">ndn_signature_init</a> (<a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *signature)</td></tr>
+<tr class="memdesc:a9ec3404b60a5dcf5dc5850e594f8f0bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init a Signature structure.  <a href="#a9ec3404b60a5dcf5dc5850e594f8f0bb">More...</a><br /></td></tr>
+<tr class="separator:a9ec3404b60a5dcf5dc5850e594f8f0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74dc897a4ffda9c547dd28f63576e353"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a74dc897a4ffda9c547dd28f63576e353">ndn_signature_set_signature_type</a> (<a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *signature, uint8_t type)</td></tr>
+<tr class="separator:a74dc897a4ffda9c547dd28f63576e353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad36aa141c0ee713c1d5db85d25d35796"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#ad36aa141c0ee713c1d5db85d25d35796">ndn_signature_set_signature</a> (<a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *signature, const uint8_t *sig_value, size_t sig_size)</td></tr>
+<tr class="memdesc:ad36aa141c0ee713c1d5db85d25d35796"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set signature value of the Signature.  <a href="#ad36aa141c0ee713c1d5db85d25d35796">More...</a><br /></td></tr>
+<tr class="separator:ad36aa141c0ee713c1d5db85d25d35796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad58294a91de932c0d92cfa6575710c41"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#ad58294a91de932c0d92cfa6575710c41">ndn_signature_set_key_locator</a> (<a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *signature, const <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *key_name)</td></tr>
+<tr class="memdesc:ad58294a91de932c0d92cfa6575710c41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set keylocator of the Signature.  <a href="#ad58294a91de932c0d92cfa6575710c41">More...</a><br /></td></tr>
+<tr class="separator:ad58294a91de932c0d92cfa6575710c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a031b1fbde96ed505d564e5fcfcd5032e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a031b1fbde96ed505d564e5fcfcd5032e">ndn_signature_set_timestamp</a> (<a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *signature, uint64_t timestamp)</td></tr>
+<tr class="memdesc:a031b1fbde96ed505d564e5fcfcd5032e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Timestamp of the Signature.  <a href="#a031b1fbde96ed505d564e5fcfcd5032e">More...</a><br /></td></tr>
+<tr class="separator:a031b1fbde96ed505d564e5fcfcd5032e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94701526ed91b66e4f2e2d3e076c260c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a94701526ed91b66e4f2e2d3e076c260c">ndn_signature_set_signature_info_nonce</a> (<a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *signature, uint32_t nonce)</td></tr>
+<tr class="memdesc:a94701526ed91b66e4f2e2d3e076c260c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Nonce of the Signed Interest.  <a href="#a94701526ed91b66e4f2e2d3e076c260c">More...</a><br /></td></tr>
+<tr class="separator:a94701526ed91b66e4f2e2d3e076c260c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20cac11cd55fcf0cc35dd7cb85b1ce72"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a20cac11cd55fcf0cc35dd7cb85b1ce72">ndn_signature_set_validity_period</a> (<a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *signature, const uint8_t *not_before, const uint8_t *not_after)</td></tr>
+<tr class="memdesc:a20cac11cd55fcf0cc35dd7cb85b1ce72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set validity period of the Signature.  <a href="#a20cac11cd55fcf0cc35dd7cb85b1ce72">More...</a><br /></td></tr>
+<tr class="separator:a20cac11cd55fcf0cc35dd7cb85b1ce72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a824b0af636aa283c6d035a8b1acf228b"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a824b0af636aa283c6d035a8b1acf228b">ndn_signature_info_probe_block_size</a> (const <a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *signature)</td></tr>
+<tr class="memdesc:a824b0af636aa283c6d035a8b1acf228b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Probe the size of a Signature info TLV block before encoding it from a Signature structure.  <a href="#a824b0af636aa283c6d035a8b1acf228b">More...</a><br /></td></tr>
+<tr class="separator:a824b0af636aa283c6d035a8b1acf228b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39a95feaf282100b27fcfcaacc208252"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a39a95feaf282100b27fcfcaacc208252">ndn_signature_value_probe_block_size</a> (const <a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *signature)</td></tr>
+<tr class="memdesc:a39a95feaf282100b27fcfcaacc208252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Probe the size of a Signature value TLV block before encoding it from a Signature structure.  <a href="#a39a95feaf282100b27fcfcaacc208252">More...</a><br /></td></tr>
+<tr class="separator:a39a95feaf282100b27fcfcaacc208252"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa41b5a2b925e583fa7a8b389511ff852"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#aa41b5a2b925e583fa7a8b389511ff852">ndn_signature_info_tlv_encode</a> (<a class="el" href="encoder_8h.html#a7e8d31a88e1f377c42e835275385119c">ndn_encoder_t</a> *encoder, const <a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *signature)</td></tr>
 <tr class="memdesc:aa41b5a2b925e583fa7a8b389511ff852"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the Signature info into wire format (TLV block) from Signature structure.  <a href="#aa41b5a2b925e583fa7a8b389511ff852">More...</a><br /></td></tr>
 <tr class="separator:aa41b5a2b925e583fa7a8b389511ff852"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,6 +173,41 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a824b0af636aa283c6d035a8b1acf228b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a824b0af636aa283c6d035a8b1acf228b">&#9670;&nbsp;</a></span>ndn_signature_info_probe_block_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t ndn_signature_info_probe_block_size </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *&#160;</td>
+          <td class="paramname"><em>signature</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Probe the size of a Signature info TLV block before encoding it from a Signature structure. </p>
+<p>This function is used to check whether the output buffer size is enough or not. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signature.</td><td>Input. The signature structure to be probed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the length of the expected Signature info TLV block. </dd></dl>
+
+</div>
+</div>
 <a id="a7511b808d0d42581f423bb017595c897"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7511b808d0d42581f423bb017595c897">&#9670;&nbsp;</a></span>ndn_signature_info_tlv_decode()</h2>
 
@@ -220,6 +281,354 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
+
+</div>
+</div>
+<a id="a9ec3404b60a5dcf5dc5850e594f8f0bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ec3404b60a5dcf5dc5850e594f8f0bb">&#9670;&nbsp;</a></span>ndn_signature_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ndn_signature_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *&#160;</td>
+          <td class="paramname"><em>signature</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Init a Signature structure. </p>
+<p>set signature type, signature size, and disable keylocator and validity period by default. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signature.</td><td>Output. The Signature structure to be inited. </td></tr>
+    <tr><td class="paramname">type.</td><td>Input. The signature type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
+
+</div>
+</div>
+<a id="ad58294a91de932c0d92cfa6575710c41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad58294a91de932c0d92cfa6575710c41">&#9670;&nbsp;</a></span>ndn_signature_set_key_locator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ndn_signature_set_key_locator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *&#160;</td>
+          <td class="paramname"><em>signature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *&#160;</td>
+          <td class="paramname"><em>key_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set keylocator of the Signature. </p>
+<p>This function will do memory copy. </p><dl class="section note"><dt>Note</dt><dd>This function is NOT recommended. Better to first init signature and init signature.keylocator_name and set enable_KeyLocator = 1. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signature.</td><td>Output. The Signature whose keylocator will be set. </td></tr>
+    <tr><td class="paramname">key_name.</td><td>Input. The input keylocator. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad36aa141c0ee713c1d5db85d25d35796"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad36aa141c0ee713c1d5db85d25d35796">&#9670;&nbsp;</a></span>ndn_signature_set_signature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ndn_signature_set_signature </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *&#160;</td>
+          <td class="paramname"><em>signature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>sig_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>sig_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set signature value of the Signature. </p>
+<p>This function will do memory copy. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signature.</td><td>Output. The Signature whose signature value will be set. </td></tr>
+    <tr><td class="paramname">sig_value.</td><td>Input. The buffer which holds the input signature value. </td></tr>
+    <tr><td class="paramname">sig_size.</td><td>Input. Size of input buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
+
+</div>
+</div>
+<a id="a94701526ed91b66e4f2e2d3e076c260c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94701526ed91b66e4f2e2d3e076c260c">&#9670;&nbsp;</a></span>ndn_signature_set_signature_info_nonce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ndn_signature_set_signature_info_nonce </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *&#160;</td>
+          <td class="paramname"><em>signature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>nonce</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set Nonce of the Signed Interest. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interest.</td><td>Output. The Interest whose Nonce will be set. </td></tr>
+    <tr><td class="paramname">nonce.</td><td>Input. Nonce value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a74dc897a4ffda9c547dd28f63576e353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74dc897a4ffda9c547dd28f63576e353">&#9670;&nbsp;</a></span>ndn_signature_set_signature_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ndn_signature_set_signature_type </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *&#160;</td>
+          <td class="paramname"><em>signature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a031b1fbde96ed505d564e5fcfcd5032e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a031b1fbde96ed505d564e5fcfcd5032e">&#9670;&nbsp;</a></span>ndn_signature_set_timestamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ndn_signature_set_timestamp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *&#160;</td>
+          <td class="paramname"><em>signature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>timestamp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set Timestamp of the Signature. </p>
+<p>A Timestamp should be set when using a signed Interest. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signature.</td><td>Output. The Signature whose Timestamp will be set. </td></tr>
+    <tr><td class="paramname">timestamp.</td><td>Input. Timestamp value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a20cac11cd55fcf0cc35dd7cb85b1ce72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20cac11cd55fcf0cc35dd7cb85b1ce72">&#9670;&nbsp;</a></span>ndn_signature_set_validity_period()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ndn_signature_set_validity_period </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *&#160;</td>
+          <td class="paramname"><em>signature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>not_before</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>not_after</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set validity period of the Signature. </p>
+<p>This function will do memory copy. not before and not after must be ISO 8601 time format, which is 15 bytes long. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signature.</td><td>Output. The Signature whose validity period will be set. </td></tr>
+    <tr><td class="paramname">not_before.</td><td>Input. The input not_before time. </td></tr>
+    <tr><td class="paramname">not_after.</td><td>Input. The input not_after time. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a39a95feaf282100b27fcfcaacc208252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39a95feaf282100b27fcfcaacc208252">&#9670;&nbsp;</a></span>ndn_signature_value_probe_block_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t ndn_signature_value_probe_block_size </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *&#160;</td>
+          <td class="paramname"><em>signature</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Probe the size of a Signature value TLV block before encoding it from a Signature structure. </p>
+<p>This function is used to check whether the output buffer size is enough or not. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signature.</td><td>Input. The signature structure to be probed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the length of the expected Signature value TLV block. </dd></dl>
 
 </div>
 </div>

@@ -82,6 +82,10 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:afc4498defd9ed46eef30a41f76569ddd"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data_8c.html#afc4498defd9ed46eef30a41f76569ddd">_ndn_data_prepare_unsigned_block</a> (<a class="el" href="encoder_8h.html#a7e8d31a88e1f377c42e835275385119c">ndn_encoder_t</a> *encoder, const <a class="el" href="data_8h.html#a0f729ea174655117105f1093a4f45225">ndn_data_t</a> *data)</td></tr>
+<tr class="separator:afc4498defd9ed46eef30a41f76569ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23e62f6774a2aa081675da7a06e883ee"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data_8c.html#a23e62f6774a2aa081675da7a06e883ee">_prepare_signature_info</a> (<a class="el" href="data_8h.html#a0f729ea174655117105f1093a4f45225">ndn_data_t</a> *data, uint8_t signature_type, const <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *producer_identity, uint32_t key_id)</td></tr>
+<tr class="separator:a23e62f6774a2aa081675da7a06e883ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26301da4196decc9264e9b0d1890036d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data_8c.html#a26301da4196decc9264e9b0d1890036d">ndn_data_tlv_encode_digest_sign</a> (<a class="el" href="encoder_8h.html#a7e8d31a88e1f377c42e835275385119c">ndn_encoder_t</a> *encoder, <a class="el" href="data_8h.html#a0f729ea174655117105f1093a4f45225">ndn_data_t</a> *data)</td></tr>
 <tr class="memdesc:a26301da4196decc9264e9b0d1890036d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use Digest (SHA256) to sign the Data and encode the Data into wire format.  <a href="#a26301da4196decc9264e9b0d1890036d">More...</a><br /></td></tr>
 <tr class="separator:a26301da4196decc9264e9b0d1890036d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,6 +115,90 @@ Functions</h2></td></tr>
 <tr class="separator:a288a5d7beac428eb542ac48438dd18f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="afc4498defd9ed46eef30a41f76569ddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc4498defd9ed46eef30a41f76569ddd">&#9670;&nbsp;</a></span>_ndn_data_prepare_unsigned_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int _ndn_data_prepare_unsigned_block </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="encoder_8h.html#a7e8d31a88e1f377c42e835275385119c">ndn_encoder_t</a> *&#160;</td>
+          <td class="paramname"><em>encoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="data_8h.html#a0f729ea174655117105f1093a4f45225">ndn_data_t</a> *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23e62f6774a2aa081675da7a06e883ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23e62f6774a2aa081675da7a06e883ee">&#9670;&nbsp;</a></span>_prepare_signature_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _prepare_signature_info </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="data_8h.html#a0f729ea174655117105f1093a4f45225">ndn_data_t</a> *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>signature_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *&#160;</td>
+          <td class="paramname"><em>producer_identity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>key_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a288a5d7beac428eb542ac48438dd18f3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a288a5d7beac428eb542ac48438dd18f3">&#9670;&nbsp;</a></span>ndn_data_parse_encrypted_content()</h2>
 

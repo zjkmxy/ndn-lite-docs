@@ -97,6 +97,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aae3aaba724dd7d69508966005baea6b9"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-trust-schema-pattern_8h.html#aae3aaba724dd7d69508966005baea6b9">ndn_trust_schema_pattern_append_component</a> (<a class="el" href="ndn-trust-schema-pattern_8h.html#a44b804d1d2e333d9e8abbf9b6c7a4935">ndn_trust_schema_pattern_t</a> *pattern, const <a class="el" href="ndn-trust-schema-pattern-component_8h.html#ac005453c073918e373112cad265d4c46">ndn_trust_schema_pattern_component_t</a> *component)</td></tr>
+<tr class="memdesc:aae3aaba724dd7d69508966005baea6b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a component to the end of a pattern.  <a href="#aae3aaba724dd7d69508966005baea6b9">More...</a><br /></td></tr>
+<tr class="separator:aae3aaba724dd7d69508966005baea6b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8456db86628cf432e7343290c8acb221"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-trust-schema-pattern_8h.html#a8456db86628cf432e7343290c8acb221">ndn_trust_schema_pattern_from_string</a> (<a class="el" href="ndn-trust-schema-pattern_8h.html#a44b804d1d2e333d9e8abbf9b6c7a4935">ndn_trust_schema_pattern_t</a> *pattern, const char *string, uint32_t size)</td></tr>
 <tr class="memdesc:a8456db86628cf432e7343290c8acb221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init an NDN Trust Schema pattern from a string.  <a href="#a8456db86628cf432e7343290c8acb221">More...</a><br /></td></tr>
 <tr class="separator:a8456db86628cf432e7343290c8acb221"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,6 +205,52 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Index of last pattern component of given type if successfully found, -1 otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="aae3aaba724dd7d69508966005baea6b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae3aaba724dd7d69508966005baea6b9">&#9670;&nbsp;</a></span>ndn_trust_schema_pattern_append_component()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ndn_trust_schema_pattern_append_component </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ndn-trust-schema-pattern_8h.html#a44b804d1d2e333d9e8abbf9b6c7a4935">ndn_trust_schema_pattern_t</a> *&#160;</td>
+          <td class="paramname"><em>pattern</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="ndn-trust-schema-pattern-component_8h.html#ac005453c073918e373112cad265d4c46">ndn_trust_schema_pattern_component_t</a> *&#160;</td>
+          <td class="paramname"><em>component</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Appends a component to the end of a pattern. </p>
+<p>This function will do memory copy. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name.</td><td>Output. The pattern to append to. </td></tr>
+    <tr><td class="paramname">component.</td><td>Input. The name component to append with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
 
 </div>
 </div>

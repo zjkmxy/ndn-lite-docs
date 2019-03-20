@@ -76,98 +76,16 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a84b899f8ca5d22171dc429595b08f023"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="face-table_8c.html#a84b899f8ca5d22171dc429595b08f023">ndn_facetab_init</a> (void *memory, uint16_t capacity)</td></tr>
-<tr class="separator:a84b899f8ca5d22171dc429595b08f023"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4529831919aba9032ab6499d89c58d57"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="face-table_8c.html#a4529831919aba9032ab6499d89c58d57">ndn_facetab_register</a> (<a class="el" href="face-table_8h.html#a41f1f917038a95575f2abccbe6518bda">ndn_face_table_t</a> *self, <a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *face)</td></tr>
-<tr class="separator:a4529831919aba9032ab6499d89c58d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45c0b0c65ddacc741ba913b267d2ea72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="face-table_8c.html#a45c0b0c65ddacc741ba913b267d2ea72">ndn_facetab_unregister</a> (<a class="el" href="face-table_8h.html#a41f1f917038a95575f2abccbe6518bda">ndn_face_table_t</a> *self, uint16_t id)</td></tr>
-<tr class="separator:a45c0b0c65ddacc741ba913b267d2ea72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84b899f8ca5d22171dc429595b08f023"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face_tab.html#ga84b899f8ca5d22171dc429595b08f023">ndn_facetab_init</a> (void *memory, uint16_t capacity)</td></tr>
+<tr class="memdesc:ga84b899f8ca5d22171dc429595b08f023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize FaceTable at specified memory space.  <a href="group___n_d_n_fwd_face_tab.html#ga84b899f8ca5d22171dc429595b08f023">More...</a><br /></td></tr>
+<tr class="separator:ga84b899f8ca5d22171dc429595b08f023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4529831919aba9032ab6499d89c58d57"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face_tab.html#ga4529831919aba9032ab6499d89c58d57">ndn_facetab_register</a> (<a class="el" href="group___n_d_n_fwd_face_tab.html#ga41f1f917038a95575f2abccbe6518bda">ndn_face_table_t</a> *self, <a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *face)</td></tr>
+<tr class="memdesc:ga4529831919aba9032ab6499d89c58d57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a face and assign an ID to it.  <a href="group___n_d_n_fwd_face_tab.html#ga4529831919aba9032ab6499d89c58d57">More...</a><br /></td></tr>
+<tr class="separator:ga4529831919aba9032ab6499d89c58d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45c0b0c65ddacc741ba913b267d2ea72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face_tab.html#ga45c0b0c65ddacc741ba913b267d2ea72">ndn_facetab_unregister</a> (<a class="el" href="group___n_d_n_fwd_face_tab.html#ga41f1f917038a95575f2abccbe6518bda">ndn_face_table_t</a> *self, uint16_t id)</td></tr>
+<tr class="memdesc:ga45c0b0c65ddacc741ba913b267d2ea72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a face from FaceTable only.  <a href="group___n_d_n_fwd_face_tab.html#ga45c0b0c65ddacc741ba913b267d2ea72">More...</a><br /></td></tr>
+<tr class="separator:ga45c0b0c65ddacc741ba913b267d2ea72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a84b899f8ca5d22171dc429595b08f023"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84b899f8ca5d22171dc429595b08f023">&#9670;&nbsp;</a></span>ndn_facetab_init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ndn_facetab_init </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>memory</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>capacity</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4529831919aba9032ab6499d89c58d57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4529831919aba9032ab6499d89c58d57">&#9670;&nbsp;</a></span>ndn_facetab_register()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t ndn_facetab_register </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="face-table_8h.html#a41f1f917038a95575f2abccbe6518bda">ndn_face_table_t</a> *&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *&#160;</td>
-          <td class="paramname"><em>face</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a45c0b0c65ddacc741ba913b267d2ea72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45c0b0c65ddacc741ba913b267d2ea72">&#9670;&nbsp;</a></span>ndn_facetab_unregister()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ndn_facetab_unregister </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="face-table_8h.html#a41f1f917038a95575f2abccbe6518bda">ndn_face_table_t</a> *&#160;</td>
-          <td class="paramname"><em>self</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>id</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

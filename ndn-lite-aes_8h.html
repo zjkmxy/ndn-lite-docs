@@ -124,6 +124,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac3a674aea72033303a1c8dc439fa1a8b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-aes_8h.html#ac3a674aea72033303a1c8dc439fa1a8b">ndn_aes_load_key</a> (<a class="el" href="ndn-lite-aes_8h.html#a1bfe08f3d0d597778ac43db28e7587a7">ndn_aes_key_t</a> *aes_key, const uint8_t *key_value, uint32_t key_size)</td></tr>
 <tr class="memdesc:ac3a674aea72033303a1c8dc439fa1a8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load in-memory key bits into an NDN aes key.  <a href="#ac3a674aea72033303a1c8dc439fa1a8b">More...</a><br /></td></tr>
 <tr class="separator:ac3a674aea72033303a1c8dc439fa1a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a355271c053a3a42f1030ad7c9b8846c3"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-aes_8h.html#a355271c053a3a42f1030ad7c9b8846c3">ndn_aes_key_init</a> (<a class="el" href="ndn-lite-aes_8h.html#a1bfe08f3d0d597778ac43db28e7587a7">ndn_aes_key_t</a> *key, const uint8_t *key_value, uint32_t key_size, uint32_t key_id)</td></tr>
+<tr class="memdesc:a355271c053a3a42f1030ad7c9b8846c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an AES-128 key.  <a href="#a355271c053a3a42f1030ad7c9b8846c3">More...</a><br /></td></tr>
+<tr class="separator:a355271c053a3a42f1030ad7c9b8846c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf5eddd6e01090080c71acbff6b14174"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-aes_8h.html#abf5eddd6e01090080c71acbff6b14174">ndn_aes_cbc_encrypt</a> (const uint8_t *input_value, uint8_t input_size, uint8_t *output_value, uint8_t output_size, const uint8_t *aes_iv, const <a class="el" href="ndn-lite-aes_8h.html#a1bfe08f3d0d597778ac43db28e7587a7">ndn_aes_key_t</a> *aes_key)</td></tr>
 <tr class="memdesc:abf5eddd6e01090080c71acbff6b14174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use AES-128-CBC algorithm to encrypt a buffer.  <a href="#abf5eddd6e01090080c71acbff6b14174">More...</a><br /></td></tr>
 <tr class="separator:abf5eddd6e01090080c71acbff6b14174"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -454,6 +457,66 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a355271c053a3a42f1030ad7c9b8846c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a355271c053a3a42f1030ad7c9b8846c3">&#9670;&nbsp;</a></span>ndn_aes_key_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ndn_aes_key_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ndn-lite-aes_8h.html#a1bfe08f3d0d597778ac43db28e7587a7">ndn_aes_key_t</a> *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>key_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>key_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>key_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialize an AES-128 key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key.</td><td>Input. The HMAC key whose info will be set. </td></tr>
+    <tr><td class="paramname">key_value.</td><td>Input. The key value bytes to set. </td></tr>
+    <tr><td class="paramname">key_size.</td><td>Input. The key size. Should not larger than 32 bytes. </td></tr>
+    <tr><td class="paramname">key_id.</td><td>Input. The key id to be set with this key. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
 
 </div>
 </div>

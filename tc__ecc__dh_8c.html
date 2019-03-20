@@ -67,7 +67,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">tc_ecc_dh.c File Reference</div>  </div>
 </div><!--header-->
@@ -87,6 +88,11 @@ Functions</h2></td></tr>
 <tr class="memitem:af22a81f5c7b46c7a43532930ffee7c89"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc__dh_8c.html#af22a81f5c7b46c7a43532930ffee7c89">tc_uECC_shared_secret</a> (const uint8_t *public_key, const uint8_t *private_key, uint8_t *secret, <a class="el" href="tc__ecc_8h.html#a8b74423c6941ae921ae2998900680385">tc_uECC_Curve</a> curve)</td></tr>
 <tr class="memdesc:af22a81f5c7b46c7a43532930ffee7c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a shared secret given your secret key and someone else's public key.  <a href="#af22a81f5c7b46c7a43532930ffee7c89">More...</a><br /></td></tr>
 <tr class="separator:af22a81f5c7b46c7a43532930ffee7c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a2adc1dfa39652d365a2125a1f4bd4270"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="tc__ecc_8h.html#a3cb0940adc785ce8498d76046742cee3">tc_uECC_RNG_Function</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ecc__dh_8c.html#a2adc1dfa39652d365a2125a1f4bd4270">g_rng_function</a> = 0</td></tr>
+<tr class="separator:a2adc1dfa39652d365a2125a1f4bd4270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a5c746c8ca5b1446c90b49a921d34d586"></a>
@@ -224,6 +230,29 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section warning"><dt>Warning</dt><dd>It is recommended to use the output of <a class="el" href="tc__ecc__dh_8h.html#aeced08676bc99016b7e2a014febd3401" title="Compute a shared secret given your secret key and someone else&#39;s public key.">tc_uECC_shared_secret()</a> as the input of a recommended Key Derivation Function (see NIST SP 800-108) in order to produce a cryptographically secure symmetric key. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a2adc1dfa39652d365a2125a1f4bd4270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2adc1dfa39652d365a2125a1f4bd4270">&#9670;&nbsp;</a></span>g_rng_function</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tc__ecc_8h.html#a3cb0940adc785ce8498d76046742cee3">tc_uECC_RNG_Function</a> g_rng_function = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

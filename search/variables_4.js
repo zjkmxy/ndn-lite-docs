@@ -1,20 +1,16 @@
 var searchData=
 [
-  ['ecc_5fprv_5fkeys',['ecc_prv_keys',['../structndn__key__storage.html#a92c5df1019e6f1a6e11fa38725c76cb3',1,'ndn_key_storage']]],
-  ['ecc_5fpub_5fkeys',['ecc_pub_keys',['../structndn__key__storage.html#ab6ccbae6b634195fd247026da1bd7abf',1,'ndn_key_storage']]],
-  ['ecdsa_5fsign',['ecdsa_sign',['../structndn__ecc__backend.html#ab77011309e25a3b4cf31c10cd53edb7e',1,'ndn_ecc_backend']]],
-  ['ecdsa_5fverify',['ecdsa_verify',['../structndn__ecc__backend.html#aab997ce5f0e71ba6effcbb0304ed9a8a',1,'ndn_ecc_backend']]],
-  ['eks',['eks',['../structndn__ac__state.html#ae33a109a4be545cb72997137a023cb4f',1,'ndn_ac_state']]],
-  ['enable_5fcanbeprefix',['enable_CanBePrefix',['../structndn__interest.html#a50c7fa887e6fa14f34bbac1d3d6ac690',1,'ndn_interest']]],
-  ['enable_5fcontenttype',['enable_ContentType',['../structndn__metainfo.html#a23bd8f7f6c691b317c627573a9827013',1,'ndn_metainfo']]],
-  ['enable_5ffinalblockid',['enable_FinalBlockId',['../structndn__metainfo.html#aa7b225200adebbd55521c7ba8c2ae25d',1,'ndn_metainfo']]],
-  ['enable_5ffreshnessperiod',['enable_FreshnessPeriod',['../structndn__metainfo.html#a0a792a5455393591461d66c463fc7219',1,'ndn_metainfo']]],
-  ['enable_5fhoplimit',['enable_HopLimit',['../structndn__interest.html#a55e59cbf3fac124c445f96b515bf14c6',1,'ndn_interest']]],
-  ['enable_5fkeylocator',['enable_KeyLocator',['../structndn__signature.html#a2988ecd5096df677f0541e78d5f5bbcc',1,'ndn_signature']]],
-  ['enable_5fmustbefresh',['enable_MustBeFresh',['../structndn__interest.html#a680871223679ed6272e3a2856bddb3b5',1,'ndn_interest']]],
-  ['enable_5fparameters',['enable_Parameters',['../structndn__interest.html#a94918e7ad15874f6474be023c8c8430f',1,'ndn_interest']]],
-  ['enable_5fsignatureinfononce',['enable_SignatureInfoNonce',['../structndn__signature.html#a113dbb78d2740d5d77b263988e0c04c2',1,'ndn_signature']]],
-  ['enable_5ftimestamp',['enable_Timestamp',['../structndn__signature.html#a0ed18a9d02854784ef91ded077fdd4c2',1,'ndn_signature']]],
-  ['enable_5fvalidityperiod',['enable_ValidityPeriod',['../structndn__signature.html#ac3836a22ab7d2a9161dfe4041bc49f70',1,'ndn_signature']]],
-  ['express_5ftime',['express_time',['../structndn__pit__entry.html#aa681748b2498431c505bc4b40c891f4d',1,'ndn_pit_entry']]]
+  ['data_5fpattern',['data_pattern',['../structndn__trust__schema__rule.html#a8186b71aa6c143c62ed7bc886c2634d4',1,'ndn_trust_schema_rule']]],
+  ['decrypt_5fkd_5fpri',['decrypt_kd_pri',['../structsign__on__basic__sec__intf.html#a00a13243c2cb6357c2e8a1ed3083c2c3',1,'sign_on_basic_sec_intf']]],
+  ['destroy',['destroy',['../structndn__face__intf.html#af8077049cf72d675d2d0240c0dcec439',1,'ndn_face_intf']]],
+  ['device_5fcapabilities_5flen',['device_capabilities_len',['../structsign__on__basic__client__t.html#a2d50a8f1fe16acce091cab51d875c837',1,'sign_on_basic_client_t']]],
+  ['device_5fcapabilities_5fp',['device_capabilities_p',['../structsign__on__basic__client__t.html#a6827d144802579355c1e269dbfda510f',1,'sign_on_basic_client_t']]],
+  ['device_5fidentifier_5flen',['device_identifier_len',['../structsign__on__basic__client__t.html#a94cec12e27ffae2803976d06f8dee9f7',1,'sign_on_basic_client_t']]],
+  ['device_5fidentifier_5fp',['device_identifier_p',['../structsign__on__basic__client__t.html#a9993dc7ca362f8e900b1f439403080f8',1,'sign_on_basic_client_t']]],
+  ['dh_5fprv',['dh_prv',['../structndn__ac__unfinished__key.html#ab305a48741f92a9e7d0ec564114bae5c',1,'ndn_ac_unfinished_key']]],
+  ['dh_5fpub',['dh_pub',['../structndn__ac__unfinished__key.html#a89e28b094a7d2e7d5e2946d42af7adb5',1,'ndn_ac_unfinished_key']]],
+  ['dh_5fshared_5fsecret',['dh_shared_secret',['../structndn__ecc__backend.html#a75deb84197eb48a1e6c2314d37669753',1,'ndn_ecc_backend']]],
+  ['dks',['dks',['../structndn__ac__state.html#a9140e10c782dca9a362eecdd4e960e26',1,'ndn_ac_state']]],
+  ['double_5fjacobian',['double_jacobian',['../structu_e_c_c___curve__t.html#ac083860d8289f3bcb3a0df6cad1c99f2',1,'uECC_Curve_t::double_jacobian()'],['../structtc__u_e_c_c___curve__t.html#a168af525f82f472c8ab1e337ea18d97e',1,'tc_uECC_Curve_t::double_jacobian()']]],
+  ['down',['down',['../structndn__face__intf.html#a791684dc447503d1f8d42df475cffc73',1,'ndn_face_intf']]]
 ];

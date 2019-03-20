@@ -79,6 +79,12 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a93c0ebe1abdcd9bf0148f792bc3238f3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ctr__prng_8c.html#a93c0ebe1abdcd9bf0148f792bc3238f3">arrInc</a> (uint8_t arr[], unsigned int len)</td></tr>
+<tr class="memdesc:a93c0ebe1abdcd9bf0148f792bc3238f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array incrementer Treats the supplied array as one contiguous number (MSB in arr[0]), and increments it by one.  <a href="#a93c0ebe1abdcd9bf0148f792bc3238f3">More...</a><br /></td></tr>
+<tr class="separator:a93c0ebe1abdcd9bf0148f792bc3238f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a704194bfaf365fa31a42ef492e636ae2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ctr__prng_8c.html#a704194bfaf365fa31a42ef492e636ae2">tc_ctr_prng_update</a> (<a class="el" href="struct_t_c_ctr_prng__t.html">TCCtrPrng_t</a> *const ctx, uint8_t const *const providedData)</td></tr>
+<tr class="memdesc:a704194bfaf365fa31a42ef492e636ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">CTR PRNG update Updates the internal state of supplied the CTR PRNG context increments it by one.  <a href="#a704194bfaf365fa31a42ef492e636ae2">More...</a><br /></td></tr>
+<tr class="separator:a704194bfaf365fa31a42ef492e636ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dd574476cb39395ebb77a85077cdda4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__ctr__prng_8c.html#a3dd574476cb39395ebb77a85077cdda4">tc_ctr_prng_init</a> (<a class="el" href="struct_t_c_ctr_prng__t.html">TCCtrPrng_t</a> *const ctx, uint8_t const *const entropy, unsigned int entropyLen, uint8_t const *const personalization, unsigned int pLen)</td></tr>
 <tr class="memdesc:a3dd574476cb39395ebb77a85077cdda4"><td class="mdescLeft">&#160;</td><td class="mdescRight">CTR-PRNG initialization procedure Initializes prng context with entropy and personalization string (if any)  <a href="#a3dd574476cb39395ebb77a85077cdda4">More...</a><br /></td></tr>
 <tr class="separator:a3dd574476cb39395ebb77a85077cdda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -93,6 +99,52 @@ Functions</h2></td></tr>
 <tr class="separator:a8f2cdd157751e371d6091837b09c125e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a93c0ebe1abdcd9bf0148f792bc3238f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93c0ebe1abdcd9bf0148f792bc3238f3">&#9670;&nbsp;</a></span>arrInc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void arrInc </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>arr</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Array incrementer Treats the supplied array as one contiguous number (MSB in arr[0]), and increments it by one. </p>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>IN/OUT &ndash; array to be incremented </td></tr>
+    <tr><td class="paramname">len</td><td>IN &ndash; size of arr in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a8ca7289b56b9742394ed40f909fbf4d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8ca7289b56b9742394ed40f909fbf4d3">&#9670;&nbsp;</a></span>tc_ctr_prng_generate()</h2>
 
@@ -296,6 +348,53 @@ Assumes tc_ctr_prng_init has been called for ctx </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctx</td><td>IN/OUT &ndash; the PRNG context </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a704194bfaf365fa31a42ef492e636ae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a704194bfaf365fa31a42ef492e636ae2">&#9670;&nbsp;</a></span>tc_ctr_prng_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tc_ctr_prng_update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_t_c_ctr_prng__t.html">TCCtrPrng_t</a> *const&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t const *const&#160;</td>
+          <td class="paramname"><em>providedData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>CTR PRNG update Updates the internal state of supplied the CTR PRNG context increments it by one. </p>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Assumes: providedData is (TC_AES_KEY_SIZE + TC_AES_BLOCK_SIZE) bytes long </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>IN/OUT &ndash; CTR PRNG state </td></tr>
+    <tr><td class="paramname">providedData</td><td>IN &ndash; data used when updating the internal state </td></tr>
   </table>
   </dd>
 </dl>

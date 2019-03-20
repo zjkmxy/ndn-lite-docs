@@ -2,6 +2,7 @@ var searchData=
 [
   ['k1',['K1',['../structtc__cmac__struct.html#a38381aa0a249cf9a07e9484f282b43ac',1,'tc_cmac_struct']]],
   ['k2',['K2',['../structtc__cmac__struct.html#a334a0300b44b7163f0105232ae650472',1,'tc_cmac_struct']]],
+  ['k256',['k256',['../tc__sha256_8c.html#aa220b1ff55e249d57f662e22812ddb06',1,'tc_sha256.c']]],
   ['kd_5fpri_5flen',['KD_pri_len',['../structsign__on__basic__client__t.html#a6e9cc9bb32f83f9c1f851a58e6700884',1,'sign_on_basic_client_t::KD_pri_len()'],['../structsign__on__basic__client__nrf__sdk__ble.html#ab8ea687a27416959e314259afc3ab1c3',1,'sign_on_basic_client_nrf_sdk_ble::KD_pri_len()']]],
   ['kd_5fpri_5fp',['KD_pri_p',['../structsign__on__basic__client__t.html#ade1422387c367e2c156e237d0933f6f6',1,'sign_on_basic_client_t::KD_pri_p()'],['../structsign__on__basic__client__nrf__sdk__ble.html#a39a52a76ebb524373eb39fab90bf7c05',1,'sign_on_basic_client_nrf_sdk_ble::KD_pri_p()']]],
   ['kd_5fpub_5fcert_5flen',['KD_pub_cert_len',['../structsign__on__basic__client__t.html#a0538a632295f4d377dcc259ff88e5362',1,'sign_on_basic_client_t::KD_pub_cert_len()'],['../structsign__on__basic__client__nrf__sdk__ble.html#a689dd0adeb16a38671e1b1deef47c5b2',1,'sign_on_basic_client_nrf_sdk_ble::KD_pub_cert_len()']]],

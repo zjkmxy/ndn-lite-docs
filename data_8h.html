@@ -118,6 +118,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af3560a314950a6f1e3e4527b74bd6dcb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data_8h.html#af3560a314950a6f1e3e4527b74bd6dcb">ndn_data_tlv_decode_hmac_verify</a> (<a class="el" href="data_8h.html#a0f729ea174655117105f1093a4f45225">ndn_data_t</a> *data, const uint8_t *block_value, uint32_t block_size, const <a class="el" href="ndn-lite-hmac_8h.html#ab87648c70021e435b506f021a48ff3f2">ndn_hmac_key_t</a> *hmac_key)</td></tr>
 <tr class="memdesc:af3560a314950a6f1e3e4527b74bd6dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode the encoded Data into a ndn_data_t and verify the HMAC signature.  <a href="#af3560a314950a6f1e3e4527b74bd6dcb">More...</a><br /></td></tr>
 <tr class="separator:af3560a314950a6f1e3e4527b74bd6dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9132c1ba318cb979fe9965bfc649852e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data_8h.html#a9132c1ba318cb979fe9965bfc649852e">ndn_data_set_content</a> (<a class="el" href="data_8h.html#a0f729ea174655117105f1093a4f45225">ndn_data_t</a> *data, uint8_t *content_value, uint32_t content_size)</td></tr>
+<tr class="memdesc:a9132c1ba318cb979fe9965bfc649852e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Data content.  <a href="#a9132c1ba318cb979fe9965bfc649852e">More...</a><br /></td></tr>
+<tr class="separator:a9132c1ba318cb979fe9965bfc649852e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bd61d7907dcd89bad1521c9ffd9a221"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data_8h.html#a1bd61d7907dcd89bad1521c9ffd9a221">ndn_data_set_encrypted_content</a> (<a class="el" href="data_8h.html#a0f729ea174655117105f1093a4f45225">ndn_data_t</a> *data, const uint8_t *content_value, uint32_t content_size, const <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *key_id, const uint8_t *aes_iv, const <a class="el" href="ndn-lite-aes_8h.html#a1bfe08f3d0d597778ac43db28e7587a7">ndn_aes_key_t</a> *key)</td></tr>
 <tr class="memdesc:a1bd61d7907dcd89bad1521c9ffd9a221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Data content with the encrypted content.  <a href="#a1bd61d7907dcd89bad1521c9ffd9a221">More...</a><br /></td></tr>
 <tr class="separator:a1bd61d7907dcd89bad1521c9ffd9a221"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,6 +205,59 @@ Functions</h2></td></tr>
     <tr><td class="paramname">key_id.</td><td>Output. The encryption key name. </td></tr>
     <tr><td class="paramname">aes_iv.</td><td>Output. The IV used for AES decryption. </td></tr>
     <tr><td class="paramname">key.</td><td>Input. The AES key used for AES decryption. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
+
+</div>
+</div>
+<a id="a9132c1ba318cb979fe9965bfc649852e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9132c1ba318cb979fe9965bfc649852e">&#9670;&nbsp;</a></span>ndn_data_set_content()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ndn_data_set_content </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="data_8h.html#a0f729ea174655117105f1093a4f45225">ndn_data_t</a> *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>content_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>content_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the Data content. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data.</td><td>Output. The data whose content will be set. </td></tr>
+    <tr><td class="paramname">content_value.</td><td>Input. The content buffer (Content Value only, no T(type) and L(length)). </td></tr>
+    <tr><td class="paramname">content_size.</td><td>Input. The size of the content buffer. </td></tr>
   </table>
   </dd>
 </dl>

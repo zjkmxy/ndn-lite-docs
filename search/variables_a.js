@@ -1,12 +1,23 @@
 var searchData=
 [
-  ['last_5ftime',['last_time',['../structndn__pit__entry.html#ade8a9997005cb9d4b5e0fe941e700401',1,'ndn_pit_entry']]],
-  ['left_5fchild',['left_child',['../structnametree__entry.html#ae6dc93a39f6981cabf24f9b677ec0deb',1,'nametree_entry']]],
-  ['leftover',['leftover',['../structtc__cmac__struct.html#af98a80ea3fe8b66b76a541264fc2f051',1,'tc_cmac_struct::leftover()'],['../structtc__sha256__state__struct.html#a5bb59f2dd725d03ba3228653735815d1',1,'tc_sha256_state_struct::leftover()']]],
-  ['leftover_5foffset',['leftover_offset',['../structtc__cmac__struct.html#abab98a00ddc06ec73d1688450fb43bd2',1,'tc_cmac_struct::leftover_offset()'],['../structtc__sha256__state__struct.html#a1dd44cd01fd487dc1236149eb8b07548',1,'tc_sha256_state_struct::leftover_offset()']]],
-  ['length',['length',['../structndn__msg.html#ab206bf48561ded10a3b17f4d77f9a616',1,'ndn_msg']]],
-  ['lifetime',['lifetime',['../structinterest__options.html#a8c7f571cba1747a0865bf12f317b789d',1,'interest_options::lifetime()'],['../structndn__interest.html#a6e9746f40fa1ddddd8ba7c02ab34fa9d',1,'ndn_interest::lifetime()']]],
-  ['load_5fkey',['load_key',['../structndn__aes__backend.html#af8510fe52cebb4083e57eb2e843d0fdb',1,'ndn_aes_backend::load_key()'],['../structndn__hmac__backend.html#a2bdfd39c4161e9743be6b80a941ff7ef',1,'ndn_hmac_backend::load_key()']]],
-  ['load_5fprv_5fkey',['load_prv_key',['../structndn__ecc__backend.html#a72b4cfe18ec0001b691fd52cf41a15a8',1,'ndn_ecc_backend']]],
-  ['load_5fpub_5fkey',['load_pub_key',['../structndn__ecc__backend.html#a2a232cd1e06cd6b9f138c08a78939176',1,'ndn_ecc_backend']]]
+  ['k1',['K1',['../structtc__cmac__struct.html#a38381aa0a249cf9a07e9484f282b43ac',1,'tc_cmac_struct']]],
+  ['k2',['K2',['../structtc__cmac__struct.html#a334a0300b44b7163f0105232ae650472',1,'tc_cmac_struct']]],
+  ['k256',['k256',['../tc__sha256_8c.html#aa220b1ff55e249d57f662e22812ddb06',1,'tc_sha256.c']]],
+  ['kd_5fpri_5flen',['KD_pri_len',['../structsign__on__basic__client__t.html#a6e9cc9bb32f83f9c1f851a58e6700884',1,'sign_on_basic_client_t::KD_pri_len()'],['../structsign__on__basic__client__nrf__sdk__ble.html#ab8ea687a27416959e314259afc3ab1c3',1,'sign_on_basic_client_nrf_sdk_ble::KD_pri_len()']]],
+  ['kd_5fpri_5fp',['KD_pri_p',['../structsign__on__basic__client__t.html#ade1422387c367e2c156e237d0933f6f6',1,'sign_on_basic_client_t::KD_pri_p()'],['../structsign__on__basic__client__nrf__sdk__ble.html#a39a52a76ebb524373eb39fab90bf7c05',1,'sign_on_basic_client_nrf_sdk_ble::KD_pri_p()']]],
+  ['kd_5fpub_5fcert_5flen',['KD_pub_cert_len',['../structsign__on__basic__client__t.html#a0538a632295f4d377dcc259ff88e5362',1,'sign_on_basic_client_t::KD_pub_cert_len()'],['../structsign__on__basic__client__nrf__sdk__ble.html#a689dd0adeb16a38671e1b1deef47c5b2',1,'sign_on_basic_client_nrf_sdk_ble::KD_pub_cert_len()']]],
+  ['kd_5fpub_5fcert_5fp',['KD_pub_cert_p',['../structsign__on__basic__client__t.html#a7af790d591de43d54c53d2941eebe2a2',1,'sign_on_basic_client_t::KD_pub_cert_p()'],['../structsign__on__basic__client__nrf__sdk__ble.html#aec687a49dabd311c874728961257ccaa',1,'sign_on_basic_client_nrf_sdk_ble::KD_pub_cert_p()']]],
+  ['key',['key',['../struct_t_c_ctr_prng__t.html#a6bb7cef2b203b422ddabbc59330ecfd0',1,'TCCtrPrng_t::key()'],['../structtc__hmac__state__struct.html#a5c45ebda50a0566433c707a2511e99e6',1,'tc_hmac_state_struct::key()'],['../structtc__hmac__prng__struct.html#a01d12cb09c8ba0d1ac6b83812a0c0919',1,'tc_hmac_prng_struct::key()']]],
+  ['key_5fid',['key_id',['../structndn__ac__unfinished__key.html#af5626d294b3a08ed47f59de5e130d811',1,'ndn_ac_unfinished_key::key_id()'],['../structndn__aes__key.html#abdfba1606d890ce366377385bd09b52c',1,'ndn_aes_key::key_id()'],['../structndn__ecc__pub.html#a313e2dbda38370f01d7b1a30cfe871a4',1,'ndn_ecc_pub::key_id()'],['../structndn__ecc__prv.html#a6addc778435922fb22e27dcb365063d3',1,'ndn_ecc_prv::key_id()'],['../structndn__hmac__key.html#a526bd6363c2e3f35a4685ab94446b39e',1,'ndn_hmac_key::key_id()']]],
+  ['key_5flocator_5fname',['key_locator_name',['../structndn__signature.html#a40e5ba3404e7f92bd71bea423c1b38b0',1,'ndn_signature']]],
+  ['key_5fpattern',['key_pattern',['../structndn__trust__schema__rule.html#a3e16e5562768136e0cc609344cec04cf',1,'ndn_trust_schema_rule']]],
+  ['key_5fsize',['key_size',['../structabstract__aes__key.html#a17db113b318030faedcba378b28c7f32',1,'abstract_aes_key::key_size()'],['../structabstract__ecc__pub__key.html#a96ed54df52ca01694f12c32deefa2e62',1,'abstract_ecc_pub_key::key_size()'],['../structabstract__ecc__prv__key.html#afa353d8c4403a6e84bb0d52ea301ae6b',1,'abstract_ecc_prv_key::key_size()'],['../structabstract__hmac__key.html#a576ebe535c86b3d0ac90493aa7f06c14',1,'abstract_hmac_key::key_size()']]],
+  ['key_5fvalue',['key_value',['../structabstract__aes__key.html#ad31867ed6e3cbbdf60aaeca812c5f199',1,'abstract_aes_key::key_value()'],['../structabstract__ecc__pub__key.html#a268df9f7e35b40d3687157759fe69f0c',1,'abstract_ecc_pub_key::key_value()'],['../structabstract__ecc__prv__key.html#a49340d52344ae27b5c6ce47963647ef3',1,'abstract_ecc_prv_key::key_value()'],['../structabstract__hmac__key.html#a61c6a6a219fbff80c35a152f64fef9ec',1,'abstract_hmac_key::key_value()']]],
+  ['keyid',['keyid',['../structtc__cmac__struct.html#adaf3c1aec9293835af933f77408897b7',1,'tc_cmac_struct']]],
+  ['ks_5fpri_5flen',['KS_pri_len',['../structsign__on__basic__client__t.html#ab1d64253fbff9a6b93392ff513ebadb9',1,'sign_on_basic_client_t']]],
+  ['ks_5fpri_5fp',['KS_pri_p',['../structsign__on__basic__client__t.html#aae33b108d194da388ce571c60cc68309',1,'sign_on_basic_client_t']]],
+  ['ks_5fpub_5flen',['KS_pub_len',['../structsign__on__basic__client__t.html#aa6c561cbdd54f206bc12ae6942a7d755',1,'sign_on_basic_client_t']]],
+  ['ks_5fpub_5fp',['KS_pub_p',['../structsign__on__basic__client__t.html#aab04af8c6dca55253507be1a92a8d0e2',1,'sign_on_basic_client_t']]],
+  ['kt_5flen',['KT_len',['../structsign__on__basic__client__t.html#aa53471d6b423854ece806a7c82c6620a',1,'sign_on_basic_client_t']]],
+  ['kt_5fp',['KT_p',['../structsign__on__basic__client__t.html#ac81ff2991e623eaac110d6e01256b099',1,'sign_on_basic_client_t']]]
 ];

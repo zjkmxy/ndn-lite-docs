@@ -85,12 +85,16 @@ Collaboration diagram for ndn_fib_entry:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:afb8153188738ad75f1335f29303ce6f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="bit-operations_8h.html#affc3feed8995797a481682033fe4ccb8">ndn_bitset_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__fib__entry.html#afb8153188738ad75f1335f29303ce6f1">nexthop</a></td></tr>
+<tr class="memdesc:afb8153188738ad75f1335f29303ce6f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A bitset recording all next hops.  <a href="#afb8153188738ad75f1335f29303ce6f1">More...</a><br /></td></tr>
 <tr class="separator:afb8153188738ad75f1335f29303ce6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dad9e91e035de7d6a21884ca042ea7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="callback-funcs_8h.html#a723850a958e63905c4b1aa3c4232cb52">ndn_on_interest_func</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__fib__entry.html#a5dad9e91e035de7d6a21884ca042ea7d">on_interest</a></td></tr>
+<tr class="memdesc:a5dad9e91e035de7d6a21884ca042ea7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">OnOnterest callback function if registered.  <a href="#a5dad9e91e035de7d6a21884ca042ea7d">More...</a><br /></td></tr>
 <tr class="separator:a5dad9e91e035de7d6a21884ca042ea7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45aba8bc260675d8da0493bd9eb290c6"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__fib__entry.html#a45aba8bc260675d8da0493bd9eb290c6">userdata</a></td></tr>
+<tr class="memdesc:a45aba8bc260675d8da0493bd9eb290c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">User defined data.  <a href="#a45aba8bc260675d8da0493bd9eb290c6">More...</a><br /></td></tr>
 <tr class="separator:a45aba8bc260675d8da0493bd9eb290c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6effc54c06f98d28e5c094504854585"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__fib__entry.html#aa6effc54c06f98d28e5c094504854585">nametree_id</a></td></tr>
+<tr class="memdesc:aa6effc54c06f98d28e5c094504854585"><td class="mdescLeft">&#160;</td><td class="mdescRight">NameTree entry's ID.  <a href="#aa6effc54c06f98d28e5c094504854585">More...</a><br /></td></tr>
 <tr class="separator:aa6effc54c06f98d28e5c094504854585"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -108,6 +112,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>NameTree entry's ID. </p>
+<p><a class="el" href="ndn-constants_8h.html#ad61ec7f675ac40e4950a7c9cca24dd60">NDN_INVALID_ID</a> if the entry is empty. </p>
+
 </div>
 </div>
 <a id="afb8153188738ad75f1335f29303ce6f1"></a>
@@ -121,6 +128,8 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>A bitset recording all next hops. </p>
 
 </div>
 </div>
@@ -136,6 +145,8 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>OnOnterest callback function if registered. </p>
+
 </div>
 </div>
 <a id="a45aba8bc260675d8da0493bd9eb290c6"></a>
@@ -149,6 +160,8 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>User defined data. </p>
 
 </div>
 </div>

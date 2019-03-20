@@ -108,6 +108,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aaf9edf0ac8a205a21f9242e10db62be9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name_8h.html#aaf9edf0ac8a205a21f9242e10db62be9">ndn_name_from_string</a> (<a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *name, const char *string, uint32_t size)</td></tr>
 <tr class="memdesc:aaf9edf0ac8a205a21f9242e10db62be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init a name block from a string.  <a href="#aaf9edf0ac8a205a21f9242e10db62be9">More...</a><br /></td></tr>
 <tr class="separator:aaf9edf0ac8a205a21f9242e10db62be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78bba51d6976af6c334bf71dc2258fb9"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name_8h.html#a78bba51d6976af6c334bf71dc2258fb9">ndn_name_probe_block_size</a> (const <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *name)</td></tr>
+<tr class="memdesc:a78bba51d6976af6c334bf71dc2258fb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Probe the size of a Name TLV block before encoding it from a Name structure.  <a href="#a78bba51d6976af6c334bf71dc2258fb9">More...</a><br /></td></tr>
+<tr class="separator:a78bba51d6976af6c334bf71dc2258fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40eec588ed7352baa1fac0adde4de28b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name_8h.html#a40eec588ed7352baa1fac0adde4de28b">ndn_name_tlv_encode</a> (<a class="el" href="encoder_8h.html#a7e8d31a88e1f377c42e835275385119c">ndn_encoder_t</a> *encoder, const <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *name)</td></tr>
 <tr class="memdesc:a40eec588ed7352baa1fac0adde4de28b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the Name structure into wire format (TLV block).  <a href="#a40eec588ed7352baa1fac0adde4de28b">More...</a><br /></td></tr>
 <tr class="separator:a40eec588ed7352baa1fac0adde4de28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -516,6 +519,41 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a78bba51d6976af6c334bf71dc2258fb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78bba51d6976af6c334bf71dc2258fb9">&#9670;&nbsp;</a></span>ndn_name_probe_block_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t ndn_name_probe_block_size </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Probe the size of a Name TLV block before encoding it from a Name structure. </p>
+<p>This function is used to check whether the output buffer size is enough or not. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name.</td><td>Input. The Name structure to be probed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the length of the expected Name TLV block. </dd></dl>
+
+</div>
+</div>
 <a id="a914e08a55fb142d992d5026496f4fcee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a914e08a55fb142d992d5026496f4fcee">&#9670;&nbsp;</a></span>ndn_name_tlv_decode()</h2>
 
@@ -581,7 +619,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Encode the Name structure into wire format (TLV block). </p>
-<p>This function will do memory copy. Need to call ndn_name_probe_block_size() to initialize output block in advance. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This function will do memory copy. Need to call <a class="el" href="name_8h.html#a78bba51d6976af6c334bf71dc2258fb9" title="Probe the size of a Name TLV block before encoding it from a Name structure.">ndn_name_probe_block_size()</a> to initialize output block in advance. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encoder.</td><td>Output. The encoder who keeps the encoding result and the state. </td></tr>
     <tr><td class="paramname">name.</td><td>Input. The Name structure to be encoded. </td></tr>

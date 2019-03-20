@@ -68,7 +68,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">tc_aes_decrypt.c File Reference</div>  </div>
 </div><!--header-->
@@ -95,9 +96,24 @@ Functions</h2></td></tr>
 <tr class="memitem:a18101402a6a26dff30232ea34837688b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__aes__decrypt_8c.html#a18101402a6a26dff30232ea34837688b">tc_aes128_set_decrypt_key</a> (<a class="el" href="tc__aes_8h.html#a32bcef43049810395433f8040b3dc40e">TCAesKeySched_t</a> s, const uint8_t *k)</td></tr>
 <tr class="memdesc:a18101402a6a26dff30232ea34837688b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the AES-128 decryption key Uses key k to initialize s.  <a href="#a18101402a6a26dff30232ea34837688b">More...</a><br /></td></tr>
 <tr class="separator:a18101402a6a26dff30232ea34837688b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a626a71f62d4b83f0e65bf11ffc002912"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__aes__decrypt_8c.html#a626a71f62d4b83f0e65bf11ffc002912">mult_row_column</a> (uint8_t *out, const uint8_t *in)</td></tr>
+<tr class="separator:a626a71f62d4b83f0e65bf11ffc002912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeefb2c7b191e61ab28ad5b6206562a9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__aes__decrypt_8c.html#afeefb2c7b191e61ab28ad5b6206562a9">inv_mix_columns</a> (uint8_t *s)</td></tr>
+<tr class="separator:afeefb2c7b191e61ab28ad5b6206562a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae603cf04a4557100472ae03eec9ee186"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__aes__decrypt_8c.html#ae603cf04a4557100472ae03eec9ee186">add_round_key</a> (uint8_t *s, const unsigned int *k)</td></tr>
+<tr class="separator:ae603cf04a4557100472ae03eec9ee186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5defd2845e14b31c475d9520174da6c0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__aes__decrypt_8c.html#a5defd2845e14b31c475d9520174da6c0">inv_sub_bytes</a> (uint8_t *s)</td></tr>
+<tr class="separator:a5defd2845e14b31c475d9520174da6c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac884e363bc13846ed1ead241c280a5b5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__aes__decrypt_8c.html#ac884e363bc13846ed1ead241c280a5b5">inv_shift_rows</a> (uint8_t *s)</td></tr>
+<tr class="separator:ac884e363bc13846ed1ead241c280a5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a660fb3c374f5f42abd9bebc196a6a029"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__aes__decrypt_8c.html#a660fb3c374f5f42abd9bebc196a6a029">tc_aes_decrypt</a> (uint8_t *out, const uint8_t *in, const <a class="el" href="tc__aes_8h.html#a32bcef43049810395433f8040b3dc40e">TCAesKeySched_t</a> s)</td></tr>
 <tr class="memdesc:a660fb3c374f5f42abd9bebc196a6a029"><td class="mdescLeft">&#160;</td><td class="mdescRight">AES-128 Encryption procedure Decrypts in buffer into out buffer under key schedule s.  <a href="#a660fb3c374f5f42abd9bebc196a6a029">More...</a><br /></td></tr>
 <tr class="separator:a660fb3c374f5f42abd9bebc196a6a029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a9858e9f7b602d512b3620bc085437743"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__aes__decrypt_8c.html#a9858e9f7b602d512b3620bc085437743">inv_sbox</a> [256]</td></tr>
+<tr class="separator:a9858e9f7b602d512b3620bc085437743"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="abc6d837728ff2967a3775eec52063bc6"></a>
@@ -191,6 +207,156 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ae603cf04a4557100472ae03eec9ee186"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae603cf04a4557100472ae03eec9ee186">&#9670;&nbsp;</a></span>add_round_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void add_round_key </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int *&#160;</td>
+          <td class="paramname"><em>k</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afeefb2c7b191e61ab28ad5b6206562a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeefb2c7b191e61ab28ad5b6206562a9">&#9670;&nbsp;</a></span>inv_mix_columns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void inv_mix_columns </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac884e363bc13846ed1ead241c280a5b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac884e363bc13846ed1ead241c280a5b5">&#9670;&nbsp;</a></span>inv_shift_rows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void inv_shift_rows </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5defd2845e14b31c475d9520174da6c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5defd2845e14b31c475d9520174da6c0">&#9670;&nbsp;</a></span>inv_sub_bytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void inv_sub_bytes </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a626a71f62d4b83f0e65bf11ffc002912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a626a71f62d4b83f0e65bf11ffc002912">&#9670;&nbsp;</a></span>mult_row_column()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void mult_row_column </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>in</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a18101402a6a26dff30232ea34837688b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a18101402a6a26dff30232ea34837688b">&#9670;&nbsp;</a></span>tc_aes128_set_decrypt_key()</h2>
 
@@ -275,6 +441,29 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a9858e9f7b602d512b3620bc085437743"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9858e9f7b602d512b3620bc085437743">&#9670;&nbsp;</a></span>inv_sbox</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t inv_sbox[256]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">  0x52, 0x09, 0x6a, 0xd5, 0x30, 0x36, 0xa5, 0x38, 0xbf, 0x40, 0xa3, 0x9e,</div><div class="line">  0x81, 0xf3, 0xd7, 0xfb, 0x7c, 0xe3, 0x39, 0x82, 0x9b, 0x2f, 0xff, 0x87,</div><div class="line">  0x34, 0x8e, 0x43, 0x44, 0xc4, 0xde, 0xe9, 0xcb, 0x54, 0x7b, 0x94, 0x32,</div><div class="line">  0xa6, 0xc2, 0x23, 0x3d, 0xee, 0x4c, 0x95, 0x0b, 0x42, 0xfa, 0xc3, 0x4e,</div><div class="line">  0x08, 0x2e, 0xa1, 0x66, 0x28, 0xd9, 0x24, 0xb2, 0x76, 0x5b, 0xa2, 0x49,</div><div class="line">  0x6d, 0x8b, 0xd1, 0x25, 0x72, 0xf8, 0xf6, 0x64, 0x86, 0x68, 0x98, 0x16,</div><div class="line">  0xd4, 0xa4, 0x5c, 0xcc, 0x5d, 0x65, 0xb6, 0x92, 0x6c, 0x70, 0x48, 0x50,</div><div class="line">  0xfd, 0xed, 0xb9, 0xda, 0x5e, 0x15, 0x46, 0x57, 0xa7, 0x8d, 0x9d, 0x84,</div><div class="line">  0x90, 0xd8, 0xab, 0x00, 0x8c, 0xbc, 0xd3, 0x0a, 0xf7, 0xe4, 0x58, 0x05,</div><div class="line">  0xb8, 0xb3, 0x45, 0x06, 0xd0, 0x2c, 0x1e, 0x8f, 0xca, 0x3f, 0x0f, 0x02,</div><div class="line">  0xc1, 0xaf, 0xbd, 0x03, 0x01, 0x13, 0x8a, 0x6b, 0x3a, 0x91, 0x11, 0x41,</div><div class="line">  0x4f, 0x67, 0xdc, 0xea, 0x97, 0xf2, 0xcf, 0xce, 0xf0, 0xb4, 0xe6, 0x73,</div><div class="line">  0x96, 0xac, 0x74, 0x22, 0xe7, 0xad, 0x35, 0x85, 0xe2, 0xf9, 0x37, 0xe8,</div><div class="line">  0x1c, 0x75, 0xdf, 0x6e, 0x47, 0xf1, 0x1a, 0x71, 0x1d, 0x29, 0xc5, 0x89,</div><div class="line">  0x6f, 0xb7, 0x62, 0x0e, 0xaa, 0x18, 0xbe, 0x1b, 0xfc, 0x56, 0x3e, 0x4b,</div><div class="line">  0xc6, 0xd2, 0x79, 0x20, 0x9a, 0xdb, 0xc0, 0xfe, 0x78, 0xcd, 0x5a, 0xf4,</div><div class="line">  0x1f, 0xdd, 0xa8, 0x33, 0x88, 0x07, 0xc7, 0x31, 0xb1, 0x12, 0x10, 0x59,</div><div class="line">  0x27, 0x80, 0xec, 0x5f, 0x60, 0x51, 0x7f, 0xa9, 0x19, 0xb5, 0x4a, 0x0d,</div><div class="line">  0x2d, 0xe5, 0x7a, 0x9f, 0x93, 0xc9, 0x9c, 0xef, 0xa0, 0xe0, 0x3b, 0x4d,</div><div class="line">  0xae, 0x2a, 0xf5, 0xb0, 0xc8, 0xeb, 0xbb, 0x3c, 0x83, 0x53, 0x99, 0x61,</div><div class="line">  0x17, 0x2b, 0x04, 0x7e, 0xba, 0x77, 0xd6, 0x26, 0xe1, 0x69, 0x14, 0x63,</div><div class="line">  0x55, 0x21, 0x0c, 0x7d</div><div class="line">}</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

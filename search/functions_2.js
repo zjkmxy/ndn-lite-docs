@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['cnstrct_5fbtstrp_5frqst',['cnstrct_btstrp_rqst',['../sign-on-basic-client_8c.html#a6353b28776b1b43bfd8522fa82a8d1e6',1,'cnstrct_btstrp_rqst(uint8_t *buf_p, uint32_t buf_len, uint32_t *output_len_p, struct sign_on_basic_client_t *sign_on_basic_client):&#160;sign-on-basic-client.c'],['../sign-on-basic-client_8h.html#a6353b28776b1b43bfd8522fa82a8d1e6',1,'cnstrct_btstrp_rqst(uint8_t *buf_p, uint32_t buf_len, uint32_t *output_len_p, struct sign_on_basic_client_t *sign_on_basic_client):&#160;sign-on-basic-client.c']]],
-  ['cnstrct_5fcert_5frqst',['cnstrct_cert_rqst',['../sign-on-basic-client_8c.html#ac331a3687e9f80298ccc2f692f0cb390',1,'cnstrct_cert_rqst(uint8_t *buf_p, uint32_t buf_len, uint32_t *output_len_p, struct sign_on_basic_client_t *sign_on_basic_client):&#160;sign-on-basic-client.c'],['../sign-on-basic-client_8h.html#ac331a3687e9f80298ccc2f692f0cb390',1,'cnstrct_cert_rqst(uint8_t *buf_p, uint32_t buf_len, uint32_t *output_len_p, struct sign_on_basic_client_t *sign_on_basic_client):&#160;sign-on-basic-client.c']]],
-  ['cnstrct_5ffin_5fmsg',['cnstrct_fin_msg',['../sign-on-basic-client_8c.html#abb3b6ca6607c10c3c5a76b60776d4cbb',1,'cnstrct_fin_msg(uint8_t *buf_p, uint32_t buf_len, uint32_t *output_len_p, struct sign_on_basic_client_t *sign_on_basic_client):&#160;sign-on-basic-client.c'],['../sign-on-basic-client_8h.html#abb3b6ca6607c10c3c5a76b60776d4cbb',1,'cnstrct_fin_msg(uint8_t *buf_p, uint32_t buf_len, uint32_t *output_len_p, struct sign_on_basic_client_t *sign_on_basic_client):&#160;sign-on-basic-client.c']]],
-  ['component_5fmatch',['component_match',['../name-tree_8c.html#aa7b0a72ebe8a392621a9f69e8d0bb585',1,'name-tree.c']]],
-  ['cond_5fset',['cond_set',['../tc__ecc_8c.html#ae126f2cc7fe216521336e5ba74ebab9b',1,'tc_ecc.c']]]
+  ['bigendian',['BigEndian',['../tc__sha256_8c.html#a4fc0178464290202184d4354ef77b4d5',1,'tc_sha256.c']]],
+  ['bits2int',['bits2int',['../u_e_c_c_8c.html#a3ef4ada41b4a250680f39cf26b12d3cf',1,'bits2int(uECC_word_t *native, const uint8_t *bits, unsigned bits_size, uECC_Curve curve):&#160;uECC.c'],['../tc__ecc__dsa_8c.html#afe2882d9d36168459ae9c877df77ff59',1,'bits2int(tc_uECC_word_t *native, const uint8_t *bits, unsigned bits_size, tc_uECC_Curve curve):&#160;tc_ecc_dsa.c']]],
+  ['bitset_5flog2',['bitset_log2',['../bit-operations_8h.html#afbfec3fef14d74d6bfe892d7d523ba2a',1,'bit-operations.h']]],
+  ['bitset_5fset',['bitset_set',['../bit-operations_8h.html#ad4b61f9b09a6242f2da1321d52d85f05',1,'bit-operations.h']]],
+  ['bitset_5funset',['bitset_unset',['../bit-operations_8h.html#a36023eb8c18c6ba71d435a8239f20cf1',1,'bit-operations.h']]]
 ];

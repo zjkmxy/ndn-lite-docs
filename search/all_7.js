@@ -1,6 +1,7 @@
 var searchData=
 [
   ['g',['G',['../structu_e_c_c___curve__t.html#a2fcca33b26a3e74a0643c8464117834d',1,'uECC_Curve_t::G()'],['../structtc__u_e_c_c___curve__t.html#a1ee4a0d63b7a3c6963add820523c0c97',1,'tc_uECC_Curve_t::G()']]],
+  ['g_5frng_5ffunction',['g_rng_function',['../u_e_c_c_8c.html#ac090891986270ccb35d91076966623d0',1,'g_rng_function():&#160;uECC.c'],['../tc__ecc_8c.html#a2adc1dfa39652d365a2125a1f4bd4270',1,'g_rng_function():&#160;tc_ecc.c'],['../tc__ecc__dh_8c.html#a2adc1dfa39652d365a2125a1f4bd4270',1,'g_rng_function():&#160;tc_ecc_dh.c'],['../tc__ecc__dsa_8c.html#a2adc1dfa39652d365a2125a1f4bd4270',1,'g_rng_function():&#160;tc_ecc_dsa.c']]],
   ['gen_5fbtstrp_5frqst_5fsig',['gen_btstrp_rqst_sig',['../structsign__on__basic__sec__intf.html#a645b5f44eb273a80530643e5686c6de3',1,'sign_on_basic_sec_intf']]],
   ['gen_5fcert_5frqst_5fsig',['gen_cert_rqst_sig',['../structsign__on__basic__sec__intf.html#a7a399887b6fde30ea693db373603ad15',1,'sign_on_basic_sec_intf']]],
   ['gen_5ffin_5fmsg_5fsig',['gen_fin_msg_sig',['../structsign__on__basic__sec__intf.html#a12d27f6ffbf30b60b4c6597a9c258d3a',1,'sign_on_basic_sec_intf']]],

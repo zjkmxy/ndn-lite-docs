@@ -99,6 +99,12 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a8a44092ec2bd1c56f16a2b1db086e920"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-default-ecc-impl_8c.html#a8a44092ec2bd1c56f16a2b1db086e920">_init_sha256</a> (const <a class="el" href="structu_e_c_c___hash_context.html">uECC_HashContext</a> *base)</td></tr>
+<tr class="separator:a8a44092ec2bd1c56f16a2b1db086e920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc16fd16576d7be2d7f0340681371999"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-default-ecc-impl_8c.html#acc16fd16576d7be2d7f0340681371999">_update_sha256</a> (const <a class="el" href="structu_e_c_c___hash_context.html">uECC_HashContext</a> *base, const uint8_t *message, unsigned message_size)</td></tr>
+<tr class="separator:acc16fd16576d7be2d7f0340681371999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6da434844df7413f530804c0e8285f80"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-default-ecc-impl_8c.html#a6da434844df7413f530804c0e8285f80">_finish_sha256</a> (const <a class="el" href="structu_e_c_c___hash_context.html">uECC_HashContext</a> *base, uint8_t *hash_result)</td></tr>
+<tr class="separator:a6da434844df7413f530804c0e8285f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7859fbee95814038bae0980dbd9e93d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-default-ecc-impl_8c.html#af7859fbee95814038bae0980dbd9e93d">ndn_lite_default_ecc_get_pub_key_size</a> (const struct <a class="el" href="structabstract__ecc__pub__key.html">abstract_ecc_pub_key</a> *pub_key)</td></tr>
 <tr class="separator:af7859fbee95814038bae0980dbd9e93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5892a3092a63e51a4418f13b526dcc7b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-default-ecc-impl_8c.html#a5892a3092a63e51a4418f13b526dcc7b">ndn_lite_default_ecc_get_prv_key_size</a> (const struct <a class="el" href="structabstract__ecc__prv__key.html">abstract_ecc_prv_key</a> *prv_key)</td></tr>
@@ -138,6 +144,110 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a6da434844df7413f530804c0e8285f80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6da434844df7413f530804c0e8285f80">&#9670;&nbsp;</a></span>_finish_sha256()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _finish_sha256 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structu_e_c_c___hash_context.html">uECC_HashContext</a> *&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>hash_result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a44092ec2bd1c56f16a2b1db086e920"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a44092ec2bd1c56f16a2b1db086e920">&#9670;&nbsp;</a></span>_init_sha256()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _init_sha256 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structu_e_c_c___hash_context.html">uECC_HashContext</a> *&#160;</td>
+          <td class="paramname"><em>base</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc16fd16576d7be2d7f0340681371999"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc16fd16576d7be2d7f0340681371999">&#9670;&nbsp;</a></span>_update_sha256()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _update_sha256 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structu_e_c_c___hash_context.html">uECC_HashContext</a> *&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>message_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a036cd6858272565f4aa0ef606466d85b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a036cd6858272565f4aa0ef606466d85b">&#9670;&nbsp;</a></span>ndn_lite_default_ecc_dh_shared_secret()</h2>
 

@@ -1,13 +1,20 @@
 var searchData=
 [
-  ['face_5fid',['face_id',['../structndn__face__intf.html#a9db2a3210bf5cd4b92f43fbcf114568f',1,'ndn_face_intf']]],
-  ['facetab',['facetab',['../structndn__forwarder.html#a418f8b5c77ebf7b5d31d5e993d80b625',1,'ndn_forwarder']]],
-  ['fib',['fib',['../structndn__forwarder.html#ae57b33fa4413bd6b2288edb9033b4793',1,'ndn_forwarder']]],
-  ['fib_5fid',['fib_id',['../structnametree__entry.html#ad25111247159496617e0d55757f4ba2b',1,'nametree_entry']]],
-  ['final_5fblock_5fid',['final_block_id',['../structndn__metainfo.html#ab61c6d30847b97bf069591cdefec3a70',1,'ndn_metainfo']]],
-  ['finish_5fhash',['finish_hash',['../structu_e_c_c___hash_context.html#aa64f2d81d2e4043c159d0549dbc41cde',1,'uECC_HashContext']]],
-  ['frag_5fidentifier',['frag_identifier',['../structndn__fragmenter.html#a874e86628a6877c5f6a4a74886578d04',1,'ndn_fragmenter::frag_identifier()'],['../structndn__frag__assembler.html#acbde9f723d558cd49673a8003137806f',1,'ndn_frag_assembler::frag_identifier()']]],
-  ['fragment_5fmax_5fsize',['fragment_max_size',['../structndn__fragmenter.html#a6d18cc10684ebab3678d21f73e6ea5f8',1,'ndn_fragmenter']]],
-  ['freshness_5fperiod',['freshness_period',['../structndn__metainfo.html#a5490e1ba738de7ab45ddeffafd389a52',1,'ndn_metainfo']]],
-  ['func',['func',['../structndn__msg.html#a09d11df2b1af00ee3fc99df74d36ce99',1,'ndn_msg']]]
+  ['ecc_5fprv_5fkeys',['ecc_prv_keys',['../structndn__key__storage.html#a92c5df1019e6f1a6e11fa38725c76cb3',1,'ndn_key_storage']]],
+  ['ecc_5fpub_5fkeys',['ecc_pub_keys',['../structndn__key__storage.html#ab6ccbae6b634195fd247026da1bd7abf',1,'ndn_key_storage']]],
+  ['ecdsa_5fsign',['ecdsa_sign',['../structndn__ecc__backend.html#ab77011309e25a3b4cf31c10cd53edb7e',1,'ndn_ecc_backend']]],
+  ['ecdsa_5fverify',['ecdsa_verify',['../structndn__ecc__backend.html#aab997ce5f0e71ba6effcbb0304ed9a8a',1,'ndn_ecc_backend']]],
+  ['eks',['eks',['../structndn__ac__state.html#ae33a109a4be545cb72997137a023cb4f',1,'ndn_ac_state']]],
+  ['enable_5fcanbeprefix',['enable_CanBePrefix',['../structndn__interest.html#a50c7fa887e6fa14f34bbac1d3d6ac690',1,'ndn_interest']]],
+  ['enable_5fcontenttype',['enable_ContentType',['../structndn__metainfo.html#a23bd8f7f6c691b317c627573a9827013',1,'ndn_metainfo']]],
+  ['enable_5ffinalblockid',['enable_FinalBlockId',['../structndn__metainfo.html#aa7b225200adebbd55521c7ba8c2ae25d',1,'ndn_metainfo']]],
+  ['enable_5ffreshnessperiod',['enable_FreshnessPeriod',['../structndn__metainfo.html#a0a792a5455393591461d66c463fc7219',1,'ndn_metainfo']]],
+  ['enable_5fhoplimit',['enable_HopLimit',['../structndn__interest.html#a55e59cbf3fac124c445f96b515bf14c6',1,'ndn_interest']]],
+  ['enable_5fkeylocator',['enable_KeyLocator',['../structndn__signature.html#a2988ecd5096df677f0541e78d5f5bbcc',1,'ndn_signature']]],
+  ['enable_5fmustbefresh',['enable_MustBeFresh',['../structndn__interest.html#a680871223679ed6272e3a2856bddb3b5',1,'ndn_interest']]],
+  ['enable_5fparameters',['enable_Parameters',['../structndn__interest.html#a94918e7ad15874f6474be023c8c8430f',1,'ndn_interest']]],
+  ['enable_5fsignatureinfononce',['enable_SignatureInfoNonce',['../structndn__signature.html#a113dbb78d2740d5d77b263988e0c04c2',1,'ndn_signature']]],
+  ['enable_5ftimestamp',['enable_Timestamp',['../structndn__signature.html#a0ed18a9d02854784ef91ded077fdd4c2',1,'ndn_signature']]],
+  ['enable_5fvalidityperiod',['enable_ValidityPeriod',['../structndn__signature.html#ac3836a22ab7d2a9161dfe4041bc49f70',1,'ndn_signature']]],
+  ['express_5ftime',['express_time',['../structndn__pit__entry.html#aa681748b2498431c505bc4b40c891f4d',1,'ndn_pit_entry']]]
 ];

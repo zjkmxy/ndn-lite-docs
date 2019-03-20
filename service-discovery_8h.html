@@ -111,6 +111,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a490cea545a1635f95902f68d8f2dbba7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="service-discovery_8h.html#ad133f90a8494be6744792696f4c41ded">ndn_service_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="service-discovery_8h.html#a490cea545a1635f95902f68d8f2dbba7">ndn_sd_register_get_self_service</a> (const char *id_value, uint32_t id_size)</td></tr>
 <tr class="memdesc:a490cea545a1635f95902f68d8f2dbba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to a NDN service by searching its NDN service ID.  <a href="#a490cea545a1635f95902f68d8f2dbba7">More...</a><br /></td></tr>
 <tr class="separator:a490cea545a1635f95902f68d8f2dbba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad93a353fd9f70b1c4ade01fda4962d71"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="service-discovery_8h.html#ad93a353fd9f70b1c4ade01fda4962d71">ndn_sd_set_service_status</a> (<a class="el" href="service-discovery_8h.html#ad133f90a8494be6744792696f4c41ded">ndn_service_t</a> *service, uint8_t status)</td></tr>
+<tr class="memdesc:ad93a353fd9f70b1c4ade01fda4962d71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set service status of a NDN service.  <a href="#ad93a353fd9f70b1c4ade01fda4962d71">More...</a><br /></td></tr>
+<tr class="separator:ad93a353fd9f70b1c4ade01fda4962d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2a56c09d78862a6ba0d9e92dc921376"><td class="memItemLeft" align="right" valign="top"><a class="el" href="service-discovery_8h.html#a2623523fc25e05e646c57fa2bc90e391">ndn_sd_identity_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="service-discovery_8h.html#ab2a56c09d78862a6ba0d9e92dc921376">ndn_sd_find_neigbor</a> (const <a class="el" href="name-component_8h.html#a6fcb406cc3baa1de6bb60323fcece5d6">name_component_t</a> *id)</td></tr>
 <tr class="memdesc:ab2a56c09d78862a6ba0d9e92dc921376"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a neighbor in the neighbor list by searching its identity.  <a href="#ab2a56c09d78862a6ba0d9e92dc921376">More...</a><br /></td></tr>
 <tr class="separator:ab2a56c09d78862a6ba0d9e92dc921376"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -526,6 +529,52 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer to the NDN service if it exists. </dd></dl>
+
+</div>
+</div>
+<a id="ad93a353fd9f70b1c4ade01fda4962d71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad93a353fd9f70b1c4ade01fda4962d71">&#9670;&nbsp;</a></span>ndn_sd_set_service_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ndn_sd_set_service_status </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="service-discovery_8h.html#ad133f90a8494be6744792696f4c41ded">ndn_service_t</a> *&#160;</td>
+          <td class="paramname"><em>service</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set service status of a NDN service. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">service.</td><td>Input. The NDN service whose service status will be set. </td></tr>
+    <tr><td class="paramname">status.</td><td>Input. Service status value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
 
 </div>
 </div>

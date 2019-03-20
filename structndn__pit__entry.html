@@ -86,20 +86,31 @@ Collaboration diagram for ndn_pit_entry:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a5e78f72ee3248a324a84b70ec8db95e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="forwarder-helper_8h.html#ab3029eb7252ce096a135f0cdfe2a325b">interest_options_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__pit__entry.html#a5e78f72ee3248a324a84b70ec8db95e1">options</a></td></tr>
+<tr class="memdesc:a5e78f72ee3248a324a84b70ec8db95e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interest Options.  <a href="#a5e78f72ee3248a324a84b70ec8db95e1">More...</a><br /></td></tr>
 <tr class="separator:a5e78f72ee3248a324a84b70ec8db95e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d29c5cae705eeedc7090cc50ddd3d78"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__pit__entry.html#a3d29c5cae705eeedc7090cc50ddd3d78">incoming_faces</a></td></tr>
+<tr class="memdesc:a3d29c5cae705eeedc7090cc50ddd3d78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Faces received this Interest.  <a href="#a3d29c5cae705eeedc7090cc50ddd3d78">More...</a><br /></td></tr>
 <tr class="separator:a3d29c5cae705eeedc7090cc50ddd3d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade8a9997005cb9d4b5e0fe941e700401"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uniform-time_8h.html#af1773cc5496fc87d1d738fb8052726a8">ndn_time_ms_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__pit__entry.html#ade8a9997005cb9d4b5e0fe941e700401">last_time</a></td></tr>
+<tr class="memitem:a352ee236d91430130039408c43a3ad9c"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__pit__entry.html#a352ee236d91430130039408c43a3ad9c">outgoing_faces</a></td></tr>
+<tr class="memdesc:a352ee236d91430130039408c43a3ad9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Faces sent out this Interest.  <a href="#a352ee236d91430130039408c43a3ad9c">More...</a><br /></td></tr>
+<tr class="separator:a352ee236d91430130039408c43a3ad9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade8a9997005cb9d4b5e0fe941e700401"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___n_d_n_util_uni_time.html#gaf1773cc5496fc87d1d738fb8052726a8">ndn_time_ms_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__pit__entry.html#ade8a9997005cb9d4b5e0fe941e700401">last_time</a></td></tr>
+<tr class="memdesc:ade8a9997005cb9d4b5e0fe941e700401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp for last time the forwarder received this Interest.  <a href="#ade8a9997005cb9d4b5e0fe941e700401">More...</a><br /></td></tr>
 <tr class="separator:ade8a9997005cb9d4b5e0fe941e700401"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa681748b2498431c505bc4b40c891f4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uniform-time_8h.html#af1773cc5496fc87d1d738fb8052726a8">ndn_time_ms_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__pit__entry.html#aa681748b2498431c505bc4b40c891f4d">express_time</a></td></tr>
+<tr class="memitem:aa681748b2498431c505bc4b40c891f4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___n_d_n_util_uni_time.html#gaf1773cc5496fc87d1d738fb8052726a8">ndn_time_ms_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__pit__entry.html#aa681748b2498431c505bc4b40c891f4d">express_time</a></td></tr>
+<tr class="memdesc:aa681748b2498431c505bc4b40c891f4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp when the application expressed this Interest.  <a href="#aa681748b2498431c505bc4b40c891f4d">More...</a><br /></td></tr>
 <tr class="separator:aa681748b2498431c505bc4b40c891f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a868f115ee7ed23b837d9179826c87455"><td class="memItemLeft" align="right" valign="top"><a class="el" href="callback-funcs_8h.html#a452c4f70da99ab88816c3b2398a9c09e">ndn_on_data_func</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__pit__entry.html#a868f115ee7ed23b837d9179826c87455">on_data</a></td></tr>
+<tr class="memdesc:a868f115ee7ed23b837d9179826c87455"><td class="mdescLeft">&#160;</td><td class="mdescRight">OnData callback if the application expressed this Interest.  <a href="#a868f115ee7ed23b837d9179826c87455">More...</a><br /></td></tr>
 <tr class="separator:a868f115ee7ed23b837d9179826c87455"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7197327ae511de64187ff9aad37608e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="callback-funcs_8h.html#a8405a85fb37f81835d71363fd396b270">ndn_on_timeout_func</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__pit__entry.html#af7197327ae511de64187ff9aad37608e">on_timeout</a></td></tr>
+<tr class="memdesc:af7197327ae511de64187ff9aad37608e"><td class="mdescLeft">&#160;</td><td class="mdescRight">OnTimeout callback if the application expressed this Interest.  <a href="#af7197327ae511de64187ff9aad37608e">More...</a><br /></td></tr>
 <tr class="separator:af7197327ae511de64187ff9aad37608e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab31fb1de8ce9a34154a967f373a80888"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__pit__entry.html#ab31fb1de8ce9a34154a967f373a80888">userdata</a></td></tr>
+<tr class="memdesc:ab31fb1de8ce9a34154a967f373a80888"><td class="mdescLeft">&#160;</td><td class="mdescRight">User defined data.  <a href="#ab31fb1de8ce9a34154a967f373a80888">More...</a><br /></td></tr>
 <tr class="separator:ab31fb1de8ce9a34154a967f373a80888"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b8db6a7359739bba30216bf815e2ac3"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__pit__entry.html#a0b8db6a7359739bba30216bf815e2ac3">nametree_id</a></td></tr>
+<tr class="memdesc:a0b8db6a7359739bba30216bf815e2ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">NameTree entry's ID.  <a href="#a0b8db6a7359739bba30216bf815e2ac3">More...</a><br /></td></tr>
 <tr class="separator:a0b8db6a7359739bba30216bf815e2ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -112,10 +123,13 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="uniform-time_8h.html#af1773cc5496fc87d1d738fb8052726a8">ndn_time_ms_t</a> ndn_pit_entry::express_time</td>
+          <td class="memname"><a class="el" href="group___n_d_n_util_uni_time.html#gaf1773cc5496fc87d1d738fb8052726a8">ndn_time_ms_t</a> ndn_pit_entry::express_time</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Timestamp when the application expressed this Interest. </p>
+<p>0 If it's received from a face. </p>
 
 </div>
 </div>
@@ -131,6 +145,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Faces received this Interest. </p>
+<p>Used to forward corresponding Data. </p>
+
 </div>
 </div>
 <a id="ade8a9997005cb9d4b5e0fe941e700401"></a>
@@ -140,10 +157,12 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="uniform-time_8h.html#af1773cc5496fc87d1d738fb8052726a8">ndn_time_ms_t</a> ndn_pit_entry::last_time</td>
+          <td class="memname"><a class="el" href="group___n_d_n_util_uni_time.html#gaf1773cc5496fc87d1d738fb8052726a8">ndn_time_ms_t</a> ndn_pit_entry::last_time</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Timestamp for last time the forwarder received this Interest. </p>
 
 </div>
 </div>
@@ -159,6 +178,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>NameTree entry's ID. </p>
+<p><a class="el" href="ndn-constants_8h.html#ad61ec7f675ac40e4950a7c9cca24dd60">NDN_INVALID_ID</a> if the entry is empty. </p>
+
 </div>
 </div>
 <a id="a868f115ee7ed23b837d9179826c87455"></a>
@@ -172,6 +194,8 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>OnData callback if the application expressed this Interest. </p>
 
 </div>
 </div>
@@ -187,6 +211,8 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>OnTimeout callback if the application expressed this Interest. </p>
+
 </div>
 </div>
 <a id="a5e78f72ee3248a324a84b70ec8db95e1"></a>
@@ -201,6 +227,25 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Interest Options. </p>
+
+</div>
+</div>
+<a id="a352ee236d91430130039408c43a3ad9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a352ee236d91430130039408c43a3ad9c">&#9670;&nbsp;</a></span>outgoing_faces</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t ndn_pit_entry::outgoing_faces</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Faces sent out this Interest. </p>
+<p>Used to suppress Interest forwarding. </p>
+
 </div>
 </div>
 <a id="ab31fb1de8ce9a34154a967f373a80888"></a>
@@ -214,6 +259,8 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>User defined data. </p>
 
 </div>
 </div>

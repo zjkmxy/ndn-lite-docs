@@ -92,12 +92,30 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a26de2c71c5fbf6dab4c8defb1539d75f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="metainfo_8h.html#a26de2c71c5fbf6dab4c8defb1539d75f">ndn_metainfo_init</a> (<a class="el" href="metainfo_8h.html#a5839d993f3b62b8e187da1c8ab71227b">ndn_metainfo_t</a> *meta)</td></tr>
+<tr class="memdesc:a26de2c71c5fbf6dab4c8defb1539d75f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init a Metainfo structure.  <a href="#a26de2c71c5fbf6dab4c8defb1539d75f">More...</a><br /></td></tr>
+<tr class="separator:a26de2c71c5fbf6dab4c8defb1539d75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab800dfe4fc0acf75934dd2f62f5e2b3f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="metainfo_8h.html#ab800dfe4fc0acf75934dd2f62f5e2b3f">ndn_metainfo_from_other</a> (<a class="el" href="metainfo_8h.html#a5839d993f3b62b8e187da1c8ab71227b">ndn_metainfo_t</a> *meta, const <a class="el" href="metainfo_8h.html#a5839d993f3b62b8e187da1c8ab71227b">ndn_metainfo_t</a> *other)</td></tr>
+<tr class="memdesc:ab800dfe4fc0acf75934dd2f62f5e2b3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init a Metainfo structure.  <a href="#ab800dfe4fc0acf75934dd2f62f5e2b3f">More...</a><br /></td></tr>
+<tr class="separator:ab800dfe4fc0acf75934dd2f62f5e2b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27784d3cb9b49eff4d1e5aa38618b6d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="metainfo_8h.html#a27784d3cb9b49eff4d1e5aa38618b6d4">ndn_metainfo_tlv_decode</a> (<a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *decoder, <a class="el" href="metainfo_8h.html#a5839d993f3b62b8e187da1c8ab71227b">ndn_metainfo_t</a> *meta)</td></tr>
 <tr class="memdesc:a27784d3cb9b49eff4d1e5aa38618b6d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode the Metainfo from wire format (TLV block).  <a href="#a27784d3cb9b49eff4d1e5aa38618b6d4">More...</a><br /></td></tr>
 <tr class="separator:a27784d3cb9b49eff4d1e5aa38618b6d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adee413de90cf8e66a7d507bf3b345a8e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="metainfo_8h.html#adee413de90cf8e66a7d507bf3b345a8e">ndn_metainfo_from_tlv_block</a> (<a class="el" href="metainfo_8h.html#a5839d993f3b62b8e187da1c8ab71227b">ndn_metainfo_t</a> *meta, const uint8_t *block_value, uint32_t block_size)</td></tr>
 <tr class="memdesc:adee413de90cf8e66a7d507bf3b345a8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode a Metainfo TLV block into a ndn_metainfo_t.  <a href="#adee413de90cf8e66a7d507bf3b345a8e">More...</a><br /></td></tr>
 <tr class="separator:adee413de90cf8e66a7d507bf3b345a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a637dfdbf89674e33ba54bb057391aa5e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="metainfo_8h.html#a637dfdbf89674e33ba54bb057391aa5e">ndn_metainfo_set_content_type</a> (<a class="el" href="metainfo_8h.html#a5839d993f3b62b8e187da1c8ab71227b">ndn_metainfo_t</a> *meta, uint8_t content_type)</td></tr>
+<tr class="memdesc:a637dfdbf89674e33ba54bb057391aa5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set ContentType of the Metainfo.  <a href="#a637dfdbf89674e33ba54bb057391aa5e">More...</a><br /></td></tr>
+<tr class="separator:a637dfdbf89674e33ba54bb057391aa5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35fd8220b6effec69670fbe87d40e1b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="metainfo_8h.html#ab35fd8220b6effec69670fbe87d40e1b">ndn_metainfo_set_freshness_period</a> (<a class="el" href="metainfo_8h.html#a5839d993f3b62b8e187da1c8ab71227b">ndn_metainfo_t</a> *meta, uint64_t freshness_period)</td></tr>
+<tr class="memdesc:ab35fd8220b6effec69670fbe87d40e1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set FreshnessPeriod of the Metainfo.  <a href="#ab35fd8220b6effec69670fbe87d40e1b">More...</a><br /></td></tr>
+<tr class="separator:ab35fd8220b6effec69670fbe87d40e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da6b4633bca6dea103b3b892dee6244"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="metainfo_8h.html#a5da6b4633bca6dea103b3b892dee6244">ndn_metainfo_set_final_block_id</a> (<a class="el" href="metainfo_8h.html#a5839d993f3b62b8e187da1c8ab71227b">ndn_metainfo_t</a> *meta, const <a class="el" href="name-component_8h.html#a6fcb406cc3baa1de6bb60323fcece5d6">name_component_t</a> *final_block_id)</td></tr>
+<tr class="memdesc:a5da6b4633bca6dea103b3b892dee6244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set FinalBlockId of the Metainfo.  <a href="#a5da6b4633bca6dea103b3b892dee6244">More...</a><br /></td></tr>
+<tr class="separator:a5da6b4633bca6dea103b3b892dee6244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39585cd0677b6ff3255b9e1c506f56dd"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="metainfo_8h.html#a39585cd0677b6ff3255b9e1c506f56dd">ndn_metainfo_probe_block_size</a> (const <a class="el" href="metainfo_8h.html#a5839d993f3b62b8e187da1c8ab71227b">ndn_metainfo_t</a> *meta)</td></tr>
+<tr class="memdesc:a39585cd0677b6ff3255b9e1c506f56dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Probe the size of a Metainfo TLV block before encoding it from a Metainfo structure.  <a href="#a39585cd0677b6ff3255b9e1c506f56dd">More...</a><br /></td></tr>
+<tr class="separator:a39585cd0677b6ff3255b9e1c506f56dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60d7126bd0ae2bac459da8404be53c2a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="metainfo_8h.html#a60d7126bd0ae2bac459da8404be53c2a">ndn_metainfo_tlv_encode</a> (<a class="el" href="encoder_8h.html#a7e8d31a88e1f377c42e835275385119c">ndn_encoder_t</a> *encoder, const <a class="el" href="metainfo_8h.html#a5839d993f3b62b8e187da1c8ab71227b">ndn_metainfo_t</a> *meta)</td></tr>
 <tr class="memdesc:a60d7126bd0ae2bac459da8404be53c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the Metainfo structure into wire format (TLV block).  <a href="#a60d7126bd0ae2bac459da8404be53c2a">More...</a><br /></td></tr>
 <tr class="separator:a60d7126bd0ae2bac459da8404be53c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,6 +138,51 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ab800dfe4fc0acf75934dd2f62f5e2b3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab800dfe4fc0acf75934dd2f62f5e2b3f">&#9670;&nbsp;</a></span>ndn_metainfo_from_other()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ndn_metainfo_from_other </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="metainfo_8h.html#a5839d993f3b62b8e187da1c8ab71227b">ndn_metainfo_t</a> *&#160;</td>
+          <td class="paramname"><em>meta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="metainfo_8h.html#a5839d993f3b62b8e187da1c8ab71227b">ndn_metainfo_t</a> *&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Init a Metainfo structure. </p>
+<p>This function will do memory copy. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meta.</td><td>Output. The Metainfo structure to be inited. </td></tr>
+    <tr><td class="paramname">other.</td><td>Output. The Metainfo structure to be copied from. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="adee413de90cf8e66a7d507bf3b345a8e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adee413de90cf8e66a7d507bf3b345a8e">&#9670;&nbsp;</a></span>ndn_metainfo_from_tlv_block()</h2>
 
@@ -162,6 +225,210 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if decoding is successful. </dd></dl>
+
+</div>
+</div>
+<a id="a26de2c71c5fbf6dab4c8defb1539d75f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26de2c71c5fbf6dab4c8defb1539d75f">&#9670;&nbsp;</a></span>ndn_metainfo_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ndn_metainfo_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="metainfo_8h.html#a5839d993f3b62b8e187da1c8ab71227b">ndn_metainfo_t</a> *&#160;</td>
+          <td class="paramname"><em>meta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Init a Metainfo structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meta.</td><td>Output. The Metainfo structure to be inited. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a39585cd0677b6ff3255b9e1c506f56dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39585cd0677b6ff3255b9e1c506f56dd">&#9670;&nbsp;</a></span>ndn_metainfo_probe_block_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t ndn_metainfo_probe_block_size </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="metainfo_8h.html#a5839d993f3b62b8e187da1c8ab71227b">ndn_metainfo_t</a> *&#160;</td>
+          <td class="paramname"><em>meta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Probe the size of a Metainfo TLV block before encoding it from a Metainfo structure. </p>
+<p>This function is used to check whether the output buffer size is enough or not. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meta.</td><td>Input. The Metainfo structure to probe. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the length of the Metainfo TLV block. </dd></dl>
+
+</div>
+</div>
+<a id="a637dfdbf89674e33ba54bb057391aa5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a637dfdbf89674e33ba54bb057391aa5e">&#9670;&nbsp;</a></span>ndn_metainfo_set_content_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ndn_metainfo_set_content_type </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="metainfo_8h.html#a5839d993f3b62b8e187da1c8ab71227b">ndn_metainfo_t</a> *&#160;</td>
+          <td class="paramname"><em>meta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>content_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set ContentType of the Metainfo. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meta.</td><td>Output. The Metainfo whose ContentType will be set. </td></tr>
+    <tr><td class="paramname">content_type.</td><td>Input. ContentType value following NDN Packet Format Specification 0.3. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5da6b4633bca6dea103b3b892dee6244"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5da6b4633bca6dea103b3b892dee6244">&#9670;&nbsp;</a></span>ndn_metainfo_set_final_block_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ndn_metainfo_set_final_block_id </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="metainfo_8h.html#a5839d993f3b62b8e187da1c8ab71227b">ndn_metainfo_t</a> *&#160;</td>
+          <td class="paramname"><em>meta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="name-component_8h.html#a6fcb406cc3baa1de6bb60323fcece5d6">name_component_t</a> *&#160;</td>
+          <td class="paramname"><em>final_block_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set FinalBlockId of the Metainfo. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meta.</td><td>Output. The Metainfo whose FinalBlockId will be set. </td></tr>
+    <tr><td class="paramname">final_block_id.</td><td>Input. The last component of Name. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab35fd8220b6effec69670fbe87d40e1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab35fd8220b6effec69670fbe87d40e1b">&#9670;&nbsp;</a></span>ndn_metainfo_set_freshness_period()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ndn_metainfo_set_freshness_period </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="metainfo_8h.html#a5839d993f3b62b8e187da1c8ab71227b">ndn_metainfo_t</a> *&#160;</td>
+          <td class="paramname"><em>meta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>freshness_period</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set FreshnessPeriod of the Metainfo. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">meta.</td><td>Output. The Metainfo whose FreshnessPeriod will be set. </td></tr>
+    <tr><td class="paramname">freshness_period.</td><td>Input. FreshnessPeriod value. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

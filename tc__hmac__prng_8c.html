@@ -67,7 +67,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">tc_hmac_prng.c File Reference</div>  </div>
 </div><!--header-->
@@ -79,6 +80,8 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a8c4524715d34cb10863008e323d4df69"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__hmac__prng_8c.html#a8c4524715d34cb10863008e323d4df69">update</a> (<a class="el" href="tc__hmac__prng_8h.html#a6678aa0efba10a8cd84929a9fa4ae4bd">TCHmacPrng_t</a> prng, const uint8_t *e, unsigned int len)</td></tr>
+<tr class="separator:a8c4524715d34cb10863008e323d4df69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a685735c9371c0cbb84bb70e4717c7be8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__hmac__prng_8c.html#a685735c9371c0cbb84bb70e4717c7be8">tc_hmac_prng_init</a> (<a class="el" href="tc__hmac__prng_8h.html#a6678aa0efba10a8cd84929a9fa4ae4bd">TCHmacPrng_t</a> prng, const uint8_t *personalization, unsigned int plen)</td></tr>
 <tr class="memdesc:a685735c9371c0cbb84bb70e4717c7be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">HMAC-PRNG initialization procedure Initializes prng with personalization, disables tc_hmac_prng_generate.  <a href="#a685735c9371c0cbb84bb70e4717c7be8">More...</a><br /></td></tr>
 <tr class="separator:a685735c9371c0cbb84bb70e4717c7be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -88,6 +91,21 @@ Functions</h2></td></tr>
 <tr class="memitem:a7c95ac0d8ceea9bfc45b427c2863d68d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__hmac__prng_8c.html#a7c95ac0d8ceea9bfc45b427c2863d68d">tc_hmac_prng_generate</a> (uint8_t *out, unsigned int outlen, <a class="el" href="tc__hmac__prng_8h.html#a6678aa0efba10a8cd84929a9fa4ae4bd">TCHmacPrng_t</a> prng)</td></tr>
 <tr class="memdesc:a7c95ac0d8ceea9bfc45b427c2863d68d"><td class="mdescLeft">&#160;</td><td class="mdescRight">HMAC-PRNG generate procedure Generates outlen pseudo-random bytes into out buffer, updates prng.  <a href="#a7c95ac0d8ceea9bfc45b427c2863d68d">More...</a><br /></td></tr>
 <tr class="separator:a7c95ac0d8ceea9bfc45b427c2863d68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a8270e6cdf8c399900f8b40285b0efc3a"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__hmac__prng_8c.html#a8270e6cdf8c399900f8b40285b0efc3a">MIN_SLEN</a> = 32</td></tr>
+<tr class="separator:a8270e6cdf8c399900f8b40285b0efc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee24802190d348991541672583f10b6"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__hmac__prng_8c.html#a4ee24802190d348991541672583f10b6">MAX_SLEN</a> = UINT32_MAX</td></tr>
+<tr class="separator:a4ee24802190d348991541672583f10b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a859d0aaedd6e465fab2e1e8c82385b88"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__hmac__prng_8c.html#a859d0aaedd6e465fab2e1e8c82385b88">MAX_PLEN</a> = UINT32_MAX</td></tr>
+<tr class="separator:a859d0aaedd6e465fab2e1e8c82385b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a801faa1edf3afebc984ab91698d9fa30"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__hmac__prng_8c.html#a801faa1edf3afebc984ab91698d9fa30">MAX_ALEN</a> = UINT32_MAX</td></tr>
+<tr class="separator:a801faa1edf3afebc984ab91698d9fa30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf7f3d2b8d9523b61465cfde23ae016"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__hmac__prng_8c.html#aedf7f3d2b8d9523b61465cfde23ae016">MAX_GENS</a> = UINT32_MAX</td></tr>
+<tr class="separator:aedf7f3d2b8d9523b61465cfde23ae016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac155392a107c35cac4174ca22b45be38"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__hmac__prng_8c.html#ac155392a107c35cac4174ca22b45be38">MAX_OUT</a> = (1 &lt;&lt; 19)</td></tr>
+<tr class="separator:ac155392a107c35cac4174ca22b45be38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a7c95ac0d8ceea9bfc45b427c2863d68d"></a>
@@ -243,6 +261,181 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a8c4524715d34cb10863008e323d4df69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c4524715d34cb10863008e323d4df69">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tc__hmac__prng_8h.html#a6678aa0efba10a8cd84929a9fa4ae4bd">TCHmacPrng_t</a>&#160;</td>
+          <td class="paramname"><em>prng</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a801faa1edf3afebc984ab91698d9fa30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a801faa1edf3afebc984ab91698d9fa30">&#9670;&nbsp;</a></span>MAX_ALEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int MAX_ALEN = UINT32_MAX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aedf7f3d2b8d9523b61465cfde23ae016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedf7f3d2b8d9523b61465cfde23ae016">&#9670;&nbsp;</a></span>MAX_GENS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int MAX_GENS = UINT32_MAX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac155392a107c35cac4174ca22b45be38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac155392a107c35cac4174ca22b45be38">&#9670;&nbsp;</a></span>MAX_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int MAX_OUT = (1 &lt;&lt; 19)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a859d0aaedd6e465fab2e1e8c82385b88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a859d0aaedd6e465fab2e1e8c82385b88">&#9670;&nbsp;</a></span>MAX_PLEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int MAX_PLEN = UINT32_MAX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ee24802190d348991541672583f10b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee24802190d348991541672583f10b6">&#9670;&nbsp;</a></span>MAX_SLEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int MAX_SLEN = UINT32_MAX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8270e6cdf8c399900f8b40285b0efc3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8270e6cdf8c399900f8b40285b0efc3a">&#9670;&nbsp;</a></span>MIN_SLEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int MIN_SLEN = 32</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

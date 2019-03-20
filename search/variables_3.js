@@ -1,16 +1,19 @@
 var searchData=
 [
-  ['data_5fpattern',['data_pattern',['../structndn__trust__schema__rule.html#a8186b71aa6c143c62ed7bc886c2634d4',1,'ndn_trust_schema_rule']]],
-  ['decrypt_5fkd_5fpri',['decrypt_kd_pri',['../structsign__on__basic__sec__intf.html#a00a13243c2cb6357c2e8a1ed3083c2c3',1,'sign_on_basic_sec_intf']]],
-  ['destroy',['destroy',['../structndn__face__intf.html#af8077049cf72d675d2d0240c0dcec439',1,'ndn_face_intf']]],
-  ['device_5fcapabilities_5flen',['device_capabilities_len',['../structsign__on__basic__client__t.html#a2d50a8f1fe16acce091cab51d875c837',1,'sign_on_basic_client_t']]],
-  ['device_5fcapabilities_5fp',['device_capabilities_p',['../structsign__on__basic__client__t.html#a6827d144802579355c1e269dbfda510f',1,'sign_on_basic_client_t']]],
-  ['device_5fidentifier_5flen',['device_identifier_len',['../structsign__on__basic__client__t.html#a94cec12e27ffae2803976d06f8dee9f7',1,'sign_on_basic_client_t']]],
-  ['device_5fidentifier_5fp',['device_identifier_p',['../structsign__on__basic__client__t.html#a9993dc7ca362f8e900b1f439403080f8',1,'sign_on_basic_client_t']]],
-  ['dh_5fprv',['dh_prv',['../structndn__ac__unfinished__key.html#ab305a48741f92a9e7d0ec564114bae5c',1,'ndn_ac_unfinished_key']]],
-  ['dh_5fpub',['dh_pub',['../structndn__ac__unfinished__key.html#a89e28b094a7d2e7d5e2946d42af7adb5',1,'ndn_ac_unfinished_key']]],
-  ['dh_5fshared_5fsecret',['dh_shared_secret',['../structndn__ecc__backend.html#a75deb84197eb48a1e6c2314d37669753',1,'ndn_ecc_backend']]],
-  ['dks',['dks',['../structndn__ac__state.html#a9140e10c782dca9a362eecdd4e960e26',1,'ndn_ac_state']]],
-  ['double_5fjacobian',['double_jacobian',['../structu_e_c_c___curve__t.html#ac083860d8289f3bcb3a0df6cad1c99f2',1,'uECC_Curve_t::double_jacobian()'],['../structtc__u_e_c_c___curve__t.html#a168af525f82f472c8ab1e337ea18d97e',1,'tc_uECC_Curve_t::double_jacobian()']]],
-  ['down',['down',['../structndn__face__intf.html#a791684dc447503d1f8d42df475cffc73',1,'ndn_face_intf']]]
+  ['can_5fbe_5fprefix',['can_be_prefix',['../structinterest__options.html#a27a39551479669991ad4f3c948aa8d61',1,'interest_options']]],
+  ['capacity',['capacity',['../structndn__face__table.html#aba546950ad2e5af81a0ba93fd0c00e35',1,'ndn_face_table::capacity()'],['../structndn__fib.html#a4318b452c366a208fb7de838797e961f',1,'ndn_fib::capacity()'],['../structndn__pit.html#aa68bc4ccb72c1951e66c3fb081136d86',1,'ndn_pit::capacity()']]],
+  ['cbc_5fdecrypt',['cbc_decrypt',['../structndn__aes__backend.html#a6051573b9b5113a0ac09e764e6246e90',1,'ndn_aes_backend']]],
+  ['cbc_5fencrypt',['cbc_encrypt',['../structndn__aes__backend.html#a5c4726080ba860151e468ad33d57fc6e',1,'ndn_aes_backend']]],
+  ['ccl',['ccl',['../structregex__t.html#a39ecde2a0f90f334f4c4a444d88c8310',1,'regex_t']]],
+  ['ch',['ch',['../structregex__t.html#a8d7e50136fa04eb490367d658f846ed1',1,'regex_t']]],
+  ['components',['components',['../structndn__name.html#a4996af111d6a71dfd9a3ba818f69850a',1,'ndn_name::components()'],['../structndn__trust__schema__pattern.html#a548cd4213bae08c9a71c70fc280ba290',1,'ndn_trust_schema_pattern::components()']]],
+  ['components_5fsize',['components_size',['../structndn__name.html#a489fbf46a7eaefb02cf6a1bae720404f',1,'ndn_name::components_size()'],['../structndn__trust__schema__pattern.html#ac67d7a26c8d70272e4ca807f496cd934',1,'ndn_trust_schema_pattern::components_size()']]],
+  ['content_5fsize',['content_size',['../structndn__data.html#a736460e08608b59e602e1f0c1399449c',1,'ndn_data']]],
+  ['content_5ftype',['content_type',['../structndn__metainfo.html#ad0ac6dbb9c3a37097ca11adf9ecf188a',1,'ndn_metainfo']]],
+  ['content_5fvalue',['content_value',['../structndn__data.html#aa473d15952d7740548edf56ba1391c30',1,'ndn_data']]],
+  ['countdown',['countdown',['../structtc__cmac__struct.html#ab6b8fb65786aba7a2cf381c5d392f9e0',1,'tc_cmac_struct::countdown()'],['../structtc__hmac__prng__struct.html#a76e55722fa7d89d95b97fc06c2a0b2c2',1,'tc_hmac_prng_struct::countdown()']]],
+  ['counter',['counter',['../structndn__fragmenter.html#a454b988f8d96bf184a0155a0d068e48e',1,'ndn_fragmenter']]],
+  ['ctx',['ctx',['../structu_e_c_c___s_h_a256___hash_context.html#a767ee45a4c719b42d6e9573305ad808e',1,'uECC_SHA256_HashContext']]],
+  ['curve_5fsecp256r1',['curve_secp256r1',['../tc__ecc_8h.html#ac2b834d5c87921e0ec195b06c73d46c5',1,'tc_ecc.h']]],
+  ['curve_5ftype',['curve_type',['../structndn__ecc__pub.html#a183248c46bef0aaac070400bb78ba308',1,'ndn_ecc_pub::curve_type()'],['../structndn__ecc__prv.html#a9ebf4f12bf7ba06188b29455287874ad',1,'ndn_ecc_prv::curve_type()']]]
 ];

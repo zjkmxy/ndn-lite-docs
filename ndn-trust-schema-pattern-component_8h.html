@@ -99,6 +99,12 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a2d003890cdd82c0de14e94dad4dda535"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-trust-schema-pattern-component_8h.html#a2d003890cdd82c0de14e94dad4dda535">ndn_trust_schema_pattern_component_from_buffer</a> (<a class="el" href="ndn-trust-schema-pattern-component_8h.html#ac005453c073918e373112cad265d4c46">ndn_trust_schema_pattern_component_t</a> *component, uint32_t type, const uint8_t *value, uint32_t size)</td></tr>
+<tr class="memdesc:a2d003890cdd82c0de14e94dad4dda535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init an NDN Trust Schema pattern Component structure from caller supplied memory block.  <a href="#a2d003890cdd82c0de14e94dad4dda535">More...</a><br /></td></tr>
+<tr class="separator:a2d003890cdd82c0de14e94dad4dda535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cfb6b39fed456c680c16526c5e4f1e6"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-trust-schema-pattern-component_8h.html#a6cfb6b39fed456c680c16526c5e4f1e6">_probe_trust_schema_pattern_component_type</a> (const char *string)</td></tr>
+<tr class="memdesc:a6cfb6b39fed456c680c16526c5e4f1e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Probes a string to get its trust schema pattern component type.  <a href="#a6cfb6b39fed456c680c16526c5e4f1e6">More...</a><br /></td></tr>
+<tr class="separator:a6cfb6b39fed456c680c16526c5e4f1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1700fd2a161acc9f83c7a04e202b391"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-trust-schema-pattern-component_8h.html#ab1700fd2a161acc9f83c7a04e202b391">ndn_trust_schema_pattern_component_from_string</a> (<a class="el" href="ndn-trust-schema-pattern-component_8h.html#ac005453c073918e373112cad265d4c46">ndn_trust_schema_pattern_component_t</a> *component, const char *string, uint32_t size)</td></tr>
 <tr class="memdesc:ab1700fd2a161acc9f83c7a04e202b391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init an NDN Trust Schema Pattern Component structure from string.  <a href="#ab1700fd2a161acc9f83c7a04e202b391">More...</a><br /></td></tr>
 <tr class="separator:ab1700fd2a161acc9f83c7a04e202b391"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,6 +133,42 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a6cfb6b39fed456c680c16526c5e4f1e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cfb6b39fed456c680c16526c5e4f1e6">&#9670;&nbsp;</a></span>_probe_trust_schema_pattern_component_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t _probe_trust_schema_pattern_component_type </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Probes a string to get its trust schema pattern component type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string.</td><td>Input. String variable which will be probed for trust schema pattern component type. </td></tr>
+    <tr><td class="paramname">size.</td><td>Input. Size of input string. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns the trust schema pattern component type if there is no error and the probing found a valid NDN trust schema pattern component type. </dd></dl>
+
+</div>
+</div>
 <a id="ac38560905588056eec8bdc6af1c88597"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac38560905588056eec8bdc6af1c88597">&#9670;&nbsp;</a></span>ndn_trust_schema_pattern_component_compare()</h2>
 
@@ -196,6 +238,66 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">lhs.</td><td>Input. The pattern component to be copied. </td></tr>
     <tr><td class="paramname">rhs.</td><td>Output. The pattern component to be copied to. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
+
+</div>
+</div>
+<a id="a2d003890cdd82c0de14e94dad4dda535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d003890cdd82c0de14e94dad4dda535">&#9670;&nbsp;</a></span>ndn_trust_schema_pattern_component_from_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ndn_trust_schema_pattern_component_from_buffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ndn-trust-schema-pattern-component_8h.html#ac005453c073918e373112cad265d4c46">ndn_trust_schema_pattern_component_t</a> *&#160;</td>
+          <td class="paramname"><em>component</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Init an NDN Trust Schema pattern Component structure from caller supplied memory block. </p>
+<p>The function will do memory copy </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">component.</td><td>Output. The NDN Trust Schema pattern Component structure to be inited. </td></tr>
+    <tr><td class="paramname">type.</td><td>Input. NDN Trust Schema pattern Component Type to be set with. </td></tr>
+    <tr><td class="paramname">value.</td><td>Input. Memory block which holds the NDN Trust Schema Pattern Component Value. </td></tr>
+    <tr><td class="paramname">size.</td><td>Input. Size of input block. </td></tr>
   </table>
   </dd>
 </dl>

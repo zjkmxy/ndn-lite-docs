@@ -91,7 +91,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIT entry.  <a href="structndn__pit__entry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__pit.html">ndn_pit</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIT class.  <a href="structndn__pit.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwarding Information Base (FIB).  <a href="structndn__pit.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -105,21 +105,15 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:ga96ad322d1d01065597c3e66e9c079a08"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIT entry.  <a href="#ga96ad322d1d01065597c3e66e9c079a08">More...</a><br /></td></tr>
 <tr class="separator:ga96ad322d1d01065597c3e66e9c079a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2c27a2be51d7b3873fd36e471f568ec8"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structndn__pit.html">ndn_pit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_p_i_t.html#ga2c27a2be51d7b3873fd36e471f568ec8">ndn_pit_t</a></td></tr>
-<tr class="memdesc:ga2c27a2be51d7b3873fd36e471f568ec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIT class.  <a href="#ga2c27a2be51d7b3873fd36e471f568ec8">More...</a><br /></td></tr>
+<tr class="memdesc:ga2c27a2be51d7b3873fd36e471f568ec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwarding Information Base (FIB).  <a href="#ga2c27a2be51d7b3873fd36e471f568ec8">More...</a><br /></td></tr>
 <tr class="separator:ga2c27a2be51d7b3873fd36e471f568ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga37b48bda28d0059eaace6a6e906f9b71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_p_i_t.html#ga37b48bda28d0059eaace6a6e906f9b71">ndn_pit_init</a> (void *memory, uint16_t capacity, <a class="el" href="name-tree_8h.html#a699153a76e5485373ce87e54e6fe5c98">ndn_nametree_t</a> *nametree)</td></tr>
+<tr class="memitem:ga37b48bda28d0059eaace6a6e906f9b71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_p_i_t.html#ga37b48bda28d0059eaace6a6e906f9b71">ndn_pit_init</a> (void *memory, uint16_t capacity, <a class="el" href="group___n_d_n_fwd_name_tree.html#ga699153a76e5485373ce87e54e6fe5c98">ndn_nametree_t</a> *nametree)</td></tr>
 <tr class="separator:ga37b48bda28d0059eaace6a6e906f9b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga69d1e4ba5a333fc0261ba0fc9c39b468"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_p_i_t.html#ga69d1e4ba5a333fc0261ba0fc9c39b468">ndn_pit_unregister_face</a> (<a class="el" href="group___n_d_n_fwd_p_i_t.html#ga2c27a2be51d7b3873fd36e471f568ec8">ndn_pit_t</a> *self, uint16_t face_id)</td></tr>
 <tr class="separator:ga69d1e4ba5a333fc0261ba0fc9c39b468"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga58e78feb0ad4a56df63161d44c1e8e7e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_p_i_t.html#ga58e78feb0ad4a56df63161d44c1e8e7e">ndn_pit_entry_add_incoming_face</a> (<a class="el" href="group___n_d_n_fwd_p_i_t.html#ga96ad322d1d01065597c3e66e9c079a08">ndn_pit_entry_t</a> *entry, <a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *face)</td></tr>
-<tr class="separator:ga58e78feb0ad4a56df63161d44c1e8e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4199a8b5f0b4e2a62b5ea03bcc6e8a76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_p_i_t.html#ga4199a8b5f0b4e2a62b5ea03bcc6e8a76">ndn_pit_set_entry</a> (<a class="el" href="group___n_d_n_fwd_p_i_t.html#ga96ad322d1d01065597c3e66e9c079a08">ndn_pit_entry_t</a> *entry, <a class="el" href="forwarder-helper_8h.html#ab3029eb7252ce096a135f0cdfe2a325b">interest_options_t</a> options, uint64_t incoming_faces, <a class="el" href="uniform-time_8h.html#af1773cc5496fc87d1d738fb8052726a8">ndn_time_ms_t</a> last_time, <a class="el" href="uniform-time_8h.html#af1773cc5496fc87d1d738fb8052726a8">ndn_time_ms_t</a> express_time, <a class="el" href="callback-funcs_8h.html#a452c4f70da99ab88816c3b2398a9c09e">ndn_on_data_func</a> on_data, <a class="el" href="callback-funcs_8h.html#a8405a85fb37f81835d71363fd396b270">ndn_on_timeout_func</a> on_timeout, void *userdata, uint16_t nametree_id)</td></tr>
-<tr class="separator:ga4199a8b5f0b4e2a62b5ea03bcc6e8a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafd5d5f26bdf7335da1333dfd48860f69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_p_i_t.html#gafd5d5f26bdf7335da1333dfd48860f69">ndn_pit_refresh_entry</a> (<a class="el" href="group___n_d_n_fwd_p_i_t.html#ga96ad322d1d01065597c3e66e9c079a08">ndn_pit_entry_t</a> *entry)</td></tr>
-<tr class="separator:gafd5d5f26bdf7335da1333dfd48860f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa9131c8e93235641c71b568b81ac77af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___n_d_n_fwd_p_i_t.html#ga96ad322d1d01065597c3e66e9c079a08">ndn_pit_entry_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_p_i_t.html#gaa9131c8e93235641c71b568b81ac77af">ndn_pit_find_or_insert</a> (<a class="el" href="group___n_d_n_fwd_p_i_t.html#ga2c27a2be51d7b3873fd36e471f568ec8">ndn_pit_t</a> *self, uint8_t *name, size_t length)</td></tr>
 <tr class="separator:gaa9131c8e93235641c71b568b81ac77af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad97cc06ef3c8fc02f51f96fb6e41c99b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___n_d_n_fwd_p_i_t.html#ga96ad322d1d01065597c3e66e9c079a08">ndn_pit_entry_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_p_i_t.html#gad97cc06ef3c8fc02f51f96fb6e41c99b">ndn_pit_find</a> (<a class="el" href="group___n_d_n_fwd_p_i_t.html#ga2c27a2be51d7b3873fd36e471f568ec8">ndn_pit_t</a> *self, uint8_t *prefix, size_t length)</td></tr>
@@ -179,39 +173,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>PIT class. </p>
+<p>Forwarding Information Base (FIB). </p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga58e78feb0ad4a56df63161d44c1e8e7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga58e78feb0ad4a56df63161d44c1e8e7e">&#9670;&nbsp;</a></span>ndn_pit_entry_add_incoming_face()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ndn_pit_entry_add_incoming_face </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group___n_d_n_fwd_p_i_t.html#ga96ad322d1d01065597c3e66e9c079a08">ndn_pit_entry_t</a> *&#160;</td>
-          <td class="paramname"><em>entry</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *&#160;</td>
-          <td class="paramname"><em>face</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gad97cc06ef3c8fc02f51f96fb6e41c99b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad97cc06ef3c8fc02f51f96fb6e41c99b">&#9670;&nbsp;</a></span>ndn_pit_find()</h2>
 
@@ -301,7 +267,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="name-tree_8h.html#a699153a76e5485373ce87e54e6fe5c98">ndn_nametree_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group___n_d_n_fwd_name_tree.html#ga699153a76e5485373ce87e54e6fe5c98">ndn_nametree_t</a> *&#160;</td>
           <td class="paramname"><em>nametree</em>&#160;</td>
         </tr>
         <tr>
@@ -348,24 +314,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gafd5d5f26bdf7335da1333dfd48860f69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafd5d5f26bdf7335da1333dfd48860f69">&#9670;&nbsp;</a></span>ndn_pit_refresh_entry()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ndn_pit_refresh_entry </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group___n_d_n_fwd_p_i_t.html#ga96ad322d1d01065597c3e66e9c079a08">ndn_pit_entry_t</a> *&#160;</td>
-          <td class="paramname"><em>entry</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga175dfa92389cbd3142e508832af045c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga175dfa92389cbd3142e508832af045c1">&#9670;&nbsp;</a></span>ndn_pit_remove_entry()</h2>
 
@@ -383,76 +331,6 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype"><a class="el" href="group___n_d_n_fwd_p_i_t.html#ga96ad322d1d01065597c3e66e9c079a08">ndn_pit_entry_t</a> *&#160;</td>
           <td class="paramname"><em>entry</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga4199a8b5f0b4e2a62b5ea03bcc6e8a76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4199a8b5f0b4e2a62b5ea03bcc6e8a76">&#9670;&nbsp;</a></span>ndn_pit_set_entry()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ndn_pit_set_entry </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group___n_d_n_fwd_p_i_t.html#ga96ad322d1d01065597c3e66e9c079a08">ndn_pit_entry_t</a> *&#160;</td>
-          <td class="paramname"><em>entry</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="forwarder-helper_8h.html#ab3029eb7252ce096a135f0cdfe2a325b">interest_options_t</a>&#160;</td>
-          <td class="paramname"><em>options</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>incoming_faces</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="uniform-time_8h.html#af1773cc5496fc87d1d738fb8052726a8">ndn_time_ms_t</a>&#160;</td>
-          <td class="paramname"><em>last_time</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="uniform-time_8h.html#af1773cc5496fc87d1d738fb8052726a8">ndn_time_ms_t</a>&#160;</td>
-          <td class="paramname"><em>express_time</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="callback-funcs_8h.html#a452c4f70da99ab88816c3b2398a9c09e">ndn_on_data_func</a>&#160;</td>
-          <td class="paramname"><em>on_data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="callback-funcs_8h.html#a8405a85fb37f81835d71363fd396b270">ndn_on_timeout_func</a>&#160;</td>
-          <td class="paramname"><em>on_timeout</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>userdata</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>nametree_id</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

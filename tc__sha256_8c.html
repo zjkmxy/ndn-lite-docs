@@ -68,7 +68,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">tc_sha256.c File Reference</div>  </div>
 </div><!--header-->
@@ -80,13 +81,13 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aa88aa4f510e7309d3d6d4d36c40e9093"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__sha256_8c.html#aa88aa4f510e7309d3d6d4d36c40e9093">Sigma0</a>(a)&#160;&#160;&#160;(ROTR((a), 2) ^ ROTR((a), 13) ^ ROTR((a), 22))</td></tr>
+<tr class="memitem:aa88aa4f510e7309d3d6d4d36c40e9093"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__sha256_8c.html#aa88aa4f510e7309d3d6d4d36c40e9093">Sigma0</a>(a)&#160;&#160;&#160;(<a class="el" href="tc__sha256_8c.html#a1b52cb041b0c6efdafe948f4190828c4">ROTR</a>((a), 2) ^ <a class="el" href="tc__sha256_8c.html#a1b52cb041b0c6efdafe948f4190828c4">ROTR</a>((a), 13) ^ <a class="el" href="tc__sha256_8c.html#a1b52cb041b0c6efdafe948f4190828c4">ROTR</a>((a), 22))</td></tr>
 <tr class="separator:aa88aa4f510e7309d3d6d4d36c40e9093"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7323033f54232dbaacd77a06880ef561"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__sha256_8c.html#a7323033f54232dbaacd77a06880ef561">Sigma1</a>(a)&#160;&#160;&#160;(ROTR((a), 6) ^ ROTR((a), 11) ^ ROTR((a), 25))</td></tr>
+<tr class="memitem:a7323033f54232dbaacd77a06880ef561"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__sha256_8c.html#a7323033f54232dbaacd77a06880ef561">Sigma1</a>(a)&#160;&#160;&#160;(<a class="el" href="tc__sha256_8c.html#a1b52cb041b0c6efdafe948f4190828c4">ROTR</a>((a), 6) ^ <a class="el" href="tc__sha256_8c.html#a1b52cb041b0c6efdafe948f4190828c4">ROTR</a>((a), 11) ^ <a class="el" href="tc__sha256_8c.html#a1b52cb041b0c6efdafe948f4190828c4">ROTR</a>((a), 25))</td></tr>
 <tr class="separator:a7323033f54232dbaacd77a06880ef561"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3c69d41653173911bb4c3a6a82bd946"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__sha256_8c.html#ad3c69d41653173911bb4c3a6a82bd946">sigma0</a>(a)&#160;&#160;&#160;(ROTR((a), 7) ^ ROTR((a), 18) ^ ((a) &gt;&gt; 3))</td></tr>
+<tr class="memitem:ad3c69d41653173911bb4c3a6a82bd946"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__sha256_8c.html#ad3c69d41653173911bb4c3a6a82bd946">sigma0</a>(a)&#160;&#160;&#160;(<a class="el" href="tc__sha256_8c.html#a1b52cb041b0c6efdafe948f4190828c4">ROTR</a>((a), 7) ^ <a class="el" href="tc__sha256_8c.html#a1b52cb041b0c6efdafe948f4190828c4">ROTR</a>((a), 18) ^ ((a) &gt;&gt; 3))</td></tr>
 <tr class="separator:ad3c69d41653173911bb4c3a6a82bd946"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35eccd4ae0532e38d3a16a784cd77ad4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__sha256_8c.html#a35eccd4ae0532e38d3a16a784cd77ad4">sigma1</a>(a)&#160;&#160;&#160;(ROTR((a), 17) ^ ROTR((a), 19) ^ ((a) &gt;&gt; 10))</td></tr>
+<tr class="memitem:a35eccd4ae0532e38d3a16a784cd77ad4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__sha256_8c.html#a35eccd4ae0532e38d3a16a784cd77ad4">sigma1</a>(a)&#160;&#160;&#160;(<a class="el" href="tc__sha256_8c.html#a1b52cb041b0c6efdafe948f4190828c4">ROTR</a>((a), 17) ^ <a class="el" href="tc__sha256_8c.html#a1b52cb041b0c6efdafe948f4190828c4">ROTR</a>((a), 19) ^ ((a) &gt;&gt; 10))</td></tr>
 <tr class="separator:a35eccd4ae0532e38d3a16a784cd77ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e70965b441a15447359883949ebdf38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__sha256_8c.html#a3e70965b441a15447359883949ebdf38">Ch</a>(a,  b,  c)&#160;&#160;&#160;(((a) &amp; (b)) ^ ((~(a)) &amp; (c)))</td></tr>
 <tr class="separator:a3e70965b441a15447359883949ebdf38"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -95,6 +96,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ab1e467915d90b3804d73661b32d80d81"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__sha256_8c.html#ab1e467915d90b3804d73661b32d80d81">compress</a> (unsigned int *iv, const uint8_t *data)</td></tr>
+<tr class="separator:ab1e467915d90b3804d73661b32d80d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9913aa7d379a3566fcd1210b355e987"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__sha256_8c.html#ac9913aa7d379a3566fcd1210b355e987">tc_sha256_init</a> (<a class="el" href="tc__sha256_8h.html#ad366c87b1be6ec1160ed9f1a603fb15c">TCSha256State_t</a> s)</td></tr>
 <tr class="memdesc:ac9913aa7d379a3566fcd1210b355e987"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHA256 initialization procedure Initializes s.  <a href="#ac9913aa7d379a3566fcd1210b355e987">More...</a><br /></td></tr>
 <tr class="separator:ac9913aa7d379a3566fcd1210b355e987"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -104,6 +107,15 @@ Functions</h2></td></tr>
 <tr class="memitem:aceeed41ffc367e5caadd97ac2e67507d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__sha256_8c.html#aceeed41ffc367e5caadd97ac2e67507d">tc_sha256_final</a> (uint8_t *digest, <a class="el" href="tc__sha256_8h.html#ad366c87b1be6ec1160ed9f1a603fb15c">TCSha256State_t</a> s)</td></tr>
 <tr class="memdesc:aceeed41ffc367e5caadd97ac2e67507d"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHA256 final procedure Inserts the completed hash computation into digest.  <a href="#aceeed41ffc367e5caadd97ac2e67507d">More...</a><br /></td></tr>
 <tr class="separator:aceeed41ffc367e5caadd97ac2e67507d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b52cb041b0c6efdafe948f4190828c4"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__sha256_8c.html#a1b52cb041b0c6efdafe948f4190828c4">ROTR</a> (unsigned int a, unsigned int n)</td></tr>
+<tr class="separator:a1b52cb041b0c6efdafe948f4190828c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc0178464290202184d4354ef77b4d5"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__sha256_8c.html#a4fc0178464290202184d4354ef77b4d5">BigEndian</a> (const uint8_t **c)</td></tr>
+<tr class="separator:a4fc0178464290202184d4354ef77b4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aa220b1ff55e249d57f662e22812ddb06"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tc__sha256_8c.html#aa220b1ff55e249d57f662e22812ddb06">k256</a> [64]</td></tr>
+<tr class="separator:aa220b1ff55e249d57f662e22812ddb06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a3e70965b441a15447359883949ebdf38"></a>
@@ -185,7 +197,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">a</td><td>)</td>
-          <td>&#160;&#160;&#160;(ROTR((a), 2) ^ ROTR((a), 13) ^ ROTR((a), 22))</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="tc__sha256_8c.html#a1b52cb041b0c6efdafe948f4190828c4">ROTR</a>((a), 2) ^ <a class="el" href="tc__sha256_8c.html#a1b52cb041b0c6efdafe948f4190828c4">ROTR</a>((a), 13) ^ <a class="el" href="tc__sha256_8c.html#a1b52cb041b0c6efdafe948f4190828c4">ROTR</a>((a), 22))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -203,7 +215,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">a</td><td>)</td>
-          <td>&#160;&#160;&#160;(ROTR((a), 7) ^ ROTR((a), 18) ^ ((a) &gt;&gt; 3))</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="tc__sha256_8c.html#a1b52cb041b0c6efdafe948f4190828c4">ROTR</a>((a), 7) ^ <a class="el" href="tc__sha256_8c.html#a1b52cb041b0c6efdafe948f4190828c4">ROTR</a>((a), 18) ^ ((a) &gt;&gt; 3))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -221,7 +233,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">a</td><td>)</td>
-          <td>&#160;&#160;&#160;(ROTR((a), 6) ^ ROTR((a), 11) ^ ROTR((a), 25))</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="tc__sha256_8c.html#a1b52cb041b0c6efdafe948f4190828c4">ROTR</a>((a), 6) ^ <a class="el" href="tc__sha256_8c.html#a1b52cb041b0c6efdafe948f4190828c4">ROTR</a>((a), 11) ^ <a class="el" href="tc__sha256_8c.html#a1b52cb041b0c6efdafe948f4190828c4">ROTR</a>((a), 25))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -239,7 +251,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">a</td><td>)</td>
-          <td>&#160;&#160;&#160;(ROTR((a), 17) ^ ROTR((a), 19) ^ ((a) &gt;&gt; 10))</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="tc__sha256_8c.html#a1b52cb041b0c6efdafe948f4190828c4">ROTR</a>((a), 17) ^ <a class="el" href="tc__sha256_8c.html#a1b52cb041b0c6efdafe948f4190828c4">ROTR</a>((a), 19) ^ ((a) &gt;&gt; 10))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -247,6 +259,104 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a4fc0178464290202184d4354ef77b4d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc0178464290202184d4354ef77b4d5">&#9670;&nbsp;</a></span>BigEndian()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned int BigEndian </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t **&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1e467915d90b3804d73661b32d80d81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1e467915d90b3804d73661b32d80d81">&#9670;&nbsp;</a></span>compress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void compress </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>iv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b52cb041b0c6efdafe948f4190828c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b52cb041b0c6efdafe948f4190828c4">&#9670;&nbsp;</a></span>ROTR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned int ROTR </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aceeed41ffc367e5caadd97ac2e67507d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aceeed41ffc367e5caadd97ac2e67507d">&#9670;&nbsp;</a></span>tc_sha256_final()</h2>
 
@@ -359,6 +469,29 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aa220b1ff55e249d57f662e22812ddb06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa220b1ff55e249d57f662e22812ddb06">&#9670;&nbsp;</a></span>k256</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int k256[64]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">  0x428a2f98, 0x71374491, 0xb5c0fbcf, 0xe9b5dba5, 0x3956c25b, 0x59f111f1,</div><div class="line">  0x923f82a4, 0xab1c5ed5, 0xd807aa98, 0x12835b01, 0x243185be, 0x550c7dc3,</div><div class="line">  0x72be5d74, 0x80deb1fe, 0x9bdc06a7, 0xc19bf174, 0xe49b69c1, 0xefbe4786,</div><div class="line">  0x0fc19dc6, 0x240ca1cc, 0x2de92c6f, 0x4a7484aa, 0x5cb0a9dc, 0x76f988da,</div><div class="line">  0x983e5152, 0xa831c66d, 0xb00327c8, 0xbf597fc7, 0xc6e00bf3, 0xd5a79147,</div><div class="line">  0x06ca6351, 0x14292967, 0x27b70a85, 0x2e1b2138, 0x4d2c6dfc, 0x53380d13,</div><div class="line">  0x650a7354, 0x766a0abb, 0x81c2c92e, 0x92722c85, 0xa2bfe8a1, 0xa81a664b,</div><div class="line">  0xc24b8b70, 0xc76c51a3, 0xd192e819, 0xd6990624, 0xf40e3585, 0x106aa070,</div><div class="line">  0x19a4c116, 0x1e376c08, 0x2748774c, 0x34b0bcb5, 0x391c0cb3, 0x4ed8aa4a,</div><div class="line">  0x5b9cca4f, 0x682e6ff3, 0x748f82ee, 0x78a5636f, 0x84c87814, 0x8cc70208,</div><div class="line">  0x90befffa, 0xa4506ceb, 0xbef9a3f7, 0xc67178f2</div><div class="line">}</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

@@ -1,5 +1,7 @@
 <map id="NDNUtil" name="NDNUtil">
 <area shape="rect" id="node1" href="$group___n_d_n_util_msq_queue.html" title="Message queue of the forwarder." alt="" coords="123,5,242,29"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,29,75,53"/>
-<area shape="rect" id="node3" href="$group___n_d_n_util_mem_pool.html" title="Memory pool manages pseudo memory blocks in a static memory array." alt="" coords="130,53,235,77"/>
+<area shape="rect" id="node2" href="$group___n_d_n_util_re.html" title="Mini regex&#45;module inspired by Rob Pike&#39;s regex code described in: http://www.cs.princeton...." alt="" coords="152,53,212,77"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,77,75,101"/>
+<area shape="rect" id="node4" href="$group___n_d_n_util_uni_time.html" title="Unified interfaces to get time, since different platform has different implementations." alt="" coords="130,101,235,125"/>
+<area shape="rect" id="node5" href="$group___n_d_n_util_mem_pool.html" title="Memory pool manages pseudo memory blocks in a static memory array." alt="" coords="130,149,235,173"/>
 </map>

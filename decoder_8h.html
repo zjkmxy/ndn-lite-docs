@@ -68,7 +68,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">decoder.h File Reference</div>  </div>
 </div><!--header-->
@@ -88,6 +89,48 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a80f0c1294feb93f657e2515c87df2624"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structndn__decoder.html">ndn_decoder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a></td></tr>
 <tr class="memdesc:a80f0c1294feb93f657e2515c87df2624"><td class="mdescLeft">&#160;</td><td class="mdescRight">The structure to keep the state when doing NDN TLV decoding.  <a href="#a80f0c1294feb93f657e2515c87df2624">More...</a><br /></td></tr>
 <tr class="separator:a80f0c1294feb93f657e2515c87df2624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a80ba6ce90b569c8b5965925ece618913"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decoder_8h.html#a80ba6ce90b569c8b5965925ece618913">decoder_init</a> (<a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *decoder, const uint8_t *block_value, uint32_t block_size)</td></tr>
+<tr class="memdesc:a80ba6ce90b569c8b5965925ece618913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init a decoder by setting the wire format buffer and its size.  <a href="#a80ba6ce90b569c8b5965925ece618913">More...</a><br /></td></tr>
+<tr class="separator:a80ba6ce90b569c8b5965925ece618913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e4042a34cbaaf3223a96c83e52e341"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decoder_8h.html#a03e4042a34cbaaf3223a96c83e52e341">decoder_get_var</a> (<a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *decoder, uint32_t *var)</td></tr>
+<tr class="memdesc:a03e4042a34cbaaf3223a96c83e52e341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the variable size Type (T) and Length (L).  <a href="#a03e4042a34cbaaf3223a96c83e52e341">More...</a><br /></td></tr>
+<tr class="separator:a03e4042a34cbaaf3223a96c83e52e341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4484ab19930d6d2257eac2b0bb30e3c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decoder_8h.html#ac4484ab19930d6d2257eac2b0bb30e3c">decoder_get_type</a> (<a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *decoder, uint32_t *type)</td></tr>
+<tr class="memdesc:ac4484ab19930d6d2257eac2b0bb30e3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the variable size Type (T).  <a href="#ac4484ab19930d6d2257eac2b0bb30e3c">More...</a><br /></td></tr>
+<tr class="separator:ac4484ab19930d6d2257eac2b0bb30e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acefc31e25434817fbada7fc5cfeb157a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decoder_8h.html#acefc31e25434817fbada7fc5cfeb157a">decoder_get_length</a> (<a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *decoder, uint32_t *length)</td></tr>
+<tr class="memdesc:acefc31e25434817fbada7fc5cfeb157a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the variable size Length (L).  <a href="#acefc31e25434817fbada7fc5cfeb157a">More...</a><br /></td></tr>
+<tr class="separator:acefc31e25434817fbada7fc5cfeb157a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56cd619a7db6ba485c003d9a9b1a78b2"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decoder_8h.html#a56cd619a7db6ba485c003d9a9b1a78b2">decoder_get_raw_buffer_value</a> (<a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *decoder, uint8_t *value, uint32_t size)</td></tr>
+<tr class="memdesc:a56cd619a7db6ba485c003d9a9b1a78b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the variable size Value (V) to bytes.  <a href="#a56cd619a7db6ba485c003d9a9b1a78b2">More...</a><br /></td></tr>
+<tr class="separator:a56cd619a7db6ba485c003d9a9b1a78b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20393371e933bf7d2e812a36e4ef8964"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decoder_8h.html#a20393371e933bf7d2e812a36e4ef8964">decoder_get_byte_value</a> (<a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *decoder, uint8_t *value)</td></tr>
+<tr class="memdesc:a20393371e933bf7d2e812a36e4ef8964"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the fixed size Value (V) to a single byte.  <a href="#a20393371e933bf7d2e812a36e4ef8964">More...</a><br /></td></tr>
+<tr class="separator:a20393371e933bf7d2e812a36e4ef8964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad33b60c84aaa5ad83d6cbb8c0a0aa7c4"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decoder_8h.html#ad33b60c84aaa5ad83d6cbb8c0a0aa7c4">decoder_get_uint16_value</a> (<a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *decoder, uint16_t *value)</td></tr>
+<tr class="memdesc:ad33b60c84aaa5ad83d6cbb8c0a0aa7c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the fixed size Value (V) to a uint16_t.  <a href="#ad33b60c84aaa5ad83d6cbb8c0a0aa7c4">More...</a><br /></td></tr>
+<tr class="separator:ad33b60c84aaa5ad83d6cbb8c0a0aa7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7015ba38f2ec931f2e9749db1539656"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decoder_8h.html#ad7015ba38f2ec931f2e9749db1539656">decoder_get_uint32_value</a> (<a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *decoder, uint32_t *value)</td></tr>
+<tr class="memdesc:ad7015ba38f2ec931f2e9749db1539656"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the fixed size Value (V) to a uint32_t.  <a href="#ad7015ba38f2ec931f2e9749db1539656">More...</a><br /></td></tr>
+<tr class="separator:ad7015ba38f2ec931f2e9749db1539656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad57f29628b46fdd54dd5d02a5a127b1c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decoder_8h.html#ad57f29628b46fdd54dd5d02a5a127b1c">decoder_get_uint64_value</a> (<a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *decoder, uint64_t *value)</td></tr>
+<tr class="memdesc:ad57f29628b46fdd54dd5d02a5a127b1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the fixed size Value (V) to a uint64_t.  <a href="#ad57f29628b46fdd54dd5d02a5a127b1c">More...</a><br /></td></tr>
+<tr class="separator:ad57f29628b46fdd54dd5d02a5a127b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54dd4e2585fe80dbce61d6f1e8f7e24f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decoder_8h.html#a54dd4e2585fe80dbce61d6f1e8f7e24f">decoder_get_uint_value</a> (<a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *decoder, uint32_t length, uint64_t *value)</td></tr>
+<tr class="memdesc:a54dd4e2585fe80dbce61d6f1e8f7e24f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the non-negative int Value (V) to a uint64_t.  <a href="#a54dd4e2585fe80dbce61d6f1e8f7e24f">More...</a><br /></td></tr>
+<tr class="separator:a54dd4e2585fe80dbce61d6f1e8f7e24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86d3d29c1fdcf7d8e9829e03ea6cf1ba"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decoder_8h.html#a86d3d29c1fdcf7d8e9829e03ea6cf1ba">decoder_move_forward</a> (<a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *decoder, uint32_t step)</td></tr>
+<tr class="memdesc:a86d3d29c1fdcf7d8e9829e03ea6cf1ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move the decoder's offset forward by.  <a href="#a86d3d29c1fdcf7d8e9829e03ea6cf1ba">More...</a><br /></td></tr>
+<tr class="separator:a86d3d29c1fdcf7d8e9829e03ea6cf1ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aad4017104743c876201c5cfc053605"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decoder_8h.html#a2aad4017104743c876201c5cfc053605">decoder_move_backward</a> (<a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *decoder, uint32_t step)</td></tr>
+<tr class="memdesc:a2aad4017104743c876201c5cfc053605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move the decoder's offset backward by.  <a href="#a2aad4017104743c876201c5cfc053605">More...</a><br /></td></tr>
+<tr class="separator:a2aad4017104743c876201c5cfc053605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0f6bb1cf124be2a021189ca8fab6e40"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decoder_8h.html#ac0f6bb1cf124be2a021189ca8fab6e40">decoder_get_offset</a> (const <a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *decoder)</td></tr>
+<tr class="memdesc:ac0f6bb1cf124be2a021189ca8fab6e40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the offset of the decoder.  <a href="#ac0f6bb1cf124be2a021189ca8fab6e40">More...</a><br /></td></tr>
+<tr class="separator:ac0f6bb1cf124be2a021189ca8fab6e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a80f0c1294feb93f657e2515c87df2624"></a>
@@ -103,6 +146,617 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The structure to keep the state when doing NDN TLV decoding. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a20393371e933bf7d2e812a36e4ef8964"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20393371e933bf7d2e812a36e4ef8964">&#9670;&nbsp;</a></span>decoder_get_byte_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int decoder_get_byte_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *&#160;</td>
+          <td class="paramname"><em>decoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the fixed size Value (V) to a single byte. </p>
+<p>This function is supposed to be invoked after <a class="el" href="decoder_8h.html#acefc31e25434817fbada7fc5cfeb157a" title="Get the variable size Length (L).">decoder_get_length()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">decoder.</td><td>Input/Output. The decoder's offset will be updated. </td></tr>
+    <tr><td class="paramname">value.</td><td>Output. The variable to keep the byte value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
+
+</div>
+</div>
+<a id="acefc31e25434817fbada7fc5cfeb157a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acefc31e25434817fbada7fc5cfeb157a">&#9670;&nbsp;</a></span>decoder_get_length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int decoder_get_length </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *&#160;</td>
+          <td class="paramname"><em>decoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the variable size Length (L). </p>
+<p>This function is supposed to be invoked after <a class="el" href="decoder_8h.html#ac4484ab19930d6d2257eac2b0bb30e3c" title="Get the variable size Type (T).">decoder_get_type()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">decoder.</td><td>Input/Output. The decoder's offset will be updated. </td></tr>
+    <tr><td class="paramname">length.</td><td>Output. The uint32_t to keep the decoded Length (L). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
+
+</div>
+</div>
+<a id="ac0f6bb1cf124be2a021189ca8fab6e40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0f6bb1cf124be2a021189ca8fab6e40">&#9670;&nbsp;</a></span>decoder_get_offset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static uint32_t decoder_get_offset </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *&#160;</td>
+          <td class="paramname"><em>decoder</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the offset of the decoder. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">decoder.</td><td>Input. The decoder's offset will be updated. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the uint32_t type offset. </dd></dl>
+
+</div>
+</div>
+<a id="a56cd619a7db6ba485c003d9a9b1a78b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56cd619a7db6ba485c003d9a9b1a78b2">&#9670;&nbsp;</a></span>decoder_get_raw_buffer_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int decoder_get_raw_buffer_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *&#160;</td>
+          <td class="paramname"><em>decoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the variable size Value (V) to bytes. </p>
+<p>This function is supposed to be invoked after <a class="el" href="decoder_8h.html#acefc31e25434817fbada7fc5cfeb157a" title="Get the variable size Length (L).">decoder_get_length()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">decoder.</td><td>Input/Output. The decoder's offset will be updated. </td></tr>
+    <tr><td class="paramname">value.</td><td>Output. The variable to keep the value. It must have been initialized with an empty uint8_t array. </td></tr>
+    <tr><td class="paramname">size.</td><td>Input. The size should be set to the value obtained from <a class="el" href="decoder_8h.html#acefc31e25434817fbada7fc5cfeb157a" title="Get the variable size Length (L).">decoder_get_length()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
+
+</div>
+</div>
+<a id="ac4484ab19930d6d2257eac2b0bb30e3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4484ab19930d6d2257eac2b0bb30e3c">&#9670;&nbsp;</a></span>decoder_get_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int decoder_get_type </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *&#160;</td>
+          <td class="paramname"><em>decoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the variable size Type (T). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">decoder.</td><td>Input/Output. The decoder's offset will be updated. </td></tr>
+    <tr><td class="paramname">type.</td><td>Output. The uint32_t to keep the decoded Type (T). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
+
+</div>
+</div>
+<a id="ad33b60c84aaa5ad83d6cbb8c0a0aa7c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad33b60c84aaa5ad83d6cbb8c0a0aa7c4">&#9670;&nbsp;</a></span>decoder_get_uint16_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int decoder_get_uint16_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *&#160;</td>
+          <td class="paramname"><em>decoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the fixed size Value (V) to a uint16_t. </p>
+<p>This function is supposed to be invoked after <a class="el" href="decoder_8h.html#acefc31e25434817fbada7fc5cfeb157a" title="Get the variable size Length (L).">decoder_get_length()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">decoder.</td><td>Input/Output. The decoder's offset will be updated. </td></tr>
+    <tr><td class="paramname">value.</td><td>Output. The variable to keep the uint16_t value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
+
+</div>
+</div>
+<a id="ad7015ba38f2ec931f2e9749db1539656"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7015ba38f2ec931f2e9749db1539656">&#9670;&nbsp;</a></span>decoder_get_uint32_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int decoder_get_uint32_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *&#160;</td>
+          <td class="paramname"><em>decoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the fixed size Value (V) to a uint32_t. </p>
+<p>This function is supposed to be invoked after <a class="el" href="decoder_8h.html#acefc31e25434817fbada7fc5cfeb157a" title="Get the variable size Length (L).">decoder_get_length()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">decoder.</td><td>Input/Output. The decoder's offset will be updated. </td></tr>
+    <tr><td class="paramname">value.</td><td>Output. The variable to keep the uint32_t value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
+
+</div>
+</div>
+<a id="ad57f29628b46fdd54dd5d02a5a127b1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad57f29628b46fdd54dd5d02a5a127b1c">&#9670;&nbsp;</a></span>decoder_get_uint64_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int decoder_get_uint64_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *&#160;</td>
+          <td class="paramname"><em>decoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the fixed size Value (V) to a uint64_t. </p>
+<p>This function is supposed to be invoked after <a class="el" href="decoder_8h.html#acefc31e25434817fbada7fc5cfeb157a" title="Get the variable size Length (L).">decoder_get_length()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">decoder.</td><td>Input/Output. The decoder's offset will be updated. </td></tr>
+    <tr><td class="paramname">value.</td><td>Output. The variable to keep the uint64_t value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
+
+</div>
+</div>
+<a id="a54dd4e2585fe80dbce61d6f1e8f7e24f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54dd4e2585fe80dbce61d6f1e8f7e24f">&#9670;&nbsp;</a></span>decoder_get_uint_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int decoder_get_uint_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *&#160;</td>
+          <td class="paramname"><em>decoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the non-negative int Value (V) to a uint64_t. </p>
+<p>This function is supposed to be invoked after <a class="el" href="decoder_8h.html#acefc31e25434817fbada7fc5cfeb157a" title="Get the variable size Length (L).">decoder_get_length()</a>. TLV-LENGTH of the TLV element MUST be either 1, 2, 4, or 8. </p><dl class="section note"><dt>Note</dt><dd>For more details, go <a href="https://named-data.net/doc/NDN-packet-spec/current/tlv.html">https://named-data.net/doc/NDN-packet-spec/current/tlv.html</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">decoder.</td><td>Input/Output. The decoder's offset will be updated. </td></tr>
+    <tr><td class="paramname">length.</td><td>Input. The Length (L) obtained from <a class="el" href="decoder_8h.html#acefc31e25434817fbada7fc5cfeb157a" title="Get the variable size Length (L).">decoder_get_length()</a>. </td></tr>
+    <tr><td class="paramname">value.</td><td>Output. The variable to keep the non-negative int value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
+
+</div>
+</div>
+<a id="a03e4042a34cbaaf3223a96c83e52e341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03e4042a34cbaaf3223a96c83e52e341">&#9670;&nbsp;</a></span>decoder_get_var()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int decoder_get_var </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *&#160;</td>
+          <td class="paramname"><em>decoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>var</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the variable size Type (T) and Length (L). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">decoder.</td><td>Input/Output. The decoder's offset will be updated. </td></tr>
+    <tr><td class="paramname">var.</td><td>Output. The uint32_t to keep the decoded Type (T) or Length (L). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
+
+</div>
+</div>
+<a id="a80ba6ce90b569c8b5965925ece618913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80ba6ce90b569c8b5965925ece618913">&#9670;&nbsp;</a></span>decoder_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void decoder_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *&#160;</td>
+          <td class="paramname"><em>decoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>block_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>block_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Init a decoder by setting the wire format buffer and its size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">decoder.</td><td>Output. The decoder to be inited. </td></tr>
+    <tr><td class="paramname">block_value.</td><td>Input. The wire format buffer. </td></tr>
+    <tr><td class="paramname">block_size.</td><td>Input. The size of wire format buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2aad4017104743c876201c5cfc053605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aad4017104743c876201c5cfc053605">&#9670;&nbsp;</a></span>decoder_move_backward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int decoder_move_backward </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *&#160;</td>
+          <td class="paramname"><em>decoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>step</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move the decoder's offset backward by. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">step.</td><td></td></tr>
+    <tr><td class="paramname">decoder.</td><td>Output. The decoder's offset will be updated. </td></tr>
+    <tr><td class="paramname">step.</td><td>Input. The step by which the offset will be moved. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
+
+</div>
+</div>
+<a id="a86d3d29c1fdcf7d8e9829e03ea6cf1ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86d3d29c1fdcf7d8e9829e03ea6cf1ba">&#9670;&nbsp;</a></span>decoder_move_forward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int decoder_move_forward </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="decoder_8h.html#a80f0c1294feb93f657e2515c87df2624">ndn_decoder_t</a> *&#160;</td>
+          <td class="paramname"><em>decoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>step</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move the decoder's offset forward by. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">step.</td><td></td></tr>
+    <tr><td class="paramname">decoder.</td><td>Output. The decoder's offset will be updated. </td></tr>
+    <tr><td class="paramname">step.</td><td>Input. The step by which the offset will be moved. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
 
 </div>
 </div>

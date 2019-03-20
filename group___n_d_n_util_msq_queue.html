@@ -152,9 +152,9 @@ Functions</h2></td></tr>
 <p>The callback function of message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">self</td><td>Input. The object to receive this message. </td></tr>
-    <tr><td class="paramname">param_length</td><td>Input. The length of the <code>param</code>. </td></tr>
-    <tr><td class="paramname">param</td><td>Input. Point to a raw memory in size <code>param_length</code>. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">self</td><td>The object to receive this message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">param_length</td><td>[Optional] The length of the <code>param</code>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>[Optional] Point to a raw memory in size <code>param_length</code>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -181,7 +181,7 @@ Functions</h2></td></tr>
 <p>Cancel a posted message. </p>
 <p>Please make sure the pointer is correct and it's used before dispatch. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">msg</td><td>Pointer to message </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">msg</td><td>Pointer to message </td></tr>
   </table>
   </dd>
 </dl>
@@ -304,10 +304,10 @@ Functions</h2></td></tr>
 <p>Post a message to the queue. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">target</td><td>Input. The object to receive this message. </td></tr>
-    <tr><td class="paramname">reason</td><td>Input. The message callback function. </td></tr>
-    <tr><td class="paramname">length</td><td>Input. The length of parameters <code>param</code>. </td></tr>
-    <tr><td class="paramname">param</td><td>Input. The parameters of this message. Its context will be copied into the queue. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">target</td><td>The object to receive this message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reason</td><td>The message callback function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>[Optional] The length of parameters <code>param</code>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>[Optional] The parameters of this message. Its context will be copied into the queue. </td></tr>
   </table>
   </dd>
 </dl>

@@ -146,9 +146,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a32f7b1ff458bf03d113e18f3c2b7c008"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-ecc_8h.html#a32f7b1ff458bf03d113e18f3c2b7c008">ndn_ecc_load_pub_key</a> (<a class="el" href="ndn-lite-ecc_8h.html#a271dccd7895f0930a18233338f9c7cae">ndn_ecc_pub_t</a> *pub_key, const uint8_t *key_value, uint32_t key_size)</td></tr>
 <tr class="memdesc:a32f7b1ff458bf03d113e18f3c2b7c008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load in-memory key bits into an NDN public key.  <a href="#a32f7b1ff458bf03d113e18f3c2b7c008">More...</a><br /></td></tr>
 <tr class="separator:a32f7b1ff458bf03d113e18f3c2b7c008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b38d1e68b8d5aad67964fc1a24a7539"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-ecc_8h.html#a0b38d1e68b8d5aad67964fc1a24a7539">ndn_ecc_pub_init</a> (<a class="el" href="ndn-lite-ecc_8h.html#a271dccd7895f0930a18233338f9c7cae">ndn_ecc_pub_t</a> *ecc_pub, const uint8_t *key_value, uint32_t key_size, uint8_t curve_type, uint32_t key_id)</td></tr>
+<tr class="memdesc:a0b38d1e68b8d5aad67964fc1a24a7539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an ECC public key.  <a href="#a0b38d1e68b8d5aad67964fc1a24a7539">More...</a><br /></td></tr>
+<tr class="separator:a0b38d1e68b8d5aad67964fc1a24a7539"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0680723e6f5facaeaded4102c44d4276"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-ecc_8h.html#a0680723e6f5facaeaded4102c44d4276">ndn_ecc_load_prv_key</a> (<a class="el" href="ndn-lite-ecc_8h.html#a60d264130b5bd406a8ebf359acdc449a">ndn_ecc_prv_t</a> *prv_key, const uint8_t *key_value, uint32_t key_size)</td></tr>
 <tr class="memdesc:a0680723e6f5facaeaded4102c44d4276"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load in-memory key bits into an NDN private key.  <a href="#a0680723e6f5facaeaded4102c44d4276">More...</a><br /></td></tr>
 <tr class="separator:a0680723e6f5facaeaded4102c44d4276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa85373036e5a5adefeab95c44b4968a1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-ecc_8h.html#aa85373036e5a5adefeab95c44b4968a1">ndn_ecc_prv_init</a> (<a class="el" href="ndn-lite-ecc_8h.html#a60d264130b5bd406a8ebf359acdc449a">ndn_ecc_prv_t</a> *ecc_prv, const uint8_t *key_value, uint32_t key_size, uint8_t curve_type, uint32_t key_id)</td></tr>
+<tr class="memdesc:aa85373036e5a5adefeab95c44b4968a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an ECC private key.  <a href="#aa85373036e5a5adefeab95c44b4968a1">More...</a><br /></td></tr>
+<tr class="separator:aa85373036e5a5adefeab95c44b4968a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acffa612a8d2f8be2ad975be80180b63d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-ecc_8h.html#acffa612a8d2f8be2ad975be80180b63d">ndn_ecc_set_rng</a> (<a class="el" href="ndn-lite-rng_8h.html#a1e80e58b6bcac820f0dff9a933d82432">ndn_rng_impl</a> rng)</td></tr>
 <tr class="memdesc:acffa612a8d2f8be2ad975be80180b63d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set RNG function for backend implementation library, which need this to perform non-deterministic signing.  <a href="#acffa612a8d2f8be2ad975be80180b63d">More...</a><br /></td></tr>
 <tr class="separator:acffa612a8d2f8be2ad975be80180b63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -679,6 +685,140 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>NDN_SUCCESS if there is no error. </dd></dl>
+
+</div>
+</div>
+<a id="aa85373036e5a5adefeab95c44b4968a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa85373036e5a5adefeab95c44b4968a1">&#9670;&nbsp;</a></span>ndn_ecc_prv_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ndn_ecc_prv_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ndn-lite-ecc_8h.html#a60d264130b5bd406a8ebf359acdc449a">ndn_ecc_prv_t</a> *&#160;</td>
+          <td class="paramname"><em>ecc_prv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>key_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>key_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>curve_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>key_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialize an ECC private key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ecc_prv.</td><td>Input. The ECC private key whose info will be set. </td></tr>
+    <tr><td class="paramname">key_value.</td><td>Input. The key value bytes to set. </td></tr>
+    <tr><td class="paramname">key_size.</td><td>Input. The key size. Should not larger than 32 bytes. </td></tr>
+    <tr><td class="paramname">curve_type.</td><td>Input. Type of ECC Curve. Can be secp160r1, secp192r1, secp224r1, secp256r1, secp256k1. </td></tr>
+    <tr><td class="paramname">key_id.</td><td>Input. The key id to be set with this ECC private key. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
+
+</div>
+</div>
+<a id="a0b38d1e68b8d5aad67964fc1a24a7539"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b38d1e68b8d5aad67964fc1a24a7539">&#9670;&nbsp;</a></span>ndn_ecc_pub_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ndn_ecc_pub_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ndn-lite-ecc_8h.html#a271dccd7895f0930a18233338f9c7cae">ndn_ecc_pub_t</a> *&#160;</td>
+          <td class="paramname"><em>ecc_pub</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>key_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>key_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>curve_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>key_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialize an ECC public key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ecc_pub.</td><td>Input. The ECC public key whose info will be set. </td></tr>
+    <tr><td class="paramname">key_value.</td><td>Input. The key value bytes to set. </td></tr>
+    <tr><td class="paramname">key_size.</td><td>Input. The key size. Should not larger than 64 bytes. </td></tr>
+    <tr><td class="paramname">curve_type.</td><td>Input. Type of ECC Curve. Can be secp160r1, secp192r1, secp224r1, secp256r1, secp256k1. </td></tr>
+    <tr><td class="paramname">key_id.</td><td>Input. The key id to be set with this ECC public key. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
 
 </div>
 </div>

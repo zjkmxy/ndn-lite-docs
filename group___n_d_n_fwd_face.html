@@ -64,17 +64,21 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Face<div class="ingroups"><a class="el" href="group___n_d_n_fwd.html">Forwarder</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Abstract NDN network face.  
+<a href="#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for Face:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group___n_d_n_fwd_face.png" border="0" alt="" usemap="#group______n__d__n__fwd__face"/>
 <map name="group______n__d__n__fwd__face" id="group______n__d__n__fwd__face">
-<area shape="rect"  title=" " alt="" coords="135,5,186,29"/>
+<area shape="rect"  title="Abstract NDN network face." alt="" coords="135,5,186,29"/>
 <area shape="rect"  href="group___n_d_n_fwd.html" title="A lite forwarder." alt="" coords="5,5,87,29"/>
 </map>
 </td></tr></table></center>
@@ -89,22 +93,38 @@ Data Structures</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:gab61dab89f31eb408b213e92b617ba4c9"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#gab61dab89f31eb408b213e92b617ba4c9">ndn_face_intf_up</a>) (struct <a class="el" href="structndn__face__intf.html">ndn_face_intf</a> *self)</td></tr>
-<tr class="memdesc:gab61dab89f31eb408b213e92b617ba4c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The interface up function.  <a href="#gab61dab89f31eb408b213e92b617ba4c9">More...</a><br /></td></tr>
+<tr class="memdesc:gab61dab89f31eb408b213e92b617ba4c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on the face.  <a href="#gab61dab89f31eb408b213e92b617ba4c9">More...</a><br /></td></tr>
 <tr class="separator:gab61dab89f31eb408b213e92b617ba4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab4bfb4f0e624f01bd027fe65f41deb3d"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#gab4bfb4f0e624f01bd027fe65f41deb3d">ndn_face_intf_send</a>) (struct <a class="el" href="structndn__face__intf.html">ndn_face_intf</a> *self, const uint8_t *packet, uint32_t size)</td></tr>
-<tr class="memdesc:gab4bfb4f0e624f01bd027fe65f41deb3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The packet sending function.  <a href="#gab4bfb4f0e624f01bd027fe65f41deb3d">More...</a><br /></td></tr>
+<tr class="memdesc:gab4bfb4f0e624f01bd027fe65f41deb3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send out a packet.  <a href="#gab4bfb4f0e624f01bd027fe65f41deb3d">More...</a><br /></td></tr>
 <tr class="separator:gab4bfb4f0e624f01bd027fe65f41deb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4ddc971aec5a26529d396e88f9a55250"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#ga4ddc971aec5a26529d396e88f9a55250">ndn_face_intf_down</a>) (struct <a class="el" href="structndn__face__intf.html">ndn_face_intf</a> *self)</td></tr>
-<tr class="memdesc:ga4ddc971aec5a26529d396e88f9a55250"><td class="mdescLeft">&#160;</td><td class="mdescRight">The interface down function.  <a href="#ga4ddc971aec5a26529d396e88f9a55250">More...</a><br /></td></tr>
+<tr class="memdesc:ga4ddc971aec5a26529d396e88f9a55250"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutdown the face temporarily.  <a href="#ga4ddc971aec5a26529d396e88f9a55250">More...</a><br /></td></tr>
 <tr class="separator:ga4ddc971aec5a26529d396e88f9a55250"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4ae4b76cc49babcf1a35f9a939b236a6"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#ga4ae4b76cc49babcf1a35f9a939b236a6">ndn_face_intf_destroy</a>) (struct <a class="el" href="structndn__face__intf.html">ndn_face_intf</a> *self)</td></tr>
-<tr class="memdesc:ga4ae4b76cc49babcf1a35f9a939b236a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The interface destructor.  <a href="#ga4ae4b76cc49babcf1a35f9a939b236a6">More...</a><br /></td></tr>
+<tr class="memdesc:ga4ae4b76cc49babcf1a35f9a939b236a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ga4ae4b76cc49babcf1a35f9a939b236a6">More...</a><br /></td></tr>
 <tr class="separator:ga4ae4b76cc49babcf1a35f9a939b236a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8e0eb2b6fbad96a93867661dc7562913"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structndn__face__intf.html">ndn_face_intf</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a></td></tr>
 <tr class="memdesc:ga8e0eb2b6fbad96a93867661dc7562913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract NDN network face.  <a href="#ga8e0eb2b6fbad96a93867661dc7562913">More...</a><br /></td></tr>
 <tr class="separator:ga8e0eb2b6fbad96a93867661dc7562913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga22012eb7b92efa1c50f94ae82d3018bb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#ga22012eb7b92efa1c50f94ae82d3018bb">ndn_face_up</a> (<a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *self)</td></tr>
+<tr class="memdesc:ga22012eb7b92efa1c50f94ae82d3018bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on the face.  <a href="#ga22012eb7b92efa1c50f94ae82d3018bb">More...</a><br /></td></tr>
+<tr class="separator:ga22012eb7b92efa1c50f94ae82d3018bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga63847b15f0a86266892b5fe7f518ce49"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#ga63847b15f0a86266892b5fe7f518ce49">ndn_face_send</a> (<a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *self, const uint8_t *packet, uint32_t size)</td></tr>
+<tr class="memdesc:ga63847b15f0a86266892b5fe7f518ce49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send out a packet.  <a href="#ga63847b15f0a86266892b5fe7f518ce49">More...</a><br /></td></tr>
+<tr class="separator:ga63847b15f0a86266892b5fe7f518ce49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c24fdb633c2ad24d239d319948b72ce"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#ga9c24fdb633c2ad24d239d319948b72ce">ndn_face_down</a> (<a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *self)</td></tr>
+<tr class="memdesc:ga9c24fdb633c2ad24d239d319948b72ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutdown the face temporarily.  <a href="#ga9c24fdb633c2ad24d239d319948b72ce">More...</a><br /></td></tr>
+<tr class="separator:ga9c24fdb633c2ad24d239d319948b72ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36d633ae9891ebcaf7c6edfe35760c50"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_face.html#ga36d633ae9891ebcaf7c6edfe35760c50">ndn_face_destroy</a> (<a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *self)</td></tr>
+<tr class="memdesc:ga36d633ae9891ebcaf7c6edfe35760c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ga36d633ae9891ebcaf7c6edfe35760c50">More...</a><br /></td></tr>
+<tr class="separator:ga36d633ae9891ebcaf7c6edfe35760c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Abstract NDN network face. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga4ae4b76cc49babcf1a35f9a939b236a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4ae4b76cc49babcf1a35f9a939b236a6">&#9670;&nbsp;</a></span>ndn_face_intf_destroy</h2>
@@ -118,13 +138,8 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The interface destructor. </p>
-<p>Destroy the specified interface permanently. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">self</td><td>Input. The interface to destroy. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Destructor. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___n_d_n_fwd_face.html#ga36d633ae9891ebcaf7c6edfe35760c50" title="Destructor.">ndn_face_destroy</a> </dd></dl>
 
 </div>
 </div>
@@ -140,14 +155,8 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The interface down function. </p>
-<p>Shutdown the specified interface temporarily </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">self</td><td>Input. The interface to turn off. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
+<p>Shutdown the face temporarily. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___n_d_n_fwd_face.html#ga9c24fdb633c2ad24d239d319948b72ce" title="Shutdown the face temporarily.">ndn_face_down</a> </dd></dl>
 
 </div>
 </div>
@@ -163,17 +172,8 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The packet sending function. </p>
-<p>Send out a packet, Interest, Data, etc. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">self</td><td>Input. The interface through which the packet will be sent. </td></tr>
-    <tr><td class="paramname">name</td><td>[optional]Input. The name of the packet. </td></tr>
-    <tr><td class="paramname">packet</td><td>Input. The wire format packet buffer. </td></tr>
-    <tr><td class="paramname">size</td><td>Input. The size of the wire format packet buffer. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
+<p>Send out a packet. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___n_d_n_fwd_face.html#ga63847b15f0a86266892b5fe7f518ce49" title="Send out a packet.">ndn_face_send</a> </dd></dl>
 
 </div>
 </div>
@@ -190,7 +190,7 @@ Typedefs</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Abstract NDN network face. </p>
-<p>An abstract base class for all faces. Derived classes should implement the function <a class="el" href="structndn__face__intf.html#ace40f959a6e47a9c2e25aaabf06167d9">ndn_face_intf::up</a>, <a class="el" href="structndn__face__intf.html#a433e9dc6989c25648364e304ecbf2fb2">ndn_face_intf::send</a>, <a class="el" href="structndn__face__intf.html#a791684dc447503d1f8d42df475cffc73">ndn_face_intf::down</a>, and <a class="el" href="structndn__face__intf.html#af8077049cf72d675d2d0240c0dcec439">ndn_face_intf::destroy</a> with platform-specific APIs via assigning function pointers in <code><a class="el" href="structndn__face__intf.html" title="Abstract NDN network face.">ndn_face_intf</a></code>. </p><dl class="section attention"><dt>Attention</dt><dd><code><a class="el" href="structndn__face__intf.html" title="Abstract NDN network face.">ndn_face_intf</a></code> should always be the first member of any face class. </dd></dl>
+<p>An abstract base class for all faces. Derived classes should implement the function <a class="el" href="structndn__face__intf.html#ace40f959a6e47a9c2e25aaabf06167d9" title="Turn on the face.">ndn_face_intf::up</a>, <a class="el" href="structndn__face__intf.html#a433e9dc6989c25648364e304ecbf2fb2" title="Send out a packet.">ndn_face_intf::send</a>, <a class="el" href="structndn__face__intf.html#a791684dc447503d1f8d42df475cffc73" title="Shutdown the face temporarily.">ndn_face_intf::down</a>, and <a class="el" href="structndn__face__intf.html#af8077049cf72d675d2d0240c0dcec439" title="Destructor.">ndn_face_intf::destroy</a> with platform-specific APIs via assigning function pointers in <code><a class="el" href="structndn__face__intf.html" title="Abstract NDN network face.">ndn_face_intf</a></code>. </p><dl class="section attention"><dt>Attention</dt><dd><code><a class="el" href="structndn__face__intf.html" title="Abstract NDN network face.">ndn_face_intf</a></code> should always be the first member of any face class. </dd></dl>
 
 </div>
 </div>
@@ -206,14 +206,166 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The interface up function. </p>
-<p>Turn on the specified interface. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Turn on the face. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___n_d_n_fwd_face.html#ga22012eb7b92efa1c50f94ae82d3018bb" title="Turn on the face.">ndn_face_up</a> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga36d633ae9891ebcaf7c6edfe35760c50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga36d633ae9891ebcaf7c6edfe35760c50">&#9670;&nbsp;</a></span>ndn_face_destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ndn_face_destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor. </p>
+<p>Destroy the face permanently. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">self</td><td>Input. The interface to trun on. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">self</td><td>The face to destroy. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 if there is no error. </dd></dl>
+
+</div>
+</div>
+<a id="ga9c24fdb633c2ad24d239d319948b72ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9c24fdb633c2ad24d239d319948b72ce">&#9670;&nbsp;</a></span>ndn_face_down()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ndn_face_down </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Shutdown the face temporarily. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">self</td><td>Input. The interface to turn off. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group___n_d_n_error_code.html#ga6cc0372232218f7a1b4e4e6723aee2d1" title="The operation completed successfully.">NDN_SUCCESS</a> if the call succeeded. The error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ga63847b15f0a86266892b5fe7f518ce49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga63847b15f0a86266892b5fe7f518ce49">&#9670;&nbsp;</a></span>ndn_face_send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ndn_face_send </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send out a packet. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">self</td><td>The face through which to send. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet</td><td>The encoded packet. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>The size of <code>packet</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group___n_d_n_error_code.html#ga6cc0372232218f7a1b4e4e6723aee2d1" title="The operation completed successfully.">NDN_SUCCESS</a> if the call succeeded. The error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ga22012eb7b92efa1c50f94ae82d3018bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga22012eb7b92efa1c50f94ae82d3018bb">&#9670;&nbsp;</a></span>ndn_face_up()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int ndn_face_up </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___n_d_n_fwd_face.html#ga8e0eb2b6fbad96a93867661dc7562913">ndn_face_intf_t</a> *&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Turn on the face. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">self</td><td>The face to trun on. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group___n_d_n_error_code.html#ga6cc0372232218f7a1b4e4e6723aee2d1" title="The operation completed successfully.">NDN_SUCCESS</a> if the call succeeded. The error code otherwise. </dd></dl>
 
 </div>
 </div>

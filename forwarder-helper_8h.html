@@ -104,9 +104,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5d5e3984a22138d30c69ee0eddd23a50"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forwarder-helper_8h.html#a5d5e3984a22138d30c69ee0eddd23a50">tlv_interest_get_header</a> (uint8_t *interest, size_t buflen, <a class="el" href="forwarder-helper_8h.html#ab3029eb7252ce096a135f0cdfe2a325b">interest_options_t</a> *options, uint8_t **name, size_t *name_len)</td></tr>
 <tr class="memdesc:a5d5e3984a22138d30c69ee0eddd23a50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name and options of an Interest packet.  <a href="#a5d5e3984a22138d30c69ee0eddd23a50">More...</a><br /></td></tr>
 <tr class="separator:a5d5e3984a22138d30c69ee0eddd23a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a774b692497e4b0859b52a3c9d85783e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forwarder-helper_8h.html#a774b692497e4b0859b52a3c9d85783e6">tlv_data_get_header</a> (uint8_t *data, size_t buflen, uint8_t **name, size_t *name_len)</td></tr>
-<tr class="memdesc:a774b692497e4b0859b52a3c9d85783e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of a Data packet.  <a href="#a774b692497e4b0859b52a3c9d85783e6">More...</a><br /></td></tr>
-<tr class="separator:a774b692497e4b0859b52a3c9d85783e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f3be62b77ac652ee70b61f2aca33d3e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forwarder-helper_8h.html#a1f3be62b77ac652ee70b61f2aca33d3e">tlv_data_get_name</a> (uint8_t *data, size_t buflen, uint8_t **name, size_t *name_len)</td></tr>
+<tr class="memdesc:a1f3be62b77ac652ee70b61f2aca33d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of a Data packet.  <a href="#a1f3be62b77ac652ee70b61f2aca33d3e">More...</a><br /></td></tr>
+<tr class="separator:a1f3be62b77ac652ee70b61f2aca33d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dd1f8cfdf802c5ffa85c820c091800f"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forwarder-helper_8h.html#a9dd1f8cfdf802c5ffa85c820c091800f">tlv_interest_get_hoplimit_ptr</a> (uint8_t *interest, size_t buflen)</td></tr>
 <tr class="separator:a9dd1f8cfdf802c5ffa85c820c091800f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -180,14 +180,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a774b692497e4b0859b52a3c9d85783e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a774b692497e4b0859b52a3c9d85783e6">&#9670;&nbsp;</a></span>tlv_data_get_header()</h2>
+<a id="a1f3be62b77ac652ee70b61f2aca33d3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f3be62b77ac652ee70b61f2aca33d3e">&#9670;&nbsp;</a></span>tlv_data_get_name()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int tlv_data_get_header </td>
+          <td class="memname">int tlv_data_get_name </td>
           <td>(</td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>data</em>, </td>

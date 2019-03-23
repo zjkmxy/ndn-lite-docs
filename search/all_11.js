@@ -24,7 +24,7 @@ var searchData=
   ['repeatm_5fsome',['REPEATM_SOME',['../u_e_c_c_8c.html#adec101a71fc486186cd45026846a1b23',1,'uECC.c']]],
   ['reseedcount',['reseedCount',['../struct_t_c_ctr_prng__t.html#a60b571beb2c8844d4dd9f044177b2b03',1,'TCCtrPrng_t']]],
   ['result_5fsize',['result_size',['../structu_e_c_c___hash_context.html#a76125e8841af2108f06e174dde2b4d78',1,'uECC_HashContext']]],
-  ['right_5fbro',['right_bro',['../structnametree__entry.html#aad48e9630bb9d7a0ba836f465425f1f8',1,'nametree_entry']]],
+  ['right_5fbro',['right_bro',['../structnametree__entry.html#ad0a6ed4cfa6fa457056bdbad83878c68',1,'nametree_entry']]],
   ['rng',['rng',['../structndn__rng__backend.html#ab7ba1c3bd3bd46c72f3e673ea0c22d5c',1,'ndn_rng_backend']]],
   ['rotr',['ROTR',['../tc__sha256_8c.html#a1b52cb041b0c6efdafe948f4190828c4',1,'tc_sha256.c']]],
   ['rotword',['rotword',['../tc__aes__encrypt_8c.html#ab9fd5d036bdb2544d63a45cccb59f802',1,'tc_aes_encrypt.c']]],

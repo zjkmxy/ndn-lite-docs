@@ -67,12 +67,14 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">ndn-constants.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+</div>
 <p><a href="ndn-constants_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -99,7 +101,7 @@ Macros</h2></td></tr>
 <tr class="separator:aa639f31a4351b41e5af0ffa3f25dd765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8262148490f365456f0645b712937ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-constants_8h.html#ad8262148490f365456f0645b712937ab">NDN_DEFAULT_INTEREST_LIFETIME</a>&#160;&#160;&#160;4000</td></tr>
 <tr class="separator:ad8262148490f365456f0645b712937ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada844b91b34ea777449451643ce0de48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-constants_8h.html#ada844b91b34ea777449451643ce0de48">NDN_CONTENT_BUFFER_SIZE</a>&#160;&#160;&#160;256</td></tr>
+<tr class="memitem:ada844b91b34ea777449451643ce0de48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-constants_8h.html#ada844b91b34ea777449451643ce0de48">NDN_CONTENT_BUFFER_SIZE</a>&#160;&#160;&#160;4096</td></tr>
 <tr class="separator:ada844b91b34ea777449451643ce0de48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18790869b4440d3ff1e9fa78e2d4639d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-constants_8h.html#a18790869b4440d3ff1e9fa78e2d4639d">NDN_SIGNATURE_BUFFER_SIZE</a>&#160;&#160;&#160;128</td></tr>
 <tr class="separator:a18790869b4440d3ff1e9fa78e2d4639d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,6 +255,11 @@ Macros</h2></td></tr>
 <tr class="separator:a09a69e005d16e62b5fa299c98ab50cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5c59373939dc8771c7e3aa0ddd8d021"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-constants_8h.html#ad5c59373939dc8771c7e3aa0ddd8d021">NDN_TRUST_SCHEMA_SUBPATTERN_END_ONLY</a>&#160;&#160;&#160;0x01</td></tr>
 <tr class="separator:ad5c59373939dc8771c7e3aa0ddd8d021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:aef915007dcd615d2b8be18c48e749dfa"><td class="memItemLeft" align="right" valign="top">typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-constants_8h.html#aef915007dcd615d2b8be18c48e749dfa">ndn_table_id_t</a></td></tr>
+<tr class="separator:aef915007dcd615d2b8be18c48e749dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a3eb1844587186925ab2c0259ea68e3a6"></a>
@@ -490,7 +497,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="ndn-constants_8h.html#a42389ab2feb8b3af2b5f24710a2baa90">NDN_ASN1_ECDSA_MAX_RAW_SIG_SIZE</a> + \</div><div class="line">                                             NDN_ASN1_ECDSA_ENCODING_MAX_EXTRA_BYTES)</div><div class="ttc" id="ndn-constants_8h_html_a42389ab2feb8b3af2b5f24710a2baa90"><div class="ttname"><a href="ndn-constants_8h.html#a42389ab2feb8b3af2b5f24710a2baa90">NDN_ASN1_ECDSA_MAX_RAW_SIG_SIZE</a></div><div class="ttdeci">#define NDN_ASN1_ECDSA_MAX_RAW_SIG_SIZE</div><div class="ttdef"><b>Definition:</b> ndn-constants.h:100</div></div>
+<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="ndn-constants_8h.html#a42389ab2feb8b3af2b5f24710a2baa90">NDN_ASN1_ECDSA_MAX_RAW_SIG_SIZE</a> + \</div><div class="line">                                             NDN_ASN1_ECDSA_ENCODING_MAX_EXTRA_BYTES)</div><div class="ttc" id="ndn-constants_8h_html_a42389ab2feb8b3af2b5f24710a2baa90"><div class="ttname"><a href="ndn-constants_8h.html#a42389ab2feb8b3af2b5f24710a2baa90">NDN_ASN1_ECDSA_MAX_RAW_SIG_SIZE</a></div><div class="ttdeci">#define NDN_ASN1_ECDSA_MAX_RAW_SIG_SIZE</div><div class="ttdef"><b>Definition:</b> ndn-constants.h:105</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -519,7 +526,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="ndn-constants_8h.html#af9251e1cfe4cd78d0232f19a8778220e">NDN_ASN1_ECDSA_MIN_RAW_SIG_SIZE</a> + \</div><div class="line">                                             NDN_ASN1_ECDSA_ENCODING_MIN_EXTRA_BYTES)</div><div class="ttc" id="ndn-constants_8h_html_af9251e1cfe4cd78d0232f19a8778220e"><div class="ttname"><a href="ndn-constants_8h.html#af9251e1cfe4cd78d0232f19a8778220e">NDN_ASN1_ECDSA_MIN_RAW_SIG_SIZE</a></div><div class="ttdeci">#define NDN_ASN1_ECDSA_MIN_RAW_SIG_SIZE</div><div class="ttdef"><b>Definition:</b> ndn-constants.h:97</div></div>
+<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="ndn-constants_8h.html#af9251e1cfe4cd78d0232f19a8778220e">NDN_ASN1_ECDSA_MIN_RAW_SIG_SIZE</a> + \</div><div class="line">                                             NDN_ASN1_ECDSA_ENCODING_MIN_EXTRA_BYTES)</div><div class="ttc" id="ndn-constants_8h_html_af9251e1cfe4cd78d0232f19a8778220e"><div class="ttname"><a href="ndn-constants_8h.html#af9251e1cfe4cd78d0232f19a8778220e">NDN_ASN1_ECDSA_MIN_RAW_SIG_SIZE</a></div><div class="ttdeci">#define NDN_ASN1_ECDSA_MIN_RAW_SIG_SIZE</div><div class="ttdef"><b>Definition:</b> ndn-constants.h:102</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -548,7 +555,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="ndn-constants_8h.html#a435e8aac156f25314b84558db81d806f">NDN_ASN1_ECDSA_SECP160R1_RAW_SIG_SIZE</a> + \</div><div class="line">                                                       NDN_ASN1_ECDSA_ENCODING_MAX_EXTRA_BYTES)</div><div class="ttc" id="ndn-constants_8h_html_a435e8aac156f25314b84558db81d806f"><div class="ttname"><a href="ndn-constants_8h.html#a435e8aac156f25314b84558db81d806f">NDN_ASN1_ECDSA_SECP160R1_RAW_SIG_SIZE</a></div><div class="ttdeci">#define NDN_ASN1_ECDSA_SECP160R1_RAW_SIG_SIZE</div><div class="ttdef"><b>Definition:</b> ndn-constants.h:86</div></div>
+<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="ndn-constants_8h.html#a435e8aac156f25314b84558db81d806f">NDN_ASN1_ECDSA_SECP160R1_RAW_SIG_SIZE</a> + \</div><div class="line">                                                       NDN_ASN1_ECDSA_ENCODING_MAX_EXTRA_BYTES)</div><div class="ttc" id="ndn-constants_8h_html_a435e8aac156f25314b84558db81d806f"><div class="ttname"><a href="ndn-constants_8h.html#a435e8aac156f25314b84558db81d806f">NDN_ASN1_ECDSA_SECP160R1_RAW_SIG_SIZE</a></div><div class="ttdeci">#define NDN_ASN1_ECDSA_SECP160R1_RAW_SIG_SIZE</div><div class="ttdef"><b>Definition:</b> ndn-constants.h:91</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -577,7 +584,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="ndn-constants_8h.html#ad3b5c728b697eee51fa3f774a84479e2">NDN_ASN1_ECDSA_SECP192R1_RAW_SIG_SIZE</a> + \</div><div class="line">NDN_ASN1_ECDSA_ENCODING_MAX_EXTRA_BYTES)</div><div class="ttc" id="ndn-constants_8h_html_ad3b5c728b697eee51fa3f774a84479e2"><div class="ttname"><a href="ndn-constants_8h.html#ad3b5c728b697eee51fa3f774a84479e2">NDN_ASN1_ECDSA_SECP192R1_RAW_SIG_SIZE</a></div><div class="ttdeci">#define NDN_ASN1_ECDSA_SECP192R1_RAW_SIG_SIZE</div><div class="ttdef"><b>Definition:</b> ndn-constants.h:85</div></div>
+<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="ndn-constants_8h.html#ad3b5c728b697eee51fa3f774a84479e2">NDN_ASN1_ECDSA_SECP192R1_RAW_SIG_SIZE</a> + \</div><div class="line">NDN_ASN1_ECDSA_ENCODING_MAX_EXTRA_BYTES)</div><div class="ttc" id="ndn-constants_8h_html_ad3b5c728b697eee51fa3f774a84479e2"><div class="ttname"><a href="ndn-constants_8h.html#ad3b5c728b697eee51fa3f774a84479e2">NDN_ASN1_ECDSA_SECP192R1_RAW_SIG_SIZE</a></div><div class="ttdeci">#define NDN_ASN1_ECDSA_SECP192R1_RAW_SIG_SIZE</div><div class="ttdef"><b>Definition:</b> ndn-constants.h:90</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -606,7 +613,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="ndn-constants_8h.html#ab58879dea9ca43710372615b4139b79e">NDN_ASN1_ECDSA_SECP224R1_RAW_SIG_SIZE</a> + \</div><div class="line">                                                       NDN_ASN1_ECDSA_ENCODING_MAX_EXTRA_BYTES)</div><div class="ttc" id="ndn-constants_8h_html_ab58879dea9ca43710372615b4139b79e"><div class="ttname"><a href="ndn-constants_8h.html#ab58879dea9ca43710372615b4139b79e">NDN_ASN1_ECDSA_SECP224R1_RAW_SIG_SIZE</a></div><div class="ttdeci">#define NDN_ASN1_ECDSA_SECP224R1_RAW_SIG_SIZE</div><div class="ttdef"><b>Definition:</b> ndn-constants.h:84</div></div>
+<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="ndn-constants_8h.html#ab58879dea9ca43710372615b4139b79e">NDN_ASN1_ECDSA_SECP224R1_RAW_SIG_SIZE</a> + \</div><div class="line">                                                       NDN_ASN1_ECDSA_ENCODING_MAX_EXTRA_BYTES)</div><div class="ttc" id="ndn-constants_8h_html_ab58879dea9ca43710372615b4139b79e"><div class="ttname"><a href="ndn-constants_8h.html#ab58879dea9ca43710372615b4139b79e">NDN_ASN1_ECDSA_SECP224R1_RAW_SIG_SIZE</a></div><div class="ttdeci">#define NDN_ASN1_ECDSA_SECP224R1_RAW_SIG_SIZE</div><div class="ttdef"><b>Definition:</b> ndn-constants.h:89</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -635,7 +642,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="ndn-constants_8h.html#a530e3b64f01d0232693857e282f95cc7">NDN_ASN1_ECDSA_SECP256K1_RAW_SIG_SIZE</a> + \</div><div class="line">                                                       NDN_ASN1_ECDSA_ENCODING_MAX_EXTRA_BYTES)</div><div class="ttc" id="ndn-constants_8h_html_a530e3b64f01d0232693857e282f95cc7"><div class="ttname"><a href="ndn-constants_8h.html#a530e3b64f01d0232693857e282f95cc7">NDN_ASN1_ECDSA_SECP256K1_RAW_SIG_SIZE</a></div><div class="ttdeci">#define NDN_ASN1_ECDSA_SECP256K1_RAW_SIG_SIZE</div><div class="ttdef"><b>Definition:</b> ndn-constants.h:83</div></div>
+<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="ndn-constants_8h.html#a530e3b64f01d0232693857e282f95cc7">NDN_ASN1_ECDSA_SECP256K1_RAW_SIG_SIZE</a> + \</div><div class="line">                                                       NDN_ASN1_ECDSA_ENCODING_MAX_EXTRA_BYTES)</div><div class="ttc" id="ndn-constants_8h_html_a530e3b64f01d0232693857e282f95cc7"><div class="ttname"><a href="ndn-constants_8h.html#a530e3b64f01d0232693857e282f95cc7">NDN_ASN1_ECDSA_SECP256K1_RAW_SIG_SIZE</a></div><div class="ttdeci">#define NDN_ASN1_ECDSA_SECP256K1_RAW_SIG_SIZE</div><div class="ttdef"><b>Definition:</b> ndn-constants.h:88</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -664,7 +671,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="ndn-constants_8h.html#aa1eebf36c584b0b01a97ba93da1c351a">NDN_ASN1_ECDSA_SECP256R1_RAW_SIG_SIZE</a> + \</div><div class="line">                                                       NDN_ASN1_ECDSA_ENCODING_MAX_EXTRA_BYTES)</div><div class="ttc" id="ndn-constants_8h_html_aa1eebf36c584b0b01a97ba93da1c351a"><div class="ttname"><a href="ndn-constants_8h.html#aa1eebf36c584b0b01a97ba93da1c351a">NDN_ASN1_ECDSA_SECP256R1_RAW_SIG_SIZE</a></div><div class="ttdeci">#define NDN_ASN1_ECDSA_SECP256R1_RAW_SIG_SIZE</div><div class="ttdef"><b>Definition:</b> ndn-constants.h:82</div></div>
+<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="ndn-constants_8h.html#aa1eebf36c584b0b01a97ba93da1c351a">NDN_ASN1_ECDSA_SECP256R1_RAW_SIG_SIZE</a> + \</div><div class="line">                                                       NDN_ASN1_ECDSA_ENCODING_MAX_EXTRA_BYTES)</div><div class="ttc" id="ndn-constants_8h_html_aa1eebf36c584b0b01a97ba93da1c351a"><div class="ttname"><a href="ndn-constants_8h.html#aa1eebf36c584b0b01a97ba93da1c351a">NDN_ASN1_ECDSA_SECP256R1_RAW_SIG_SIZE</a></div><div class="ttdeci">#define NDN_ASN1_ECDSA_SECP256R1_RAW_SIG_SIZE</div><div class="ttdef"><b>Definition:</b> ndn-constants.h:87</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -689,7 +696,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NDN_CONTENT_BUFFER_SIZE&#160;&#160;&#160;256</td>
+          <td class="memname">#define NDN_CONTENT_BUFFER_SIZE&#160;&#160;&#160;4096</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1488,6 +1495,21 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define NDN_TRUST_SCHEMA_WILDCARD_SPECIALIZER&#160;&#160;&#160;0x05</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="aef915007dcd615d2b8be18c48e749dfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef915007dcd615d2b8be18c48e749dfa">&#9670;&nbsp;</a></span>ndn_table_id_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint16_t <a class="el" href="ndn-constants_8h.html#aef915007dcd615d2b8be18c48e749dfa">ndn_table_id_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

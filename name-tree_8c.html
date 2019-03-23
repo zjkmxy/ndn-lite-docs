@@ -74,6 +74,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="name-tree_8h_source.html">name-tree.h</a>&quot;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -83,10 +84,8 @@ Functions</h2></td></tr>
 <tr class="separator:adb84328bff69d86ffd97db487d6871a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab43ae3a10b5bc653e89df8594800dbfd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name-tree_8c.html#ab43ae3a10b5bc653e89df8594800dbfd">nametree_cleanup</a> (<a class="el" href="group___n_d_n_fwd_name_tree.html#ga699153a76e5485373ce87e54e6fe5c98">ndn_nametree_t</a> *nametree)</td></tr>
 <tr class="separator:ab43ae3a10b5bc653e89df8594800dbfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5fb32922c38fbfa58046b59ce19d43c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_name_tree.html#ga5fb32922c38fbfa58046b59ce19d43c1">ndn_nametree_init</a> (void *memory, uint16_t capacity)</td></tr>
-<tr class="separator:ga5fb32922c38fbfa58046b59ce19d43c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7b0a72ebe8a392621a9f69e8d0bb585"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name-tree_8c.html#aa7b0a72ebe8a392621a9f69e8d0bb585">component_match</a> (uint8_t *name1, uint8_t *name2, size_t len)</td></tr>
-<tr class="separator:aa7b0a72ebe8a392621a9f69e8d0bb585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8aeeb62bcdb3b442d7abe2f1a23ed81d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_name_tree.html#ga8aeeb62bcdb3b442d7abe2f1a23ed81d">ndn_nametree_init</a> (void *memory, <a class="el" href="ndn-constants_8h.html#aef915007dcd615d2b8be18c48e749dfa">ndn_table_id_t</a> capacity)</td></tr>
+<tr class="separator:ga8aeeb62bcdb3b442d7abe2f1a23ed81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56061587f71a5195d4ec5f32eb799eea"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name-tree_8c.html#a56061587f71a5195d4ec5f32eb799eea">nametree_create_node</a> (<a class="el" href="group___n_d_n_fwd_name_tree.html#ga699153a76e5485373ce87e54e6fe5c98">ndn_nametree_t</a> *nametree, uint8_t name[], size_t len)</td></tr>
 <tr class="separator:a56061587f71a5195d4ec5f32eb799eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeeeda0c4e03d6d3ee534270a41ca2105"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___n_d_n_fwd_name_tree.html#gafd1e8d5e8cfb26565475277da874d7fa">nametree_entry_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_name_tree.html#gaeeeda0c4e03d6d3ee534270a41ca2105">ndn_nametree_find</a> (<a class="el" href="group___n_d_n_fwd_name_tree.html#ga699153a76e5485373ce87e54e6fe5c98">ndn_nametree_t</a> *nametree, uint8_t name[], size_t len)</td></tr>
@@ -95,44 +94,10 @@ Functions</h2></td></tr>
 <tr class="separator:a8d33b294a41ab00bd2c127bcfcd2af1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1cce7caadc21fa86e7600f227dca5b10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___n_d_n_fwd_name_tree.html#gafd1e8d5e8cfb26565475277da874d7fa">nametree_entry_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_name_tree.html#ga1cce7caadc21fa86e7600f227dca5b10">ndn_nametree_find_or_insert</a> (<a class="el" href="group___n_d_n_fwd_name_tree.html#ga699153a76e5485373ce87e54e6fe5c98">ndn_nametree_t</a> *nametree, uint8_t name[], size_t len)</td></tr>
 <tr class="separator:ga1cce7caadc21fa86e7600f227dca5b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga285c6b53867c7717d0338570319a9fc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___n_d_n_fwd_name_tree.html#gafd1e8d5e8cfb26565475277da874d7fa">nametree_entry_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_name_tree.html#ga285c6b53867c7717d0338570319a9fc5">ndn_nametree_prefix_match</a> (<a class="el" href="group___n_d_n_fwd_name_tree.html#ga699153a76e5485373ce87e54e6fe5c98">ndn_nametree_t</a> *nametree, uint8_t name[], size_t len, int type)</td></tr>
-<tr class="separator:ga285c6b53867c7717d0338570319a9fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46a2ef3ea91e76b52ea86cec7d2a1a89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___n_d_n_fwd_name_tree.html#gafd1e8d5e8cfb26565475277da874d7fa">nametree_entry_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_fwd_name_tree.html#ga46a2ef3ea91e76b52ea86cec7d2a1a89">ndn_nametree_prefix_match</a> (<a class="el" href="group___n_d_n_fwd_name_tree.html#ga699153a76e5485373ce87e54e6fe5c98">ndn_nametree_t</a> *nametree, uint8_t name[], size_t len, enum <a class="el" href="group___n_d_n_fwd_name_tree.html#ga18cadd69e5abc06c68aecb8cd4ada181">NDN_NAMETREE_ENTRY_TYPE</a> type)</td></tr>
+<tr class="separator:ga46a2ef3ea91e76b52ea86cec7d2a1a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aa7b0a72ebe8a392621a9f69e8d0bb585"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7b0a72ebe8a392621a9f69e8d0bb585">&#9670;&nbsp;</a></span>component_match()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int component_match </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>name1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>name2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="adb84328bff69d86ffd97db487d6871a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb84328bff69d86ffd97db487d6871a1">&#9670;&nbsp;</a></span>nametree_clean()</h2>
 

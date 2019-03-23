@@ -74,6 +74,7 @@ var searchData=
   ['ndn_5fsha256_5fupdate_5fimpl',['ndn_sha256_update_impl',['../ndn-lite-sha_8h.html#ae43ed51bae3d7f59910bdfa80837b1ad',1,'ndn-lite-sha.h']]],
   ['ndn_5fsha_5fbackend_5ft',['ndn_sha_backend_t',['../ndn-lite-sha_8h.html#aa70088525d9d05ad7baf9f4b9ee27cf5',1,'ndn-lite-sha.h']]],
   ['ndn_5fsignature_5ft',['ndn_signature_t',['../signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de',1,'signature.h']]],
+  ['ndn_5ftable_5fid_5ft',['ndn_table_id_t',['../ndn-constants_8h.html#aef915007dcd615d2b8be18c48e749dfa',1,'ndn-constants.h']]],
   ['ndn_5ftime_5fms_5ft',['ndn_time_ms_t',['../group___n_d_n_util_uni_time.html#gaf1773cc5496fc87d1d738fb8052726a8',1,'uniform-time.h']]],
   ['ndn_5ftime_5fus_5ft',['ndn_time_us_t',['../group___n_d_n_util_uni_time.html#ga28ef9d63320382f79345713b937fad47',1,'uniform-time.h']]],
   ['ndn_5ftrust_5fschema_5fpattern_5fcomponent_5ft',['ndn_trust_schema_pattern_component_t',['../ndn-trust-schema-pattern-component_8h.html#ac005453c073918e373112cad265d4c46',1,'ndn-trust-schema-pattern-component.h']]],

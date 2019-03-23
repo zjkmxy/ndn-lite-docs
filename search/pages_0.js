@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ndn_2dlite',['ndn-lite',['../md_ndn-lite__r_e_a_d_m_e.html',1,'']]]
+  ['design_20drafts_20of_20the_20ndn_2dlite_20forwarder',['Design Drafts of the NDN-Lite Forwarder',['../md_docs_drafts.html',1,'']]]
 ];

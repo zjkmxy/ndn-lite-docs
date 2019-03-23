@@ -68,6 +68,8 @@ var searchData=
   ['double_5fjacobian',['double_jacobian',['../structu_e_c_c___curve__t.html#ac083860d8289f3bcb3a0df6cad1c99f2',1,'uECC_Curve_t::double_jacobian()'],['../structtc__u_e_c_c___curve__t.html#a168af525f82f472c8ab1e337ea18d97e',1,'tc_uECC_Curve_t::double_jacobian()']]],
   ['double_5fjacobian_5fdefault',['double_jacobian_default',['../tc__ecc_8c.html#a096f92530d94ca363bfbcd2bbdd38f61',1,'double_jacobian_default(tc_uECC_word_t *X1, tc_uECC_word_t *Y1, tc_uECC_word_t *Z1, tc_uECC_Curve curve):&#160;tc_ecc.c'],['../tc__ecc_8h.html#a096f92530d94ca363bfbcd2bbdd38f61',1,'double_jacobian_default(tc_uECC_word_t *X1, tc_uECC_word_t *Y1, tc_uECC_word_t *Z1, tc_uECC_Curve curve):&#160;tc_ecc.c']]],
   ['down',['down',['../structndn__face__intf.html#a791684dc447503d1f8d42df475cffc73',1,'ndn_face_intf']]],
+  ['drafts_2emd',['drafts.md',['../drafts_8md.html',1,'']]],
   ['dummy_2dface_2ec',['dummy-face.c',['../dummy-face_8c.html',1,'']]],
-  ['dummy_2dface_2eh',['dummy-face.h',['../dummy-face_8h.html',1,'']]]
+  ['dummy_2dface_2eh',['dummy-face.h',['../dummy-face_8h.html',1,'']]],
+  ['design_20drafts_20of_20the_20ndn_2dlite_20forwarder',['Design Drafts of the NDN-Lite Forwarder',['../md_docs_drafts.html',1,'']]]
 ];

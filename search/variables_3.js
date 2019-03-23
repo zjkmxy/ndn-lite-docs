@@ -1,7 +1,7 @@
 var searchData=
 [
   ['can_5fbe_5fprefix',['can_be_prefix',['../structinterest__options.html#a27a39551479669991ad4f3c948aa8d61',1,'interest_options']]],
-  ['capacity',['capacity',['../structndn__face__table.html#aba546950ad2e5af81a0ba93fd0c00e35',1,'ndn_face_table::capacity()'],['../structndn__fib.html#a4318b452c366a208fb7de838797e961f',1,'ndn_fib::capacity()'],['../structndn__pit.html#aa68bc4ccb72c1951e66c3fb081136d86',1,'ndn_pit::capacity()']]],
+  ['capacity',['capacity',['../structndn__face__table.html#a89891367ca46cf2a41f794007039df0e',1,'ndn_face_table::capacity()'],['../structndn__fib.html#a4ab57190e9efe0d5199c84266d87a9cd',1,'ndn_fib::capacity()'],['../structndn__pit.html#a9307adeff1ba7974b07ab3e8c1759eb7',1,'ndn_pit::capacity()']]],
   ['cbc_5fdecrypt',['cbc_decrypt',['../structndn__aes__backend.html#a6051573b9b5113a0ac09e764e6246e90',1,'ndn_aes_backend']]],
   ['cbc_5fencrypt',['cbc_encrypt',['../structndn__aes__backend.html#a5c4726080ba860151e468ad33d57fc6e',1,'ndn_aes_backend']]],
   ['ccl',['ccl',['../structregex__t.html#a39ecde2a0f90f334f4c4a444d88c8310',1,'regex_t']]],

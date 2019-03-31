@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['sign_5fon_5fbasic_5fclient_5fnrf_5fsdk_5fble_5ft',['sign_on_basic_client_nrf_sdk_ble_t',['../sign-on-basic-client-nrf-sdk-ble_8h.html#afc08848e758d3518ee3413179baa0389',1,'sign-on-basic-client-nrf-sdk-ble.h']]],
+  ['sign_5fon_5fbasic_5fclient_5ft',['sign_on_basic_client_t',['../sign-on-basic-client_8h.html#a30de7cd076024cdb905d6186a4fc2e21',1,'sign_on_basic_client_t():&#160;sign-on-basic-client.h'],['../sign-on-basic-sec-intf-setter_8h.html#a483bae853b8e5cc7a18348052e0148fb',1,'sign_on_basic_client_t():&#160;sign-on-basic-sec-intf-setter.h']]],
   ['sign_5fon_5fbasic_5fsec_5fdecrypt_5fkd_5fpri',['sign_on_basic_sec_decrypt_kd_pri',['../sign-on-basic-client_8h.html#aa5d21037c30bb67dd47fdbaba17ee97c',1,'sign-on-basic-client.h']]],
   ['sign_5fon_5fbasic_5fsec_5fgen_5fbtstrp_5frqst_5fsig',['sign_on_basic_sec_gen_btstrp_rqst_sig',['../sign-on-basic-client_8h.html#a20fc7f9024fa912100eaf8ed87801c9d',1,'sign-on-basic-client.h']]],
   ['sign_5fon_5fbasic_5fsec_5fgen_5fcert_5frqst_5fsig',['sign_on_basic_sec_gen_cert_rqst_sig',['../sign-on-basic-client_8h.html#a8e10ff183625ce42052ca35e32e9c032',1,'sign-on-basic-client.h']]],

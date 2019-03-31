@@ -11,6 +11,7 @@ var searchData=
   ['content_5fsize',['content_size',['../structndn__data.html#a736460e08608b59e602e1f0c1399449c',1,'ndn_data']]],
   ['content_5ftype',['content_type',['../structndn__metainfo.html#ad0ac6dbb9c3a37097ca11adf9ecf188a',1,'ndn_metainfo']]],
   ['content_5fvalue',['content_value',['../structndn__data.html#aa473d15952d7740548edf56ba1391c30',1,'ndn_data']]],
+  ['cop',['cop',['../structnametree__entry.html#a27e676d000843dbe6d53c037e8b48677',1,'nametree_entry']]],
   ['countdown',['countdown',['../structtc__cmac__struct.html#ab6b8fb65786aba7a2cf381c5d392f9e0',1,'tc_cmac_struct::countdown()'],['../structtc__hmac__prng__struct.html#a76e55722fa7d89d95b97fc06c2a0b2c2',1,'tc_hmac_prng_struct::countdown()']]],
   ['counter',['counter',['../structndn__fragmenter.html#a454b988f8d96bf184a0155a0d068e48e',1,'ndn_fragmenter']]],
   ['ctx',['ctx',['../structu_e_c_c___s_h_a256___hash_context.html#a767ee45a4c719b42d6e9573305ad808e',1,'uECC_SHA256_HashContext']]],

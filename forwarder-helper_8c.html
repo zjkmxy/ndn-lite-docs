@@ -76,240 +76,87 @@ $(function() {
 <code>#include &quot;<a class="el" href="tlv_8h_source.html">tlv.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ndn-error-code_8h_source.html">../ndn-error-code.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ndn-constants_8h_source.html">../ndn-constants.h</a>&quot;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &lt;limits.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="data_8h_source.html">data.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="interest_8h_source.html">interest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="signed-interest_8h_source.html">signed-interest.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6288f25587bb24370050f357ccae2fa2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forwarder-helper_8c.html#a6288f25587bb24370050f357ccae2fa2">tlv_get_tlvar</a> (uint8_t *buf, size_t buflen, uint32_t *var)</td></tr>
-<tr class="memdesc:a6288f25587bb24370050f357ccae2fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first variable of type or length from a TLV encoded form.  <a href="#a6288f25587bb24370050f357ccae2fa2">More...</a><br /></td></tr>
-<tr class="separator:a6288f25587bb24370050f357ccae2fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a187dc69da00e11130dca193f1b64882a"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forwarder-helper_8c.html#a187dc69da00e11130dca193f1b64882a">tlv_get_type_length</a> (uint8_t *buf, size_t buflen, uint32_t *type, uint32_t *length)</td></tr>
-<tr class="memdesc:a187dc69da00e11130dca193f1b64882a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get type and length from a TLV encoded form.  <a href="#a187dc69da00e11130dca193f1b64882a">More...</a><br /></td></tr>
-<tr class="separator:a187dc69da00e11130dca193f1b64882a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61ba8850d06a3c4455538ec9dfb1ca24"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forwarder-helper_8c.html#a61ba8850d06a3c4455538ec9dfb1ca24">tlv_check_type_length</a> (uint8_t *buf, size_t buflen, uint32_t type)</td></tr>
-<tr class="memdesc:a61ba8850d06a3c4455538ec9dfb1ca24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the type and length of a TLV block.  <a href="#a61ba8850d06a3c4455538ec9dfb1ca24">More...</a><br /></td></tr>
-<tr class="separator:a61ba8850d06a3c4455538ec9dfb1ca24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a222d6b33fe2d1e585ace042300b587eb"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forwarder-helper_8c.html#a222d6b33fe2d1e585ace042300b587eb">tlv_get_uint</a> (uint8_t *buf, size_t buflen)</td></tr>
-<tr class="separator:a222d6b33fe2d1e585ace042300b587eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d5e3984a22138d30c69ee0eddd23a50"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forwarder-helper_8c.html#a5d5e3984a22138d30c69ee0eddd23a50">tlv_interest_get_header</a> (uint8_t *interest, size_t buflen, <a class="el" href="forwarder-helper_8h.html#ab3029eb7252ce096a135f0cdfe2a325b">interest_options_t</a> *options, uint8_t **name, size_t *name_len)</td></tr>
-<tr class="memdesc:a5d5e3984a22138d30c69ee0eddd23a50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name and options of an Interest packet.  <a href="#a5d5e3984a22138d30c69ee0eddd23a50">More...</a><br /></td></tr>
-<tr class="separator:a5d5e3984a22138d30c69ee0eddd23a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f3be62b77ac652ee70b61f2aca33d3e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forwarder-helper_8c.html#a1f3be62b77ac652ee70b61f2aca33d3e">tlv_data_get_name</a> (uint8_t *data, size_t buflen, uint8_t **name, size_t *name_len)</td></tr>
-<tr class="memdesc:a1f3be62b77ac652ee70b61f2aca33d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of a Data packet.  <a href="#a1f3be62b77ac652ee70b61f2aca33d3e">More...</a><br /></td></tr>
-<tr class="separator:a1f3be62b77ac652ee70b61f2aca33d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dd1f8cfdf802c5ffa85c820c091800f"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forwarder-helper_8c.html#a9dd1f8cfdf802c5ffa85c820c091800f">tlv_interest_get_hoplimit_ptr</a> (uint8_t *interest, size_t buflen)</td></tr>
-<tr class="separator:a9dd1f8cfdf802c5ffa85c820c091800f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6288f25587bb24370050f357ccae2fa2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_encode_fwd_helper.html#ga6288f25587bb24370050f357ccae2fa2">tlv_get_tlvar</a> (uint8_t *buf, size_t buflen, uint32_t *var)</td></tr>
+<tr class="memdesc:ga6288f25587bb24370050f357ccae2fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first variable of type or length from a TLV encoded form.  <a href="group___n_d_n_encode_fwd_helper.html#ga6288f25587bb24370050f357ccae2fa2">More...</a><br /></td></tr>
+<tr class="separator:ga6288f25587bb24370050f357ccae2fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga187dc69da00e11130dca193f1b64882a"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_encode_fwd_helper.html#ga187dc69da00e11130dca193f1b64882a">tlv_get_type_length</a> (uint8_t *buf, size_t buflen, uint32_t *type, uint32_t *length)</td></tr>
+<tr class="memdesc:ga187dc69da00e11130dca193f1b64882a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get type and length from a TLV encoded form.  <a href="group___n_d_n_encode_fwd_helper.html#ga187dc69da00e11130dca193f1b64882a">More...</a><br /></td></tr>
+<tr class="separator:ga187dc69da00e11130dca193f1b64882a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61ba8850d06a3c4455538ec9dfb1ca24"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_encode_fwd_helper.html#ga61ba8850d06a3c4455538ec9dfb1ca24">tlv_check_type_length</a> (uint8_t *buf, size_t buflen, uint32_t type)</td></tr>
+<tr class="memdesc:ga61ba8850d06a3c4455538ec9dfb1ca24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the type and length of a TLV block.  <a href="group___n_d_n_encode_fwd_helper.html#ga61ba8850d06a3c4455538ec9dfb1ca24">More...</a><br /></td></tr>
+<tr class="separator:ga61ba8850d06a3c4455538ec9dfb1ca24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ae0fe39b5d053814f76b84a3512b8d4"><td class="memItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forwarder-helper_8c.html#a3ae0fe39b5d053814f76b84a3512b8d4">tlv_get_uint</a> (uint8_t *buf, size_t buflen)</td></tr>
+<tr class="separator:a3ae0fe39b5d053814f76b84a3512b8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5d5e3984a22138d30c69ee0eddd23a50"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_encode_fwd_helper.html#ga5d5e3984a22138d30c69ee0eddd23a50">tlv_interest_get_header</a> (uint8_t *interest, size_t buflen, <a class="el" href="group___n_d_n_encode_fwd_helper.html#gab3029eb7252ce096a135f0cdfe2a325b">interest_options_t</a> *options, uint8_t **name, size_t *name_len)</td></tr>
+<tr class="memdesc:ga5d5e3984a22138d30c69ee0eddd23a50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name and options of an Interest packet.  <a href="group___n_d_n_encode_fwd_helper.html#ga5d5e3984a22138d30c69ee0eddd23a50">More...</a><br /></td></tr>
+<tr class="separator:ga5d5e3984a22138d30c69ee0eddd23a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f3be62b77ac652ee70b61f2aca33d3e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_encode_fwd_helper.html#ga1f3be62b77ac652ee70b61f2aca33d3e">tlv_data_get_name</a> (uint8_t *data, size_t buflen, uint8_t **name, size_t *name_len)</td></tr>
+<tr class="memdesc:ga1f3be62b77ac652ee70b61f2aca33d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of a Data packet.  <a href="group___n_d_n_encode_fwd_helper.html#ga1f3be62b77ac652ee70b61f2aca33d3e">More...</a><br /></td></tr>
+<tr class="separator:ga1f3be62b77ac652ee70b61f2aca33d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9dd1f8cfdf802c5ffa85c820c091800f"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_encode_fwd_helper.html#ga9dd1f8cfdf802c5ffa85c820c091800f">tlv_interest_get_hoplimit_ptr</a> (uint8_t *interest, size_t buflen)</td></tr>
+<tr class="memdesc:ga9dd1f8cfdf802c5ffa85c820c091800f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pointer to hop limit field of a Interest packet.  <a href="group___n_d_n_encode_fwd_helper.html#ga9dd1f8cfdf802c5ffa85c820c091800f">More...</a><br /></td></tr>
+<tr class="separator:ga9dd1f8cfdf802c5ffa85c820c091800f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c9a3b4504db2c4e176255da08ba368"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forwarder-helper_8c.html#a34c9a3b4504db2c4e176255da08ba368">tlv_make_segno</a> (<a class="el" href="name-component_8h.html#a6fcb406cc3baa1de6bb60323fcece5d6">name_component_t</a> *comp, uint64_t val)</td></tr>
+<tr class="separator:a34c9a3b4504db2c4e176255da08ba368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5102634fa1c3610d113bc1e13cc9c98"><td class="memItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forwarder-helper_8c.html#ae5102634fa1c3610d113bc1e13cc9c98">tlv_decode_segno</a> (<a class="el" href="name-component_8h.html#a6fcb406cc3baa1de6bb60323fcece5d6">name_component_t</a> *comp)</td></tr>
+<tr class="separator:ae5102634fa1c3610d113bc1e13cc9c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d0811fa0aa8e1a8774f86e5a6209127"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_encode_fwd_helper.html#ga6d0811fa0aa8e1a8774f86e5a6209127">tlv_make_data</a> (uint8_t *buf, size_t buflen, size_t *result_size, int argc,...)</td></tr>
+<tr class="memdesc:ga6d0811fa0aa8e1a8774f86e5a6209127"><td class="mdescLeft">&#160;</td><td class="mdescRight">All-in-one function to generate a Data packet.  <a href="group___n_d_n_encode_fwd_helper.html#ga6d0811fa0aa8e1a8774f86e5a6209127">More...</a><br /></td></tr>
+<tr class="separator:ga6d0811fa0aa8e1a8774f86e5a6209127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga17331bddfb3f6731559e502fd05604ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_encode_fwd_helper.html#ga17331bddfb3f6731559e502fd05604ee">tlv_parse_data</a> (uint8_t *buf, size_t buflen, int argc,...)</td></tr>
+<tr class="memdesc:ga17331bddfb3f6731559e502fd05604ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">All-in-one function to parse a Data packet.  <a href="group___n_d_n_encode_fwd_helper.html#ga17331bddfb3f6731559e502fd05604ee">More...</a><br /></td></tr>
+<tr class="separator:ga17331bddfb3f6731559e502fd05604ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd494eabe8ea9c9f4bf3c169fa1c4d24"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_encode_fwd_helper.html#gadd494eabe8ea9c9f4bf3c169fa1c4d24">tlv_make_interest</a> (uint8_t *buf, size_t buflen, size_t *result_size, int argc,...)</td></tr>
+<tr class="memdesc:gadd494eabe8ea9c9f4bf3c169fa1c4d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">All-in-one function to generate a Interest packet.  <a href="group___n_d_n_encode_fwd_helper.html#gadd494eabe8ea9c9f4bf3c169fa1c4d24">More...</a><br /></td></tr>
+<tr class="separator:gadd494eabe8ea9c9f4bf3c169fa1c4d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a61ba8850d06a3c4455538ec9dfb1ca24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61ba8850d06a3c4455538ec9dfb1ca24">&#9670;&nbsp;</a></span>tlv_check_type_length()</h2>
+<a id="ae5102634fa1c3610d113bc1e13cc9c98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5102634fa1c3610d113bc1e13cc9c98">&#9670;&nbsp;</a></span>tlv_decode_segno()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int tlv_check_type_length </td>
+          <td class="memname">static uint64_t tlv_decode_segno </td>
           <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="name-component_8h.html#a6fcb406cc3baa1de6bb60323fcece5d6">name_component_t</a> *&#160;</td>
+          <td class="paramname"><em>comp</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>buflen</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>type</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Check the type and length of a TLV block. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buf</td><td>[in, opt] The buffer containing the TLV block. </td></tr>
-    <tr><td class="paramname">buflen</td><td>[in] The length of <code>buf</code> . </td></tr>
-    <tr><td class="paramname">type</td><td>[in] The required type. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">NDN_SUCCESS</td><td>The check succeeds. </td></tr>
-    <tr><td class="paramname">NDN_INVALID_POINTER</td><td>The <code>buf</code> is <code>NULL</code> . </td></tr>
-    <tr><td class="paramname">NDN_OVERSIZE_VAR</td><td>Either type of length in <code>buf</code> is truncated or malicious. </td></tr>
-    <tr><td class="paramname">NDN_WRONG_TLV_TYPE</td><td>The type of <code>buf</code> is different from <code>type</code> . </td></tr>
-    <tr><td class="paramname">NDN_WRONG_TLV_LENGTH</td><td>The length of <code>buf</code> is different from <code>length</code> . </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
-<a id="a1f3be62b77ac652ee70b61f2aca33d3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f3be62b77ac652ee70b61f2aca33d3e">&#9670;&nbsp;</a></span>tlv_data_get_name()</h2>
+<a id="a3ae0fe39b5d053814f76b84a3512b8d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ae0fe39b5d053814f76b84a3512b8d4">&#9670;&nbsp;</a></span>tlv_get_uint()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int tlv_data_get_name </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>buflen</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t **&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>name_len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the name of a Data packet. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>[in] The Data packet. </td></tr>
-    <tr><td class="paramname">buflen</td><td>[in] The length of <code>data</code> . </td></tr>
-    <tr><td class="paramname">name</td><td>[out] A pointer to the name in <code>data</code> . </td></tr>
-    <tr><td class="paramname">name_len</td><td>[out] The length of <code>name</code> . </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a6288f25587bb24370050f357ccae2fa2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6288f25587bb24370050f357ccae2fa2">&#9670;&nbsp;</a></span>tlv_get_tlvar()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t tlv_get_tlvar </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>buflen</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t *&#160;</td>
-          <td class="paramname"><em>var</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the first variable of type or length from a TLV encoded form. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buf</td><td>[in] The buffer containing the TLV encoded form. </td></tr>
-    <tr><td class="paramname">buflen</td><td>[in] The length of <code>buf</code> . </td></tr>
-    <tr><td class="paramname">var</td><td>[out] The decoded value. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>If the function succeeds, return the size <code>var</code> takes. If the function fails, return 0. </dd></dl>
-
-</div>
-</div>
-<a id="a187dc69da00e11130dca193f1b64882a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a187dc69da00e11130dca193f1b64882a">&#9670;&nbsp;</a></span>tlv_get_type_length()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t* tlv_get_type_length </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>buflen</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t *&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t *&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get type and length from a TLV encoded form. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buf</td><td>[in] The buffer containing the TLV encoded form. </td></tr>
-    <tr><td class="paramname">buflen</td><td>[in] The length of <code>buf</code> . </td></tr>
-    <tr><td class="paramname">type</td><td>[out] The decoded type. </td></tr>
-    <tr><td class="paramname">length</td><td>[out] The decoded length. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>If the function succeeds, return a pointer to its content. If the function fails, return NULL. </dd></dl>
-
-</div>
-</div>
-<a id="a222d6b33fe2d1e585ace042300b587eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a222d6b33fe2d1e585ace042300b587eb">&#9670;&nbsp;</a></span>tlv_get_uint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t tlv_get_uint </td>
+          <td class="memname">static uint64_t tlv_get_uint </td>
           <td>(</td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
@@ -326,45 +173,35 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a5d5e3984a22138d30c69ee0eddd23a50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d5e3984a22138d30c69ee0eddd23a50">&#9670;&nbsp;</a></span>tlv_interest_get_header()</h2>
+<a id="a34c9a3b4504db2c4e176255da08ba368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c9a3b4504db2c4e176255da08ba368">&#9670;&nbsp;</a></span>tlv_make_segno()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int tlv_interest_get_header </td>
+          <td class="memname">static void tlv_make_segno </td>
           <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>interest</em>, </td>
+          <td class="paramtype"><a class="el" href="name-component_8h.html#a6fcb406cc3baa1de6bb60323fcece5d6">name_component_t</a> *&#160;</td>
+          <td class="paramname"><em>comp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>buflen</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="forwarder-helper_8h.html#ab3029eb7252ce096a135f0cdfe2a325b">interest_options_t</a> *&#160;</td>
-          <td class="paramname"><em>options</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t **&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>name_len</em>&#160;</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -372,46 +209,11 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-<p>Get the name and options of an Interest packet. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">interest</td><td>[in] The Interest packet. </td></tr>
-    <tr><td class="paramname">buflen</td><td>[in] The length of <code>interest</code> . </td></tr>
-    <tr><td class="paramname">options</td><td>[out, opt] Options of <code>interest</code> . </td></tr>
-    <tr><td class="paramname">name</td><td>[out] A pointer to the name in <code>interest</code> . </td></tr>
-    <tr><td class="paramname">name_len</td><td>[out] The length of <code>name</code> . </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a9dd1f8cfdf802c5ffa85c820c091800f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dd1f8cfdf802c5ffa85c820c091800f">&#9670;&nbsp;</a></span>tlv_interest_get_hoplimit_ptr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t* tlv_interest_get_hoplimit_ptr </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>interest</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>buflen</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

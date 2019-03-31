@@ -105,7 +105,7 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a008b8b7b70a44e50a7783b7e6d40891f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forwarder_8c.html#a008b8b7b70a44e50a7783b7e6d40891f">fwd_on_incoming_interest</a> (uint8_t *interest, size_t length, <a class="el" href="forwarder-helper_8h.html#ab3029eb7252ce096a135f0cdfe2a325b">interest_options_t</a> *options, uint8_t *name, size_t name_len, <a class="el" href="ndn-constants_8h.html#aef915007dcd615d2b8be18c48e749dfa">ndn_table_id_t</a> face_id)</td></tr>
+<tr class="memitem:a008b8b7b70a44e50a7783b7e6d40891f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forwarder_8c.html#a008b8b7b70a44e50a7783b7e6d40891f">fwd_on_incoming_interest</a> (uint8_t *interest, size_t length, <a class="el" href="group___n_d_n_encode_fwd_helper.html#gab3029eb7252ce096a135f0cdfe2a325b">interest_options_t</a> *options, uint8_t *name, size_t name_len, <a class="el" href="ndn-constants_8h.html#aef915007dcd615d2b8be18c48e749dfa">ndn_table_id_t</a> face_id)</td></tr>
 <tr class="separator:a008b8b7b70a44e50a7783b7e6d40891f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ceaee587818941ea53e42ca280ef582"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="forwarder_8c.html#a7ceaee587818941ea53e42ca280ef582">fwd_on_outgoing_interest</a> (uint8_t *interest, size_t length, uint8_t *name, size_t name_len, <a class="el" href="group___n_d_n_fwd_p_i_t.html#ga96ad322d1d01065597c3e66e9c079a08">ndn_pit_entry_t</a> *entry, <a class="el" href="ndn-constants_8h.html#aef915007dcd615d2b8be18c48e749dfa">ndn_table_id_t</a> face_id)</td></tr>
 <tr class="separator:a7ceaee587818941ea53e42ca280ef582"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,10 +168,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code" href="forwarder_8c.html#a9855afeb61da9b61f4efb66c63b8a83c">NDN_FORWARDER_RESERVE_SIZE</a>(<a class="code" href="ndn-constants_8h.html#a95f5891d1a442bbf7e2b028242687e05">NDN_NAMETREE_MAX_SIZE</a>, \</div><div class="line">                             <a class="code" href="ndn-constants_8h.html#a1dca27e73f511126c00d9f0d12b0e534">NDN_FACE_TABLE_MAX_SIZE</a>, \</div><div class="line">                             <a class="code" href="ndn-constants_8h.html#a43c012add745a0fbd1356828d600bcea">NDN_FIB_MAX_SIZE</a>, \</div><div class="line">                             <a class="code" href="ndn-constants_8h.html#a4ffd9ff00b7003376b788e299bb1258f">NDN_PIT_MAX_SIZE</a>)</div><div class="ttc" id="ndn-constants_8h_html_a95f5891d1a442bbf7e2b028242687e05"><div class="ttname"><a href="ndn-constants_8h.html#a95f5891d1a442bbf7e2b028242687e05">NDN_NAMETREE_MAX_SIZE</a></div><div class="ttdeci">#define NDN_NAMETREE_MAX_SIZE</div><div class="ttdef"><b>Definition:</b> ndn-constants.h:42</div></div>
-<div class="ttc" id="ndn-constants_8h_html_a4ffd9ff00b7003376b788e299bb1258f"><div class="ttname"><a href="ndn-constants_8h.html#a4ffd9ff00b7003376b788e299bb1258f">NDN_PIT_MAX_SIZE</a></div><div class="ttdeci">#define NDN_PIT_MAX_SIZE</div><div class="ttdef"><b>Definition:</b> ndn-constants.h:44</div></div>
+<div class="ttc" id="ndn-constants_8h_html_a4ffd9ff00b7003376b788e299bb1258f"><div class="ttname"><a href="ndn-constants_8h.html#a4ffd9ff00b7003376b788e299bb1258f">NDN_PIT_MAX_SIZE</a></div><div class="ttdeci">#define NDN_PIT_MAX_SIZE</div><div class="ttdef"><b>Definition:</b> ndn-constants.h:45</div></div>
 <div class="ttc" id="forwarder_8c_html_a9855afeb61da9b61f4efb66c63b8a83c"><div class="ttname"><a href="forwarder_8c.html#a9855afeb61da9b61f4efb66c63b8a83c">NDN_FORWARDER_RESERVE_SIZE</a></div><div class="ttdeci">#define NDN_FORWARDER_RESERVE_SIZE(nametree_size, facetab_size, fib_size, pit_size)</div><div class="ttdef"><b>Definition:</b> forwarder.c:17</div></div>
-<div class="ttc" id="ndn-constants_8h_html_a1dca27e73f511126c00d9f0d12b0e534"><div class="ttname"><a href="ndn-constants_8h.html#a1dca27e73f511126c00d9f0d12b0e534">NDN_FACE_TABLE_MAX_SIZE</a></div><div class="ttdeci">#define NDN_FACE_TABLE_MAX_SIZE</div><div class="ttdef"><b>Definition:</b> ndn-constants.h:46</div></div>
-<div class="ttc" id="ndn-constants_8h_html_a43c012add745a0fbd1356828d600bcea"><div class="ttname"><a href="ndn-constants_8h.html#a43c012add745a0fbd1356828d600bcea">NDN_FIB_MAX_SIZE</a></div><div class="ttdeci">#define NDN_FIB_MAX_SIZE</div><div class="ttdef"><b>Definition:</b> ndn-constants.h:43</div></div>
+<div class="ttc" id="ndn-constants_8h_html_a1dca27e73f511126c00d9f0d12b0e534"><div class="ttname"><a href="ndn-constants_8h.html#a1dca27e73f511126c00d9f0d12b0e534">NDN_FACE_TABLE_MAX_SIZE</a></div><div class="ttdeci">#define NDN_FACE_TABLE_MAX_SIZE</div><div class="ttdef"><b>Definition:</b> ndn-constants.h:48</div></div>
+<div class="ttc" id="ndn-constants_8h_html_a43c012add745a0fbd1356828d600bcea"><div class="ttname"><a href="ndn-constants_8h.html#a43c012add745a0fbd1356828d600bcea">NDN_FIB_MAX_SIZE</a></div><div class="ttdeci">#define NDN_FIB_MAX_SIZE</div><div class="ttdef"><b>Definition:</b> ndn-constants.h:44</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -212,7 +212,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="group___n_d_n_fwd_name_tree.html#ga61123ad429ced326422eec6dbaf3ddae">NDN_NAMETREE_RESERVE_SIZE</a>(nametree_size) + \</div><div class="line">   NDN_FACE_TABLE_RESERVE_SIZE(facetab_size) + \</div><div class="line">   NDN_FIB_RESERVE_SIZE(fib_size) + \</div><div class="line">   NDN_PIT_RESERVE_SIZE(pit_size))</div><div class="ttc" id="group___n_d_n_fwd_name_tree_html_ga61123ad429ced326422eec6dbaf3ddae"><div class="ttname"><a href="group___n_d_n_fwd_name_tree.html#ga61123ad429ced326422eec6dbaf3ddae">NDN_NAMETREE_RESERVE_SIZE</a></div><div class="ttdeci">#define NDN_NAMETREE_RESERVE_SIZE(entry_count)</div><div class="ttdef"><b>Definition:</b> name-tree.h:67</div></div>
+<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="name-splay_8h.html#a61123ad429ced326422eec6dbaf3ddae">NDN_NAMETREE_RESERVE_SIZE</a>(nametree_size) + \</div><div class="line">   NDN_FACE_TABLE_RESERVE_SIZE(facetab_size) + \</div><div class="line">   NDN_FIB_RESERVE_SIZE(fib_size) + \</div><div class="line">   NDN_PIT_RESERVE_SIZE(pit_size))</div><div class="ttc" id="name-splay_8h_html_a61123ad429ced326422eec6dbaf3ddae"><div class="ttname"><a href="name-splay_8h.html#a61123ad429ced326422eec6dbaf3ddae">NDN_NAMETREE_RESERVE_SIZE</a></div><div class="ttdeci">#define NDN_NAMETREE_RESERVE_SIZE(entry_count)</div><div class="ttdef"><b>Definition:</b> name-splay.h:43</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -230,7 +230,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>NDN-Lite forwarder. </p>
-<p>We will support content support in future versions. The NDN forwarder is a singleton in an application. </p>
+<p>We will support content store in future versions. The NDN forwarder is a singleton in an application. </p>
 
 </div>
 </div>
@@ -361,7 +361,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="forwarder-helper_8h.html#ab3029eb7252ce096a135f0cdfe2a325b">interest_options_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group___n_d_n_encode_fwd_helper.html#gab3029eb7252ce096a135f0cdfe2a325b">interest_options_t</a> *&#160;</td>
           <td class="paramname"><em>options</em>, </td>
         </tr>
         <tr>

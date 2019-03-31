@@ -62,6 +62,7 @@ var searchData=
   ['ndn_5fname_5fcomponents_5fsize',['NDN_NAME_COMPONENTS_SIZE',['../ndn-constants_8h.html#a5eef4997fe94971c9d0285cec5691127',1,'ndn-constants.h']]],
   ['ndn_5fname_5fmax_5fblock_5fsize',['NDN_NAME_MAX_BLOCK_SIZE',['../ndn-constants_8h.html#aeb80b1602794e499217802fb9150f8ea',1,'ndn-constants.h']]],
   ['ndn_5fnametree_5fmax_5fsize',['NDN_NAMETREE_MAX_SIZE',['../ndn-constants_8h.html#a95f5891d1a442bbf7e2b028242687e05',1,'ndn-constants.h']]],
+  ['ndn_5fnametree_5freserve_5fsize',['NDN_NAMETREE_RESERVE_SIZE',['../name-splay_8h.html#a61123ad429ced326422eec6dbaf3ddae',1,'name-splay.h']]],
   ['ndn_5fpit_5fmax_5fsize',['NDN_PIT_MAX_SIZE',['../ndn-constants_8h.html#a4ffd9ff00b7003376b788e299bb1258f',1,'ndn-constants.h']]],
   ['ndn_5fsd_5fcontrol',['NDN_SD_CONTROL',['../ndn-services_8h.html#a5165d0e9350e0f3f724eb8a8e3674054',1,'ndn-services.h']]],
   ['ndn_5fsd_5fcontrol_5fpower_5foff',['NDN_SD_CONTROL_POWER_OFF',['../ndn-services_8h.html#a8334daf4edb3e552a2e5b57602c16bda',1,'ndn-services.h']]],

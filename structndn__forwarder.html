@@ -76,24 +76,26 @@ Collaboration diagram for ndn_forwarder:</div>
 <div class="dyncontent">
 <div class="center"><img src="structndn__forwarder__coll__graph.png" border="0" usemap="#ndn__forwarder_coll__map" alt="Collaboration graph"/></div>
 <map name="ndn__forwarder_coll__map" id="ndn__forwarder_coll__map">
-<area shape="rect"  title="NDN&#45;Lite forwarder." alt="" coords="214,503,322,589"/>
-<area shape="rect"  href="structndn__face__table.html" title="Face Table." alt="" coords="65,361,178,435"/>
-<area shape="rect"  href="structndn__face__intf.html" title="Abstract NDN network face." alt="" coords="5,187,107,287"/>
-<area shape="rect"  href="structndn__pit.html" title="Forwarding Information Base (FIB)." alt="" coords="223,355,313,441"/>
-<area shape="rect"  href="structndn__pit__entry.html" title="PIT entry." alt="" coords="205,180,331,293"/>
-<area shape="rect"  href="structinterest__options.html" title=" " alt="" coords="210,5,326,119"/>
-<area shape="rect"  href="structndn__fib.html" title="Forwarding Information Base (FIB)." alt="" coords="350,355,439,441"/>
-<area shape="rect"  href="structndn__fib__entry.html" title="FIB entry." alt="" coords="355,180,462,293"/>
+<area shape="rect"  title="NDN&#45;Lite forwarder." alt="" coords="398,516,506,589"/>
+<area shape="rect"  href="structndn__face__table.html" title="Face Table." alt="" coords="122,381,235,455"/>
+<area shape="rect"  href="structndn__face__intf.html" title="Abstract NDN network face." alt="" coords="5,213,107,313"/>
+<area shape="rect"  href="structndn__nametree.html" title=" " alt="" coords="504,227,611,300"/>
+<area shape="rect"  href="structndn__pit.html" title="Forwarding Information Base (FIB)." alt="" coords="359,381,441,455"/>
+<area shape="rect"  href="structndn__fib.html" title="Forwarding Information Base (FIB)." alt="" coords="464,381,546,455"/>
+<area shape="rect"  href="structnametree__entry.html" title="NameTree node." alt="" coords="500,5,615,119"/>
+<area shape="rect"  href="structndn__pit__entry.html" title="PIT entry." alt="" coords="205,207,331,320"/>
+<area shape="rect"  href="structinterest__options.html" title="Interest options which the forwarder cares." alt="" coords="210,5,326,119"/>
+<area shape="rect"  href="structndn__fib__entry.html" title="FIB entry." alt="" coords="355,207,462,320"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a2680dce22093b01566a26c84d3a723fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___n_d_n_fwd_name_tree.html#ga699153a76e5485373ce87e54e6fe5c98">ndn_nametree_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__forwarder.html#a2680dce22093b01566a26c84d3a723fe">nametree</a></td></tr>
+<tr class="memitem:a2680dce22093b01566a26c84d3a723fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="name-splay_8h.html#af790f91d0b069be04770e949af69530f">ndn_nametree_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__forwarder.html#a2680dce22093b01566a26c84d3a723fe">nametree</a></td></tr>
 <tr class="separator:a2680dce22093b01566a26c84d3a723fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a418f8b5c77ebf7b5d31d5e993d80b625"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___n_d_n_fwd_face_tab.html#ga41f1f917038a95575f2abccbe6518bda">ndn_face_table_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__forwarder.html#a418f8b5c77ebf7b5d31d5e993d80b625">facetab</a></td></tr>
 <tr class="separator:a418f8b5c77ebf7b5d31d5e993d80b625"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae57b33fa4413bd6b2288edb9033b4793"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___n_d_n_fwd_f_i_b.html#gaeeaf739350ba1495b70e78214ad6d33a">ndn_fib_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__forwarder.html#ae57b33fa4413bd6b2288edb9033b4793">fib</a></td></tr>
+<tr class="memitem:ae57b33fa4413bd6b2288edb9033b4793"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___n_d_n_fwd_f_i_b.html#gae8b32eb1d96c67e251eaef8c9218fe65">ndn_fib_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__forwarder.html#ae57b33fa4413bd6b2288edb9033b4793">fib</a></td></tr>
 <tr class="memdesc:ae57b33fa4413bd6b2288edb9033b4793"><td class="mdescLeft">&#160;</td><td class="mdescRight">The forwarding information base (FIB).  <a href="#ae57b33fa4413bd6b2288edb9033b4793">More...</a><br /></td></tr>
 <tr class="separator:ae57b33fa4413bd6b2288edb9033b4793"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0339d49e147698f63025a5d741cfe28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___n_d_n_fwd_p_i_t.html#ga2c27a2be51d7b3873fd36e471f568ec8">ndn_pit_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structndn__forwarder.html#ab0339d49e147698f63025a5d741cfe28">pit</a></td></tr>
@@ -104,7 +106,7 @@ Data Fields</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NDN-Lite forwarder. </p>
-<p>We will support content support in future versions. The NDN forwarder is a singleton in an application. </p>
+<p>We will support content store in future versions. The NDN forwarder is a singleton in an application. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a418f8b5c77ebf7b5d31d5e993d80b625"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a418f8b5c77ebf7b5d31d5e993d80b625">&#9670;&nbsp;</a></span>facetab</h2>
@@ -127,7 +129,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group___n_d_n_fwd_f_i_b.html#gaeeaf739350ba1495b70e78214ad6d33a">ndn_fib_t</a>* ndn_forwarder::fib</td>
+          <td class="memname"><a class="el" href="group___n_d_n_fwd_f_i_b.html#gae8b32eb1d96c67e251eaef8c9218fe65">ndn_fib_t</a>* ndn_forwarder::fib</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -157,7 +159,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group___n_d_n_fwd_name_tree.html#ga699153a76e5485373ce87e54e6fe5c98">ndn_nametree_t</a>* ndn_forwarder::nametree</td>
+          <td class="memname"><a class="el" href="name-splay_8h.html#af790f91d0b069be04770e949af69530f">ndn_nametree_t</a>* ndn_forwarder::nametree</td>
         </tr>
       </table>
 </div><div class="memdoc">

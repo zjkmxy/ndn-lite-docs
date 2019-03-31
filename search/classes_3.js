@@ -29,6 +29,7 @@ var searchData=
   ['ndn_5fmetainfo',['ndn_metainfo',['../structndn__metainfo.html',1,'']]],
   ['ndn_5fmsg',['ndn_msg',['../structndn__msg.html',1,'']]],
   ['ndn_5fname',['ndn_name',['../structndn__name.html',1,'']]],
+  ['ndn_5fnametree',['ndn_nametree',['../structndn__nametree.html',1,'']]],
   ['ndn_5fpit',['ndn_pit',['../structndn__pit.html',1,'']]],
   ['ndn_5fpit_5fentry',['ndn_pit_entry',['../structndn__pit__entry.html',1,'']]],
   ['ndn_5frng_5fbackend',['ndn_rng_backend',['../structndn__rng__backend.html',1,'']]],

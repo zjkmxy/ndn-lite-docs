@@ -11,7 +11,7 @@ var searchData=
   ['interest_2ec',['interest.c',['../interest_8c.html',1,'']]],
   ['interest_2eh',['interest.h',['../interest_8h.html',1,'']]],
   ['interest_5foptions',['interest_options',['../structinterest__options.html',1,'']]],
-  ['interest_5foptions_5ft',['interest_options_t',['../forwarder-helper_8h.html#ab3029eb7252ce096a135f0cdfe2a325b',1,'forwarder-helper.h']]],
+  ['interest_5foptions_5ft',['interest_options_t',['../group___n_d_n_encode_fwd_helper.html#gab3029eb7252ce096a135f0cdfe2a325b',1,'forwarder-helper.h']]],
   ['interest_5fparams',['interest_params',['../structinterest__params.html',1,'']]],
   ['interest_5fparams_5ft',['interest_params_t',['../interest_8h.html#af46a0a240478450f026fbfa043eb6bef',1,'interest.h']]],
   ['intf',['intf',['../structndn__dummy__face.html#a4b58397b252754d938ef5b293020f6a9',1,'ndn_dummy_face']]],

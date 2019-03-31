@@ -3,8 +3,6 @@ var searchData=
   ['service_2ddiscovery_2ec',['service-discovery.c',['../service-discovery_8c.html',1,'']]],
   ['service_2ddiscovery_2eh',['service-discovery.h',['../service-discovery_8h.html',1,'']]],
   ['sign_2don_2dbasic_2dclient_2dconsts_2eh',['sign-on-basic-client-consts.h',['../sign-on-basic-client-consts_8h.html',1,'']]],
-  ['sign_2don_2dbasic_2dclient_2dnrf_2dsdk_2dble_2ec',['sign-on-basic-client-nrf-sdk-ble.c',['../sign-on-basic-client-nrf-sdk-ble_8c.html',1,'']]],
-  ['sign_2don_2dbasic_2dclient_2dnrf_2dsdk_2dble_2eh',['sign-on-basic-client-nrf-sdk-ble.h',['../sign-on-basic-client-nrf-sdk-ble_8h.html',1,'']]],
   ['sign_2don_2dbasic_2dclient_2ec',['sign-on-basic-client.c',['../sign-on-basic-client_8c.html',1,'']]],
   ['sign_2don_2dbasic_2dclient_2eh',['sign-on-basic-client.h',['../sign-on-basic-client_8h.html',1,'']]],
   ['sign_2don_2dbasic_2dconsts_2eh',['sign-on-basic-consts.h',['../sign-on-basic-consts_8h.html',1,'']]],

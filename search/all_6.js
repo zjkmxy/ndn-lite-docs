@@ -25,6 +25,7 @@ var searchData=
   ['fwd_5fmulticast',['fwd_multicast',['../forwarder_8c.html#ab29ebfe7114915adb0200720135ff8f1',1,'forwarder.c']]],
   ['fwd_5fon_5fincoming_5finterest',['fwd_on_incoming_interest',['../forwarder_8c.html#a008b8b7b70a44e50a7783b7e6d40891f',1,'forwarder.c']]],
   ['fwd_5fon_5foutgoing_5finterest',['fwd_on_outgoing_interest',['../forwarder_8c.html#a7ceaee587818941ea53e42ca280ef582',1,'forwarder.c']]],
+  ['forwarder_20helper',['Forwarder helper',['../group___n_d_n_encode_fwd_helper.html',1,'']]],
   ['face_20errors',['Face Errors',['../group___n_d_n_error_code_face.html',1,'']]],
   ['forwarder_20errors',['Forwarder Errors',['../group___n_d_n_error_code_forwarder.html',1,'']]],
   ['fragmentation_20errors',['Fragmentation Errors',['../group___n_d_n_error_code_fragmentation.html',1,'']]],

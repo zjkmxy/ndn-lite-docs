@@ -1,5 +1,7 @@
 <map id="ndn_pit" name="ndn_pit">
-<area shape="rect" id="node1" title="Forwarding Information Base (FIB)." alt="" coords="23,355,113,441"/>
-<area shape="rect" id="node2" href="$structndn__pit__entry.html" title="PIT entry." alt="" coords="5,180,131,293"/>
-<area shape="rect" id="node3" href="$structinterest__options.html" title=" " alt="" coords="10,5,126,119"/>
+<area shape="rect" id="node1" title="Forwarding Information Base (FIB)." alt="" coords="97,381,178,455"/>
+<area shape="rect" id="node2" href="$structndn__pit__entry.html" title="PIT entry." alt="" coords="5,207,131,320"/>
+<area shape="rect" id="node3" href="$structinterest__options.html" title="Interest options which the forwarder cares." alt="" coords="10,5,126,119"/>
+<area shape="rect" id="node4" href="$structndn__nametree.html" title=" " alt="" coords="154,227,262,300"/>
+<area shape="rect" id="node5" href="$structnametree__entry.html" title="NameTree node." alt="" coords="151,5,265,119"/>
 </map>

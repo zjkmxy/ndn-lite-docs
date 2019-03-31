@@ -1,10 +1,12 @@
 <map id="ndn_forwarder" name="ndn_forwarder">
-<area shape="rect" id="node1" title="NDN&#45;Lite forwarder." alt="" coords="214,503,322,589"/>
-<area shape="rect" id="node2" href="$structndn__face__table.html" title="Face Table." alt="" coords="65,361,178,435"/>
-<area shape="rect" id="node3" href="$structndn__face__intf.html" title="Abstract NDN network face." alt="" coords="5,187,107,287"/>
-<area shape="rect" id="node4" href="$structndn__pit.html" title="Forwarding Information Base (FIB)." alt="" coords="223,355,313,441"/>
-<area shape="rect" id="node5" href="$structndn__pit__entry.html" title="PIT entry." alt="" coords="205,180,331,293"/>
-<area shape="rect" id="node6" href="$structinterest__options.html" title=" " alt="" coords="210,5,326,119"/>
-<area shape="rect" id="node7" href="$structndn__fib.html" title="Forwarding Information Base (FIB)." alt="" coords="350,355,439,441"/>
-<area shape="rect" id="node8" href="$structndn__fib__entry.html" title="FIB entry." alt="" coords="355,180,462,293"/>
+<area shape="rect" id="node1" title="NDN&#45;Lite forwarder." alt="" coords="398,516,506,589"/>
+<area shape="rect" id="node2" href="$structndn__face__table.html" title="Face Table." alt="" coords="122,381,235,455"/>
+<area shape="rect" id="node3" href="$structndn__face__intf.html" title="Abstract NDN network face." alt="" coords="5,213,107,313"/>
+<area shape="rect" id="node4" href="$structndn__nametree.html" title=" " alt="" coords="504,227,611,300"/>
+<area shape="rect" id="node6" href="$structndn__pit.html" title="Forwarding Information Base (FIB)." alt="" coords="359,381,441,455"/>
+<area shape="rect" id="node9" href="$structndn__fib.html" title="Forwarding Information Base (FIB)." alt="" coords="464,381,546,455"/>
+<area shape="rect" id="node5" href="$structnametree__entry.html" title="NameTree node." alt="" coords="500,5,615,119"/>
+<area shape="rect" id="node7" href="$structndn__pit__entry.html" title="PIT entry." alt="" coords="205,207,331,320"/>
+<area shape="rect" id="node8" href="$structinterest__options.html" title="Interest options which the forwarder cares." alt="" coords="210,5,326,119"/>
+<area shape="rect" id="node10" href="$structndn__fib__entry.html" title="FIB entry." alt="" coords="355,207,462,320"/>
 </map>

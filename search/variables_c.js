@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['m_5fon_5fsign_5fon_5fcompleted',['m_on_sign_on_completed',['../sign-on-basic-client-nrf-sdk-ble_8c.html#a6897d31a997987b626812b395fd9cef3',1,'sign-on-basic-client-nrf-sdk-ble.c']]],
-  ['m_5fsign_5fon_5fbasic_5fclient',['m_sign_on_basic_client',['../sign-on-basic-client-nrf-sdk-ble_8c.html#a6055a749c9470699baddaadaacf53d43',1,'sign-on-basic-client-nrf-sdk-ble.c']]],
   ['make_5fkey',['make_key',['../structndn__ecc__backend.html#a9333b4fb80025d0ad4f2272f475a85de',1,'ndn_ecc_backend::make_key()'],['../structndn__hmac__backend.html#aebd8b1cdd98617039346c77890577d0a',1,'ndn_hmac_backend::make_key()']]],
   ['max_5falen',['MAX_ALEN',['../tc__hmac__prng_8c.html#a801faa1edf3afebc984ab91698d9fa30',1,'tc_hmac_prng.c']]],
   ['max_5fcalls',['MAX_CALLS',['../tc__cmac__mode_8c.html#a916cef6ac3833e0b3f90be2cd8858a7d',1,'tc_cmac_mode.c']]],

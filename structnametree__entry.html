@@ -72,7 +72,7 @@ $(function() {
 <p>NameTree node.  
  <a href="structnametree__entry.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="name-tree_8h_source.html">name-tree.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="name-splay_8h_source.html">name-splay.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for nametree_entry:</div>
 <div class="dyncontent">
@@ -84,25 +84,46 @@ Collaboration diagram for nametree_entry:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:acbf91c63509067da6dff74f02b495f29"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnametree__entry.html#acbf91c63509067da6dff74f02b495f29">val</a> [<a class="el" href="ndn-constants_8h.html#aaf41e045f3e8e75133e0163a060eb384">NDN_NAME_COMPONENT_BLOCK_SIZE</a>]</td></tr>
-<tr class="memdesc:acbf91c63509067da6dff74f02b495f29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name component of this node.  <a href="#acbf91c63509067da6dff74f02b495f29">More...</a><br /></td></tr>
-<tr class="separator:acbf91c63509067da6dff74f02b495f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72a20c8db9d11a9bf0ffbd83d97ebf36"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnametree__entry.html#a72a20c8db9d11a9bf0ffbd83d97ebf36">val</a> [<a class="el" href="ndn-constants_8h.html#aaf41e045f3e8e75133e0163a060eb384">NDN_NAME_COMPONENT_BLOCK_SIZE</a>]</td></tr>
+<tr class="memdesc:a72a20c8db9d11a9bf0ffbd83d97ebf36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name component of this node.  <a href="#a72a20c8db9d11a9bf0ffbd83d97ebf36">More...</a><br /></td></tr>
+<tr class="separator:a72a20c8db9d11a9bf0ffbd83d97ebf36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a735b369ee040606d608b1bc446946d24"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structnametree__entry.html">nametree_entry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnametree__entry.html#a735b369ee040606d608b1bc446946d24">sub</a></td></tr>
+<tr class="separator:a735b369ee040606d608b1bc446946d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27e676d000843dbe6d53c037e8b48677"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structnametree__entry.html">nametree_entry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnametree__entry.html#a27e676d000843dbe6d53c037e8b48677">cop</a> [2]</td></tr>
+<tr class="memdesc:a27e676d000843dbe6d53c037e8b48677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtree.  <a href="#a27e676d000843dbe6d53c037e8b48677">More...</a><br /></td></tr>
+<tr class="separator:a27e676d000843dbe6d53c037e8b48677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46f29ea88e165d9eae8abaf7f10a658f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ndn-constants_8h.html#aef915007dcd615d2b8be18c48e749dfa">ndn_table_id_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnametree__entry.html#a46f29ea88e165d9eae8abaf7f10a658f">pit_id</a></td></tr>
+<tr class="memdesc:a46f29ea88e165d9eae8abaf7f10a658f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Child or parent.  <a href="#a46f29ea88e165d9eae8abaf7f10a658f">More...</a><br /></td></tr>
+<tr class="separator:a46f29ea88e165d9eae8abaf7f10a658f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfb6f94c20fa523a3b4c782e8edae0b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ndn-constants_8h.html#aef915007dcd615d2b8be18c48e749dfa">ndn_table_id_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnametree__entry.html#adfb6f94c20fa523a3b4c782e8edae0b4">fib_id</a></td></tr>
+<tr class="memdesc:adfb6f94c20fa523a3b4c782e8edae0b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Corresponding FIB entry's id.  <a href="#adfb6f94c20fa523a3b4c782e8edae0b4">More...</a><br /></td></tr>
+<tr class="separator:adfb6f94c20fa523a3b4c782e8edae0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e4006b94039cc27cf97789a85c1ecbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ndn-constants_8h.html#aef915007dcd615d2b8be18c48e749dfa">ndn_table_id_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnametree__entry.html#a4e4006b94039cc27cf97789a85c1ecbc">left_child</a></td></tr>
 <tr class="memdesc:a4e4006b94039cc27cf97789a85c1ecbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">First child of this node.  <a href="#a4e4006b94039cc27cf97789a85c1ecbc">More...</a><br /></td></tr>
 <tr class="separator:a4e4006b94039cc27cf97789a85c1ecbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0a6ed4cfa6fa457056bdbad83878c68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ndn-constants_8h.html#aef915007dcd615d2b8be18c48e749dfa">ndn_table_id_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnametree__entry.html#ad0a6ed4cfa6fa457056bdbad83878c68">right_bro</a></td></tr>
 <tr class="memdesc:ad0a6ed4cfa6fa457056bdbad83878c68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Right brother of this node.  <a href="#ad0a6ed4cfa6fa457056bdbad83878c68">More...</a><br /></td></tr>
 <tr class="separator:ad0a6ed4cfa6fa457056bdbad83878c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46f29ea88e165d9eae8abaf7f10a658f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ndn-constants_8h.html#aef915007dcd615d2b8be18c48e749dfa">ndn_table_id_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnametree__entry.html#a46f29ea88e165d9eae8abaf7f10a658f">pit_id</a></td></tr>
-<tr class="memdesc:a46f29ea88e165d9eae8abaf7f10a658f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Corresponding PIT entry's id.  <a href="#a46f29ea88e165d9eae8abaf7f10a658f">More...</a><br /></td></tr>
-<tr class="separator:a46f29ea88e165d9eae8abaf7f10a658f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfb6f94c20fa523a3b4c782e8edae0b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ndn-constants_8h.html#aef915007dcd615d2b8be18c48e749dfa">ndn_table_id_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnametree__entry.html#adfb6f94c20fa523a3b4c782e8edae0b4">fib_id</a></td></tr>
-<tr class="memdesc:adfb6f94c20fa523a3b4c782e8edae0b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Corresponding FIB entry's id.  <a href="#adfb6f94c20fa523a3b4c782e8edae0b4">More...</a><br /></td></tr>
-<tr class="separator:adfb6f94c20fa523a3b4c782e8edae0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NameTree node. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
+<a id="a27e676d000843dbe6d53c037e8b48677"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27e676d000843dbe6d53c037e8b48677">&#9670;&nbsp;</a></span>cop</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structnametree__entry.html">nametree_entry</a>* nametree_entry::cop[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Subtree. </p>
+
+</div>
+</div>
 <a id="adfb6f94c20fa523a3b4c782e8edae0b4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adfb6f94c20fa523a3b4c782e8edae0b4">&#9670;&nbsp;</a></span>fib_id</h2>
 
@@ -149,7 +170,8 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Corresponding PIT entry's id. </p>
+<p>Child or parent. </p>
+<p>Corresponding PIT entry's id.</p>
 <p><a class="el" href="ndn-constants_8h.html#ad61ec7f675ac40e4950a7c9cca24dd60">NDN_INVALID_ID</a> if none. </p>
 
 </div>
@@ -171,14 +193,28 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="acbf91c63509067da6dff74f02b495f29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbf91c63509067da6dff74f02b495f29">&#9670;&nbsp;</a></span>val</h2>
+<a id="a735b369ee040606d608b1bc446946d24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a735b369ee040606d608b1bc446946d24">&#9670;&nbsp;</a></span>sub</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t nametree_entry::val[<a class="el" href="ndn-constants_8h.html#aaf41e045f3e8e75133e0163a060eb384">NDN_NAME_COMPONENT_BLOCK_SIZE</a>]</td>
+          <td class="memname">struct <a class="el" href="structnametree__entry.html">nametree_entry</a>* nametree_entry::sub</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72a20c8db9d11a9bf0ffbd83d97ebf36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72a20c8db9d11a9bf0ffbd83d97ebf36">&#9670;&nbsp;</a></span>val</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t nametree_entry::val</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -187,7 +223,8 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li>ndn-lite/forwarder/<a class="el" href="name-splay_8h_source.html">name-splay.h</a></li>
 <li>ndn-lite/forwarder/<a class="el" href="name-tree_8h_source.html">name-tree.h</a></li>
 </ul>
 </div><!-- contents -->

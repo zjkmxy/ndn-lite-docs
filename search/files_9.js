@@ -2,6 +2,8 @@ var searchData=
 [
   ['name_2dcomponent_2ec',['name-component.c',['../name-component_8c.html',1,'']]],
   ['name_2dcomponent_2eh',['name-component.h',['../name-component_8h.html',1,'']]],
+  ['name_2dsplay_2ec',['name-splay.c',['../name-splay_8c.html',1,'']]],
+  ['name_2dsplay_2eh',['name-splay.h',['../name-splay_8h.html',1,'']]],
   ['name_2dtree_2ec',['name-tree.c',['../name-tree_8c.html',1,'']]],
   ['name_2dtree_2eh',['name-tree.h',['../name-tree_8h.html',1,'']]],
   ['name_2ec',['name.c',['../name_8c.html',1,'']]],

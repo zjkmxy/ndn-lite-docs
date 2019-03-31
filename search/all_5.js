@@ -44,5 +44,6 @@ var searchData=
   ['eval3',['EVAL3',['../u_e_c_c_8c.html#aee8e56918d51b5dab93d8c6d8266814b',1,'uECC.c']]],
   ['eval4',['EVAL4',['../u_e_c_c_8c.html#a5d9eb883e12b6ce5401726db89588f81',1,'uECC.c']]],
   ['even',['EVEN',['../u_e_c_c_8c.html#ab74814b2d829f58ce25e7b365e9d08b3',1,'EVEN():&#160;uECC.c'],['../tc__ecc_8c.html#ab74814b2d829f58ce25e7b365e9d08b3',1,'EVEN():&#160;tc_ecc.c']]],
-  ['express_5ftime',['express_time',['../structndn__pit__entry.html#aa681748b2498431c505bc4b40c891f4d',1,'ndn_pit_entry']]]
+  ['express_5ftime',['express_time',['../structndn__pit__entry.html#aa681748b2498431c505bc4b40c891f4d',1,'ndn_pit_entry']]],
+  ['encoding',['Encoding',['../group___n_d_n_encode.html',1,'']]]
 ];

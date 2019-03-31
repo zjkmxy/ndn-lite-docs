@@ -1,4 +1,4 @@
 <map id="ndn_pit_entry" name="ndn_pit_entry">
 <area shape="rect" id="node1" title="PIT entry." alt="" coords="5,180,131,293"/>
-<area shape="rect" id="node2" href="$structinterest__options.html" title=" " alt="" coords="10,5,126,119"/>
+<area shape="rect" id="node2" href="$structinterest__options.html" title="Interest options which the forwarder cares." alt="" coords="10,5,126,119"/>
 </map>

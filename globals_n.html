@@ -109,13 +109,35 @@ $(function() {
 : <a class="el" href="name-tree_8c.html#a56061587f71a5195d4ec5f32eb799eea">name-tree.c</a>
 </li>
 <li>nametree_entry_t
-: <a class="el" href="group___n_d_n_fwd_name_tree.html#gafd1e8d5e8cfb26565475277da874d7fa">name-tree.h</a>
+: <a class="el" href="name-splay_8h.html#afd1e8d5e8cfb26565475277da874d7fa">name-splay.h</a>
+, <a class="el" href="group___n_d_n_fwd_name_tree.html#gafd1e8d5e8cfb26565475277da874d7fa">name-tree.h</a>
+</li>
+<li>nametree_find_or_insert_sub()
+: <a class="el" href="name-splay_8c.html#a2572cff6cbc319a520a53f0286551b53">name-splay.c</a>
 </li>
 <li>nametree_find_or_insert_try()
 : <a class="el" href="name-tree_8c.html#a8d33b294a41ab00bd2c127bcfcd2af1a">name-tree.c</a>
 </li>
+<li>nametree_finish()
+: <a class="el" href="name-splay_8c.html#ac6e72e821e582c18bfc55208ac09b2ba">name-splay.c</a>
+</li>
+<li>nametree_newnode()
+: <a class="el" href="name-splay_8c.html#a11c8fdc69bb21df89d85d7c91a6b3468">name-splay.c</a>
+</li>
 <li>nametree_refresh()
 : <a class="el" href="name-tree_8c.html#a749f81bd695f7ecd36045cc69d1bf1d4">name-tree.c</a>
+</li>
+<li>nametree_reset_entry()
+: <a class="el" href="name-splay_8c.html#aede13a4b1279c0b75495805b4c7f151a">name-splay.c</a>
+</li>
+<li>nametree_splay()
+: <a class="el" href="name-splay_8c.html#a93b3ff48e53eecc4f7ba9f26e5a5c8fa">name-splay.c</a>
+</li>
+<li>nametree_zig()
+: <a class="el" href="name-splay_8c.html#ae3e336d20f5c3d6565949e03f373ce3f">name-splay.c</a>
+</li>
+<li>nametree_zigzig()
+: <a class="el" href="name-splay_8c.html#ac145c95514f1d3d86cc0fed8b38aa731">name-splay.c</a>
 </li>
 <li>Nb
 : <a class="el" href="tc__aes_8h.html#a1ae104196f1fc7af4751c5b9e07b1610">tc_aes.h</a>
@@ -198,8 +220,8 @@ $(function() {
 : <a class="el" href="ndn-lite-aes_8h.html#a6fb1be85f5d1d4dc6f9d544724e4619a">ndn-lite-aes.h</a>
 </li>
 <li>ndn_aes_get_key_value()
-: <a class="el" href="ndn-lite-aes_8c.html#af5008842f1c3b34a69c7a6538ff69173">ndn-lite-aes.c</a>
-, <a class="el" href="ndn-lite-aes_8h.html#af5008842f1c3b34a69c7a6538ff69173">ndn-lite-aes.h</a>
+: <a class="el" href="ndn-lite-aes_8h.html#af5008842f1c3b34a69c7a6538ff69173">ndn-lite-aes.h</a>
+, <a class="el" href="ndn-lite-aes_8c.html#af5008842f1c3b34a69c7a6538ff69173">ndn-lite-aes.c</a>
 </li>
 <li>ndn_aes_get_key_value_impl
 : <a class="el" href="ndn-lite-aes_8h.html#a4adff06e02a542440e0fc6cdb7983bd5">ndn-lite-aes.h</a>
@@ -392,8 +414,8 @@ $(function() {
 , <a class="el" href="data_8h.html#af3560a314950a6f1e3e4527b74bd6dcb">data.h</a>
 </li>
 <li>ndn_data_tlv_decode_no_verify()
-: <a class="el" href="data_8h.html#abdba3713ea09139bbfeb5f94fef597eb">data.h</a>
-, <a class="el" href="data_8c.html#abdba3713ea09139bbfeb5f94fef597eb">data.c</a>
+: <a class="el" href="data_8c.html#abdba3713ea09139bbfeb5f94fef597eb">data.c</a>
+, <a class="el" href="data_8h.html#abdba3713ea09139bbfeb5f94fef597eb">data.h</a>
 </li>
 <li>ndn_data_tlv_encode_digest_sign()
 : <a class="el" href="data_8c.html#a26301da4196decc9264e9b0d1890036d">data.c</a>
@@ -650,7 +672,7 @@ $(function() {
 : <a class="el" href="group___n_d_n_fwd_f_i_b.html#ga39149c6642dd82d4196d43fd9b49aa53">fib.h</a>
 </li>
 <li>ndn_fib_t
-: <a class="el" href="group___n_d_n_fwd_f_i_b.html#gaeeaf739350ba1495b70e78214ad6d33a">fib.h</a>
+: <a class="el" href="group___n_d_n_fwd_f_i_b.html#gae8b32eb1d96c67e251eaef8c9218fe65">fib.h</a>
 </li>
 <li>ndn_fib_unregister_face()
 : <a class="el" href="group___n_d_n_fwd_f_i_b.html#gad498709e859702ed7628569dc8ad0328">fib.c</a>
@@ -688,8 +710,8 @@ $(function() {
 , <a class="el" href="group___n_d_n_fwd_forwarder.html#gae20555e0b3645d21429671ec51d75874">forwarder.h</a>
 </li>
 <li>ndn_forwarder_register_prefix()
-: <a class="el" href="group___n_d_n_fwd_forwarder.html#ga242d83d29bed45ac4eba6896686e5a16">forwarder.c</a>
-, <a class="el" href="group___n_d_n_fwd_forwarder.html#ga242d83d29bed45ac4eba6896686e5a16">forwarder.h</a>
+: <a class="el" href="group___n_d_n_fwd_forwarder.html#ga242d83d29bed45ac4eba6896686e5a16">forwarder.h</a>
+, <a class="el" href="group___n_d_n_fwd_forwarder.html#ga242d83d29bed45ac4eba6896686e5a16">forwarder.c</a>
 </li>
 <li>ndn_forwarder_remove_all_routes()
 : <a class="el" href="group___n_d_n_fwd_forwarder.html#gaad596c735921ed97fd79c0d54f07b2c7">forwarder.c</a>
@@ -706,8 +728,8 @@ $(function() {
 : <a class="el" href="forwarder_8c.html#adf9816d8080c2a8400533d64f4a7b89e">forwarder.c</a>
 </li>
 <li>ndn_forwarder_unregister_face()
-: <a class="el" href="group___n_d_n_fwd_forwarder.html#gabcf1ec89cf5d5952181576ef1a331aaf">forwarder.h</a>
-, <a class="el" href="group___n_d_n_fwd_forwarder.html#gabcf1ec89cf5d5952181576ef1a331aaf">forwarder.c</a>
+: <a class="el" href="group___n_d_n_fwd_forwarder.html#gabcf1ec89cf5d5952181576ef1a331aaf">forwarder.c</a>
+, <a class="el" href="group___n_d_n_fwd_forwarder.html#gabcf1ec89cf5d5952181576ef1a331aaf">forwarder.h</a>
 </li>
 <li>ndn_forwarder_unregister_prefix()
 : <a class="el" href="group___n_d_n_fwd_forwarder.html#gadd4d6034be89a37db47ea782fd5c8e02">forwarder.c</a>
@@ -912,6 +934,9 @@ $(function() {
 : <a class="el" href="interest_8c.html#a5e7cf807971c73f1407502e1c7de7eed">interest.c</a>
 , <a class="el" href="interest_8h.html#a5e7cf807971c73f1407502e1c7de7eed">interest.h</a>
 </li>
+<li>NDN_INVALID_ARG
+: <a class="el" href="group___n_d_n_error_code_general.html#gab3a86cd8a478cf46ac8134619401d262">ndn-error-code.h</a>
+</li>
 <li>NDN_INVALID_ID
 : <a class="el" href="ndn-constants_8h.html#ad61ec7f675ac40e4950a7c9cca24dd60">ndn-constants.h</a>
 </li>
@@ -1082,16 +1107,16 @@ $(function() {
 : <a class="el" href="ndn-constants_8h.html#a53dcc60203b52ba86ea6ce2b0ab7dbbd">ndn-constants.h</a>
 </li>
 <li>ndn_memory_pool_alloc()
-: <a class="el" href="group___n_d_n_util_mem_pool.html#ga1572622c40db648ce4798e145d429e44">memory-pool.c</a>
-, <a class="el" href="group___n_d_n_util_mem_pool.html#ga1572622c40db648ce4798e145d429e44">memory-pool.h</a>
+: <a class="el" href="group___n_d_n_util_mem_pool.html#ga1572622c40db648ce4798e145d429e44">memory-pool.h</a>
+, <a class="el" href="group___n_d_n_util_mem_pool.html#ga1572622c40db648ce4798e145d429e44">memory-pool.c</a>
 </li>
 <li>ndn_memory_pool_free()
 : <a class="el" href="group___n_d_n_util_mem_pool.html#gab76b975b5ef2d1652592bb55632349bc">memory-pool.c</a>
 , <a class="el" href="group___n_d_n_util_mem_pool.html#gab76b975b5ef2d1652592bb55632349bc">memory-pool.h</a>
 </li>
 <li>ndn_memory_pool_init()
-: <a class="el" href="group___n_d_n_util_mem_pool.html#ga9e7f13bfe5db773a65e9cb7b6ffe83d6">memory-pool.c</a>
-, <a class="el" href="group___n_d_n_util_mem_pool.html#ga9e7f13bfe5db773a65e9cb7b6ffe83d6">memory-pool.h</a>
+: <a class="el" href="group___n_d_n_util_mem_pool.html#ga9e7f13bfe5db773a65e9cb7b6ffe83d6">memory-pool.h</a>
+, <a class="el" href="group___n_d_n_util_mem_pool.html#ga9e7f13bfe5db773a65e9cb7b6ffe83d6">memory-pool.c</a>
 </li>
 <li>NDN_MEMORY_POOL_RESERVE_SIZE
 : <a class="el" href="group___n_d_n_util_mem_pool.html#gade6c8d55d43de7873eb49adf32cc0b81">memory-pool.h</a>
@@ -1122,8 +1147,8 @@ $(function() {
 : <a class="el" href="metainfo_8h.html#a5839d993f3b62b8e187da1c8ab71227b">metainfo.h</a>
 </li>
 <li>ndn_metainfo_tlv_decode()
-: <a class="el" href="metainfo_8c.html#a27784d3cb9b49eff4d1e5aa38618b6d4">metainfo.c</a>
-, <a class="el" href="metainfo_8h.html#a27784d3cb9b49eff4d1e5aa38618b6d4">metainfo.h</a>
+: <a class="el" href="metainfo_8h.html#a27784d3cb9b49eff4d1e5aa38618b6d4">metainfo.h</a>
+, <a class="el" href="metainfo_8c.html#a27784d3cb9b49eff4d1e5aa38618b6d4">metainfo.c</a>
 </li>
 <li>ndn_metainfo_tlv_encode()
 : <a class="el" href="metainfo_8c.html#a60d7126bd0ae2bac459da8404be53c2a">metainfo.c</a>
@@ -1143,16 +1168,16 @@ $(function() {
 , <a class="el" href="group___n_d_n_util_msq_queue.html#gacf70379963532d87684732d798af5e59">msg-queue.h</a>
 </li>
 <li>ndn_msgqueue_dispatch()
-: <a class="el" href="group___n_d_n_util_msq_queue.html#gaf426b18fdf32ef1704329681af36d051">msg-queue.h</a>
-, <a class="el" href="group___n_d_n_util_msq_queue.html#gaf426b18fdf32ef1704329681af36d051">msg-queue.c</a>
+: <a class="el" href="group___n_d_n_util_msq_queue.html#gaf426b18fdf32ef1704329681af36d051">msg-queue.c</a>
+, <a class="el" href="group___n_d_n_util_msq_queue.html#gaf426b18fdf32ef1704329681af36d051">msg-queue.h</a>
 </li>
 <li>ndn_msgqueue_empty()
 : <a class="el" href="group___n_d_n_util_msq_queue.html#ga20805137ae911ed02f83fd3d3419c490">msg-queue.c</a>
 , <a class="el" href="group___n_d_n_util_msq_queue.html#ga20805137ae911ed02f83fd3d3419c490">msg-queue.h</a>
 </li>
 <li>ndn_msgqueue_init()
-: <a class="el" href="group___n_d_n_util_msq_queue.html#ga9f875a3ca6f8f6bb0accd4f33c182add">msg-queue.h</a>
-, <a class="el" href="group___n_d_n_util_msq_queue.html#ga9f875a3ca6f8f6bb0accd4f33c182add">msg-queue.c</a>
+: <a class="el" href="group___n_d_n_util_msq_queue.html#ga9f875a3ca6f8f6bb0accd4f33c182add">msg-queue.c</a>
+, <a class="el" href="group___n_d_n_util_msq_queue.html#ga9f875a3ca6f8f6bb0accd4f33c182add">msg-queue.h</a>
 </li>
 <li>ndn_msgqueue_post()
 : <a class="el" href="group___n_d_n_util_msq_queue.html#ga9a02bdee2edd5cef7c54c55286b3bce4">msg-queue.c</a>
@@ -1166,8 +1191,8 @@ $(function() {
 : <a class="el" href="group___n_d_n_util_msq_queue.html#ga64a776e6a341f931618c31a7a94d7ed9">msg-queue.h</a>
 </li>
 <li>ndn_name_append_component()
-: <a class="el" href="name_8c.html#a64384d95e56cc47ebace67c437a64293">name.c</a>
-, <a class="el" href="name_8h.html#a64384d95e56cc47ebace67c437a64293">name.h</a>
+: <a class="el" href="name_8h.html#a64384d95e56cc47ebace67c437a64293">name.h</a>
+, <a class="el" href="name_8c.html#a64384d95e56cc47ebace67c437a64293">name.c</a>
 </li>
 <li>ndn_name_compare()
 : <a class="el" href="name_8c.html#a65207bea0be3dbed5f7ceda875f1f729">name.c</a>
@@ -1223,45 +1248,71 @@ $(function() {
 , <a class="el" href="name_8h.html#a914e08a55fb142d992d5026496f4fcee">name.h</a>
 </li>
 <li>ndn_name_tlv_encode()
-: <a class="el" href="name_8h.html#a40eec588ed7352baa1fac0adde4de28b">name.h</a>
-, <a class="el" href="name_8c.html#a40eec588ed7352baa1fac0adde4de28b">name.c</a>
+: <a class="el" href="name_8c.html#a40eec588ed7352baa1fac0adde4de28b">name.c</a>
+, <a class="el" href="name_8h.html#a40eec588ed7352baa1fac0adde4de28b">name.h</a>
+</li>
+<li>ndn_nametree_at()
+: <a class="el" href="group___n_d_n_fwd_name_tree.html#ga8a5e2506ea4fc5c0f1aee2a1617c4edc">name-tree.c</a>
+, <a class="el" href="group___n_d_n_fwd_name_tree.html#ga8a5e2506ea4fc5c0f1aee2a1617c4edc">name-splay.c</a>
+, <a class="el" href="name-splay_8h.html#a8a5e2506ea4fc5c0f1aee2a1617c4edc">name-splay.h</a>
+, <a class="el" href="group___n_d_n_fwd_name_tree.html#ga8a5e2506ea4fc5c0f1aee2a1617c4edc">name-tree.h</a>
 </li>
 <li>NDN_NAMETREE_ENTRY_TYPE
-: <a class="el" href="group___n_d_n_fwd_name_tree.html#ga18cadd69e5abc06c68aecb8cd4ada181">name-tree.h</a>
+: <a class="el" href="name-splay_8h.html#a18cadd69e5abc06c68aecb8cd4ada181">name-splay.h</a>
+, <a class="el" href="group___n_d_n_fwd_name_tree.html#ga18cadd69e5abc06c68aecb8cd4ada181">name-tree.h</a>
 </li>
 <li>NDN_NAMETREE_ENTRY_TYPE_CNT
-: <a class="el" href="group___n_d_n_fwd_name_tree.html#gga18cadd69e5abc06c68aecb8cd4ada181a7b073cceecb661de290fb655620a8a20">name-tree.h</a>
+: <a class="el" href="group___n_d_n_fwd_name_tree.html#gga18cadd69e5abc06c68aecb8cd4ada181a7b073cceecb661de290fb655620a8a20">name-splay.h</a>
+, <a class="el" href="group___n_d_n_fwd_name_tree.html#gga18cadd69e5abc06c68aecb8cd4ada181a7b073cceecb661de290fb655620a8a20">name-tree.h</a>
 </li>
 <li>NDN_NAMETREE_FIB_TYPE
-: <a class="el" href="group___n_d_n_fwd_name_tree.html#gga18cadd69e5abc06c68aecb8cd4ada181a74a0138c11145173b4515a89e652c1ce">name-tree.h</a>
+: <a class="el" href="group___n_d_n_fwd_name_tree.html#gga18cadd69e5abc06c68aecb8cd4ada181a74a0138c11145173b4515a89e652c1ce">name-splay.h</a>
+, <a class="el" href="group___n_d_n_fwd_name_tree.html#gga18cadd69e5abc06c68aecb8cd4ada181a74a0138c11145173b4515a89e652c1ce">name-tree.h</a>
 </li>
 <li>ndn_nametree_find()
-: <a class="el" href="group___n_d_n_fwd_name_tree.html#gaeeeda0c4e03d6d3ee534270a41ca2105">name-tree.c</a>
+: <a class="el" href="group___n_d_n_fwd_name_tree.html#gaeeeda0c4e03d6d3ee534270a41ca2105">name-splay.c</a>
+, <a class="el" href="name-splay_8h.html#ab0bf72cbb5e4778bcc7779ee6dd1cd49">name-splay.h</a>
+, <a class="el" href="group___n_d_n_fwd_name_tree.html#gaeeeda0c4e03d6d3ee534270a41ca2105">name-tree.c</a>
 , <a class="el" href="group___n_d_n_fwd_name_tree.html#gaeeeda0c4e03d6d3ee534270a41ca2105">name-tree.h</a>
 </li>
 <li>ndn_nametree_find_or_insert()
-: <a class="el" href="group___n_d_n_fwd_name_tree.html#ga1cce7caadc21fa86e7600f227dca5b10">name-tree.c</a>
+: <a class="el" href="group___n_d_n_fwd_name_tree.html#ga1cce7caadc21fa86e7600f227dca5b10">name-splay.c</a>
+, <a class="el" href="name-splay_8h.html#a021452a0498ba49ddc2837cd4443c039">name-splay.h</a>
+, <a class="el" href="group___n_d_n_fwd_name_tree.html#ga1cce7caadc21fa86e7600f227dca5b10">name-tree.c</a>
 , <a class="el" href="group___n_d_n_fwd_name_tree.html#ga1cce7caadc21fa86e7600f227dca5b10">name-tree.h</a>
 </li>
+<li>ndn_nametree_getid()
+: <a class="el" href="group___n_d_n_fwd_name_tree.html#gaa6da14a733c401dec333f85d8a6f05ee">name-splay.c</a>
+, <a class="el" href="name-splay_8h.html#aa6da14a733c401dec333f85d8a6f05ee">name-splay.h</a>
+, <a class="el" href="group___n_d_n_fwd_name_tree.html#gaa6da14a733c401dec333f85d8a6f05ee">name-tree.c</a>
+, <a class="el" href="group___n_d_n_fwd_name_tree.html#gaa6da14a733c401dec333f85d8a6f05ee">name-tree.h</a>
+</li>
 <li>ndn_nametree_init()
-: <a class="el" href="group___n_d_n_fwd_name_tree.html#ga8aeeb62bcdb3b442d7abe2f1a23ed81d">name-tree.c</a>
+: <a class="el" href="group___n_d_n_fwd_name_tree.html#ga8aeeb62bcdb3b442d7abe2f1a23ed81d">name-splay.c</a>
+, <a class="el" href="name-splay_8h.html#a8aeeb62bcdb3b442d7abe2f1a23ed81d">name-splay.h</a>
+, <a class="el" href="group___n_d_n_fwd_name_tree.html#ga8aeeb62bcdb3b442d7abe2f1a23ed81d">name-tree.c</a>
 , <a class="el" href="group___n_d_n_fwd_name_tree.html#ga8aeeb62bcdb3b442d7abe2f1a23ed81d">name-tree.h</a>
 </li>
 <li>NDN_NAMETREE_MAX_SIZE
 : <a class="el" href="ndn-constants_8h.html#a95f5891d1a442bbf7e2b028242687e05">ndn-constants.h</a>
 </li>
 <li>NDN_NAMETREE_PIT_TYPE
-: <a class="el" href="group___n_d_n_fwd_name_tree.html#gga18cadd69e5abc06c68aecb8cd4ada181aaf6cf7b0635ff2107513551c15fe578e">name-tree.h</a>
+: <a class="el" href="group___n_d_n_fwd_name_tree.html#gga18cadd69e5abc06c68aecb8cd4ada181aaf6cf7b0635ff2107513551c15fe578e">name-splay.h</a>
+, <a class="el" href="group___n_d_n_fwd_name_tree.html#gga18cadd69e5abc06c68aecb8cd4ada181aaf6cf7b0635ff2107513551c15fe578e">name-tree.h</a>
 </li>
 <li>ndn_nametree_prefix_match()
-: <a class="el" href="group___n_d_n_fwd_name_tree.html#ga46a2ef3ea91e76b52ea86cec7d2a1a89">name-tree.c</a>
+: <a class="el" href="name-splay_8h.html#a62e1a14ae06970594687f0b9388b0200">name-splay.h</a>
+, <a class="el" href="group___n_d_n_fwd_name_tree.html#ga46a2ef3ea91e76b52ea86cec7d2a1a89">name-splay.c</a>
+, <a class="el" href="group___n_d_n_fwd_name_tree.html#ga46a2ef3ea91e76b52ea86cec7d2a1a89">name-tree.c</a>
 , <a class="el" href="group___n_d_n_fwd_name_tree.html#ga46a2ef3ea91e76b52ea86cec7d2a1a89">name-tree.h</a>
 </li>
 <li>NDN_NAMETREE_RESERVE_SIZE
 : <a class="el" href="group___n_d_n_fwd_name_tree.html#ga61123ad429ced326422eec6dbaf3ddae">name-tree.h</a>
+, <a class="el" href="name-splay_8h.html#a61123ad429ced326422eec6dbaf3ddae">name-splay.h</a>
 </li>
 <li>ndn_nametree_t
-: <a class="el" href="group___n_d_n_fwd_name_tree.html#ga699153a76e5485373ce87e54e6fe5c98">name-tree.h</a>
+: <a class="el" href="name-splay_8h.html#af790f91d0b069be04770e949af69530f">name-splay.h</a>
+, <a class="el" href="group___n_d_n_fwd_name_tree.html#ga699153a76e5485373ce87e54e6fe5c98">name-tree.h</a>
 </li>
 <li>ndn_on_data_func
 : <a class="el" href="callback-funcs_8h.html#a452c4f70da99ab88816c3b2398a9c09e">callback-funcs.h</a>
@@ -1303,12 +1354,12 @@ $(function() {
 : <a class="el" href="ndn-constants_8h.html#a4ffd9ff00b7003376b788e299bb1258f">ndn-constants.h</a>
 </li>
 <li>ndn_pit_prefix_match()
-: <a class="el" href="group___n_d_n_fwd_p_i_t.html#ga2696d9dfefb813ea17cdbc68d5e159a8">pit.h</a>
-, <a class="el" href="group___n_d_n_fwd_p_i_t.html#ga2696d9dfefb813ea17cdbc68d5e159a8">pit.c</a>
+: <a class="el" href="group___n_d_n_fwd_p_i_t.html#ga2696d9dfefb813ea17cdbc68d5e159a8">pit.c</a>
+, <a class="el" href="group___n_d_n_fwd_p_i_t.html#ga2696d9dfefb813ea17cdbc68d5e159a8">pit.h</a>
 </li>
 <li>ndn_pit_remove_entry()
-: <a class="el" href="group___n_d_n_fwd_p_i_t.html#ga175dfa92389cbd3142e508832af045c1">pit.c</a>
-, <a class="el" href="group___n_d_n_fwd_p_i_t.html#ga175dfa92389cbd3142e508832af045c1">pit.h</a>
+: <a class="el" href="group___n_d_n_fwd_p_i_t.html#ga175dfa92389cbd3142e508832af045c1">pit.h</a>
+, <a class="el" href="group___n_d_n_fwd_p_i_t.html#ga175dfa92389cbd3142e508832af045c1">pit.c</a>
 </li>
 <li>ndn_pit_remove_entry_if_empty()
 : <a class="el" href="pit_8c.html#a47a1f589a87f4cd0cda5769d53a6dbd5">pit.c</a>
@@ -1323,8 +1374,8 @@ $(function() {
 : <a class="el" href="pit_8c.html#a346b4becd9085237482057e99b70aa1a">pit.c</a>
 </li>
 <li>ndn_pit_unregister_face()
-: <a class="el" href="group___n_d_n_fwd_p_i_t.html#ga673d95c8f23a2fefb3b932e3fa4c41a0">pit.c</a>
-, <a class="el" href="group___n_d_n_fwd_p_i_t.html#ga673d95c8f23a2fefb3b932e3fa4c41a0">pit.h</a>
+: <a class="el" href="group___n_d_n_fwd_p_i_t.html#ga673d95c8f23a2fefb3b932e3fa4c41a0">pit.h</a>
+, <a class="el" href="group___n_d_n_fwd_p_i_t.html#ga673d95c8f23a2fefb3b932e3fa4c41a0">pit.c</a>
 </li>
 <li>ndn_rng()
 : <a class="el" href="ndn-lite-rng_8h.html#a7c078082eaeb50793c800ce17e8a8255">ndn-lite-rng.h</a>
@@ -1347,20 +1398,20 @@ $(function() {
 : <a class="el" href="ndn-rule-storage_8c.html#ac58227b5158bb8b8f74fa0ef19adc27f">ndn-rule-storage.c</a>
 </li>
 <li>ndn_rule_storage_add_rule()
-: <a class="el" href="ndn-rule-storage_8c.html#a6c0676b98a4c3ac50d11e16673968896">ndn-rule-storage.c</a>
-, <a class="el" href="ndn-rule-storage_8h.html#a6c0676b98a4c3ac50d11e16673968896">ndn-rule-storage.h</a>
+: <a class="el" href="ndn-rule-storage_8h.html#a6c0676b98a4c3ac50d11e16673968896">ndn-rule-storage.h</a>
+, <a class="el" href="ndn-rule-storage_8c.html#a6c0676b98a4c3ac50d11e16673968896">ndn-rule-storage.c</a>
 </li>
 <li>ndn_rule_storage_get_rule()
 : <a class="el" href="ndn-rule-storage_8c.html#a01edd2045c54ca030183e1440d20275f">ndn-rule-storage.c</a>
 , <a class="el" href="ndn-rule-storage_8h.html#a01edd2045c54ca030183e1440d20275f">ndn-rule-storage.h</a>
 </li>
 <li>ndn_rule_storage_init()
-: <a class="el" href="ndn-rule-storage_8c.html#a63871a2a336a55494e9bf2d9d0feae53">ndn-rule-storage.c</a>
-, <a class="el" href="ndn-rule-storage_8h.html#a63871a2a336a55494e9bf2d9d0feae53">ndn-rule-storage.h</a>
+: <a class="el" href="ndn-rule-storage_8h.html#a63871a2a336a55494e9bf2d9d0feae53">ndn-rule-storage.h</a>
+, <a class="el" href="ndn-rule-storage_8c.html#a63871a2a336a55494e9bf2d9d0feae53">ndn-rule-storage.c</a>
 </li>
 <li>ndn_rule_storage_remove_rule()
-: <a class="el" href="ndn-rule-storage_8h.html#aeec319a20f6bcb36a67998339de1093a">ndn-rule-storage.h</a>
-, <a class="el" href="ndn-rule-storage_8c.html#aeec319a20f6bcb36a67998339de1093a">ndn-rule-storage.c</a>
+: <a class="el" href="ndn-rule-storage_8c.html#aeec319a20f6bcb36a67998339de1093a">ndn-rule-storage.c</a>
+, <a class="el" href="ndn-rule-storage_8h.html#aeec319a20f6bcb36a67998339de1093a">ndn-rule-storage.h</a>
 </li>
 <li>ndn_sd_context_t
 : <a class="el" href="service-discovery_8h.html#a338f2f1740c7134735db8c6c3ae8fd14">service-discovery.h</a>
@@ -1385,8 +1436,8 @@ $(function() {
 , <a class="el" href="service-discovery_8c.html#a1918a6a2dd6efede2540a717c6db8626">service-discovery.c</a>
 </li>
 <li>ndn_sd_find_neigbor()
-: <a class="el" href="service-discovery_8c.html#ab2a56c09d78862a6ba0d9e92dc921376">service-discovery.c</a>
-, <a class="el" href="service-discovery_8h.html#ab2a56c09d78862a6ba0d9e92dc921376">service-discovery.h</a>
+: <a class="el" href="service-discovery_8h.html#ab2a56c09d78862a6ba0d9e92dc921376">service-discovery.h</a>
+, <a class="el" href="service-discovery_8c.html#ab2a56c09d78862a6ba0d9e92dc921376">service-discovery.c</a>
 </li>
 <li>ndn_sd_identity_t
 : <a class="el" href="service-discovery_8h.html#a2623523fc25e05e646c57fa2bc90e391">service-discovery.h</a>
@@ -1408,28 +1459,28 @@ $(function() {
 : <a class="el" href="group___n_d_n_error_code_s_d.html#ga19523c3efe948d790487918a57ba5dae">ndn-error-code.h</a>
 </li>
 <li>ndn_sd_on_advertisement_process()
-: <a class="el" href="service-discovery_8h.html#aa82d0e2d52beb12af0f8b8cde24fc4c9">service-discovery.h</a>
-, <a class="el" href="service-discovery_8c.html#aa82d0e2d52beb12af0f8b8cde24fc4c9">service-discovery.c</a>
+: <a class="el" href="service-discovery_8c.html#aa82d0e2d52beb12af0f8b8cde24fc4c9">service-discovery.c</a>
+, <a class="el" href="service-discovery_8h.html#aa82d0e2d52beb12af0f8b8cde24fc4c9">service-discovery.h</a>
 </li>
 <li>ndn_sd_on_query_process()
-: <a class="el" href="service-discovery_8h.html#ad711ccc6bafff85fa4e4f207e36ba666">service-discovery.h</a>
-, <a class="el" href="service-discovery_8c.html#ad711ccc6bafff85fa4e4f207e36ba666">service-discovery.c</a>
+: <a class="el" href="service-discovery_8c.html#ad711ccc6bafff85fa4e4f207e36ba666">service-discovery.c</a>
+, <a class="el" href="service-discovery_8h.html#ad711ccc6bafff85fa4e4f207e36ba666">service-discovery.h</a>
 </li>
 <li>ndn_sd_on_query_response_process()
-: <a class="el" href="service-discovery_8h.html#a2005f9a05718f5687ebd37cd0bfe6697">service-discovery.h</a>
-, <a class="el" href="service-discovery_8c.html#a2005f9a05718f5687ebd37cd0bfe6697">service-discovery.c</a>
+: <a class="el" href="service-discovery_8c.html#a2005f9a05718f5687ebd37cd0bfe6697">service-discovery.c</a>
+, <a class="el" href="service-discovery_8h.html#a2005f9a05718f5687ebd37cd0bfe6697">service-discovery.h</a>
 </li>
 <li>ndn_sd_on_query_timeout_process()
-: <a class="el" href="service-discovery_8h.html#a9e31e7c8030ec9d0896199f8985247ba">service-discovery.h</a>
-, <a class="el" href="service-discovery_8c.html#a9e31e7c8030ec9d0896199f8985247ba">service-discovery.c</a>
+: <a class="el" href="service-discovery_8c.html#a9e31e7c8030ec9d0896199f8985247ba">service-discovery.c</a>
+, <a class="el" href="service-discovery_8h.html#a9e31e7c8030ec9d0896199f8985247ba">service-discovery.h</a>
 </li>
 <li>ndn_sd_prepare_advertisement()
 : <a class="el" href="service-discovery_8c.html#aa4cd92f6f3e24a2ca1837db4b3b96e24">service-discovery.c</a>
 , <a class="el" href="service-discovery_8h.html#aa4cd92f6f3e24a2ca1837db4b3b96e24">service-discovery.h</a>
 </li>
 <li>ndn_sd_prepare_query()
-: <a class="el" href="service-discovery_8h.html#af12c709687c25c2d2b3ee7ee8b6a5771">service-discovery.h</a>
-, <a class="el" href="service-discovery_8c.html#af12c709687c25c2d2b3ee7ee8b6a5771">service-discovery.c</a>
+: <a class="el" href="service-discovery_8c.html#af12c709687c25c2d2b3ee7ee8b6a5771">service-discovery.c</a>
+, <a class="el" href="service-discovery_8h.html#af12c709687c25c2d2b3ee7ee8b6a5771">service-discovery.h</a>
 </li>
 <li>ndn_sd_register_get_self_service()
 : <a class="el" href="service-discovery_8c.html#aaf2cb2bef1b8e5b36bfda8c9b4888c42">service-discovery.c</a>
@@ -1529,19 +1580,19 @@ $(function() {
 : <a class="el" href="ndn-lite-hmac_8c.html#a71fe6c0e5d64e03882e5d403569d224d">ndn-lite-hmac.c</a>
 </li>
 <li>ndn_security_init()
-: <a class="el" href="ndn-lite-sec-config_8h.html#aece5d6d3e3fdd000eadd5aca468276cd">ndn-lite-sec-config.h</a>
-, <a class="el" href="ndn-lite-sec-config_8c.html#aece5d6d3e3fdd000eadd5aca468276cd">ndn-lite-sec-config.c</a>
+: <a class="el" href="ndn-lite-sec-config_8c.html#aece5d6d3e3fdd000eadd5aca468276cd">ndn-lite-sec-config.c</a>
+, <a class="el" href="ndn-lite-sec-config_8h.html#aece5d6d3e3fdd000eadd5aca468276cd">ndn-lite-sec-config.h</a>
 </li>
 <li>ndn_service_t
 : <a class="el" href="service-discovery_8h.html#ad133f90a8494be6744792696f4c41ded">service-discovery.h</a>
 </li>
 <li>ndn_sha256()
-: <a class="el" href="ndn-lite-sha_8h.html#afb8db04440b1b819a50e24c7aadf46b0">ndn-lite-sha.h</a>
-, <a class="el" href="ndn-lite-sha_8c.html#afb8db04440b1b819a50e24c7aadf46b0">ndn-lite-sha.c</a>
+: <a class="el" href="ndn-lite-sha_8c.html#afb8db04440b1b819a50e24c7aadf46b0">ndn-lite-sha.c</a>
+, <a class="el" href="ndn-lite-sha_8h.html#afb8db04440b1b819a50e24c7aadf46b0">ndn-lite-sha.h</a>
 </li>
 <li>ndn_sha256_finish()
-: <a class="el" href="ndn-lite-sha_8h.html#a47ad9101679df12f06630ef09871cae3">ndn-lite-sha.h</a>
-, <a class="el" href="ndn-lite-sha_8c.html#a47ad9101679df12f06630ef09871cae3">ndn-lite-sha.c</a>
+: <a class="el" href="ndn-lite-sha_8c.html#a47ad9101679df12f06630ef09871cae3">ndn-lite-sha.c</a>
+, <a class="el" href="ndn-lite-sha_8h.html#a47ad9101679df12f06630ef09871cae3">ndn-lite-sha.h</a>
 </li>
 <li>ndn_sha256_finish_impl
 : <a class="el" href="ndn-lite-sha_8h.html#afd316ee7e81e079bb84300d7d945b86f">ndn-lite-sha.h</a>
@@ -1554,15 +1605,15 @@ $(function() {
 : <a class="el" href="ndn-lite-sha_8h.html#ac120f2400144377ee79d1f8ff78877bf">ndn-lite-sha.h</a>
 </li>
 <li>ndn_sha256_sign()
-: <a class="el" href="ndn-lite-sha_8c.html#a6860b1debc4e43714691733a7e51149c">ndn-lite-sha.c</a>
-, <a class="el" href="ndn-lite-sha_8h.html#a6860b1debc4e43714691733a7e51149c">ndn-lite-sha.h</a>
+: <a class="el" href="ndn-lite-sha_8h.html#a6860b1debc4e43714691733a7e51149c">ndn-lite-sha.h</a>
+, <a class="el" href="ndn-lite-sha_8c.html#a6860b1debc4e43714691733a7e51149c">ndn-lite-sha.c</a>
 </li>
 <li>ndn_sha256_state_t
 : <a class="el" href="ndn-lite-sha_8h.html#a273f5dfdde1b538733296a04971cfa46">ndn-lite-sha.h</a>
 </li>
 <li>ndn_sha256_update()
-: <a class="el" href="ndn-lite-sha_8c.html#ab3475820a40821832771f3c689dcbdad">ndn-lite-sha.c</a>
-, <a class="el" href="ndn-lite-sha_8h.html#ab3475820a40821832771f3c689dcbdad">ndn-lite-sha.h</a>
+: <a class="el" href="ndn-lite-sha_8h.html#ab3475820a40821832771f3c689dcbdad">ndn-lite-sha.h</a>
+, <a class="el" href="ndn-lite-sha_8c.html#ab3475820a40821832771f3c689dcbdad">ndn-lite-sha.c</a>
 </li>
 <li>ndn_sha256_update_impl
 : <a class="el" href="ndn-lite-sha_8h.html#ae43ed51bae3d7f59910bdfa80837b1ad">ndn-lite-sha.h</a>
@@ -1700,8 +1751,8 @@ $(function() {
 , <a class="el" href="signature_8h.html#a7511b808d0d42581f423bb017595c897">signature.h</a>
 </li>
 <li>ndn_signature_info_tlv_encode()
-: <a class="el" href="signature_8h.html#aa41b5a2b925e583fa7a8b389511ff852">signature.h</a>
-, <a class="el" href="signature_8c.html#aa41b5a2b925e583fa7a8b389511ff852">signature.c</a>
+: <a class="el" href="signature_8c.html#aa41b5a2b925e583fa7a8b389511ff852">signature.c</a>
+, <a class="el" href="signature_8h.html#aa41b5a2b925e583fa7a8b389511ff852">signature.h</a>
 </li>
 <li>ndn_signature_init()
 : <a class="el" href="signature_8h.html#a9ec3404b60a5dcf5dc5850e594f8f0bb">signature.h</a>
@@ -1746,24 +1797,24 @@ $(function() {
 , <a class="el" href="signed-interest_8h.html#a8dd880321c27341cf3e465b92d52bc37">signed-interest.h</a>
 </li>
 <li>ndn_signed_interest_digest_verify()
-: <a class="el" href="signed-interest_8c.html#ac7d983319c4ca76e39a158a5b40c5c85">signed-interest.c</a>
-, <a class="el" href="signed-interest_8h.html#ac7d983319c4ca76e39a158a5b40c5c85">signed-interest.h</a>
+: <a class="el" href="signed-interest_8h.html#ac7d983319c4ca76e39a158a5b40c5c85">signed-interest.h</a>
+, <a class="el" href="signed-interest_8c.html#ac7d983319c4ca76e39a158a5b40c5c85">signed-interest.c</a>
 </li>
 <li>ndn_signed_interest_ecdsa_sign()
-: <a class="el" href="signed-interest_8c.html#acb71d494384ff394fbc4dfca81623928">signed-interest.c</a>
-, <a class="el" href="signed-interest_8h.html#acb71d494384ff394fbc4dfca81623928">signed-interest.h</a>
+: <a class="el" href="signed-interest_8h.html#acb71d494384ff394fbc4dfca81623928">signed-interest.h</a>
+, <a class="el" href="signed-interest_8c.html#acb71d494384ff394fbc4dfca81623928">signed-interest.c</a>
 </li>
 <li>ndn_signed_interest_ecdsa_verify()
-: <a class="el" href="signed-interest_8c.html#ab0ee5385fa7fdb2449dceb83711c0c06">signed-interest.c</a>
-, <a class="el" href="signed-interest_8h.html#ab0ee5385fa7fdb2449dceb83711c0c06">signed-interest.h</a>
+: <a class="el" href="signed-interest_8h.html#ab0ee5385fa7fdb2449dceb83711c0c06">signed-interest.h</a>
+, <a class="el" href="signed-interest_8c.html#ab0ee5385fa7fdb2449dceb83711c0c06">signed-interest.c</a>
 </li>
 <li>ndn_signed_interest_hmac_sign()
 : <a class="el" href="signed-interest_8h.html#a5c7d580de7b6f906d1661d9a21e62c73">signed-interest.h</a>
 , <a class="el" href="signed-interest_8c.html#a5c7d580de7b6f906d1661d9a21e62c73">signed-interest.c</a>
 </li>
 <li>ndn_signed_interest_hmac_verify()
-: <a class="el" href="signed-interest_8h.html#af02c5b3e9d3395018fc10dd11ab31fa3">signed-interest.h</a>
-, <a class="el" href="signed-interest_8c.html#af02c5b3e9d3395018fc10dd11ab31fa3">signed-interest.c</a>
+: <a class="el" href="signed-interest_8c.html#af02c5b3e9d3395018fc10dd11ab31fa3">signed-interest.c</a>
+, <a class="el" href="signed-interest_8h.html#af02c5b3e9d3395018fc10dd11ab31fa3">signed-interest.h</a>
 </li>
 <li>NDN_SUCCESS
 : <a class="el" href="group___n_d_n_error_code.html#ga6cc0372232218f7a1b4e4e6723aee2d1">ndn-error-code.h</a>
@@ -1817,8 +1868,8 @@ $(function() {
 : <a class="el" href="ndn-constants_8h.html#a54ef63f47bb43b88d95244a711101095">ndn-constants.h</a>
 </li>
 <li>ndn_trust_schema_pattern_component_compare()
-: <a class="el" href="ndn-trust-schema-pattern-component_8c.html#ac38560905588056eec8bdc6af1c88597">ndn-trust-schema-pattern-component.c</a>
-, <a class="el" href="ndn-trust-schema-pattern-component_8h.html#ac38560905588056eec8bdc6af1c88597">ndn-trust-schema-pattern-component.h</a>
+: <a class="el" href="ndn-trust-schema-pattern-component_8h.html#ac38560905588056eec8bdc6af1c88597">ndn-trust-schema-pattern-component.h</a>
+, <a class="el" href="ndn-trust-schema-pattern-component_8c.html#ac38560905588056eec8bdc6af1c88597">ndn-trust-schema-pattern-component.c</a>
 </li>
 <li>ndn_trust_schema_pattern_component_copy()
 : <a class="el" href="ndn-trust-schema-pattern-component_8c.html#a538b100d2c3ab72e3799b85d79fb0506">ndn-trust-schema-pattern-component.c</a>
@@ -1854,8 +1905,8 @@ $(function() {
 , <a class="el" href="ndn-trust-schema-pattern_8c.html#a180def7e065378c74a63d9ea9275a5e4">ndn-trust-schema-pattern.c</a>
 </li>
 <li>ndn_trust_schema_pattern_from_string()
-: <a class="el" href="ndn-trust-schema-pattern_8h.html#a8456db86628cf432e7343290c8acb221">ndn-trust-schema-pattern.h</a>
-, <a class="el" href="ndn-trust-schema-pattern_8c.html#a8456db86628cf432e7343290c8acb221">ndn-trust-schema-pattern.c</a>
+: <a class="el" href="ndn-trust-schema-pattern_8c.html#a8456db86628cf432e7343290c8acb221">ndn-trust-schema-pattern.c</a>
+, <a class="el" href="ndn-trust-schema-pattern_8h.html#a8456db86628cf432e7343290c8acb221">ndn-trust-schema-pattern.h</a>
 </li>
 <li>NDN_TRUST_SCHEMA_PATTERN_INVALID_FORMAT
 : <a class="el" href="group___n_d_n_error_code_schematized_trust.html#ga6275dbb3c1a564b143e3974bdebc690e">ndn-error-code.h</a>
@@ -1874,8 +1925,8 @@ $(function() {
 , <a class="el" href="ndn-trust-schema-rule_8c.html#ab1ed3587d606b15d31fb528e81f45068">ndn-trust-schema-rule.c</a>
 </li>
 <li>ndn_trust_schema_rule_from_strings()
-: <a class="el" href="ndn-trust-schema-rule_8h.html#a80529577d35dcf6cdea883aabb958cbe">ndn-trust-schema-rule.h</a>
-, <a class="el" href="ndn-trust-schema-rule_8c.html#a80529577d35dcf6cdea883aabb958cbe">ndn-trust-schema-rule.c</a>
+: <a class="el" href="ndn-trust-schema-rule_8c.html#a80529577d35dcf6cdea883aabb958cbe">ndn-trust-schema-rule.c</a>
+, <a class="el" href="ndn-trust-schema-rule_8h.html#a80529577d35dcf6cdea883aabb958cbe">ndn-trust-schema-rule.h</a>
 </li>
 <li>NDN_TRUST_SCHEMA_RULE_NAME_MAX_LENGTH
 : <a class="el" href="ndn-constants_8h.html#aa78716570fd7e1353ba86dc361767a05">ndn-constants.h</a>

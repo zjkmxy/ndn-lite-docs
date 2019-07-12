@@ -113,9 +113,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a031b1fbde96ed505d564e5fcfcd5032e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a031b1fbde96ed505d564e5fcfcd5032e">ndn_signature_set_timestamp</a> (<a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *signature, uint64_t timestamp)</td></tr>
 <tr class="memdesc:a031b1fbde96ed505d564e5fcfcd5032e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Timestamp of the Signature.  <a href="#a031b1fbde96ed505d564e5fcfcd5032e">More...</a><br /></td></tr>
 <tr class="separator:a031b1fbde96ed505d564e5fcfcd5032e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94701526ed91b66e4f2e2d3e076c260c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a94701526ed91b66e4f2e2d3e076c260c">ndn_signature_set_signature_info_nonce</a> (<a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *signature, uint32_t nonce)</td></tr>
-<tr class="memdesc:a94701526ed91b66e4f2e2d3e076c260c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Nonce of the Signed Interest.  <a href="#a94701526ed91b66e4f2e2d3e076c260c">More...</a><br /></td></tr>
-<tr class="separator:a94701526ed91b66e4f2e2d3e076c260c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7e4d0dc75c697627d93e1dcb72c2e98"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#ab7e4d0dc75c697627d93e1dcb72c2e98">ndn_signature_set_signature_nonce</a> (<a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *signature, uint32_t nonce)</td></tr>
+<tr class="memdesc:ab7e4d0dc75c697627d93e1dcb72c2e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Nonce of the Signed Interest.  <a href="#ab7e4d0dc75c697627d93e1dcb72c2e98">More...</a><br /></td></tr>
+<tr class="separator:ab7e4d0dc75c697627d93e1dcb72c2e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f4a0bbd7b6701e0f2f9f64a8efc274f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a3f4a0bbd7b6701e0f2f9f64a8efc274f">ndn_signature_set_seqnum</a> (<a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *signature, uint32_t seqnum)</td></tr>
+<tr class="memdesc:a3f4a0bbd7b6701e0f2f9f64a8efc274f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set SeqNum of the Signed Interest.  <a href="#a3f4a0bbd7b6701e0f2f9f64a8efc274f">More...</a><br /></td></tr>
+<tr class="separator:a3f4a0bbd7b6701e0f2f9f64a8efc274f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20cac11cd55fcf0cc35dd7cb85b1ce72"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a20cac11cd55fcf0cc35dd7cb85b1ce72">ndn_signature_set_validity_period</a> (<a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *signature, const uint8_t *not_before, const uint8_t *not_after)</td></tr>
 <tr class="memdesc:a20cac11cd55fcf0cc35dd7cb85b1ce72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set validity period of the Signature.  <a href="#a20cac11cd55fcf0cc35dd7cb85b1ce72">More...</a><br /></td></tr>
 <tr class="separator:a20cac11cd55fcf0cc35dd7cb85b1ce72"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,6 +172,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The structure to represent the signature validity period. </p>
+<p>This is designed for but not limited to the use of certificate. </p>
 
 </div>
 </div>
@@ -366,6 +370,51 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3f4a0bbd7b6701e0f2f9f64a8efc274f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f4a0bbd7b6701e0f2f9f64a8efc274f">&#9670;&nbsp;</a></span>ndn_signature_set_seqnum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ndn_signature_set_seqnum </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *&#160;</td>
+          <td class="paramname"><em>signature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>seqnum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set SeqNum of the Signed Interest. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interest.</td><td>Output. The Interest whose Nonce SeqNum be set. </td></tr>
+    <tr><td class="paramname">SeqNum.</td><td>Input. SeqNum value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad36aa141c0ee713c1d5db85d25d35796"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad36aa141c0ee713c1d5db85d25d35796">&#9670;&nbsp;</a></span>ndn_signature_set_signature()</h2>
 
@@ -419,8 +468,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a94701526ed91b66e4f2e2d3e076c260c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94701526ed91b66e4f2e2d3e076c260c">&#9670;&nbsp;</a></span>ndn_signature_set_signature_info_nonce()</h2>
+<a id="ab7e4d0dc75c697627d93e1dcb72c2e98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7e4d0dc75c697627d93e1dcb72c2e98">&#9670;&nbsp;</a></span>ndn_signature_set_signature_nonce()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -429,7 +478,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void ndn_signature_set_signature_info_nonce </td>
+          <td class="memname">static void ndn_signature_set_signature_nonce </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="signature_8h.html#aa63d3400ca23db61d4d2b427c0e220de">ndn_signature_t</a> *&#160;</td>
           <td class="paramname"><em>signature</em>, </td>

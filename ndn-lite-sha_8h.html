@@ -121,6 +121,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a47ad9101679df12f06630ef09871cae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHA256 final procedure.  <a href="#a47ad9101679df12f06630ef09871cae3">More...</a><br /></td></tr>
 <tr class="separator:a47ad9101679df12f06630ef09871cae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb8db04440b1b819a50e24c7aadf46b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-sha_8h.html#afb8db04440b1b819a50e24c7aadf46b0">ndn_sha256</a> (const uint8_t *data, uint32_t datalen, uint8_t *hash_result)</td></tr>
+<tr class="memdesc:afb8db04440b1b819a50e24c7aadf46b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">SHA256 a series of bytes into the result.  <a href="#afb8db04440b1b819a50e24c7aadf46b0">More...</a><br /></td></tr>
 <tr class="separator:afb8db04440b1b819a50e24c7aadf46b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6860b1debc4e43714691733a7e51149c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-sha_8h.html#a6860b1debc4e43714691733a7e51149c">ndn_sha256_sign</a> (const uint8_t *input_value, uint32_t input_size, uint8_t *output_value, uint32_t output_max_size, uint32_t *output_used_size)</td></tr>
 <tr class="memdesc:a6860b1debc4e43714691733a7e51149c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sign a buffer using SHA-256 algorithm.  <a href="#a6860b1debc4e43714691733a7e51149c">More...</a><br /></td></tr>
@@ -254,6 +255,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>SHA256 a series of bytes into the result. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data.</td><td>Input. The input data buffer. </td></tr>
+    <tr><td class="paramname">datalen.</td><td>Input. The length of the input data. </td></tr>
+    <tr><td class="paramname">hash_result.</td><td>Output. Output buffer whose length should be at least 32. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>NDN_SUCCESS (0) if there is no error. </dd></dl>
 
 </div>
 </div>

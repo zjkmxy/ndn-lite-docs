@@ -352,22 +352,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Receive a packet from a face. </p>
-<p>Removing the last route of a FIB entry will delete the entry. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">face</td><td>[Optional] The face of the route. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">prefix</td><td>The prefix of the route. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>The length of <code>prefix</code>. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group___n_d_n_error_code.html#ga6cc0372232218f7a1b4e4e6723aee2d1" title="The operation completed successfully.">NDN_SUCCESS</a> if the call succeeded. The error code otherwise. </dd></dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname"><a class="el" href="group___n_d_n_error_code_forwarder.html#ga130102c578e26d3579d7c07acee1ff77" title="The PIT is full.">NDN_FWD_PIT_FULL</a></td><td>PIT or NameTree is full. See also <a class="el" href="ndn-constants_8h.html#a4ffd9ff00b7003376b788e299bb1258f">NDN_PIT_MAX_SIZE</a>, <a class="el" href="ndn-constants_8h.html#a95f5891d1a442bbf7e2b028242687e05">NDN_NAMETREE_MAX_SIZE</a>. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>The application doesn't need to call this manually. </dd></dl>
 
 </div>
 </div>

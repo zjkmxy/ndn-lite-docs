@@ -1,4 +1,5 @@
 <map id="Encoding" name="Encoding">
-<area shape="rect" id="node1" title="Encoding and decoding functions." alt="" coords="5,5,82,29"/>
-<area shape="rect" id="node2" href="$group___n_d_n_encode_fwd_helper.html" title="Some helper functions and easy&#45;to&#45;use wrapping API." alt="" coords="130,5,253,29"/>
+<area shape="rect" id="node1" title="Encoding and decoding functions." alt="" coords="5,29,82,53"/>
+<area shape="rect" id="node2" href="$group___n_d_n_encode_wrapper_a_p_i.html" title="High&#45;level wrapper APIs providing convenience." alt="" coords="143,5,240,29"/>
+<area shape="rect" id="node3" href="$group___n_d_n_encode_fwd_helper.html" title="Some helper functions used by the forwarder." alt="" coords="130,53,253,77"/>
 </map>

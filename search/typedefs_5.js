@@ -12,6 +12,8 @@ var searchData=
   ['ndn_5faes_5fget_5fkey_5fvalue_5fimpl',['ndn_aes_get_key_value_impl',['../ndn-lite-aes_8h.html#a4adff06e02a542440e0fc6cdb7983bd5',1,'ndn-lite-aes.h']]],
   ['ndn_5faes_5fkey_5ft',['ndn_aes_key_t',['../ndn-lite-aes_8h.html#a1bfe08f3d0d597778ac43db28e7587a7',1,'ndn-lite-aes.h']]],
   ['ndn_5faes_5fload_5fkey_5fimpl',['ndn_aes_load_key_impl',['../ndn-lite-aes_8h.html#a7460dbd7bba88d849315852d23e30823',1,'ndn-lite-aes.h']]],
+  ['ndn_5faes_5fparse_5funpadding_5fsize_5fimpl',['ndn_aes_parse_unpadding_size_impl',['../ndn-lite-aes_8h.html#ad09944d52132dc458444b55523cfd019',1,'ndn-lite-aes.h']]],
+  ['ndn_5faes_5fprobe_5fpadding_5fsize_5fimpl',['ndn_aes_probe_padding_size_impl',['../ndn-lite-aes_8h.html#abaee007f4aa9527bb860528aa418a001',1,'ndn-lite-aes.h']]],
   ['ndn_5fbitset_5ft',['ndn_bitset_t',['../bit-operations_8h.html#affc3feed8995797a481682033fe4ccb8',1,'bit-operations.h']]],
   ['ndn_5fbuffer_5ft',['ndn_buffer_t',['../encoder_8h.html#a9fb37852bb5016d8f59b76d24771978d',1,'encoder.h']]],
   ['ndn_5fdata_5ft',['ndn_data_t',['../data_8h.html#a0f729ea174655117105f1093a4f45225',1,'data.h']]],

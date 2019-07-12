@@ -97,6 +97,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a1bb839d38dc0d84dd370a9887d8f7249"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data_8h.html#a1bb839d38dc0d84dd370a9887d8f7249">ndn_data_init</a> (<a class="el" href="data_8h.html#a0f729ea174655117105f1093a4f45225">ndn_data_t</a> *data)</td></tr>
+<tr class="memdesc:a1bb839d38dc0d84dd370a9887d8f7249"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init an Data packet.  <a href="#a1bb839d38dc0d84dd370a9887d8f7249">More...</a><br /></td></tr>
+<tr class="separator:a1bb839d38dc0d84dd370a9887d8f7249"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26301da4196decc9264e9b0d1890036d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data_8h.html#a26301da4196decc9264e9b0d1890036d">ndn_data_tlv_encode_digest_sign</a> (<a class="el" href="encoder_8h.html#a7e8d31a88e1f377c42e835275385119c">ndn_encoder_t</a> *encoder, <a class="el" href="data_8h.html#a0f729ea174655117105f1093a4f45225">ndn_data_t</a> *data)</td></tr>
 <tr class="memdesc:a26301da4196decc9264e9b0d1890036d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use Digest (SHA256) to sign the Data and encode the Data into wire format.  <a href="#a26301da4196decc9264e9b0d1890036d">More...</a><br /></td></tr>
 <tr class="separator:a26301da4196decc9264e9b0d1890036d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,6 +149,40 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a1bb839d38dc0d84dd370a9887d8f7249"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bb839d38dc0d84dd370a9887d8f7249">&#9670;&nbsp;</a></span>ndn_data_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ndn_data_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="data_8h.html#a0f729ea174655117105f1093a4f45225">ndn_data_t</a> *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Init an Data packet. </p>
+<p>This function should be invoked whenever a new ndn_data_t is created. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data.</td><td>Output. The Data to be inited. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a288a5d7beac428eb542ac48438dd18f3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a288a5d7beac428eb542ac48438dd18f3">&#9670;&nbsp;</a></span>ndn_data_parse_encrypted_content()</h2>
 

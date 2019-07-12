@@ -69,7 +69,6 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">forwarder-helper.h File Reference</div>  </div>
@@ -78,7 +77,6 @@ $(function() {
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="name_8h_source.html">name.h</a>&quot;</code><br />
 </div>
 <p><a href="forwarder-helper_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -93,52 +91,6 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gab3029eb7252ce096a135f0cdfe2a325b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structinterest__options.html">interest_options</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_encode_fwd_helper.html#gab3029eb7252ce096a135f0cdfe2a325b">interest_options_t</a></td></tr>
 <tr class="memdesc:gab3029eb7252ce096a135f0cdfe2a325b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interest options which the forwarder cares.  <a href="group___n_d_n_encode_fwd_helper.html#gab3029eb7252ce096a135f0cdfe2a325b">More...</a><br /></td></tr>
 <tr class="separator:gab3029eb7252ce096a135f0cdfe2a325b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ga5eb035eec5b7117dd3990155f7342e0c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_encode_fwd_helper.html#ga5eb035eec5b7117dd3990155f7342e0c">TLV_DATAARG_TYPE</a> { <br />
-&#160;&#160;<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga5eb035eec5b7117dd3990155f7342e0ca0c9969f5c30032c5b10068f1011e9abe">TLV_DATAARG_NAME_PTR</a>, 
-<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga5eb035eec5b7117dd3990155f7342e0ca62b236dba6150c86925a0846f4c74027">TLV_DATAARG_NAME_BUF</a>, 
-<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga5eb035eec5b7117dd3990155f7342e0ca72db9027c18c84b73c7fee87b92627ca">TLV_DATAARG_NAME_SEGNO_U64</a>, 
-<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga5eb035eec5b7117dd3990155f7342e0cad8f96e1a1d410afa873f506bd6a2a192">TLV_DATAARG_CONTENTTYPE_U8</a>, 
-<br />
-&#160;&#160;<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga5eb035eec5b7117dd3990155f7342e0cab357f20451498c58c125bbed155c8c6a">TLV_DATAARG_FRESHNESSPERIOD_U64</a>, 
-<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga5eb035eec5b7117dd3990155f7342e0ca322e922465028172cb5f2b196c559541">TLV_DATAARG_FINALBLOCKID_PTR</a>, 
-<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga5eb035eec5b7117dd3990155f7342e0cae56d92c8b181efefe433744e62010741">TLV_DATAARG_FINALBLOCKID_BUF</a>, 
-<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga5eb035eec5b7117dd3990155f7342e0ca39b27c51e2eb6d2a5f665f6d25aaa429">TLV_DATAARG_FINALBLOCKID_U64</a>, 
-<br />
-&#160;&#160;<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga5eb035eec5b7117dd3990155f7342e0ca277e34455b759c5602dfd6ba8ae43144">TLV_DATAARG_CONTENT_BUF</a>, 
-<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga5eb035eec5b7117dd3990155f7342e0cad1b912b137d30345591781a580fb5440">TLV_DATAARG_CONTENT_SIZE</a>, 
-<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga5eb035eec5b7117dd3990155f7342e0ca2a7f26263c2a12cf10001d5a5031f37c">TLV_DATAARG_SIGTYPE_U8</a>, 
-<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga5eb035eec5b7117dd3990155f7342e0cac7007d3fc0cfa0f6d4e91f35dca21bdb">TLV_DATAARG_IDENTITYNAME_PTR</a>, 
-<br />
-&#160;&#160;<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga5eb035eec5b7117dd3990155f7342e0cadc99b409d28a2d10945b0e3b248a0d00">TLV_DATAARG_SIGKEY_PTR</a>, 
-<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga5eb035eec5b7117dd3990155f7342e0ca834f23a028ceb0fdb6566cd1ad17f818">TLV_DATAARG_SIGTIME_U64</a>, 
-<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga5eb035eec5b7117dd3990155f7342e0caea4f3245b154b8c9e5d2b12c05d7feed">TLV_DATAARG_VERIFY</a>
-<br />
- }</td></tr>
-<tr class="memdesc:ga5eb035eec5b7117dd3990155f7342e0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of variant args of <a class="el" href="group___n_d_n_encode_fwd_helper.html#ga6d0811fa0aa8e1a8774f86e5a6209127" title="All-in-one function to generate a Data packet.">tlv_make_data</a> and <a class="el" href="group___n_d_n_encode_fwd_helper.html#ga17331bddfb3f6731559e502fd05604ee" title="All-in-one function to parse a Data packet.">tlv_parse_data</a>.  <a href="group___n_d_n_encode_fwd_helper.html#ga5eb035eec5b7117dd3990155f7342e0c">More...</a><br /></td></tr>
-<tr class="separator:ga5eb035eec5b7117dd3990155f7342e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4ba0f35374517b04e880d0924c0346e2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_encode_fwd_helper.html#ga4ba0f35374517b04e880d0924c0346e2">TLV_INTARG_TYPE</a> { <br />
-&#160;&#160;<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga4ba0f35374517b04e880d0924c0346e2af613868a19f0ee02cd4478befd368367">TLV_INTARG_NAME_PTR</a>, 
-<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga4ba0f35374517b04e880d0924c0346e2ac6ac935d26adccf289696a5c66b55c47">TLV_INTARG_NAME_BUF</a>, 
-<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga4ba0f35374517b04e880d0924c0346e2a4bb41d290fb154ccab94e06793875c2b">TLV_INTARG_NAME_SEGNO_U64</a>, 
-<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga4ba0f35374517b04e880d0924c0346e2a3811c08bcbc56ff99f7bdc06d5567e78">TLV_INTARG_CANBEPREFIX_BOOL</a>, 
-<br />
-&#160;&#160;<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga4ba0f35374517b04e880d0924c0346e2a7345a68896b393a6b1ad6e50d2c90eb6">TLV_INTARG_MUSTBEFRESH_BOOL</a>, 
-<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga4ba0f35374517b04e880d0924c0346e2a8e7a9d0e35ba9d0f1e8296cdc934cbaa">TLV_INTARG_LIFETIME_U64</a>, 
-<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga4ba0f35374517b04e880d0924c0346e2a94c2ab72df70edccbeb354884093ac16">TLV_INTARG_HOTLIMIT_U8</a>, 
-<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga4ba0f35374517b04e880d0924c0346e2a3dc7571b868652dc5363c6cd248c5aac">TLV_INTARG_PARAMS_BUF</a>, 
-<br />
-&#160;&#160;<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga4ba0f35374517b04e880d0924c0346e2ae4e4c2a75895d4784a5894d4e015108b">TLV_INTARG_PARAMS_SIZE</a>, 
-<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga4ba0f35374517b04e880d0924c0346e2a31f882847d237fb9ff56021eac159c95">TLV_INTARG_SIGTYPE_U8</a>, 
-<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga4ba0f35374517b04e880d0924c0346e2ab0e56bdefe60843840e8c2cb4ffdb00c">TLV_INTARG_IDENTITYNAME_PTR</a>, 
-<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga4ba0f35374517b04e880d0924c0346e2a1c59919e3c9358b17f65a98b03c754ad">TLV_INTARG_SIGKEY_PTR</a>, 
-<br />
-&#160;&#160;<a class="el" href="group___n_d_n_encode_fwd_helper.html#gga4ba0f35374517b04e880d0924c0346e2a0638dfc6ac0e21b46872bee7a277e54d">TLV_INTARG_VERIFY</a>
-<br />
- }</td></tr>
-<tr class="separator:ga4ba0f35374517b04e880d0924c0346e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -160,15 +112,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9dd1f8cfdf802c5ffa85c820c091800f"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_encode_fwd_helper.html#ga9dd1f8cfdf802c5ffa85c820c091800f">tlv_interest_get_hoplimit_ptr</a> (uint8_t *interest, size_t buflen)</td></tr>
 <tr class="memdesc:ga9dd1f8cfdf802c5ffa85c820c091800f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pointer to hop limit field of a Interest packet.  <a href="group___n_d_n_encode_fwd_helper.html#ga9dd1f8cfdf802c5ffa85c820c091800f">More...</a><br /></td></tr>
 <tr class="separator:ga9dd1f8cfdf802c5ffa85c820c091800f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6d0811fa0aa8e1a8774f86e5a6209127"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_encode_fwd_helper.html#ga6d0811fa0aa8e1a8774f86e5a6209127">tlv_make_data</a> (uint8_t *buf, size_t buflen, size_t *result_size, int argc,...)</td></tr>
-<tr class="memdesc:ga6d0811fa0aa8e1a8774f86e5a6209127"><td class="mdescLeft">&#160;</td><td class="mdescRight">All-in-one function to generate a Data packet.  <a href="group___n_d_n_encode_fwd_helper.html#ga6d0811fa0aa8e1a8774f86e5a6209127">More...</a><br /></td></tr>
-<tr class="separator:ga6d0811fa0aa8e1a8774f86e5a6209127"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga17331bddfb3f6731559e502fd05604ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_encode_fwd_helper.html#ga17331bddfb3f6731559e502fd05604ee">tlv_parse_data</a> (uint8_t *buf, size_t buflen, int argc,...)</td></tr>
-<tr class="memdesc:ga17331bddfb3f6731559e502fd05604ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">All-in-one function to parse a Data packet.  <a href="group___n_d_n_encode_fwd_helper.html#ga17331bddfb3f6731559e502fd05604ee">More...</a><br /></td></tr>
-<tr class="separator:ga17331bddfb3f6731559e502fd05604ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadd494eabe8ea9c9f4bf3c169fa1c4d24"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_encode_fwd_helper.html#gadd494eabe8ea9c9f4bf3c169fa1c4d24">tlv_make_interest</a> (uint8_t *buf, size_t buflen, size_t *result_size, int argc,...)</td></tr>
-<tr class="memdesc:gadd494eabe8ea9c9f4bf3c169fa1c4d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">All-in-one function to generate a Interest packet.  <a href="group___n_d_n_encode_fwd_helper.html#gadd494eabe8ea9c9f4bf3c169fa1c4d24">More...</a><br /></td></tr>
-<tr class="separator:gadd494eabe8ea9c9f4bf3c169fa1c4d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga222d6b33fe2d1e585ace042300b587eb"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___n_d_n_encode_fwd_helper.html#ga222d6b33fe2d1e585ace042300b587eb">tlv_get_uint</a> (uint8_t *buf, size_t buflen)</td></tr>
+<tr class="memdesc:ga222d6b33fe2d1e585ace042300b587eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode an unsigned integer value.  <a href="group___n_d_n_encode_fwd_helper.html#ga222d6b33fe2d1e585ace042300b587eb">More...</a><br /></td></tr>
+<tr class="separator:ga222d6b33fe2d1e585ace042300b587eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

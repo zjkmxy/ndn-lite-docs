@@ -76,6 +76,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="name-component_8h_source.html">name-component.h</a>&quot;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
 </div>
 <p><a href="name_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -93,6 +94,9 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ab2ea89f09a2abb78cacff6581db119c8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name_8h.html#ab2ea89f09a2abb78cacff6581db119c8">ndn_name_print</a> (<a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *name)</td></tr>
+<tr class="memdesc:ab2ea89f09a2abb78cacff6581db119c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a name.  <a href="#ab2ea89f09a2abb78cacff6581db119c8">More...</a><br /></td></tr>
+<tr class="separator:ab2ea89f09a2abb78cacff6581db119c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aced4ab239440a1293d1ce4f2060bddc7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name_8h.html#aced4ab239440a1293d1ce4f2060bddc7">ndn_name_init</a> (<a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *name, const <a class="el" href="name-component_8h.html#a6fcb406cc3baa1de6bb60323fcece5d6">name_component_t</a> *components, uint32_t size)</td></tr>
 <tr class="memdesc:aced4ab239440a1293d1ce4f2060bddc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init a Name structure.  <a href="#aced4ab239440a1293d1ce4f2060bddc7">More...</a><br /></td></tr>
 <tr class="separator:aced4ab239440a1293d1ce4f2060bddc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -516,6 +520,40 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 if <code>lhs</code> is the prefix of <code>rhs</code>. </dd></dl>
+
+</div>
+</div>
+<a id="ab2ea89f09a2abb78cacff6581db119c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2ea89f09a2abb78cacff6581db119c8">&#9670;&nbsp;</a></span>ndn_name_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ndn_name_print </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="name_8h.html#a52e1c60a5efcf839a3f521199f7b4be4">ndn_name_t</a> *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Print a name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name.</td><td>Input. The name to be printed. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -47,6 +47,7 @@ var searchData=
   ['ndn_5ffrag_5fseq_5fmask',['NDN_FRAG_SEQ_MASK',['../ndn-constants_8h.html#aaf9848135da860113194cc44e5a15c7a',1,'ndn-constants.h']]],
   ['ndn_5ffwd_5finvalid_5fname_5fcomponent_5fsize',['NDN_FWD_INVALID_NAME_COMPONENT_SIZE',['../ndn-constants_8h.html#a08a4efcba6e3c58207799ac2ed63cdf5',1,'ndn-constants.h']]],
   ['ndn_5ffwd_5finvalid_5fname_5fsize',['NDN_FWD_INVALID_NAME_SIZE',['../ndn-constants_8h.html#a8cfa5a5268d68e4f726801d508db8d1f',1,'ndn-constants.h']]],
+  ['ndn_5finterest_5fparams_5fblock_5fsize',['NDN_INTEREST_PARAMS_BLOCK_SIZE',['../ndn-constants_8h.html#af95b54dc7857d06e92dfe3cd3e1cfdad',1,'ndn-constants.h']]],
   ['ndn_5finterest_5fparams_5fbuffer_5fsize',['NDN_INTEREST_PARAMS_BUFFER_SIZE',['../ndn-constants_8h.html#abab5535d3af2120266efd5eb9e743322',1,'ndn-constants.h']]],
   ['ndn_5finvalid_5fid',['NDN_INVALID_ID',['../ndn-constants_8h.html#ad61ec7f675ac40e4950a7c9cca24dd60',1,'ndn-constants.h']]],
   ['ndn_5flite_5fsec_5fbackend_5faes_5fdefault',['NDN_LITE_SEC_BACKEND_AES_DEFAULT',['../ndn-lite-sec-config_8h.html#ae5110862284c5a4e78c3d0f335dd7e00',1,'ndn-lite-sec-config.h']]],

@@ -13,7 +13,8 @@ var searchData=
   ['enable_5fkeylocator',['enable_KeyLocator',['../structndn__signature.html#a2988ecd5096df677f0541e78d5f5bbcc',1,'ndn_signature']]],
   ['enable_5fmustbefresh',['enable_MustBeFresh',['../structndn__interest.html#a680871223679ed6272e3a2856bddb3b5',1,'ndn_interest']]],
   ['enable_5fparameters',['enable_Parameters',['../structndn__interest.html#a94918e7ad15874f6474be023c8c8430f',1,'ndn_interest']]],
-  ['enable_5fsignatureinfononce',['enable_SignatureInfoNonce',['../structndn__signature.html#a113dbb78d2740d5d77b263988e0c04c2',1,'ndn_signature']]],
+  ['enable_5fseqnum',['enable_Seqnum',['../structndn__signature.html#a50012dea00620aa8d3df1854505539a3',1,'ndn_signature']]],
+  ['enable_5fsignaturenonce',['enable_SignatureNonce',['../structndn__signature.html#a9f93ea462abfd88cab9a1299cb5f4845',1,'ndn_signature']]],
   ['enable_5ftimestamp',['enable_Timestamp',['../structndn__signature.html#a0ed18a9d02854784ef91ded077fdd4c2',1,'ndn_signature']]],
   ['enable_5fvalidityperiod',['enable_ValidityPeriod',['../structndn__signature.html#ac3836a22ab7d2a9161dfe4041bc49f70',1,'ndn_signature']]],
   ['express_5ftime',['express_time',['../structndn__pit__entry.html#aa681748b2498431c505bc4b40c891f4d',1,'ndn_pit_entry']]]

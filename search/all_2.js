@@ -15,6 +15,7 @@ var searchData=
   ['bitset_5funset',['bitset_unset',['../bit-operations_8h.html#a36023eb8c18c6ba71d435a8239f20cf1',1,'bit-operations.h']]],
   ['block_5fsize',['block_size',['../structu_e_c_c___hash_context.html#a9ca932741cf8dea9ac3307ce45c1df78',1,'uECC_HashContext']]],
   ['buf',['buf',['../structmemory__block.html#afdd84a85038260465abc140af2c32f56',1,'memory_block']]],
+  ['byte',['byte',['../ndn-lite-default-aes-impl_8c.html#ae5ad6e6c30fc97bbfb458e89d5d66e6c',1,'ndn-lite-default-aes-impl.c']]],
   ['bytes_5fto_5fwords_5f4',['BYTES_TO_WORDS_4',['../tc__ecc_8h.html#a06cf282adb4fb896adfacddae6470cdb',1,'tc_ecc.h']]],
   ['bytes_5fto_5fwords_5f8',['BYTES_TO_WORDS_8',['../tc__ecc_8h.html#abe76778e81104e4a823829de9b8fe597',1,'tc_ecc.h']]]
 ];

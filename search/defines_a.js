@@ -3,7 +3,7 @@ var searchData=
   ['second_5farg',['SECOND_ARG',['../u_e_c_c_8c.html#ad9897ccdec3d3c01ff2cfede50aeb137',1,'uECC.c']]],
   ['sig_5fgeneration_5fbuf_5flength',['SIG_GENERATION_BUF_LENGTH',['../sign-on-basic-impl-consts_8h.html#aafb333f0d24605f69d7ec2b0475dd565',1,'sign-on-basic-impl-consts.h']]],
   ['sigma0',['Sigma0',['../tc__sha256_8c.html#aa88aa4f510e7309d3d6d4d36c40e9093',1,'Sigma0():&#160;tc_sha256.c'],['../tc__sha256_8c.html#ad3c69d41653173911bb4c3a6a82bd946',1,'sigma0():&#160;tc_sha256.c']]],
-  ['sigma1',['sigma1',['../tc__sha256_8c.html#a35eccd4ae0532e38d3a16a784cd77ad4',1,'sigma1():&#160;tc_sha256.c'],['../tc__sha256_8c.html#a7323033f54232dbaacd77a06880ef561',1,'Sigma1():&#160;tc_sha256.c']]],
+  ['sigma1',['Sigma1',['../tc__sha256_8c.html#a7323033f54232dbaacd77a06880ef561',1,'Sigma1():&#160;tc_sha256.c'],['../tc__sha256_8c.html#a35eccd4ae0532e38d3a16a784cd77ad4',1,'sigma1():&#160;tc_sha256.c']]],
   ['sign_5fon_5fbasic_5faes_5fkey_5fmax_5flength',['SIGN_ON_BASIC_AES_KEY_MAX_LENGTH',['../sign-on-basic-sec-consts_8h.html#ae335a1af0b09b4a65952958ae22db749',1,'sign-on-basic-sec-consts.h']]],
   ['sign_5fon_5fbasic_5fclient_5fdevice_5fcapabilities_5fmax_5flength',['SIGN_ON_BASIC_CLIENT_DEVICE_CAPABILITIES_MAX_LENGTH',['../sign-on-basic-client-consts_8h.html#aeba2dfd5a01cd5ccaded8895d263d82a',1,'sign-on-basic-client-consts.h']]],
   ['sign_5fon_5fbasic_5fclient_5fdevice_5fidentifier_5fmax_5flength',['SIGN_ON_BASIC_CLIENT_DEVICE_IDENTIFIER_MAX_LENGTH',['../sign-on-basic-client-consts_8h.html#acbf577e83e2dc32840451b7d54e68b19',1,'sign-on-basic-client-consts.h']]],

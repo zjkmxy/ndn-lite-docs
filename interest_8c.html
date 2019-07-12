@@ -73,6 +73,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="interest_8h_source.html">interest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ndn-lite-sha_8h_source.html">../security/ndn-lite-sha.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -81,9 +82,9 @@ Functions</h2></td></tr>
 <tr class="memitem:acdda7099aeea2cf5c1d65a2abf3bf694"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interest_8c.html#acdda7099aeea2cf5c1d65a2abf3bf694">ndn_interest_from_block</a> (<a class="el" href="interest_8h.html#afca88883fe1b0948d6e5d813bfacd08c">ndn_interest_t</a> *interest, const uint8_t *block_value, uint32_t block_size)</td></tr>
 <tr class="memdesc:acdda7099aeea2cf5c1d65a2abf3bf694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode an Interest TLV block into an ndn_interest_t.  <a href="#acdda7099aeea2cf5c1d65a2abf3bf694">More...</a><br /></td></tr>
 <tr class="separator:acdda7099aeea2cf5c1d65a2abf3bf694"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e7cf807971c73f1407502e1c7de7eed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interest_8c.html#a5e7cf807971c73f1407502e1c7de7eed">ndn_interest_tlv_encode</a> (<a class="el" href="encoder_8h.html#a7e8d31a88e1f377c42e835275385119c">ndn_encoder_t</a> *encoder, const <a class="el" href="interest_8h.html#afca88883fe1b0948d6e5d813bfacd08c">ndn_interest_t</a> *interest)</td></tr>
-<tr class="memdesc:a5e7cf807971c73f1407502e1c7de7eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the Interest into wire format (TLV block).  <a href="#a5e7cf807971c73f1407502e1c7de7eed">More...</a><br /></td></tr>
-<tr class="separator:a5e7cf807971c73f1407502e1c7de7eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa5bd6e40f5c4c549eb23ff8545a48d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interest_8c.html#aaa5bd6e40f5c4c549eb23ff8545a48d6">ndn_interest_tlv_encode</a> (<a class="el" href="encoder_8h.html#a7e8d31a88e1f377c42e835275385119c">ndn_encoder_t</a> *encoder, <a class="el" href="interest_8h.html#afca88883fe1b0948d6e5d813bfacd08c">ndn_interest_t</a> *interest)</td></tr>
+<tr class="memdesc:aaa5bd6e40f5c4c549eb23ff8545a48d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the Interest into wire format (TLV block).  <a href="#aaa5bd6e40f5c4c549eb23ff8545a48d6">More...</a><br /></td></tr>
+<tr class="separator:aaa5bd6e40f5c4c549eb23ff8545a48d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fb53cb13db7219e135d88996fba9d32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interest_8c.html#a3fb53cb13db7219e135d88996fba9d32">ndn_interest_name_compare_block</a> (const uint8_t *lhs_block_value, uint32_t lhs_block_size, const uint8_t *rhs_block_value, uint32_t rhs_block_size)</td></tr>
 <tr class="memdesc:a3fb53cb13db7219e135d88996fba9d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two encoded Interests' names.  <a href="#a3fb53cb13db7219e135d88996fba9d32">More...</a><br /></td></tr>
 <tr class="separator:a3fb53cb13db7219e135d88996fba9d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,8 +221,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5e7cf807971c73f1407502e1c7de7eed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e7cf807971c73f1407502e1c7de7eed">&#9670;&nbsp;</a></span>ndn_interest_tlv_encode()</h2>
+<a id="aaa5bd6e40f5c4c549eb23ff8545a48d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa5bd6e40f5c4c549eb23ff8545a48d6">&#9670;&nbsp;</a></span>ndn_interest_tlv_encode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -235,7 +236,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="interest_8h.html#afca88883fe1b0948d6e5d813bfacd08c">ndn_interest_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="interest_8h.html#afca88883fe1b0948d6e5d813bfacd08c">ndn_interest_t</a> *&#160;</td>
           <td class="paramname"><em>interest</em>&#160;</td>
         </tr>
         <tr>

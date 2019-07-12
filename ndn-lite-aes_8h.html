@@ -104,6 +104,10 @@ Typedefs</h2></td></tr>
 <tr class="separator:a8a4253334021b2fef0439935fad911ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a774b4e2814ad71ff6543254257e2dfb5"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-aes_8h.html#a774b4e2814ad71ff6543254257e2dfb5">ndn_aes_cbc_decrypt_impl</a>) (const uint8_t *input_value, uint8_t input_size, uint8_t *output_value, uint8_t output_size, const uint8_t *aes_iv, const <a class="el" href="ndn-lite-aes_8h.html#a36f2ceb63135b2ef1a38615dfb76dcf5">abstract_aes_key_t</a> *aes_key)</td></tr>
 <tr class="separator:a774b4e2814ad71ff6543254257e2dfb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaee007f4aa9527bb860528aa418a001"><td class="memItemLeft" align="right" valign="top">typedef uint32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-aes_8h.html#abaee007f4aa9527bb860528aa418a001">ndn_aes_probe_padding_size_impl</a>) (uint32_t plaintext_size)</td></tr>
+<tr class="separator:abaee007f4aa9527bb860528aa418a001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad09944d52132dc458444b55523cfd019"><td class="memItemLeft" align="right" valign="top">typedef uint32_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-aes_8h.html#ad09944d52132dc458444b55523cfd019">ndn_aes_parse_unpadding_size_impl</a>) (uint8_t *plaintext_value, uint32_t plaintext_size)</td></tr>
+<tr class="separator:ad09944d52132dc458444b55523cfd019"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74550538f5b9c78d170a5c4ef422b7df"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structndn__aes__backend.html">ndn_aes_backend</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-aes_8h.html#a74550538f5b9c78d170a5c4ef422b7df">ndn_aes_backend_t</a></td></tr>
 <tr class="memdesc:a74550538f5b9c78d170a5c4ef422b7df"><td class="mdescLeft">&#160;</td><td class="mdescRight">The structure to represent the backend implementation.  <a href="#a74550538f5b9c78d170a5c4ef422b7df">More...</a><br /></td></tr>
 <tr class="separator:a74550538f5b9c78d170a5c4ef422b7df"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,6 +137,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ad17fd6541792bfe18ae3399189329753"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-aes_8h.html#ad17fd6541792bfe18ae3399189329753">ndn_aes_cbc_decrypt</a> (const uint8_t *input_value, uint8_t input_size, uint8_t *output_value, uint8_t output_size, const uint8_t *aes_iv, const <a class="el" href="ndn-lite-aes_8h.html#a1bfe08f3d0d597778ac43db28e7587a7">ndn_aes_key_t</a> *aes_key)</td></tr>
 <tr class="memdesc:ad17fd6541792bfe18ae3399189329753"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use AES-128-CBC algorithm to decrypt an encrypted buffer.  <a href="#ad17fd6541792bfe18ae3399189329753">More...</a><br /></td></tr>
 <tr class="separator:ad17fd6541792bfe18ae3399189329753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad07d434840fd1d9faf57b26b336c75b8"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-aes_8h.html#ad07d434840fd1d9faf57b26b336c75b8">ndn_aes_probe_padding_size</a> (uint32_t plaintext_size)</td></tr>
+<tr class="memdesc:ad07d434840fd1d9faf57b26b336c75b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Probe after padding size of plaintext.  <a href="#ad07d434840fd1d9faf57b26b336c75b8">More...</a><br /></td></tr>
+<tr class="separator:ad07d434840fd1d9faf57b26b336c75b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a715b67e7de5f99fbc0d66c845414f7e7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ndn-lite-aes_8h.html#a715b67e7de5f99fbc0d66c845414f7e7">ndn_aes_parse_unpadding_size</a> (uint8_t *plaintext_value, uint32_t plaintext_size)</td></tr>
+<tr class="memdesc:a715b67e7de5f99fbc0d66c845414f7e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the orginal plaintext size after stripping padding byte.  <a href="#a715b67e7de5f99fbc0d66c845414f7e7">More...</a><br /></td></tr>
+<tr class="separator:a715b67e7de5f99fbc0d66c845414f7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a36f2ceb63135b2ef1a38615dfb76dcf5"></a>
@@ -255,6 +265,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad09944d52132dc458444b55523cfd019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad09944d52132dc458444b55523cfd019">&#9670;&nbsp;</a></span>ndn_aes_parse_unpadding_size_impl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint32_t(* ndn_aes_parse_unpadding_size_impl) (uint8_t *plaintext_value, uint32_t plaintext_size)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abaee007f4aa9527bb860528aa418a001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaee007f4aa9527bb860528aa418a001">&#9670;&nbsp;</a></span>ndn_aes_probe_padding_size_impl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint32_t(* ndn_aes_probe_padding_size_impl) (uint32_t plaintext_size)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ad17fd6541792bfe18ae3399189329753"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad17fd6541792bfe18ae3399189329753">&#9670;&nbsp;</a></span>ndn_aes_cbc_decrypt()</h2>
@@ -307,7 +345,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Use AES-128-CBC algorithm to decrypt an encrypted buffer. </p>
-<p>This function is implemented without padding. The input_size must be a multiple of NDN_AES_BLOCK_SIZE to obtain a successful decryption. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This function is implemented with padding PKCS#7, but should call additional function to parse the unpadding size. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">input_value.</td><td>Input. Buffer to decrypt. </td></tr>
     <tr><td class="paramname">input_size.</td><td>Input. Size of input buffer. </td></tr>
@@ -374,7 +412,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Use AES-128-CBC algorithm to encrypt a buffer. </p>
-<p>This function does not perform any padding. The input_size must be a multiple of NDN_AES_BLOCK_SIZE to obtain a successful encryption. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This function performs PKCS#7 padding. The input_size must be a multiple of NDN_AES_BLOCK_SIZE to obtain a successful encryption. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">input_value.</td><td>Input. Buffer to encrypt. </td></tr>
     <tr><td class="paramname">input_size.</td><td>Input. Size of input buffer. </td></tr>
@@ -561,6 +599,71 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a715b67e7de5f99fbc0d66c845414f7e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a715b67e7de5f99fbc0d66c845414f7e7">&#9670;&nbsp;</a></span>ndn_aes_parse_unpadding_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ndn_aes_parse_unpadding_size </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>plaintext_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>plaintext_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parse the orginal plaintext size after stripping padding byte. </p>
+<p>Input size should be multiple of NDN_AES_BLOCK_SIZE. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plaintext_value.</td><td>Input. Input buffer before unpadding. </td></tr>
+    <tr><td class="paramname">plaintext_size.</td><td>Input. Size of input buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>original plaintext size. </dd></dl>
+
+</div>
+</div>
+<a id="ad07d434840fd1d9faf57b26b336c75b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad07d434840fd1d9faf57b26b336c75b8">&#9670;&nbsp;</a></span>ndn_aes_probe_padding_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ndn_aes_probe_padding_size </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>plaintext_size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Probe after padding size of plaintext. </p>
+<p>Ouput should be multiple of NDN_AES_BLOCK_SIZE. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plaintext_size.</td><td>Input. Size of original plaintext. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>after padding size. </dd></dl>
 
 </div>
 </div>
